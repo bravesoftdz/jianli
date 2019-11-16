@@ -1,0 +1,16 @@
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\bin\AcReportWebDemo.dll
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\bin\AcReportWebDemo.pdb
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\bin\Interop.AcReport.dll
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\obj\Debug\Interop.AcReport.dll
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\obj\Debug\AcReportWebDemo.csproj.ResolveComReference.cache
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\obj\Debug\AcReportWebDemo.dll
+E:\AcReport2010\AcReportWebDemo\AcReportWebDemo\obj\Debug\AcReportWebDemo.pdb
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\bin\AcReportWebDemo.dll
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\bin\AcReportWebDemo.pdb
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\bin\Interop.AcReport.dll
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\obj\Debug\Interop.AcReport.dll
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\obj\Debug\AcReportWebDemo.csproj.ResolveComReference.cache
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\obj\Debug\AcReportWebDemo.dll
+E:\AcReport2010_pub\AcReportWebDemo\AcReportWebDemo\obj\Debug\AcReportWebDemo.pdb

@@ -1,0 +1,52 @@
+package PrintTemplate;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  rtl,
+  Interfaces;
+
+contains
+  UFrmPrintTemplateType in 'UFrmPrintTemplateType.pas' {FrmPrintTemplateType},
+  UFrmPrintTemplateTypeAdd in 'UFrmPrintTemplateTypeAdd.pas' {FrmPrintTemplateTypeAdd},
+  UFrmPrintTemplateTypeItemAdd in 'UFrmPrintTemplateTypeItemAdd.pas' {FrmPrintTemplateTypeItemAdd},
+  UFrmPrintTemplateItemAdd in 'UFrmPrintTemplateItemAdd.pas' {FrmPrintTemplateItemAdd},
+  PrintTemplateExport in 'PrintTemplateExport.pas',
+  PrintTemplatePlugin in 'PrintTemplatePlugin.pas',
+  UFrmPrintTemplateAdd in 'UFrmPrintTemplateAdd.pas' {FrmPrintTemplateAdd},
+  UFrmPrintTemplatePlan in 'UFrmPrintTemplatePlan.pas' {FrmPrintTemplatePlan},
+  DesignHookUtils in 'DesignHookUtils.pas',
+  PrintTemplatePlan in 'PrintTemplatePlan.pas',
+  NovaPrint in 'NovaPrint.pas' {/  ,
+},
+  UFrmPrintTemplate in 'UFrmPrintTemplate.pas' {FrmPrintTemplate},
+  HBarcode in 'HBarcode.pas',
+  pBarCode in 'pBarCode.pas',
+  NovaPrintoffline in 'NovaPrintoffline.pas';
+
+end.

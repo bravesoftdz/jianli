@@ -1,0 +1,39 @@
+unit QueryVehicleReportExport;
+
+
+interface
+
+uses Classes,SysUtils,RegPluginIntf,Services,MainFormIntf,FunctionItemIntf;
+
+procedure PlugInit(Reg:IRegPlugin);//×¢²á²å¼þ
+procedure PlugInFinal(); //Ð¶ÔØ²å¼þ
+
+exports
+  PlugInit,
+  PlugInFinal;
+implementation
+  uses QueryVehicleReportPlugin;
+procedure PlugInit(Reg:IRegPlugin);//×¢²á²å¼þ
+var queryVehicleReport:queryVehicleReportManager;
+  par:TFunctionItemParameters;
+
+begin
+  queryVehicleReport:=queryVehicleReportManager.Create;
+  Reg.RegisterFunctionItem(queryVehicleReport);
+
+
+{$IFDEF DEBUG}
+  par:=TFunctionItemParameters.Create;
+  (SysService as  IMainForm).CreateMenu('¼ìÆ±²éÑ¯\°à´Î±¨°àÇé¿ö²éÑ¯',queryVehicleReport.key,par);
+{$ENDIF}
+end;
+procedure PlugInFinal(); //Ð¶ÔØ²å¼þ
+begin
+
+end;
+
+initialization
+
+finalization
+
+end.

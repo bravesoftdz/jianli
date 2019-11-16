@@ -1,0 +1,11 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\CustFuncDemo2.csproj.ResolveComReference.cache
+obj\Debug\CustFuncDemo2.Form1.resources
+obj\Debug\CustFuncDemo2.Properties.Resources.resources
+obj\Debug\CustFuncDemo2.csproj.GenerateResource.Cache
+bin\Debug\CustFuncDemo2.exe
+bin\Debug\CustFuncDemo2.pdb
+bin\Debug\Interop.AcReport.dll
+obj\Debug\CustFuncDemo2.exe
+obj\Debug\CustFuncDemo2.pdb

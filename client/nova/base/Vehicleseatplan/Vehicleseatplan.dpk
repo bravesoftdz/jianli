@@ -1,0 +1,45 @@
+package Vehicleseatplan;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  rtl,
+  Interfaces;
+
+contains
+  UFrmVehiclespace in 'UFrmVehiclespace.pas' {FrmVehiclespace},
+  UFrmVehicleseatplan in 'UFrmVehicleseatplan.pas' {FrmVehicleseatplan},
+  UFrmVehicleseatplanAdd in 'UFrmVehicleseatplanAdd.pas' {FrmVehicleseatplanAdd},
+  UFrmVehiclespaceAdd in 'UFrmVehiclespaceAdd.pas' {FrmVehiclespaceAdd},
+  VehicleseatplanExport in 'VehicleseatplanExport.pas',
+  VehicleseatplanPlugin in 'VehicleseatplanPlugin.pas',
+  SeatPlan in 'SeatPlan.pas',
+  UFrmsetVehicleSpace in 'UFrmsetVehicleSpace.pas' {FrmsetVehicleSpace};
+
+end.

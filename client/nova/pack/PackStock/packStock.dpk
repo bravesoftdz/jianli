@@ -1,0 +1,43 @@
+package packStock;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  Interfaces,
+  adortl,
+  PrintTemplate;
+
+contains
+  PackStockPlugin in 'PackStockPlugin.pas',
+  UFrmSelSchPlan in 'UFrmSelSchPlan.pas' {FrmSelSchPlan},
+  PackStockManager in 'PackStockManager.pas',
+  UFrmPackStock in 'UFrmPackStock.pas' {FrmPackStock},
+  UFrmRevenue in 'UFrmRevenue.pas' {FrmRevenue},
+  UFrmOut in 'UFrmOut.pas' {FrmOutEdit},
+  UFrmPackReprintbillno in 'UFrmPackReprintbillno.pas' {FrmPackReprintbillno},
+  UFrmSelSchPlan2 in 'UFrmSelSchPlan2.pas' {FrmSelSchPlan2};
+
+end.

@@ -1,0 +1,63 @@
+package TicketSale;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  rtl,
+  Interfaces,
+  VclSmp,
+  Vehicleseatplan,
+  PrintTemplate,
+  bdertl,
+  vcldbx,
+  ICcardRW,
+  IDCardReader;
+
+contains
+  TicketSaleExport in 'TicketSaleExport.pas',
+  TicketSalePlugin in 'TicketSalePlugin.pas',
+  UFrmSellTicket in 'UFrmSellTicket.pas' {FrmSellTicket},
+  SellTicket in 'SellTicket.pas',
+  UFrmCustomerAdd in 'UFrmCustomerAdd.pas' {FrmCustomerAdd},
+  SellWayEnd in 'SellWayEnd.pas',
+  Ufrmpatchsellticketend in 'Ufrmpatchsellticketend.pas' {frmpatchsellticketend: TFrame},
+  Ufrmsellwayend in 'Ufrmsellwayend.pas' {frmsellwayend: TFrame},
+  Ufrmsellticketend in 'Ufrmsellticketend.pas' {frmsellticketend: TFrame},
+  Ufrmbookticketend in 'Ufrmbookticketend.pas' {frmbookticketend: TFrame},
+  UFrmChangeTicket in 'UFrmChangeTicket.pas' {FrmChangeTicket},
+  Ufrmchangeticketend in 'Ufrmchangeticketend.pas' {frmchangeticketend: TFrame},
+  UFrmSellBookTicket in 'UFrmSellBookTicket.pas' {FrmSellBookTicket},
+  UfrmsellBookticketend in 'UfrmsellBookticketend.pas' {frmsellBookticketend: TFrame},
+  UFrmSellReserveSeat in 'UFrmSellReserveSeat.pas' {FrmSellReserveSeat},
+  UfrmsellReserveSeatend in 'UfrmsellReserveSeatend.pas' {FrmSellReserveSeatend: TFrame},
+  UfrmTmpInsuranceNo in 'UfrmTmpInsuranceNo.pas' {frmTmpInsuranceNo},
+  DateCn in 'DateCn.pas',
+  UfrmreceiptSchedule in 'UfrmreceiptSchedule.pas' {frmreceiptSchedule: TFrame};
+
+end.
+

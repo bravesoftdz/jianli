@@ -1,0 +1,3 @@
+行 12: 控件 ACRptEngine1 的类 ACRptEngineX.ACRptEngineX 不是一个已加载的控件类。
+行 19: 属性名 Object.Visible 在 ACRptEngine1 中是无效的。
+行 20: 属性名 DoubleBuffered 在 ACRptEngine1 中是无效的。

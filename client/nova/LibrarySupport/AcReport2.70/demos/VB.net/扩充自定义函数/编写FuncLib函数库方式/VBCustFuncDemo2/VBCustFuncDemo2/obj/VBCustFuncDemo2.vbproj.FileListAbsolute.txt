@@ -1,0 +1,13 @@
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.vbproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.Form1.resources
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.Resources.resources
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.vbproj.GenerateResource.Cache
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\bin\Debug\VBCustFuncDemo2.exe
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\bin\Debug\VBCustFuncDemo2.pdb
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\bin\Debug\VBCustFuncDemo2.xml
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.exe
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.xml
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\编写FuncLib函数库方式\VBCustFuncDemo2\VBCustFuncDemo2\obj\Debug\VBCustFuncDemo2.pdb

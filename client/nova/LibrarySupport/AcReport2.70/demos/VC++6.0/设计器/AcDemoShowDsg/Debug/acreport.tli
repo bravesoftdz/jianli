@@ -1,0 +1,1244 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (6f194774).
+//
+// e:\controls\acreport\com\demos\vc++6.0\Éè¼ÆÆ÷\acdemoshowdsg\debug\acreport.tli
+//
+// Wrapper implementations for Win32 type library E:\controls\ACreport\COM\com\acreport.dll
+// compiler-generated file created 01/01/12 at 14:59:40 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICustDataBuilder wrapper method implementations
+//
+
+inline HRESULT ICustDataBuilder::RemoveAllTables ( ) {
+    HRESULT _hr = raw_RemoveAllTables();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::NewTable ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_NewTable(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::RemoveTable ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_RemoveTable(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::OpenTable ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_OpenTable(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::CloseTable ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_CloseTable(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AddStringField ( _bstr_t aTableName, _bstr_t aFieldName, long aLength ) {
+    HRESULT _hr = raw_AddStringField(aTableName, aFieldName, aLength);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AddIntegerField ( _bstr_t aTableName, _bstr_t aFieldName ) {
+    HRESULT _hr = raw_AddIntegerField(aTableName, aFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AddFloatField ( _bstr_t aTableName, _bstr_t aFieldName ) {
+    HRESULT _hr = raw_AddFloatField(aTableName, aFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AddDateTimeField ( _bstr_t aTableName, _bstr_t aFieldName ) {
+    HRESULT _hr = raw_AddDateTimeField(aTableName, aFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AppendRow ( _bstr_t aTableName, const _variant_t & FieldValues ) {
+    HRESULT _hr = raw_AppendRow(aTableName, FieldValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::SetCurrentRowValues ( _bstr_t aTableName, const _variant_t & FieldValues ) {
+    HRESULT _hr = raw_SetCurrentRowValues(aTableName, FieldValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AppendEmptyRow ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_AppendEmptyRow(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::DeleteRow ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_DeleteRow(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::MoveFirst ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_MoveFirst(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::MoveLast ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_MoveLast(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::MoveNext ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_MoveNext(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::MovePrior ( _bstr_t aTableName ) {
+    HRESULT _hr = raw_MovePrior(aTableName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::SetFieldValue ( const _variant_t & aTableId, const _variant_t & aFieldId, const _variant_t & Value ) {
+    HRESULT _result;
+    HRESULT _hr = raw_SetFieldValue(aTableId, aFieldId, Value, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ICustDataBuilder::GetFieldValue ( const _variant_t & aTableId, const _variant_t & aFieldId ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetFieldValue(aTableId, aFieldId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ICustDataBuilder::GetTableName ( long aIndex ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetTableName(aIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline long ICustDataBuilder::GetTableCount ( ) {
+    long _result;
+    HRESULT _hr = raw_GetTableCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICustDataBuilder::GetRecordCount ( _bstr_t aTableName ) {
+    long _result;
+    HRESULT _hr = raw_GetRecordCount(aTableName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICustDataBuilder::IsBOF ( _bstr_t aTableName ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_IsBOF(aTableName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICustDataBuilder::IsEOF ( _bstr_t aTableName ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_IsEOF(aTableName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICustDataBuilder::SetStringFieldValue ( _bstr_t aTableName, _bstr_t aFieldName, _bstr_t Value ) {
+    HRESULT _hr = raw_SetStringFieldValue(aTableName, aFieldName, Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL ICustDataBuilder::TableExist ( _bstr_t TableName ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_TableExist(TableName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICustDataBuilder::SetBlobField ( _bstr_t aTableName, _bstr_t aFieldName, struct IAcNetStream * aStream ) {
+    HRESULT _hr = raw_SetBlobField(aTableName, aFieldName, aStream);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::GetblobField ( _bstr_t aTableName, _bstr_t aFieldName, struct IAcNetStream * aStream ) {
+    HRESULT _hr = raw_GetblobField(aTableName, aFieldName, aStream);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AddBlobField ( _bstr_t aTableName, _bstr_t aFieldName ) {
+    HRESULT _hr = raw_AddBlobField(aTableName, aFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ICustDataBuilder::SetCurrentTable ( _bstr_t TableName ) {
+    long _result;
+    HRESULT _hr = raw_SetCurrentTable(TableName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICustDataBuilder::GetTableIndex ( _bstr_t TableName ) {
+    long _result;
+    HRESULT _hr = raw_GetTableIndex(TableName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICustDataBuilder::AddVariantField ( _bstr_t aTableName, _bstr_t aFieldName ) {
+    HRESULT _hr = raw_AddVariantField(aTableName, aFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::SetFieldAsString ( const _variant_t & aTableId, const _variant_t & aFieldId, _bstr_t Value ) {
+    HRESULT _hr = raw_SetFieldAsString(aTableId, aFieldId, Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICustDataBuilder::AddBooleanField ( _bstr_t aTableName, _bstr_t aFieldName ) {
+    HRESULT _hr = raw_AddBooleanField(aTableName, aFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAcRptEngine wrapper method implementations
+//
+
+inline HRESULT IAcRptEngine::Init ( ) {
+    HRESULT _hr = raw_Init();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::AddDataset ( _bstr_t DatasetName, const _variant_t & AdoRecord ) {
+    HRESULT _hr = raw_AddDataset(DatasetName, AdoRecord);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::AddVariable ( _bstr_t VarName, const _variant_t & Value ) {
+    HRESULT _hr = raw_AddVariable(VarName, Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::AddGlobalVariable ( _bstr_t VarName, const _variant_t & Value ) {
+    HRESULT _hr = raw_AddGlobalVariable(VarName, Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::SetReportFile ( _bstr_t AptFileName ) {
+    HRESULT _hr = raw_SetReportFile(AptFileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IAcRptEngine::AddDatasetRelation ( _bstr_t MasterName, _bstr_t DetailName, _bstr_t Relation ) {
+    long _result;
+    HRESULT _hr = raw_AddDatasetRelation(MasterName, DetailName, Relation, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::PrepareReport ( ) {
+    HRESULT _result;
+    HRESULT _hr = raw_PrepareReport(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::Print ( ) {
+    HRESULT _hr = raw_Print();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::PrintReport ( ) {
+    HRESULT _hr = raw_PrintReport();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::PrintPrepared ( long BeginPage, long EndPage, long Copies ) {
+    HRESULT _hr = raw_PrintPrepared(BeginPage, EndPage, Copies);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::Preview ( ) {
+    HRESULT _hr = raw_Preview();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IAcRptEngine::ShowDesigner ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_ShowDesigner(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::ExportToXls ( _bstr_t aFileName ) {
+    HRESULT _hr = raw_ExportToXls(aFileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IAcRptEngine::Calac ( _bstr_t aExpr ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Calac(aExpr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t IAcRptEngine::CalacOPZ ( _bstr_t aExpr ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_CalacOPZ(aExpr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IAcRptEngine::GetPreparedPagesCount ( ) {
+    long _result;
+    HRESULT _hr = get_PreparedPagesCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ICustDataBuilderPtr IAcRptEngine::GetCustDataBuilder ( ) {
+    struct ICustDataBuilder * _result;
+    HRESULT _hr = get_CustDataBuilder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICustDataBuilderPtr(_result, false);
+}
+
+inline ICustDataBuilderPtr IAcRptEngine::GetGlobalCustDataBuilder ( ) {
+    struct ICustDataBuilder * _result;
+    HRESULT _hr = get_GlobalCustDataBuilder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICustDataBuilderPtr(_result, false);
+}
+
+inline HRESULT IAcRptEngine::ExportToACR ( _bstr_t aFileName ) {
+    HRESULT _hr = raw_ExportToACR(aFileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::ExportToHTML ( _bstr_t aFileName ) {
+    HRESULT _hr = raw_ExportToHTML(aFileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::AddFunctionLib ( struct IAcFunctionLib * aFuncLib, long aGroupID ) {
+    HRESULT _hr = raw_AddFunctionLib(aFuncLib, aGroupID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::RemoveFuncionLib ( struct IAcFunctionLib * aFuncLib ) {
+    HRESULT _hr = raw_RemoveFuncionLib(aFuncLib);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::RemoveFuncLibGroup ( long aGroup ) {
+    HRESULT _hr = raw_RemoveFuncLibGroup(aGroup);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::AddFunctionName ( long aFuncKind, _bstr_t aFuncName, _bstr_t aParamDesc, _bstr_t aFuncDesc ) {
+    HRESULT _hr = raw_AddFunctionName(aFuncKind, aFuncName, aParamDesc, aFuncDesc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IAcRptEngine::GetLinesCount ( ) {
+    long _result;
+    HRESULT _hr = get_LinesCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAcLinePtr IAcRptEngine::GetLineX ( long aIndex ) {
+    struct IAcLine * _result;
+    HRESULT _hr = raw_GetLineX(aIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcLinePtr(_result, false);
+}
+
+inline IAcCellPtr IAcRptEngine::GetCellX ( long Row, long Col ) {
+    struct IAcCell * _result;
+    HRESULT _hr = raw_GetCellX(Row, Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcCellPtr(_result, false);
+}
+
+inline long IAcRptEngine::GetSubPageCount ( ) {
+    long _result;
+    HRESULT _hr = get_SubPageCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAcRptPagePtr IAcRptEngine::GetSubPage ( long aIndex ) {
+    struct IAcRptPage * _result;
+    HRESULT _hr = raw_GetSubPage(aIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcRptPagePtr(_result, false);
+}
+
+inline HRESULT IAcRptEngine::LoadFromFile ( _bstr_t aFileName ) {
+    HRESULT _result;
+    HRESULT _hr = raw_LoadFromFile(aFileName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::SaveToFile ( _bstr_t aFileName ) {
+    HRESULT _result;
+    HRESULT _hr = raw_SaveToFile(aFileName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::LoadFromBlobField ( const _variant_t & AdoRecord, _bstr_t BlobFieldName, _bstr_t RepTitle ) {
+    HRESULT _result;
+    HRESULT _hr = raw_LoadFromBlobField(AdoRecord, BlobFieldName, RepTitle, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::SaveToBlobField ( const _variant_t & AdoRecord, _bstr_t BlobFieldName ) {
+    HRESULT _result;
+    HRESULT _hr = raw_SaveToBlobField(AdoRecord, BlobFieldName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::LoadFromStream ( IUnknown * aStream ) {
+    HRESULT _result;
+    HRESULT _hr = raw_LoadFromStream(aStream, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::SaveToStream ( IUnknown * aStream ) {
+    HRESULT _result;
+    HRESULT _hr = raw_SaveToStream(aStream, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::GetLastError ( long * ErrorCode, BSTR * ErrorMsg ) {
+    HRESULT _hr = raw_GetLastError(ErrorCode, ErrorMsg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::LoadFromURL ( _bstr_t URL ) {
+    HRESULT _result;
+    HRESULT _hr = raw_LoadFromURL(URL, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::ClearDataRelations ( ) {
+    HRESULT _result;
+    HRESULT _hr = raw_ClearDataRelations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::SetAppConnectionString ( _bstr_t ConnString ) {
+    HRESULT _hr = raw_SetAppConnectionString(ConnString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::SetRegisterInfo ( _bstr_t RegCode, _bstr_t UserName, _bstr_t AttachCode, _bstr_t Addr, _bstr_t EMail, _bstr_t Phone, _bstr_t Fax, long * ErrCode, BSTR * ErrMsg ) {
+    HRESULT _hr = raw_SetRegisterInfo(RegCode, UserName, AttachCode, Addr, EMail, Phone, Fax, ErrCode, ErrMsg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::SetDataFieldAliasName ( _bstr_t DatasetName, _bstr_t FieldNames, _bstr_t FieldAliasNames ) {
+    HRESULT _result;
+    HRESULT _hr = raw_SetDataFieldAliasName(DatasetName, FieldNames, FieldAliasNames, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAcRptEngine::GetDisableSaveToFile ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_DisableSaveToFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcRptEngine::PutDisableSaveToFile ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_DisableSaveToFile(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IAcRptEngine::ClearContents ( ) {
+    HRESULT _result;
+    HRESULT _hr = raw_ClearContents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAcRptEngine::GetShowPreviewOnPrepare ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ShowPreviewOnPrepare(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcRptEngine::PutShowPreviewOnPrepare ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ShowPreviewOnPrepare(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IAcRptEngine::ExportToAcrStream ( struct IAcNetStream * aStream ) {
+    HRESULT _result;
+    HRESULT _hr = raw_ExportToAcrStream(aStream, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IAcRptEngine::GetShowProgress ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ShowProgress(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcRptEngine::PutShowProgress ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ShowProgress(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IAcRptEngine::SetCurrentPrinter ( _bstr_t PrinterName ) {
+    HRESULT _result;
+    HRESULT _hr = raw_SetCurrentPrinter(PrinterName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcRptEngine::PrintWithSet ( ) {
+    HRESULT _hr = raw_PrintWithSet();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::PrintOddOrEvenPages ( VARIANT_BOOL OddPages ) {
+    HRESULT _hr = raw_PrintOddOrEvenPages(OddPages);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::PrintOnDoubleSide ( ) {
+    HRESULT _hr = raw_PrintOnDoubleSide();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::ExportToXlsWithOptions ( _bstr_t aFileName, long aBeginPage, long aEndPage, long aImageOpt, VARIANT_BOOL aIfMultSheet, VARIANT_BOOL aReconfirm, VARIANT_BOOL aShowProgress, VARIANT_BOOL aOpenAfterExport ) {
+    HRESULT _result;
+    HRESULT _hr = raw_ExportToXlsWithOptions(aFileName, aBeginPage, aEndPage, aImageOpt, aIfMultSheet, aReconfirm, aShowProgress, aOpenAfterExport, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IPreviewOptionsPtr IAcRptEngine::GetPreviewOptions ( ) {
+    struct IPreviewOptions * _result;
+    HRESULT _hr = get_PreviewOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IPreviewOptionsPtr(_result, false);
+}
+
+inline HRESULT IAcRptEngine::AddNetAdoData ( _bstr_t DatasetName, struct IAcRecordset * AdoRecord ) {
+    HRESULT _hr = raw_AddNetAdoData(DatasetName, AdoRecord);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcRptEngine::SetCustInfo ( _bstr_t Title_DesignerWnd, _bstr_t Title_PreviewWnd, _bstr_t Title_PrinterTask, _bstr_t FileExt_apt, _bstr_t FileExt_acr, _bstr_t HideMenuItems, _bstr_t HideSubMenuItems, _bstr_t IconFile_Wnd, long * AErrCode, BSTR * AErrMsg ) {
+    HRESULT _hr = raw_SetCustInfo(Title_DesignerWnd, Title_PreviewWnd, Title_PrinterTask, FileExt_apt, FileExt_acr, HideMenuItems, HideSubMenuItems, IconFile_Wnd, AErrCode, AErrMsg);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface IAcRptEngineEvent wrapper method implementations
+//
+
+inline HRESULT IAcRptEngineEvent::OnFunction ( struct IAcRptEngine * RptEngine, _bstr_t FuncName, const _variant_t & P1, const _variant_t & P2, const _variant_t & P3, VARIANT * Value ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xc9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x0008\x000c\x000c\x000c\x400c", RptEngine, (BSTR)FuncName, &P1, &P2, &P3, Value);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::OnGetValue ( _bstr_t VarName, VARIANT * Value ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xca, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008\x400c", (BSTR)VarName, Value);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::AfterPrint ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xcb, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::BeforePrint ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xcc, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::BeforeDesign ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xcd, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::AfterDesign ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xce, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::BeforePrepare ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xcf, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::AfterPrepare ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd0, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::BeforePreview ( struct IAcRptEngine * aRptEngine ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009", aRptEngine);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::OnCellModify ( struct IAcRptEngine * aRptEngine, long aRow, long aCol, _bstr_t aOldText, _bstr_t aNewText ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x0003\x0003\x0008\x0008", aRptEngine, aRow, aCol, (BSTR)aOldText, (BSTR)aNewText);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::OnGetCellModifyLog ( struct IAcRptEngine * aRptEgine, long aRow, long aCol, struct IAcModifyLogList * aLogList ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x0003\x0003\x0009", aRptEgine, aRow, aCol, aLogList);
+    return _result;
+}
+
+inline HRESULT IAcRptEngineEvent::OnMeasureCellModifyLog ( struct IAcRptEngine * aRptEngine, long aRow, long aCol, VARIANT_BOOL * IfModiLogExist ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x0003\x0003\x400b", aRptEngine, aRow, aCol, IfModiLogExist);
+    return _result;
+}
+
+//
+// dispinterface IAcRptEngineEventDispatch wrapper method implementations
+//
+
+inline HRESULT IAcRptEngineEventDispatch::OnFunction ( _bstr_t FuncName, const _variant_t & P1, const _variant_t & P2, const _variant_t & P3, VARIANT * Value ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xc9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0008\x000c\x000c\x000c\x400c", (BSTR)FuncName, &P1, &P2, &P3, Value);
+    return _result;
+}
+
+//
+// interface IAcFunctionLib wrapper method implementations
+//
+
+inline long IAcFunctionLib::GetFuncCount ( ) {
+    long _result;
+    HRESULT _hr = raw_GetFuncCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcFunctionLib::GetFuncInfo ( long aFuncID, long * aFuncKind, BSTR * aFuncName, BSTR * aParamDesc, BSTR * aFuncDesc ) {
+    HRESULT _hr = raw_GetFuncInfo(aFuncID, aFuncKind, aFuncName, aParamDesc, aFuncDesc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IAcFunctionLib::DoFunction ( struct IAcRptEngine * aRptEgine, long aFuncID, _bstr_t aFuncName, const _variant_t & aParam1, const _variant_t & aParam2, const _variant_t & aParam3 ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_DoFunction(aRptEgine, aFuncID, aFuncName, aParam1, aParam2, aParam3, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IAcCell wrapper method implementations
+//
+
+inline long IAcCell::GetTextColor ( ) {
+    long _result;
+    HRESULT _hr = get_TextColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutTextColor ( long Value ) {
+    HRESULT _hr = put_TextColor(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IAcCell::GetBkColor ( ) {
+    long _result;
+    HRESULT _hr = get_BkColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutBkColor ( long Value ) {
+    HRESULT _hr = put_BkColor(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IAcCell::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IAcCell::PutValue ( const _variant_t & Value ) {
+    HRESULT _hr = put_Value(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAcCell::GetAsString ( ) {
+    BSTR _result;
+    HRESULT _hr = get_AsString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAcCell::PutAsString ( _bstr_t Value ) {
+    HRESULT _hr = put_AsString(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAcCell::GetCellText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_CellText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAcCell::PutCellText ( _bstr_t Value ) {
+    HRESULT _hr = put_CellText(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline float IAcCell::GetAsNumeric ( ) {
+    float _result;
+    HRESULT _hr = get_AsNumeric(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutAsNumeric ( float Value ) {
+    HRESULT _hr = put_AsNumeric(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IAcCell::GetAsInteger ( ) {
+    long _result;
+    HRESULT _hr = get_AsInteger(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutAsInteger ( long Value ) {
+    HRESULT _hr = put_AsInteger(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAcCell::GetAutoMerge ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_AutoMerge(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutAutoMerge ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_AutoMerge(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IAcCell::GetOwnedCellCount ( ) {
+    long _result;
+    HRESULT _hr = get_OwnedCellCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcCell::CalcCellValue ( ) {
+    HRESULT _hr = raw_CalcCellValue();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int IAcCell::GetTextSize ( ) {
+    int _result;
+    HRESULT _hr = get_TextSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutTextSize ( int Value ) {
+    HRESULT _hr = put_TextSize(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IAcCell::GetTextFontName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_TextFontName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IAcCell::PutTextFontName ( _bstr_t Value ) {
+    HRESULT _hr = put_TextFontName(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAcCell::GetTextStyleBold ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_TextStyleBold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutTextStyleBold ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_TextStyleBold(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAcCell::GetTextStyleItalic ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_TextStyleItalic(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutTextStyleItalic ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_TextStyleItalic(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAcCell::GetTextStyleUnderline ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_TextStyleUnderline(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutTextStyleUnderline ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_TextStyleUnderline(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IAcCell::GetTextStyleStrikeout ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_TextStyleStrikeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IAcCell::PutTextStyleStrikeout ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_TextStyleStrikeout(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IAcLine wrapper method implementations
+//
+
+inline long IAcLine::GetCellsCount ( ) {
+    long _result;
+    HRESULT _hr = get_CellsCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IAcCellPtr IAcLine::GetCell ( long aIndex ) {
+    struct IAcCell * _result;
+    HRESULT _hr = raw_GetCell(aIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcCellPtr(_result, false);
+}
+
+inline HRESULT IAcLine::CalcLineCellValues ( ) {
+    HRESULT _hr = raw_CalcLineCellValues();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IAcLine::GetIndex ( ) {
+    long _result;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAcRptPage wrapper method implementations
+//
+
+inline IAcLinePtr IAcRptPage::GetLineX ( long aIndex ) {
+    struct IAcLine * _result;
+    HRESULT _hr = raw_GetLineX(aIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcLinePtr(_result, false);
+}
+
+inline IAcCellPtr IAcRptPage::GetCellX ( long Row, long Col ) {
+    struct IAcCell * _result;
+    HRESULT _hr = raw_GetCellX(Row, Col, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAcCellPtr(_result, false);
+}
+
+inline long IAcRptPage::GetLineCount ( ) {
+    long _result;
+    HRESULT _hr = get_LineCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline enum AcPageType IAcRptPage::GetPageType ( ) {
+    enum AcPageType _result;
+    HRESULT _hr = get_PageType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAcModifyLogList wrapper method implementations
+//
+
+inline long IAcModifyLogList::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcModifyLogList::AddLogItem ( long aRow, long aCol, _bstr_t aOldText, _bstr_t aNewText, _bstr_t aModifiedBy, DATE aDateTime ) {
+    HRESULT _hr = raw_AddLogItem(aRow, aCol, aOldText, aNewText, aModifiedBy, aDateTime);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcModifyLogList::ClearItems ( ) {
+    HRESULT _hr = raw_ClearItems();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcModifyLogList::RemoveLogItem ( long aIndex ) {
+    HRESULT _hr = raw_RemoveLogItem(aIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAcModifyLogList::GetLogItem ( long aIndex, long * aRow, long * aCol, BSTR * aOldText, BSTR * aNewText, BSTR * aModifiedBy, DATE * aDateTime ) {
+    HRESULT _hr = raw_GetLogItem(aIndex, aRow, aCol, aOldText, aNewText, aModifiedBy, aDateTime);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAcNetStream wrapper method implementations
+//
+
+inline long IAcNetStream::Read ( BSTR * Buffer, long Count ) {
+    long _result;
+    HRESULT _hr = raw_Read(Buffer, Count, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAcNetStream::Write ( _bstr_t Buffer, long Count ) {
+    long _result;
+    HRESULT _hr = raw_Write(Buffer, Count, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAcNetStream::Seek ( long Offset, enum SeekOrg Origin ) {
+    long _result;
+    HRESULT _hr = raw_Seek(Offset, Origin, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IAcNetStream::GetSize ( ) {
+    long _result;
+    HRESULT _hr = raw_GetSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAcNetStream::SetSize ( long NewSize ) {
+    HRESULT _hr = raw_SetSize(NewSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IPreviewOptions wrapper method implementations
+//
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Open ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Open(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Open ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Open(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Save ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Save(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Save ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Save(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_PageSet ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_PageSet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_PageSet ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_PageSet(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_ApplyEdit ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_ApplyEdit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_ApplyEdit ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_ApplyEdit(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_ExportXLS ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_ExportXLS(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_ExportXLS ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_ExportXLS(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Print ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Print(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Print ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Print(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_PrintCurPage ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_PrintCurPage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_PrintCurPage ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_PrintCurPage(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Cancel ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Cancel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Cancel ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Cancel(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_PageSize ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_PageSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_PageSize ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_PageSize(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_ZoomIn ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_ZoomIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_ZoomIn ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_ZoomIn(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_ZoomOut ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_ZoomOut(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_ZoomOut ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_ZoomOut(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_First ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_First(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_First ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_First(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Prior ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Prior(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Prior ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Prior(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Next ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Next(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Next ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Next(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IPreviewOptions::GetButtonVisible_Last ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_ButtonVisible_Last(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IPreviewOptions::PutButtonVisible_Last ( VARIANT_BOOL Value ) {
+    HRESULT _hr = put_ButtonVisible_Last(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IPreviewOptions::GetWindowTitle ( ) {
+    BSTR _result;
+    HRESULT _hr = get_WindowTitle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IPreviewOptions::PutWindowTitle ( _bstr_t Value ) {
+    HRESULT _hr = put_WindowTitle(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}

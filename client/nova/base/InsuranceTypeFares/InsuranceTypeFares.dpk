@@ -1,0 +1,37 @@
+package InsuranceTypeFares;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  interfaces,
+  rtl;
+
+contains
+  InsuranceTypeFaresPlugin in 'InsuranceTypeFaresPlugin.pas',
+  InsuranceTypeFaresExport in 'InsuranceTypeFaresExport.pas',
+  UFrmInsuranceTypeFares in 'UFrmInsuranceTypeFares.pas' { TFrmInsuranceTypeFares },
+  UFrmInsuranceTypeFaresEdit in 'UFrmInsuranceTypeFaresEdit.pas' {FrmInsuranceTypeFaresEdit};
+
+end.

@@ -1,0 +1,5207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>站务系统</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" media="screen" href="/public/stylesheets/main.css">
+        <link rel="stylesheet" href="/public/bootstrap-3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/public/bootstrap-3.0.3/css/bootstrap-datetimepicker.min.css">
+        
+        <link rel="shortcut icon" type="image/png" href="/public/images/favicon.png">
+        
+        <script type="text/javascript" charset="utf-8">
+
+var i18nMessages = {"validation.phone":"Not a valid phone","validation.required":"Required","validation.match":"Must match %2$s","since.seconds":"%s second%s ago","since.days":"%s day%s ago","since.format":"MMM d, yyyy","validation.range":"Not in the range %2$d through %3$d","validation.minSize":"Minimum size is %2$d","validation.ipv6":"Not a valid IP v6 address","since.minutes":"%s minute%s ago","validation.ipv4":"Not a valid IP address","validation.email":"Invalid email address","since.years":"%s year%s ago","validation.object":"Validation failed","validation.maxSize":"Maximum size is %2$d","since.hours":"%s hour%s ago","validation.min":"Cannot be lower than %2$d","validation.max":"Cannot be greater than %2$d","validation.isTrue":"Must be checked","validation.invalid":"Incorrect value","validation.past":"Must be in the past","validation.future":"Must be in the future","since.months":"%s month%s ago","validation.notFound":"Object not found for id %2$s","validation.after":"Must be after %2$s","validation.equals":"Must be equal to \u0026{%2$s}","validation.url":"Not a valid URL","validation.before":"Must be before %2$s"};
+
+/**
+ * Fixme : only parse single char formatters eg. %s
+ */
+var i18n = function(code) {
+    var message = i18nMessages && i18nMessages[code] || code;
+    // Encode %% to handle it later
+    message = message.replace(/%%/g, "\0%\0");
+    if (arguments.length > 1) {
+        // Explicit ordered parameters
+        for (var i=1; i<arguments.length; i++) {
+            var r = new RegExp("%" + i + "\\$\\w", "g");
+            message = message.replace(r, arguments[i]);
+        }
+        // Standard ordered parameters
+        for (var i=1; i<arguments.length; i++) {
+            message = message.replace(/%\w/, arguments[i]);
+        }
+    }
+    // Decode encoded %% to single %
+    message = message.replace("\0%\0", "%");
+    // Imbricated messages
+    var imbricated = message.match(/&\{.*?\}/g);
+    if (imbricated) {
+        for (var i=0; i<imbricated.length; i++) {
+            var imbricated_code = imbricated[i].substring(2, imbricated[i].length-1).replace(/^\s*(.*?)\s*$/, "$1");
+            message = message.replace(imbricated[i], i18nMessages[imbricated_code] || "");
+        }
+    }
+    return message;
+};
+
+</script>
+
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/public/bootstrap-3.0.3/css/bootstrap-datetimepicker.min.css">
+<script src="/public/javascripts/jquery-1.10.2.min.js"></script>
+<script src="/public/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+<script src="/public/bootstrap-3.0.3/js/respond.src.js"></script>
+<script src="/public/bootstrap-3.0.3/js/bootstrap-datetimepicker.js"></script>
+<script src="/public/bootstrap-3.0.3/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link id="skin" rel="stylesheet" type="text/css" href="/public/jquery-easyui-1.3.4/themes/default/easyui.css">
+<script type="text/javascript" src="/public/jquery-easyui-1.3.4/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/public/jquery-easyui-1.3.4/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/public/javascripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/public/javascripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="/public/javascripts/extendValidation.js"></script>
+<script type="text/javascript" src="/public/javascripts/ValidationClass.js"></script>
+<script type="text/javascript" src="/public/javascripts/json2.js"></script>
+<script type="text/javascript" src="/public/javascripts/common.js"></script>
+<script type="text/javascript" src="/public/javascripts/autocomplete.js"></script>
+
+
+<link rel="stylesheet" media="screen" href="/public/stylesheets/menuTree.css" />
+<script type="text/javascript" src="/public/javascripts/base.js"></script>
+<script src="/public/javascripts/jquery.cookie.js"></script>
+<style>
+.leftTree{
+z-index:200000;
+}
+img{
+margin-bottom:15px;}
+.cssSPlice{
+float:left;
+margin-right:0px;
+}
+.img-rounded{
+width:70px;
+height:40px;
+}
+.systion,.NewDate{
+font-weight:bold;
+}
+</style>
+
+<div class="roll_wrap20140318">
+		<ul class="tree" id="mtree">
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+		
+		<div class="l">
+				<input class="ids" type="hidden" value="1" />
+				<input class="countclass" type="hidden" value="22" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','115','22','');" >区域管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','66','35','');" >车型管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','68','28','');" >站点信息</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','67','7','');" >线路管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','521','521','');" >售票点售票控制</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','130','107','');" >检票口管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','129','108','');" >上车卡位管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','76','42','');" >班次管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','77','43','');" >班次循环</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','56','23','');" >智能卡初始化</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','55','21','');" >智能卡管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','69','29','');" >售票点管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','95','61','');" >车辆品牌型号管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','96','62','');" >车辆内部空间管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','97','63','');" >车辆座位图管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','65','33','');" >车属单位</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','116','85','');" >车牌管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','58','27','');" >座位状态图</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','64','34','');" >售出座位图</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','62','30','');" >售票点可售班次控制</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','443','443','');" >驾驶员驾驶车辆设置</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'1','61','26','');" >班次折扣管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+		
+		<div class="l2">
+				<input class="ids" type="hidden" value="2" />
+				<input class="countclass" type="hidden" value="14" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','109','78','');" >驾驶员档案管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','110','79','');" >乘务员档案管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','111','81','');" >员工档案管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','112','80','');" >顾客档案管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','113','83','');" >乘务员奖惩管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','114','82','');" >驾驶员奖惩管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','117','86','');" >承包者档案管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','60','24','');" >保险公司</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','223473','223472','');" >充值优惠活动管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','57','25','');" >保险类型</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','310','231','');" >保险类型里程</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','233','230','');" >保险类型票价</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','302','216','');" >一卡通参与班次管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'2','306','866','');" >VIP订票取消时间设置</a></dd>								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+		
+		<div class="l11">
+				<input class="ids" type="hidden" value="17" />
+				<input class="countclass" type="hidden" value="5" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'17','44','11','');" >车辆安检项目</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'17','45','12','');" >安检计划</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'17','43','10','');" >车辆安检</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'17','237','236','0');" >车辆GPS检查</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'17','229','118','');" >车辆行驶里程管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+		
+		<div class="l3">
+				<input class="ids" type="hidden" value="1060018" />
+				<input class="countclass" type="hidden" value="30" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >票价管理</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','85','48','');">票种设置</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','78','44','');">票价公式组成项</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','79','45','');">票价公式管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','80','46','');">公式票价管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','81','47','');">硬调票价管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','82','49','');">节日信息设置</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','83','50','');">节日票价管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','59299','59141','');">线路票价管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','210','211','');">燃油附加费设置</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','211','211','');">燃油附加费设置</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','84','51','');">营运计划管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'5','235','234','');">售票点票价差额管理</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >调度管理</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6','87','53','');">IC卡报班</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6','75','41','');">综合调度</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6','88','60','');">班次加班</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6','74','40','');">班次并班</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6','175','64610','');">车票挂失</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6','1164826','8121','');">车辆运营线路设置</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >售票控制</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','72101','72101','');">售票截止时间控制</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','59','31','');">售票点不可售站点控制</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','219','219','');">票种折扣管理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','63','32','');">车票类型可售权限控制</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','119','88','');">售票机器控制</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','200','200','');">退票手续费率设置</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','221012','221013','');">班次预售天数控制</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','223470','223469','');">班次预售票种控制</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'1060019','305','865','');">班次站点售票控制</a>
+								</dd>
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+		
+		<div class="l6">
+				<input class="ids" type="hidden" value="20" />
+				<input class="countclass" type="hidden" value="10" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','1775','64615','');" >行包提领</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','932771','152','');" >出库结算</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','932772','153','');" >前台结算</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','926','1126','');" >行包结算单管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','35636','65555','');" >行包结算单补录</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','35666','66666','');" >行包已结账管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','322','2','PackBalanceBill');" >重置行包结算通知单号</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','323','2','PackArrivalBill');" >重置行包收讫单号</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','65160','65160','');" >货物日结算表</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'20','65159','65159','');" >货物月结算表</a></dd>								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+		
+		<div class="l4">
+				<input class="ids" type="hidden" value="3" />
+				<input class="countclass" type="hidden" value="17" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','41','6','0');" >售票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','103','6','1');" >补票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','104','6','2');" >特权补票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','10','1','');" >单独售保险</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','107','6','8');" >订票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','105','6','4');" >改签</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','47','13','');" >重打车票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','101','67','');" >退票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','102','68','');" >废票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','106','6','6');" >订票销售</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','71','37','');" >订票留位信息</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','72','38','');" >送票登记</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','70','36','');" >坏票登记</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','12','2','Insure');" >重置保险票号</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','11','2','Ticket');" >重置车票票号</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','6767','6766','');" >电子票取票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'3','118','84','');" >售票问询</a></dd>								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+		
+		<div class="l5">
+				<input class="ids" type="hidden" value="8" />
+				<input class="countclass" type="hidden" value="14" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','89','54','');" >综合检票</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','46','9','');" >结算单管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','108','69','');" >结算单补录</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','358','2','FirstBalanceBill');" >重置初检单号</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','122','2','BalanceBill');" >重置结算单号</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','2312401','2312401','');" >结算单补录（精简）</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','510','510','');" >稽查管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','408','408','');" >结算单补录(票号)</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','135','114','');" >结算单不打印项目设置</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','723','723','');" >补开结算单</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','303','217','0');" >会员进入贵宾室登记</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','325','1157479','');" >检票时间设置</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','511','519','');" >自助发班</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'8','120','87','');" >检票机器控制</a></dd>								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+		
+		<div class="l">
+				<input class="ids" type="hidden" value="1060021" />
+				<input class="countclass" type="hidden" value="32" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >票据管理</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'7','125','104','');">票据类型</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'7','124','102','');">票据库存</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'7','126','103','');">票库信息</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'7','127','101','');">票据退领</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'7','135745','135744','');">票据核销</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >结算管理</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','48','14','');">车辆预缴款</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','73','39','');">班次保底数</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','134','15','2');">售票员未缴款查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','133','15','1');">售票员已缴款查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','49','15','0');">售票员营收缴款</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','90','55','');">结算固定扣费项目</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','91','56','');">结算固定扣费项目应用</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','92','57','');">结算扣费公式</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','94','59','');">结算单结算</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','93','58','');">结算扣费公式应用</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','136','115','');">已结算查询</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','204','204','');">结算分层协议设置</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','205','206','');">营运车辆违规情况处理</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','214','214','');">VIP缴款</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','215','215','');">VIP已缴款查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','622','722','');">售票单位营收统计</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','208','208','');">售票员缴款查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'4','307','867','');">综合收费信息管理</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >票据报表</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'18500','18501','18499','');">售票员票据销存报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'18500','17707','17706','');">售票员票证使用情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'18500','173','144','');">站务分公司使用票证明细帐</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'18500','320','250','');">车票使用汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'18500','321','251','');">车票换号重打查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'18500','16052301','16052301','');">票证使用明细表</a>
+								</dd>
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+		
+		<div class="l8">
+				<input class="ids" type="hidden" value="18" />
+				<input class="countclass" type="hidden" value="48" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >售票查询</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','152','98','');">售票情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','139','72','');">本售异明细表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','138','71','');">异售本明细表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','140','73','');">预售票查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','141','74','');">车票改签查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','142','75','');">留票情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','143','76','');">退票情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','144','77','');">废票情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','157','118','');">异站退本站票查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','17768','17767','');">异站退本站票查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','220','220','');">保险销售明细表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','174','145','');">电子票明细查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','221','221','');">售票员保险销售统计</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','225','225','');">保险销售汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'30','120101','120101','');">换票废票查询</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >调度查询</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','145','97','');">客运站班次运营情况</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','146','96','');">客运班线发车时刻表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','148','94','');">并班情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','149','93','');">晚点班次情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','150','92','');">脱班班次情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','159','120','');">停班班次情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','18458','18457','');">停班班次情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','226','226','');">车辆应班登记表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','72610','21077','');">客运站加班情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','21078','21077','');">客运站加班情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'32','21138','21140','');">满座班次查询</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >票价查询</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'33','153','99','');">班次票价查询</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >检票查询</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','155','112','');">班次结算情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','147','95','');">班次漏乘情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','151','91','');">班次报班情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','7807','7806','');">混检查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','17756','17755','');">班次检票汇总表</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','158','119','');">班次检票汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','304','217','1');">会员进入贵宾室历史查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','177','147','');">远程检票情况查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'34','12412399','80301','');">检票员工作月报</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >票据情况查询</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'8242','8243','8241','');">坏票登记查询</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >财务查询</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6851','6739','6738','');">机构每日结算</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6851','212','212','');">VIP消费明细</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6851','224','224','');">VIP补卡明细查询</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6851','234','233','');">售票员解款情况表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'6851','120801','120801','');">售票员结算单查询</a>
+								</dd>
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+		
+		
+		<div class="l9">
+				<input class="ids" type="hidden" value="19" />
+				<input class="countclass" type="hidden" value="65" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >业务报表</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','6742','6741','');">客运班线动态表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','203423','203422','');">车辆报班情况一览表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','17711','17710','');">车库发车表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','160','864','');">客运班线动态同期对比表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','209','209','');">班线运营情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','21762','21761','');">停靠站点运量情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','21766','21765','');">车辆停靠站点运量情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','73908','121','');">客运每日班次营收汇总</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','21863','21862','');">班线停靠点运量情况表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','23480','23479','');">车辆营运配载统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','221011','221010','');">发班运量统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','222222','222221','');">车站发往各省、地客运量日统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','218','218','');">车辆安检月统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','163','132','');">客运班线调查统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','36','133','');">站务分公司班线数据情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','37','134','');">站务分公司网点售票情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','38','135','');">站务分公司售票员售票情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','39','136','');">站务分公司站场业务数据情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','86','137','');">联网售票统计报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','164','139','');">预售票日报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','169','140','');">站务作业统计报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','170','141','');">站务分公司各班线票价情况汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','171','142','');">站务分公司进站车辆汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'301','238','236','1');">车辆GPS检查统计</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >售票报表</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','213','213','');">VIP购票结算表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','17732','17734','');">预售票查询月报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','222870','222869','');">车辆售票流量统计</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','161','205','');">售票营收统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','172','143','');">订票统计报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','239','237','');">售票点班线售票情况表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','242','151','');">网购对账报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'300','1224279','1224279','');">售票员任务表</a>
+								</dd>
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >财务报表</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','13547','13546','');">售票员售票日报表</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','259','259','');">线路结算汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','311','160','');">线路停靠点售票统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','13555','13554','');">本售异汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','13572','13571','');">异售本汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','13594','13593','');">客运站划拨明细表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','156','117','');">车辆划拨汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','154','106','');">售票员售退废日报表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','8794','8793','');">运量单运量台账</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','9001','9001','');">班次日结算表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','17150','17149','');">各分公司划拨汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','800','800','');">售票员手工单营收汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','9004','9004','');">线路发班营收统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','9002','9002','');">线路日结算表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','17206','17204','');">长途站预售票查询情况表（跨月汇总）</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','132930','130','');">客运站结算汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','23500','23499','');">营收运量统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','91866','91865','');">班线结算统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','26301','26300','');">财务收支平衡表</a>
+								</dd>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','26248','26247','');">车辆结算汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','201','201','');">线路售票统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','260','260','');">特殊订单退款明细</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','221010','221009','');">各站互售互退营收汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','207','207','');">运费结算明细表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','230','222','');">财务收支月平衡表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','220101','100100','ui/report/queryBalanceItem');">运费结算明细表(网页版)</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','236','235','');">财务月度收支平衡表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','61201','61201','');">车辆安检费统计表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','439','439','');">售票点结算汇总表</a>
+								</dd>
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'31','120901','120901','');">车站各经营单位核算表</a>
+								</dd>
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+		
+			
+			
+				
+			
+		
+		
+		<div class="l10">
+				<input class="ids" type="hidden" value="9" />
+				<input class="countclass" type="hidden" value="23" />
+				<div class="subMenu">
+					
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','40','5','');" >功能管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','13','3','');" >菜单管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','42','8','');" >机构管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','54','20','');" >角色管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','53','19','');" >用户管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','60401','60401','');" >取票日志查询</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','14','4','');" >权限分配</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','98','64','');" >全局快捷键设置</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','50','16','');" >用户在线管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','52','17','');" >修改密码</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','121','90','');" >参数设置</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','100','65','');" >打印模板类型管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','99','66','');" >打印模板管理</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','137','116','');" >操作日志查询</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','132','110','');" >数据审计日志查询</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','223','223','');" >班次计划日志查询</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','128','105','');" >自动升级</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','26751','26731','');" >系统升级日志</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					<div class="sub_wrap">
+						
+						
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','123','100','');" >重新登录</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','51','18','');" >退出系统</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								
+								<dd><a href="javascript:void(0);" onclick="f(this,'9','18471','18470','');" >锁定系统</a></dd>								
+								
+								
+								
+							</dl>
+						
+							<dl>
+								
+								
+								
+								
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >帮助</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								
+								
+								
+								
+								
+								
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'16','131','109','');">关于</a>
+								</dd>
+								
+								
+							</dl>
+						
+			 		</div>
+			 		
+					
+			 	</div>
+			 	</div>
+		
+		
+		</ul>
+</div>
+    </body>
+</html>

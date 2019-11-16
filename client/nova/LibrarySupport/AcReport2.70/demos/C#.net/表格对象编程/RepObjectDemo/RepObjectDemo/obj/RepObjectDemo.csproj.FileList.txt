@@ -1,0 +1,11 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\RepObjectDemo.csproj.ResolveComReference.cache
+obj\Debug\RepObjectDemo.Form1.resources
+obj\Debug\RepObjectDemo.Properties.Resources.resources
+obj\Debug\RepObjectDemo.csproj.GenerateResource.Cache
+bin\Debug\RepObjectDemo.exe
+bin\Debug\RepObjectDemo.pdb
+bin\Debug\Interop.AcReport.dll
+obj\Debug\RepObjectDemo.exe
+obj\Debug\RepObjectDemo.pdb

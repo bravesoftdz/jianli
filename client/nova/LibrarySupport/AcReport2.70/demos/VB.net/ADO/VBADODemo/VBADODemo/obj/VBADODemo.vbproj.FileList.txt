@@ -1,0 +1,13 @@
+obj\Debug\VBADODemo.exe
+obj\Debug\VBADODemo.xml
+obj\Debug\VBADODemo.pdb
+bin\Debug\VBADODemo.exe
+bin\Debug\VBADODemo.pdb
+bin\Debug\VBADODemo.xml
+bin\Debug\Interop.AcReport.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\VBADODemo.vbproj.ResolveComReference.cache
+obj\Debug\VBADODemo.Form1.resources
+obj\Debug\VBADODemo.Resources.resources
+obj\Debug\VBADODemo.vbproj.GenerateResource.Cache

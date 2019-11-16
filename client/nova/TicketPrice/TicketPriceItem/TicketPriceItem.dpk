@@ -1,0 +1,48 @@
+package TicketPriceItem;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  Interfaces;
+
+contains
+  TicketPriceItemExport in 'TicketPriceItemExport.pas',
+  TicketPriceItemPlugin in 'TicketPriceItemPlugin.pas',
+  UFrmTicketPriceFormulaitem in 'UFrmTicketPriceFormulaitem.pas' {FrmTicketPriceFormulaitem},
+  UFrmTicketPriceItem in 'UFrmTicketPriceItem.pas' {FrmTicketPriceItem},
+  UFrmAboutVehcile in 'UFrmAboutVehcile.pas' {FrmAboutVehcile},
+  UFrmAboutRoute in 'UFrmAboutRoute.pas' {FrmAboutRoute},
+  UFrmAboutRouteStop in 'UFrmAboutRouteStop.pas' {FrmAboutRouteStop},
+  UFrmAboutDistance in 'UFrmAboutDistance.pas' {FrmAboutDistance},
+  UAboutStationGrade in 'UAboutStationGrade.pas' {FrmAboutStationGrade},
+  UAboutPrice in 'UAboutPrice.pas' {FrmAboutPrice},
+  UAboutRoadGrade in 'UAboutRoadGrade.pas' {FrmAboutRoadGrade},
+  UAboutSchedule in 'UAboutSchedule.pas' {FrmAboutSchedule},
+  UAboutVehcileGrade in 'UAboutVehcileGrade.pas' {FrmAboutVehcilGrade};
+
+end.

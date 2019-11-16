@@ -1,0 +1,13 @@
+obj\Debug\VBCustFuncDemo1.exe
+obj\Debug\VBCustFuncDemo1.xml
+obj\Debug\VBCustFuncDemo1.pdb
+bin\Debug\VBCustFuncDemo1.exe
+bin\Debug\VBCustFuncDemo1.pdb
+bin\Debug\VBCustFuncDemo1.xml
+bin\Debug\Interop.AcReport.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\VBCustFuncDemo1.vbproj.ResolveComReference.cache
+obj\Debug\VBCustFuncDemo1.Form1.resources
+obj\Debug\VBCustFuncDemo1.Resources.resources
+obj\Debug\VBCustFuncDemo1.vbproj.GenerateResource.Cache

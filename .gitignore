@@ -1,0 +1,7 @@
+/doc/*.mp4
+/server/NvBus/.idea
+/server/NvBus/eclipse
+/server/NvBus/.settings
+/server/NvBus/.project
+/server/NvBus/NvBus.iml
+/server/NvBus/.classpath

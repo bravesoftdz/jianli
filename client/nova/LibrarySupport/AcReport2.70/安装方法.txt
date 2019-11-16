@@ -1,0 +1,5 @@
+执行install.bat即可将AcReport报表引擎和ActiveX控件安装到windows系统当中，集成AC Report的软件即可以正常运行。
+
+在开发工具中导入AC Report类库或ActiveX控件的方法和导入其它COM或ActiveX控件的方法一致，发人员可以参考AC Report开发应用手册中的相关说明，也可以参考其它有关COM或ActiveX控件的资料。
+
+本压缩包里所有demo工程中的exe文件都可以运行，“运行报表演示程序”文件夹下面是一系列的bat文件，每个bat文件链接到相关demo下的一个exe文件，双击可以直接运行对应的demo程序，如果运行有错，请重新编译相关的demo工程。

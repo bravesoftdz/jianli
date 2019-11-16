@@ -1,0 +1,11 @@
+该VCL控件是基于COM（acreport.dll）实现的，以Delphi vcl控件的方式调用AcReport，该控件有源码，希望对不太熟悉Delphi下调用COM或不习惯在Delphi下直接使用COM的delphi开发人员有所帮助~
+
+安装方法：
+在Delphi下打开AcRptEngine.dpk，直接Install就可以。在控件面板上该控件的名称是 TAcReportVCL
+
+注意：在安装控件前，请运行 "AcReport报表引擎" 文件夹下面的 "注册ACReport引擎.bat" 将AcReport.dll注册到系统中，否则，控件将无法拖动到Form上。 
+
+VCL控件demo源码在如下位置：
+
+AcReportX.XX\demos\Delphi\VCL控件Demo
+

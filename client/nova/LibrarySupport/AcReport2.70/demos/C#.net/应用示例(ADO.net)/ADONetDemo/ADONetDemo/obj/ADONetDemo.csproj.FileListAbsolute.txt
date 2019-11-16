@@ -1,0 +1,11 @@
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ADONetDemo.exe
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ADONetDemo.pdb
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ADONetDemo.csproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ADONetDemo.Form1.resources
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ADONetDemo.Properties.Resources.resources
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\obj\Debug\ADONetDemo.csproj.GenerateResource.Cache
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\bin\Debug\ADONetDemo.exe
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\bin\Debug\ADONetDemo.pdb
+E:\work\source\ACreport\COM\demos\C#.net\应用示例(ADO.net)\ADONetDemo\ADONetDemo\bin\Debug\Interop.AcReport.dll

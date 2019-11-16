@@ -1,0 +1,2644 @@
+ALWAYS|20180827124735|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827124735|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827124735|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827124735|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827124735|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827124735|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827124735|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827124735|____postrans.cpp:722|ptrans|InitCfg end
+ALWAYS|20180827124735|_____postrans.cpp:77|ptrans|清除原流水文件,上次结算日期=[20180822],当前日期=[20180827]
+ DEBUG|20180827124735|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827124735|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827124735|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827124735|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827124735873856]
+ALWAYS|20180827124735|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827124735|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827124735|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827124735|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827124735|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827124735|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827124735|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827124735|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827124735|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827124735873856","merchantRemark":"pay","payMode":"MANUAL","payCode":""}]
+ALWAYS|20180827124735|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827124735|________comm.cpp:461|ptrans|接收返回=[{"errCode":"30","errInfo":"10000报文格式错误","transactionTime":"124741","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"007012975222","transactionAmount":1}]
+ALWAYS|20180827124735|________comm.cpp:639|ptrans|[UMS_Pay end]=[30|10000报文格式错误|873856|007012975222|0827|124741|||||]
+ALWAYS|20180827124735|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827124735|____postrans.cpp:262|ptrans|消费结束
+ ERROR|20180827124735|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827124735|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827124740|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827124740|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827124740|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827124740|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827124740|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827124740|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827124740|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827124740|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827124740|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827124740|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827124740|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827124740|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827124740632882]
+ALWAYS|20180827124740|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827124740|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827124740|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827124740|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827124740|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827124740|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827124740|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827124740|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827124740|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827124740632882","merchantRemark":"pay","payMode":"MANUAL","payCode":""}]
+ALWAYS|20180827124740|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827124740|________comm.cpp:461|ptrans|接收返回=[{"errCode":"30","errInfo":"10000报文格式错误","transactionTime":"124746","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"007012969372","transactionAmount":1}]
+ALWAYS|20180827124740|________comm.cpp:639|ptrans|[UMS_Pay end]=[30|10000报文格式错误|632882|007012969372|0827|124746|||||]
+ALWAYS|20180827124740|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827124740|____postrans.cpp:262|ptrans|消费结束
+ ERROR|20180827124740|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827124740|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827124741|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827124741|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827124741|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827124741|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827124741|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827124741|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827124741|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827124741|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827124741|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827124741|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827124741|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827124741|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827124741162616]
+ALWAYS|20180827124741|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827124741|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827124741|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827124741|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827124741|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827124741|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827124741|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827124741|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827124741|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827124741162616","merchantRemark":"pay","payMode":"MANUAL","payCode":""}]
+ALWAYS|20180827124741|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827124741|________comm.cpp:461|ptrans|接收返回=[{"errCode":"30","errInfo":"10000报文格式错误","transactionTime":"124747","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"007012984900","transactionAmount":1}]
+ALWAYS|20180827124741|________comm.cpp:639|ptrans|[UMS_Pay end]=[30|10000报文格式错误|162616|007012984900|0827|124747|||||]
+ALWAYS|20180827124741|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827124741|____postrans.cpp:262|ptrans|消费结束
+ ERROR|20180827124741|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827124741|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827124741|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827124741|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827124741|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827124741|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827124741|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827124741|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827124741|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827124741|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827124741|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827124741|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827124741|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827124741|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827124741162616]
+ALWAYS|20180827124741|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827124741|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827124741|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827124741|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827124741|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827124741|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827124741|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827124741|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827124741|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827124741162616","merchantRemark":"pay","payMode":"MANUAL","payCode":""}]
+ALWAYS|20180827124741|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827124741|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"124747","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"007012963495","transactionAmount":1}]
+ALWAYS|20180827124741|________comm.cpp:639|ptrans|[UMS_Pay end]=[94|10000交易重复|162616|007012963495|0827|124747|||||]
+ALWAYS|20180827124741|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827124741|____postrans.cpp:262|ptrans|消费结束
+ ERROR|20180827124741|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827124741|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827134359|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827134359|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827134359|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827134359|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827134359|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827134359|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827134359|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827134359|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827134359|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827134359|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827134359|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827134400|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827134359227784]
+ALWAYS|20180827134400|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827134400|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827134400|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827134400|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827134400|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827134400|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827134400|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827134400|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827134400|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827134359227784","merchantRemark":"pay","payMode":"MANUAL","payCode":""}]
+ALWAYS|20180827134400|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827134400|________comm.cpp:461|ptrans|接收返回=[{"errCode":"30","errInfo":"10000报文格式错误","transactionTime":"134406","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"007013476610","transactionAmount":1}]
+ALWAYS|20180827134400|________comm.cpp:639|ptrans|[UMS_Pay end]=[30|10000报文格式错误|227784|007013476610|0827|134406|||||]
+ALWAYS|20180827134400|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827134400|____postrans.cpp:262|ptrans|消费结束
+ ERROR|20180827134400|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827134400|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827134611|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827134611|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827134611|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827134611|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827134611|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827134611|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827134611|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827134611|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827134611|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827134611|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827134611|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827134611|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827134611706378]
+ALWAYS|20180827134611|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827134611|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827134611|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827134611|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827134611|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827134611|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827134611|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827134611|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827134611|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827134611706378","merchantRemark":"pay","payMode":"MANUAL","payCode":"283897965481145411"}]
+ALWAYS|20180827134611|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827134615|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"134616","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013466549W","transactionAmount":1,"amount":1,"orderId":"20180827134618007013466549","thirdPartyDiscountInstrution":"银行卡支付0.01元。","thirdPartyDiscountInstruction":"银行卡支付0.01元。","thirdPartyName":"支付宝钱包","userId":"2088002247307401","thirdPartyBuyerId":"2088002247307401","thirdPartyBuyerUserName":"lan***@163.com","thirdPartyOrderId":"2018082721001004400500063454","thirdPartyPayInformation":"银行卡:1"}]
+ALWAYS|20180827134615|________comm.cpp:639|ptrans|[UMS_Pay end]=[00|10000成功响应码|224432|07013466549W|0827|134616|20180827134618007013466549|支付宝钱包|银行卡支付0.01元。|1|]
+ALWAYS|20180827134615|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827134615|____postrans.cpp:181|ptrans|消费成功
+ALWAYS|20180827134615|____postrans.cpp:262|ptrans|消费结束
+ALWAYS|20180827134615|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827134615|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827134615|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827134615|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827134615|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827134615|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827134615|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827135338|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827135338|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827135338|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827135338|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827135338|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827135338|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827135338|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827135338|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827135338|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827135338|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827135338|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827135338|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827135338885405]
+ALWAYS|20180827135338|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827135338|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827135338|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827135338|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827135338|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827135338|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827135338|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827135338|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827135338|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827135338885405","merchantRemark":"pay","payMode":"MANUAL","payCode":"134656021554256224"}]
+ALWAYS|20180827135338|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827135354|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"135355","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013537260W","transactionAmount":1,"amount":1,"orderId":"20180827135349007013537260","thirdPartyDiscountInstrution":"现金支付0.01元。","thirdPartyDiscountInstruction":"现金支付0.01元。","thirdPartyName":"微信钱包","userId":"otdJ_uIhEwRvwUhgmDKln5leulvA","thirdPartyBuyerId":"otdJ_uIhEwRvwUhgmDKln5leulvA","thirdPartyOrderId":"4200000160201808279226519621","thirdPartyPayInformation":"现金:1"}]
+ALWAYS|20180827135354|________comm.cpp:639|ptrans|[UMS_Pay end]=[00|10000成功响应码|761855|07013537260W|0827|135355|20180827135349007013537260|微信钱包|现金支付0.01元。|1|]
+ALWAYS|20180827135354|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827135354|____postrans.cpp:181|ptrans|消费成功
+ALWAYS|20180827135354|____postrans.cpp:262|ptrans|消费结束
+ALWAYS|20180827135354|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827135354|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827135354|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827135354|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827135354|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827135354|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827135354|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827135531|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827135531|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827135531|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827135531|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827135531|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827135531|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827135531|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827135531|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827135531|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827135531|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827135531|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827135531|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827135531820022]
+ALWAYS|20180827135531|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827135531|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827135531|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827135531|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827135531|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827135531|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827135531|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827135531|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827135531|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827135531820022","merchantRemark":"pay","payMode":"MANUAL","payCode":"134739404371498994"}]
+ALWAYS|20180827135531|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827135544|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"135541","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013554335W","transactionAmount":1,"amount":1,"orderId":"20180827135538007013554335","thirdPartyDiscountInstrution":"现金支付0.01元。","thirdPartyDiscountInstruction":"现金支付0.01元。","thirdPartyName":"微信钱包","userId":"otdJ_uIhEwRvwUhgmDKln5leulvA","thirdPartyBuyerId":"otdJ_uIhEwRvwUhgmDKln5leulvA","thirdPartyOrderId":"4200000167201808275031728142","thirdPartyPayInformation":"现金:1"}]
+ALWAYS|20180827135544|________comm.cpp:639|ptrans|[UMS_Pay end]=[00|10000成功响应码|616144|07013554335W|0827|135541|20180827135538007013554335|微信钱包|现金支付0.01元。|1|]
+ALWAYS|20180827135544|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827135544|____postrans.cpp:181|ptrans|消费成功
+ALWAYS|20180827135544|____postrans.cpp:262|ptrans|消费结束
+ALWAYS|20180827135544|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827135544|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827135544|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827135544|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827135544|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827135544|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827135544|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827135605|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827135605|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827135605|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827135605|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827135605|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827135605|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827135605|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827135605|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827135605|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827135605|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827135605|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827135605|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827135605250540]
+ALWAYS|20180827135605|____postrans.cpp:265|ptrans|撤销开始
+ ERROR|20180827135605|____postrans.cpp:291|ptrans|找到原交易,金额=[000000000001],银商订单号=[20180827135538007013554335                        ]
+ DEBUG|20180827135605|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827135605|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827135605|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827135605|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827135605|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827135605|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827135605|________comm.cpp:667|ptrans|[UMS_Void begin]
+ALWAYS|20180827135605|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180827135538007013554335"}]
+ALWAYS|20180827135605|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/voidpayment]
+  HINT|20180827135606|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"135612","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013554335W","thirdPartyName":"微信钱包","transactionAmount":1}]
+ALWAYS|20180827135606|________comm.cpp:722|ptrans|[UMS_Void end]=[00|10000成功响应码|670363|07013554335W|0827|135612|微信钱包||]
+ALWAYS|20180827135606|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827135606|____postrans.cpp:328|ptrans|撤销成功
+ ERROR|20180827135606|____postrans.cpp:819|ptrans|findMapContent 获取recvbuf中第[7]字段为空
+ALWAYS|20180827135606|____postrans.cpp:355|ptrans|撤销结束
+ALWAYS|20180827135606|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827135606|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827135606|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827135606|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827135606|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827135606|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827135606|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827135758|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827135758|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\gmc\nopos\postrans.dll]
+ DEBUG|20180827135758|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827135758|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827135758|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827135758|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827135758|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827135758|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827135758|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\gmc\nopos\noposComm.dll]
+ DEBUG|20180827135758|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827135758|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827135758|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827135758284067]
+ALWAYS|20180827135758|____postrans.cpp:265|ptrans|撤销开始
+ ERROR|20180827135758|____postrans.cpp:291|ptrans|找到原交易,金额=[000000000001],银商订单号=[20180827135349007013537260                        ]
+ DEBUG|20180827135758|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827135758|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827135758|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827135758|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827135758|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827135758|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827135758|________comm.cpp:667|ptrans|[UMS_Void begin]
+ALWAYS|20180827135758|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180827135349007013537260"}]
+ALWAYS|20180827135758|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/voidpayment]
+  HINT|20180827135800|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"135806","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013537260W","thirdPartyName":"微信钱包","transactionAmount":1}]
+ALWAYS|20180827135800|________comm.cpp:722|ptrans|[UMS_Void end]=[00|10000成功响应码|043684|07013537260W|0827|135806|微信钱包||]
+ALWAYS|20180827135800|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827135800|____postrans.cpp:328|ptrans|撤销成功
+ ERROR|20180827135800|____postrans.cpp:819|ptrans|findMapContent 获取recvbuf中第[7]字段为空
+ALWAYS|20180827135800|____postrans.cpp:355|ptrans|撤销结束
+ALWAYS|20180827135800|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827135800|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827135800|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827135800|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827135800|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827135800|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827135800|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827143041|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827143041|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180827143042|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827143042|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827143042|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827143042|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827143042|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827143042|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827143042|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180827143042|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827143042|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827143042|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827143042855166]
+ALWAYS|20180827143042|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180827143042|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827143042|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827143042|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827143042|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827143042|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827143042|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827143042|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180827143042|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180827143042855166","merchantRemark":"pay","payMode":"MANUAL","payCode":"283229758621999647"}]
+ALWAYS|20180827143042|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180827143044|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"143036","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013877824W","transactionAmount":1,"amount":1,"orderId":"20180827143039007013877824","thirdPartyDiscountInstrution":"银行卡支付0.01元。","thirdPartyDiscountInstruction":"银行卡支付0.01元。","thirdPartyName":"支付宝钱包","userId":"2088512211643951","thirdPartyBuyerId":"2088512211643951","thirdPartyBuyerUserName":"150****7865","thirdPartyOrderId":"2018082722001443951002499246","thirdPartyPayInformation":"银行卡:1"}]
+ALWAYS|20180827143044|________comm.cpp:639|ptrans|[UMS_Pay end]=[00|10000成功响应码|624602|07013877824W|0827|143036|20180827143039007013877824|支付宝钱包|银行卡支付0.01元。|1|]
+ALWAYS|20180827143044|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827143044|____postrans.cpp:181|ptrans|消费成功
+ALWAYS|20180827143044|____postrans.cpp:262|ptrans|消费结束
+ALWAYS|20180827143044|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827143044|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827143044|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827143044|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827143044|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827143044|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827143044|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180827143126|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180827143126|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180827143126|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180827143126|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180827143126|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180827143126|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180827143126|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180827143126|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180827143126|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180827143126|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180827143126|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180827143126|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180827143126801515]
+ALWAYS|20180827143126|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180827143126|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180827143126|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180827143126|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180827143126|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180827143126|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180827143126|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180827143126|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180827143126|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180827143039007013877824","refundRequestId":"801515","transactionAmount":"000000000001"}]
+ALWAYS|20180827143126|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180827143127|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"143124","transactionDate":"0827","settlementDate":"0827","retrievalRefNum":"07013877824W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180827143127|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|221310|07013877824W|0827|143124|支付宝钱包|]
+ALWAYS|20180827143127|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180827143127|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180827143127|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180827143127|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180827143127|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180827143127|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180827143127|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180827143127|___postrans.cpp:1621|ptrans|end
+ ERROR|20180827143127|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180827143127|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828114225|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828114225|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828114225|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828114225|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828114225|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828114225|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828114225|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828114225|____postrans.cpp:722|ptrans|InitCfg end
+ALWAYS|20180828114225|_____postrans.cpp:77|ptrans|清除原流水文件,上次结算日期=[20180827],当前日期=[20180828]
+ DEBUG|20180828114225|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828114225|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828114225|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828114225|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828114225612547]
+ALWAYS|20180828114225|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828114225|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828114225|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828114225|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828114225|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828114225|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828114225|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828114225|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828114225|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828114013007021363559","refundRequestId":"612547","transactionAmount":"000000000001"}]
+ALWAYS|20180828114225|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828114227|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"114227","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07021363559W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180828114227|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|361254|07021363559W|0828|114227|支付宝钱包|]
+ALWAYS|20180828114227|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828114227|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180828114227|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180828114227|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180828114227|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180828114227|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180828114227|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180828114227|___postrans.cpp:1621|ptrans|end
+ ERROR|20180828114227|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828114227|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828114308|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828114308|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828114308|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828114308|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828114308|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828114308|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828114308|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828114308|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180828114308|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828114308|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828114308|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828114308|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828114308327364]
+ALWAYS|20180828114308|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828114308|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828114308|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828114308|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828114308|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828114308|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828114308|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828114308|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828114308|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828114013007021363559","refundRequestId":"327364","transactionAmount":"000000000099"}]
+ALWAYS|20180828114308|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828114309|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"114310","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07021363559W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180828114309|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|646077|07021363559W|0828|114310|支付宝钱包|]
+ALWAYS|20180828114309|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828114309|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180828114309|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180828114309|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180828114309|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180828114309|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180828114309|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180828114309|___postrans.cpp:1621|ptrans|end
+ ERROR|20180828114309|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828114309|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828114327|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828114327|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828114327|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828114327|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828114327|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828114327|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828114327|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828114327|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180828114327|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828114327|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828114327|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828114327|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828114327201254]
+ALWAYS|20180828114327|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828114327|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828114327|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828114327|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828114327|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828114327|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828114327|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828114327|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828114327|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828114013007021363559","refundRequestId":"201254","transactionAmount":"000000000001"}]
+ALWAYS|20180828114327|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828114327|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"114327","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07021363559W"}]
+ALWAYS|20180828114327|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|201254|07021363559W|0828|114327||]
+ALWAYS|20180828114327|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828114327|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180828114327|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828114327|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828114852|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828114852|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828114852|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828114852|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828114852|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828114852|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828114852|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828114852|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180828114852|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828114852|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828114852|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828114852|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828114852178663]
+ALWAYS|20180828114852|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828114852|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828114852|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828114852|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828114852|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828114852|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828114852|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828114852|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828114852|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828114753007021473958","refundRequestId":"178663","transactionAmount":"000000000100"}]
+ALWAYS|20180828114852|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828114853|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"114855","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07021473958W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180828114853|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|508476|07021473958W|0828|114855|支付宝钱包|]
+ALWAYS|20180828114853|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828114853|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180828114853|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180828114853|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180828114853|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180828114853|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180828114853|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180828114853|___postrans.cpp:1621|ptrans|end
+ ERROR|20180828114853|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828114853|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828115328|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828115328|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828115328|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828115328|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828115328|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828115328|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828115328|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828115328|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180828115328|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828115328|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828115328|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828115328|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828115328352786]
+ALWAYS|20180828115328|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828115328|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828115328|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828115328|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828115328|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828115328|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828115328|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828115328|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828115329|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828115113007021494376","refundRequestId":"352786","transactionAmount":"000000000100"}]
+ALWAYS|20180828115329|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828115330|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"115331","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07021494376W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180828115330|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|022414|07021494376W|0828|115331|支付宝钱包|]
+ALWAYS|20180828115330|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828115330|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180828115330|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180828115330|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180828115330|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180828115330|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180828115330|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180828115330|___postrans.cpp:1621|ptrans|end
+ ERROR|20180828115330|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828115330|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828141619|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828141619|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828141619|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828141619|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828141619|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828141619|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828141619|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828141619|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180828141619|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828141619|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828141619|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828141619|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828141619264865]
+ALWAYS|20180828141619|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828141619|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828141619|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828141619|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828141619|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828141619|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828141619|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828141619|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828141619|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828141022007022865342","refundRequestId":"264865","transactionAmount":"000000000001"}]
+ALWAYS|20180828141619|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828141621|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"141625","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07022865342W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180828141621|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|823503|07022865342W|0828|141625|支付宝钱包|]
+ALWAYS|20180828141621|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828141621|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180828141621|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180828141621|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180828141621|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180828141621|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180828141621|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180828141621|___postrans.cpp:1621|ptrans|end
+ ERROR|20180828141621|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828141621|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180828141650|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180828141650|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180828141650|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180828141650|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180828141650|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180828141650|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180828141650|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180828141650|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180828141650|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180828141650|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180828141650|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180828141650|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180828141650414274]
+ALWAYS|20180828141650|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180828141650|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180828141650|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180828141650|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180828141650|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180828141650|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180828141650|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180828141650|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180828141650|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180828141022007022865342","refundRequestId":"414274","transactionAmount":"000000000099"}]
+ALWAYS|20180828141650|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180828141651|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"141655","transactionDate":"0828","settlementDate":"0828","retrievalRefNum":"07022865342W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180828141651|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|734086|07022865342W|0828|141655|支付宝钱包|]
+ALWAYS|20180828141651|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180828141651|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180828141651|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180828141651|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180828141651|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180828141651|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180828141651|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180828141651|___postrans.cpp:1621|ptrans|end
+ ERROR|20180828141651|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180828141651|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180830105615|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180830105615|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180830105615|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180830105615|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180830105615|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180830105615|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180830105615|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180830105615|____postrans.cpp:722|ptrans|InitCfg end
+ALWAYS|20180830105615|_____postrans.cpp:77|ptrans|清除原流水文件,上次结算日期=[20180828],当前日期=[20180830]
+ DEBUG|20180830105615|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180830105615|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180830105615|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180830105615|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180830105615507621]
+ALWAYS|20180830105615|____postrans.cpp:168|ptrans|消费开始
+ DEBUG|20180830105615|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180830105615|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180830105615|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180830105615|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180830105615|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180830105615|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180830105615|________comm.cpp:576|ptrans|[UMS_Pay begin]
+ALWAYS|20180830105615|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","transactionAmount":"000000000001","transactionCurrencyCode":"156","merchantOrderId":"20180830105615507621","merchantRemark":"pay","payMode":"MANUAL","payCode":"282465099704227940"}]
+ALWAYS|20180830105615|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/pay]
+  HINT|20180830105617|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"105617","transactionDate":"0830","settlementDate":"0830","retrievalRefNum":"07038946589W","transactionAmount":1,"amount":1,"orderId":"20180830105620007038946589","thirdPartyDiscountInstrution":"银行卡支付0.01元。","thirdPartyDiscountInstruction":"银行卡支付0.01元。","thirdPartyName":"支付宝钱包","userId":"2088512211643951","thirdPartyBuyerId":"2088512211643951","thirdPartyBuyerUserName":"150****7865","thirdPartyOrderId":"2018083021001004950511984882","thirdPartyPayInformation":"银行卡:1"}]
+ALWAYS|20180830105617|________comm.cpp:639|ptrans|[UMS_Pay end]=[00|10000成功响应码|366247|07038946589W|0830|105617|20180830105620007038946589|支付宝钱包|银行卡支付0.01元。|1|]
+ALWAYS|20180830105617|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180830105617|____postrans.cpp:181|ptrans|消费成功
+ALWAYS|20180830105617|____postrans.cpp:262|ptrans|消费结束
+ALWAYS|20180830105617|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180830105617|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180830105617|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180830105618|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180830105618|___postrans.cpp:1621|ptrans|end
+ ERROR|20180830105618|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180830105618|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180830105643|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180830105643|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180830105643|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180830105643|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180830105643|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180830105643|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180830105643|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180830105643|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180830105643|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180830105643|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180830105643|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180830105643|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180830105643657500]
+ALWAYS|20180830105643|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180830105643|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180830105643|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180830105643|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180830105643|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180830105643|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180830105643|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180830105643|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180830105643|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180830105620007038946589","refundRequestId":"657500","transactionAmount":"000000000001"}]
+ALWAYS|20180830105643|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180830105645|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"105650","transactionDate":"0830","settlementDate":"0830","retrievalRefNum":"07038946589W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180830105645|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|427126|07038946589W|0830|105650|支付宝钱包|]
+ALWAYS|20180830105645|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180830105645|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180830105645|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180830105645|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180830105645|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180830105645|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180830105645|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180830105645|___postrans.cpp:1621|ptrans|end
+ ERROR|20180830105645|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180830105645|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180905165150|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180905165150|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180905165150|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180905165150|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180905165150|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180905165150|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180905165150|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180905165150|____postrans.cpp:722|ptrans|InitCfg end
+ALWAYS|20180905165150|_____postrans.cpp:77|ptrans|清除原流水文件,上次结算日期=[20180830],当前日期=[20180905]
+ DEBUG|20180905165150|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180905165150|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180905165150|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180905165150|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180905165150171556]
+ALWAYS|20180905165150|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180905165150|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180905165150|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180905165150|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180905165150|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180905165150|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180905165150|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180905165150|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180905165150|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180905164824007098426605","refundRequestId":"171556","transactionAmount":"000000005400"}]
+ALWAYS|20180905165150|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180905165152|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"165201","transactionDate":"0905","settlementDate":"0905","retrievalRefNum":"07098426605W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180905165152|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|831183|07098426605W|0905|165201|支付宝钱包|]
+ALWAYS|20180905165152|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180905165152|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180905165152|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180905165152|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180905165152|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180905165152|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180905165152|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180905165152|___postrans.cpp:1621|ptrans|end
+ ERROR|20180905165152|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180905165152|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180905165318|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180905165318|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180905165318|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180905165318|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180905165318|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180905165318|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180905165318|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180905165318|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180905165318|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180905165318|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180905165318|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180905165318|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180905165318143535]
+ALWAYS|20180905165318|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180905165318|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180905165318|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180905165318|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180905165318|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180905165318|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180905165318|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180905165318|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180905165318|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180905165257007098448377","refundRequestId":"143535","transactionAmount":"000000005400"}]
+ALWAYS|20180905165318|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180905165320|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"165328","transactionDate":"0905","settlementDate":"0905","retrievalRefNum":"07098448377W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180905165320|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|703052|07098448377W|0905|165328|支付宝钱包|]
+ALWAYS|20180905165320|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180905165320|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180905165320|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180905165320|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180905165320|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180905165320|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180905165320|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180905165320|___postrans.cpp:1621|ptrans|end
+ ERROR|20180905165320|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180905165320|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180905175323|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180905175323|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180905175323|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180905175323|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180905175323|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180905175323|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180905175323|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180905175323|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180905175323|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180905175323|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180905175323|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180905175323|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180905175323277651]
+ALWAYS|20180905175323|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180905175323|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180905175323|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180905175323|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180905175323|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180905175323|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180905175323|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180905175323|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180905175323|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180905175107007099007283","refundRequestId":"277651","transactionAmount":"000000005400"}]
+ALWAYS|20180905175323|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180905175325|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"175334","transactionDate":"0905","settlementDate":"0905","retrievalRefNum":"07099007283W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180905175325|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|037166|07099007283W|0905|175334|支付宝钱包|]
+ALWAYS|20180905175325|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180905175325|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180905175325|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180905175325|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180905175325|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180905175325|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180905175325|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180905175325|___postrans.cpp:1621|ptrans|end
+ ERROR|20180905175325|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180905175325|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180905180950|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180905180950|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180905180950|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180905180950|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180905180950|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180905180950|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180905180950|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180905180950|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180905180950|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180905180950|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180905180950|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180905180950|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180905180950367515]
+ALWAYS|20180905180950|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180905180950|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180905180950|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180905180950|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180905180950|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180905180950|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180905180950|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180905180950|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180905180950|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180905180931007099181415","refundRequestId":"367515","transactionAmount":"000000005600"}]
+ALWAYS|20180905180950|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180905180951|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"181001","transactionDate":"0905","settlementDate":"0905","retrievalRefNum":"07099181415W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180905180951|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|787318|07099181415W|0905|181001|支付宝钱包|]
+ALWAYS|20180905180951|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180905180951|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180905180951|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180905180951|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180905180951|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180905180951|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180905180951|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180905180951|___postrans.cpp:1621|ptrans|end
+ ERROR|20180905180951|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180905180951|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180905180954|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180905180954|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180905180954|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180905180954|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180905180954|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180905180954|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180905180954|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180905180954|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180905180954|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180905180954|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180905180954|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180905180954|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180905180954776647]
+ALWAYS|20180905180954|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180905180954|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180905180954|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180905180954|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180905180954|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180905180954|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180905180954|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180905180954|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180905180954|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180905180931007099181415","refundRequestId":"776647","transactionAmount":"000000005600"}]
+ALWAYS|20180905180954|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180905180955|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"181003","transactionDate":"0905","settlementDate":"0905","retrievalRefNum":"07099181415W"}]
+ALWAYS|20180905180955|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|216452|07099181415W|0905|181003||]
+ALWAYS|20180905180955|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180905180955|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180905180955|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180905180955|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180906194326|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180906194326|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180906194326|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180906194326|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180906194326|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180906194326|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180906194326|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180906194326|____postrans.cpp:722|ptrans|InitCfg end
+ALWAYS|20180906194326|_____postrans.cpp:77|ptrans|清除原流水文件,上次结算日期=[20180905],当前日期=[20180906]
+ DEBUG|20180906194326|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180906194326|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180906194326|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180906194326|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180906194326616210]
+ALWAYS|20180906194326|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180906194326|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180906194326|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180906194326|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180906194326|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180906194326|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180906194326|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180906194326|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180906194326|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180906194104007108922527","refundRequestId":"616210","transactionAmount":"000000005400"}]
+ALWAYS|20180906194326|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180906194328|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"194337","transactionDate":"0906","settlementDate":"0906","retrievalRefNum":"07108922527W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180906194328|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|375836|07108922527W|0906|194337|支付宝钱包|]
+ALWAYS|20180906194328|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180906194328|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180906194328|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180906194328|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180906194328|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180906194328|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180906194328|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180906194328|___postrans.cpp:1621|ptrans|end
+ ERROR|20180906194328|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180906194328|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180906194342|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180906194342|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180906194342|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180906194342|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180906194342|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180906194342|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180906194342|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180906194342|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180906194342|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180906194342|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180906194342|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180906194342|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180906194342402761]
+ALWAYS|20180906194342|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180906194342|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180906194342|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180906194342|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180906194342|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180906194342|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180906194342|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180906194342|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180906194342|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"2018090618335889280357305791","refundRequestId":"402761","transactionAmount":"000000005400"}]
+ALWAYS|20180906194342|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180906194342|________comm.cpp:461|ptrans|接收返回=[{"errCode":"30","errInfo":"10000非法61域","transactionTime":"194351","transactionDate":"0906","settlementDate":"0906","retrievalRefNum":"007108948487"}]
+ALWAYS|20180906194342|________comm.cpp:810|ptrans|[UMS_Refund end]=[30|10000非法61域|402761|007108948487|0906|194351||]
+ALWAYS|20180906194342|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180906194342|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180906194342|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180906194342|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180906195405|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180906195405|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180906195405|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180906195405|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180906195405|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180906195405|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180906195405|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180906195405|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180906195405|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180906195405|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180906195405|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180906195405|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180906195405535523]
+ALWAYS|20180906195405|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180906195405|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180906195405|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180906195405|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180906195405|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180906195405|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180906195405|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180906195405|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180906195405|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180906195228007109030396","refundRequestId":"535523","transactionAmount":"000000005400"}]
+ALWAYS|20180906195405|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180906195407|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"195416","transactionDate":"0906","settlementDate":"0906","retrievalRefNum":"07109030396W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180906195407|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|284248|07109030396W|0906|195416|支付宝钱包|]
+ALWAYS|20180906195407|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180906195407|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180906195407|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180906195407|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180906195407|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180906195407|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180906195407|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180906195407|___postrans.cpp:1621|ptrans|end
+ ERROR|20180906195407|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180906195407|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180906195902|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180906195902|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180906195902|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180906195902|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180906195902|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180906195902|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180906195902|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180906195902|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180906195902|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180906195902|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180906195902|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180906195902|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180906195902242263]
+ALWAYS|20180906195902|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180906195902|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180906195902|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180906195902|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180906195902|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180906195902|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180906195902|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180906195902|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180906195902|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180906195713007109091839","refundRequestId":"242263","transactionAmount":"000000000500"}]
+ALWAYS|20180906195902|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180906195904|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"195913","transactionDate":"0906","settlementDate":"0906","retrievalRefNum":"07109091839W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180906195904|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|011770|07109091839W|0906|195913|支付宝钱包|]
+ALWAYS|20180906195904|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180906195904|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180906195904|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180906195904|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180906195904|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180906195904|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180906195904|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180906195904|___postrans.cpp:1621|ptrans|end
+ ERROR|20180906195904|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180906195904|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093717|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093717|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093717|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093717|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093717|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093717|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093717|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093717|____postrans.cpp:722|ptrans|InitCfg end
+ALWAYS|20180907093717|_____postrans.cpp:77|ptrans|清除原流水文件,上次结算日期=[20180906],当前日期=[20180907]
+ DEBUG|20180907093717|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093717|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093717|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093717|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093717563524]
+ALWAYS|20180907093717|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093717|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093717|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093717|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093717|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093717|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093717|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093717|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093717|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"563524","transactionAmount":"000000001120"}]
+ALWAYS|20180907093717|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093718|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093726","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093718|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|804327|07111914642W|0907|093726|支付宝钱包|]
+ALWAYS|20180907093718|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093718|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093718|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093718|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093718|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093718|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093718|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093718|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093718|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093718|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093737|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093737|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093737|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093737|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093737|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093737|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093737|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093737|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093737|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093737|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093737|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093737|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093737777217]
+ALWAYS|20180907093737|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093737|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093737|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093737|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093737|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093737|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093737|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093737|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093737|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"777217","transactionAmount":"000000001120"}]
+ALWAYS|20180907093737|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093738|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093746","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093738|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|207022|07111914642W|0907|093746|支付宝钱包|]
+ALWAYS|20180907093738|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093738|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093738|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093738|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093738|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093738|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093738|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093738|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093738|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093738|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093739|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093739|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093739|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093739|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093739|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093739|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093739|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093739|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093739|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093739|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093739|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093739|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093739536734]
+ALWAYS|20180907093739|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093739|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093739|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093739|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093739|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093739|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093739|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093739|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093739|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"536734","transactionAmount":"000000001120"}]
+ALWAYS|20180907093739|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093740|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093748","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093740|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|866547|07111914642W|0907|093748|支付宝钱包|]
+ALWAYS|20180907093740|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093740|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093740|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093740|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093740|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093740|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093740|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093740|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093740|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093740|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093741|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093741|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093741|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093741|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093741|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093741|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093741|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093741|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093741|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093741|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093741|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093741|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093741206351]
+ALWAYS|20180907093741|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093741|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093741|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093741|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093741|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093741|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093741|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093741|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093741|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"206351","transactionAmount":"000000001120"}]
+ALWAYS|20180907093741|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093742|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093750","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093742|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|626154|07111914642W|0907|093750|支付宝钱包|]
+ALWAYS|20180907093742|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093742|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093742|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093742|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093742|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093742|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093742|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093742|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093742|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093742|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093742|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093742|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093742|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093742|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093742|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093742|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093742|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093742|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093742|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093742|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093742|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093742|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093742626154]
+ALWAYS|20180907093742|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093742|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093742|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093742|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093742|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093742|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093742|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093742|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093742|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"626154","transactionAmount":"000000001120"}]
+ALWAYS|20180907093742|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093744|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093752","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093744|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|385670|07111914642W|0907|093752|支付宝钱包|]
+ALWAYS|20180907093744|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093744|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093744|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093744|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093744|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093744|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093744|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093744|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093744|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093744|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093745|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093745|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093745|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093745|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093745|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093745|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093745|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093745|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093745|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093745|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093745|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093745|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093745615483]
+ALWAYS|20180907093745|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093745|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093745|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093745|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093745|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093745|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093745|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093745|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093745|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"615483","transactionAmount":"000000001120"}]
+ALWAYS|20180907093745|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093746|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093754","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093746|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|154317|07111914642W|0907|093754|支付宝钱包|]
+ALWAYS|20180907093746|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093746|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093746|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093746|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093746|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093746|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093746|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093746|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093746|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093746|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093747|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093747|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093747|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093747|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093747|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093747|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093747|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093747|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093747|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093747|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093747|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093747|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093747475110]
+ALWAYS|20180907093747|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093747|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093747|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093747|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093747|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093747|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093747|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093747|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093747|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"475110","transactionAmount":"000000001120"}]
+ALWAYS|20180907093747|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093748|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093756","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093748|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|704723|07111914642W|0907|093756|支付宝钱包|]
+ALWAYS|20180907093748|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093748|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093748|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093748|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093748|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093748|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093748|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093748|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093748|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093748|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093749|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093749|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093749|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093749|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093749|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093749|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093749|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093749|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093749|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093749|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093749|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093749|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093749244636]
+ALWAYS|20180907093749|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093749|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093749|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093749|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093749|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093749|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093749|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093749|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093749|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"244636","transactionAmount":"000000001120"}]
+ALWAYS|20180907093749|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093750|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093758","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093750|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|563440|07111914642W|0907|093758|支付宝钱包|]
+ALWAYS|20180907093750|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093750|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093750|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093750|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093750|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093750|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093750|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093750|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093750|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093750|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093751|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093751|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093751|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093751|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093751|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093751|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093751|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093751|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093751|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093751|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093751|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093751|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093751803242]
+ALWAYS|20180907093751|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093751|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093751|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093751|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093751|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093751|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093751|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093751|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093751|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"803242","transactionAmount":"000000001120"}]
+ALWAYS|20180907093751|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093752|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093800","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093752|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|232865|07111914642W|0907|093800|支付宝钱包|]
+ALWAYS|20180907093752|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093752|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093752|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093752|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093752|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093752|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093752|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093752|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093752|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093752|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093753|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093753|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093753|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093753|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093753|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093753|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093753|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093753|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093753|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093753|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093753|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093753|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093753663778]
+ALWAYS|20180907093753|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093753|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093753|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093753|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093753|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093753|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093753|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093753|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093753|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"663778","transactionAmount":"000000001120"}]
+ALWAYS|20180907093753|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093755|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"093803","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907093755|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|322285|07111914642W|0907|093803|支付宝钱包|]
+ALWAYS|20180907093755|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093755|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907093755|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907093755|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907093755|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907093755|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907093755|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907093755|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907093755|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093755|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907093755|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907093755|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907093755|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907093755|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907093755|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907093755|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907093755|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907093755|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907093755|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907093755|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907093755|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907093755|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907093755322285]
+ALWAYS|20180907093755|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907093755|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907093755|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907093755|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907093755|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907093755|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907093755|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907093755|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907093755|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907093353007111914642","refundRequestId":"322285","transactionAmount":"000000001120"}]
+ALWAYS|20180907093755|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907093756|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"093804","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07111914642W"}]
+ALWAYS|20180907093756|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|652108|07111914642W|0907|093804||]
+ALWAYS|20180907093756|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907093756|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907093756|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907093756|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095356|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095356|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095356|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095356|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095356|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095356|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095356|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095356|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095356|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095356|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095356|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095356|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095356020888]
+ALWAYS|20180907095356|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095356|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095356|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095356|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095356|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095356|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095356|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095356|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095356|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"020888","transactionAmount":"000000000560"}]
+ALWAYS|20180907095356|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095357|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095406","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095357|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|448681|07112061612W|0907|095406|支付宝钱包|]
+ALWAYS|20180907095357|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095357|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095357|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095357|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095357|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095357|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095357|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095357|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095357|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095357|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095428|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095428|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095428|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095428|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095428|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095428|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095428|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095428|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095428|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095428|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095428|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095428|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095428688000]
+ALWAYS|20180907095428|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095428|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095428|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095428|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095428|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095428|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095428|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095428|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095428|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"688000","transactionAmount":"000000000560"}]
+ALWAYS|20180907095428|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095430|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095438","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095430|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|358525|07112061612W|0907|095438|支付宝钱包|]
+ALWAYS|20180907095430|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095430|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095430|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095430|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095430|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095430|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095430|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095430|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095430|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095430|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095430|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095430|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095430|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095430|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095430|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095430|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095430|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095430|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095430|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095430|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095430|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095430|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095430358525]
+ALWAYS|20180907095430|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095430|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095430|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095430|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095430|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095430|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095430|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095430|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095430|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"358525","transactionAmount":"000000000560"}]
+ALWAYS|20180907095430|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095432|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095440","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095432|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|118132|07112061612W|0907|095440|支付宝钱包|]
+ALWAYS|20180907095432|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095432|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095432|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095432|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095432|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095432|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095432|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095432|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095432|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095432|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095432|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095432|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095432|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095432|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095432|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095432|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095432|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095432|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095432|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095432|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095432|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095432|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095432118132]
+ALWAYS|20180907095432|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095432|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095432|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095432|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095432|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095432|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095432|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095432|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095432|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"118132","transactionAmount":"000000000560"}]
+ALWAYS|20180907095432|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095434|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095442","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095434|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|767667|07112061612W|0907|095442|支付宝钱包|]
+ALWAYS|20180907095434|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095434|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095434|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095434|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095434|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095434|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095434|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095434|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095434|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095434|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095434|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095434|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095434|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095434|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095434|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095434|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095434|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095434|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095434|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095434|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095434|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095434|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095434767667]
+ALWAYS|20180907095434|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095434|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095434|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095434|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095434|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095434|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095434|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095434|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095434|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"767667","transactionAmount":"000000000560"}]
+ALWAYS|20180907095434|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095436|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095444","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095436|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|537285|07112061612W|0907|095444|支付宝钱包|]
+ALWAYS|20180907095436|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095436|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095436|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095436|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095436|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095436|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095436|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095436|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095436|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095436|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095436|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095436|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095436|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095436|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095436|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095436|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095436|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095436|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095436|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095436|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095436|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095436|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095436537285]
+ALWAYS|20180907095436|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095436|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095436|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095436|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095436|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095436|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095436|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095436|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095436|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"537285","transactionAmount":"000000000560"}]
+ALWAYS|20180907095436|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095437|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095446","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095437|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|866088|07112061612W|0907|095446|支付宝钱包|]
+ALWAYS|20180907095437|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095437|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095437|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095437|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095437|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095437|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095437|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095437|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095437|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095437|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095438|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095438|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095438|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095438|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095438|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095438|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095438|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095438|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095438|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095438|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095438|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095438|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095438306701]
+ALWAYS|20180907095438|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095438|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095438|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095438|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095438|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095438|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095438|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095438|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095438|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"306701","transactionAmount":"000000000560"}]
+ALWAYS|20180907095438|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095439|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095448","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095439|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|625514|07112061612W|0907|095448|支付宝钱包|]
+ALWAYS|20180907095439|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095439|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095439|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095439|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095439|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095439|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095439|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095439|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095439|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095439|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095439|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095439|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095439|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095439|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095439|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095439|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095439|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095439|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095439|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095439|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095439|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095439|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095439625514]
+ALWAYS|20180907095439|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095439|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095439|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095439|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095439|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095439|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095439|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095439|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095439|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"625514","transactionAmount":"000000000560"}]
+ALWAYS|20180907095439|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095441|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095450","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095441|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|384130|07112061612W|0907|095450|支付宝钱包|]
+ALWAYS|20180907095441|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095441|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095441|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095441|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095441|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095441|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095441|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095441|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095441|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095441|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095441|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095441|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095441|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095441|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095441|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095441|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095441|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095441|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095441|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095441|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095441|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095441|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095441384130]
+ALWAYS|20180907095441|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095441|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095441|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095441|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095441|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095441|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095441|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095441|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095441|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"384130","transactionAmount":"000000000560"}]
+ALWAYS|20180907095441|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095443|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095452","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095443|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|145756|07112061612W|0907|095452|支付宝钱包|]
+ALWAYS|20180907095443|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095443|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095443|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095443|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095443|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095443|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095443|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095443|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095443|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095443|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095443|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095443|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095443|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095443|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095443|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095443|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095443|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095443|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095443|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095443|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095443|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095443|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095443145756]
+ALWAYS|20180907095443|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095443|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095443|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095443|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095443|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095443|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095443|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095443|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095443|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"145756","transactionAmount":"000000000560"}]
+ALWAYS|20180907095443|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095444|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"095453","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907095444|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|474450|07112061612W|0907|095453|支付宝钱包|]
+ALWAYS|20180907095444|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095444|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907095444|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907095444|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907095444|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907095444|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907095444|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907095445|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095445|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095445|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095445|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095445|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095445|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095445|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095445|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095445|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095445|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095445|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095445|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095445|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095445714263]
+ALWAYS|20180907095445|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095445|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095445|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095445|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095445|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095445|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095445|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095445|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095445|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"714263","transactionAmount":"000000000560"}]
+ALWAYS|20180907095445|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095445|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"095453","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W"}]
+ALWAYS|20180907095445|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|714263|07112061612W|0907|095453||]
+ALWAYS|20180907095445|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095445|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095445|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095445|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095445|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095445|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095445|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095445|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095445|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095445|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095445|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095445|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095445|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095445|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095445714263]
+ALWAYS|20180907095445|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095445|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095445|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095445|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095445|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095445|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095445|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095445|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095445|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"714263","transactionAmount":"000000000560"}]
+ALWAYS|20180907095445|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095445|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095453","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112132120"}]
+ALWAYS|20180907095445|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|714263|007112132120|0907|095453||]
+ALWAYS|20180907095445|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095445|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095445|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095445|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095445|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095445|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095445|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095445|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095445|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095445|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095445|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095445|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095445|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095445|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095445714263]
+ALWAYS|20180907095445|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095445|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095445|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095445|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095445|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095445|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095445|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095445|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095445|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"714263","transactionAmount":"000000000560"}]
+ALWAYS|20180907095445|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095445|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095454","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112137958"}]
+ALWAYS|20180907095445|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|714263|007112137958|0907|095454||]
+ALWAYS|20180907095445|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095445|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095445|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095445|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095445|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095445|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095445|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095445|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095445|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095445|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095445|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095445|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095445|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095445|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095445714263]
+ALWAYS|20180907095445|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095445|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095445|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095445|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095445|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095445|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095445|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095445|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095445|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"714263","transactionAmount":"000000000560"}]
+ALWAYS|20180907095445|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095445|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095454","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112130288"}]
+ALWAYS|20180907095445|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|714263|007112130288|0907|095454||]
+ALWAYS|20180907095445|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095445|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095445|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095445|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095445|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095445|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095445|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095445|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095445|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095445|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095445|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095445|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095445|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095445|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095445714263]
+ALWAYS|20180907095445|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095445|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095445|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095445|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095445|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095445|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095445|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095445|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095445|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"714263","transactionAmount":"000000000560"}]
+ALWAYS|20180907095445|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095445|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095454","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112136940"}]
+ALWAYS|20180907095445|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|714263|007112136940|0907|095454||]
+ALWAYS|20180907095445|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095445|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095445|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095445|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095445|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095445|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095445|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095445|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095445|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095445|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095445|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095445|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095445|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095445|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095445714263]
+ALWAYS|20180907095445|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095445|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095445|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095445|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095445|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095445|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095445|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095445|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095445|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"714263","transactionAmount":"000000000560"}]
+ALWAYS|20180907095445|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095445|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095454","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112135942"}]
+ALWAYS|20180907095445|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|714263|007112135942|0907|095454||]
+ALWAYS|20180907095445|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095445|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095445|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095445|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095446|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095446|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095446|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095446|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095446|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095446|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095446|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095446|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095446|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095446|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095446|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095446|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095446233176]
+ALWAYS|20180907095446|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095446|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095446|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095446|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095446|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095446|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095446|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095446|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095446|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"233176","transactionAmount":"000000000560"}]
+ALWAYS|20180907095446|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095446|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"095454","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W"}]
+ALWAYS|20180907095446|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|233176|07112061612W|0907|095454||]
+ALWAYS|20180907095446|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095446|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095446|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095446|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095446|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095446|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095446|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095446|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095446|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095446|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095446|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095446|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095446|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095446|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095446|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095446|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095446233176]
+ALWAYS|20180907095446|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095446|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095446|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095446|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095446|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095446|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095446|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095446|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095446|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"233176","transactionAmount":"000000000560"}]
+ALWAYS|20180907095446|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095446|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095454","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112141880"}]
+ALWAYS|20180907095446|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|233176|007112141880|0907|095454||]
+ALWAYS|20180907095446|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095446|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095446|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095446|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095446|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095446|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095446|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095446|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095446|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095446|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095446|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095446|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095446|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095446|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095446|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095446|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095446233176]
+ALWAYS|20180907095446|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095446|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095446|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095446|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095446|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095446|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095446|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095446|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095446|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"233176","transactionAmount":"000000000560"}]
+ALWAYS|20180907095446|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095446|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095455","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112134020"}]
+ALWAYS|20180907095446|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|233176|007112134020|0907|095455||]
+ALWAYS|20180907095446|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095446|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095446|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095446|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095446|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095446|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095446|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095446|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095446|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095446|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095446|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095446|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095446|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095446|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095446|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095446|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095446233176]
+ALWAYS|20180907095446|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095446|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095446|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095446|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095446|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095446|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095446|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095446|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095446|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"233176","transactionAmount":"000000000560"}]
+ALWAYS|20180907095446|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095446|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095455","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112127328"}]
+ALWAYS|20180907095446|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|233176|007112127328|0907|095455||]
+ALWAYS|20180907095446|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095446|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095446|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095446|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095446|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095446|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095446|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095446|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095446|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095446|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095446|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095446|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095446|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095446|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095446|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095446|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095446233176]
+ALWAYS|20180907095446|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095446|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095446|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095446|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095446|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095446|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095446|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095446|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095446|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"233176","transactionAmount":"000000000560"}]
+ALWAYS|20180907095446|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095447|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095455","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112124416"}]
+ALWAYS|20180907095447|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|574880|007112124416|0907|095455||]
+ALWAYS|20180907095447|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095447|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095447|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095447|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095447|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095447|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095447|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095447|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095447|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095447|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095447|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095447|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095447|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095447|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095447|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095447|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095447574880]
+ALWAYS|20180907095447|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095447|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095447|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095447|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095447|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095447|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095447|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095447|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095447|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"574880","transactionAmount":"000000000560"}]
+ALWAYS|20180907095447|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095447|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"095455","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W"}]
+ALWAYS|20180907095447|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|574880|07112061612W|0907|095455||]
+ALWAYS|20180907095447|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095447|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095447|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095447|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095447|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095447|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095447|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095447|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095447|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095447|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095447|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095447|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095447|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095447|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095447|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095447|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095447574880]
+ALWAYS|20180907095447|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095447|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095447|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095447|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095447|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095447|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095447|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095447|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095447|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"574880","transactionAmount":"000000000560"}]
+ALWAYS|20180907095447|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095447|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095455","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112130300"}]
+ALWAYS|20180907095447|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|574880|007112130300|0907|095455||]
+ALWAYS|20180907095447|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095447|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095447|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095447|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095447|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095447|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095447|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095447|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095447|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095447|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095447|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095447|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095447|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095447|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095447|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095447|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095447574880]
+ALWAYS|20180907095447|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095447|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095447|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095447|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095447|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095447|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095447|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095447|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095447|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"574880","transactionAmount":"000000000560"}]
+ALWAYS|20180907095447|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095447|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095456","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112124420"}]
+ALWAYS|20180907095447|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|574880|007112124420|0907|095456||]
+ALWAYS|20180907095447|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095447|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095447|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095447|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095447|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095447|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095447|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095447|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095447|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095447|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095447|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095447|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095447|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095447|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095447|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095447|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095447574880]
+ALWAYS|20180907095447|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095447|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095447|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095447|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095447|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095447|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095447|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095447|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095447|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"574880","transactionAmount":"000000000560"}]
+ALWAYS|20180907095447|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095447|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095456","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112133073"}]
+ALWAYS|20180907095447|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|574880|007112133073|0907|095456||]
+ALWAYS|20180907095447|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095447|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095447|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095447|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095447|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095447|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095447|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095447|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095447|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095447|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095447|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095447|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095447|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095447|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095447|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095447|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095447574880]
+ALWAYS|20180907095447|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095447|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095447|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095447|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095447|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095447|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095447|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095447|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095447|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"574880","transactionAmount":"000000000560"}]
+ALWAYS|20180907095447|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095447|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095456","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112129362"}]
+ALWAYS|20180907095447|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|574880|007112129362|0907|095456||]
+ALWAYS|20180907095447|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095447|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095447|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095447|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095447|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095447|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095447|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095447|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095447|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095447|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095447|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095447|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095447|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095447|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095447|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095447|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095447574880]
+ALWAYS|20180907095447|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095447|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095447|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095447|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095447|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095447|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095447|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095447|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095447|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"574880","transactionAmount":"000000000560"}]
+ALWAYS|20180907095447|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095448|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095456","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112144875"}]
+ALWAYS|20180907095448|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|803503|007112144875|0907|095456||]
+ALWAYS|20180907095448|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095448|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095448|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095448|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095448|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095448|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095448|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095448|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095448|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095448|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095448|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095448|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095448|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095448|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095448|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095448|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095448803503]
+ALWAYS|20180907095448|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095448|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095448|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095448|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095448|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095448|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095448|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095448|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095448|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"803503","transactionAmount":"000000000560"}]
+ALWAYS|20180907095448|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095448|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"095456","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W"}]
+ALWAYS|20180907095448|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|803503|07112061612W|0907|095456||]
+ALWAYS|20180907095448|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095448|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095448|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095448|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095448|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095448|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095448|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095448|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095448|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095448|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095448|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095448|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095448|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095448|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095448|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095448|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095448803503]
+ALWAYS|20180907095448|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095448|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095448|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095448|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095448|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095448|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095448|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095448|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095448|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"803503","transactionAmount":"000000000560"}]
+ALWAYS|20180907095448|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095448|________comm.cpp:461|ptrans|接收返回=[{"errCode":"94","errInfo":"10000交易重复","transactionTime":"095457","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"007112136952"}]
+ALWAYS|20180907095448|________comm.cpp:810|ptrans|[UMS_Refund end]=[94|10000交易重复|803503|007112136952|0907|095457||]
+ALWAYS|20180907095448|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095448|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095448|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095448|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907095450|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907095450|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907095450|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907095450|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907095450|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907095450|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907095450|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907095450|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907095450|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907095450|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907095450|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907095450|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907095450662228]
+ALWAYS|20180907095450|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907095450|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907095450|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907095450|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907095450|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907095450|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907095450|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907095450|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907095450|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907094652007112061612","refundRequestId":"662228","transactionAmount":"000000000560"}]
+ALWAYS|20180907095450|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907095451|________comm.cpp:461|ptrans|接收返回=[{"errCode":"61","errInfo":"10000交易金额超限","transactionTime":"095459","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112061612W"}]
+ALWAYS|20180907095451|________comm.cpp:810|ptrans|[UMS_Refund end]=[61|10000交易金额超限|082022|07112061612W|0907|095459||]
+ALWAYS|20180907095451|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907095451|____postrans.cpp:390|ptrans|退货结束
+ ERROR|20180907095451|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907095451|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+
+ALWAYS|20180907102402|______posinf.cpp:663|posinf|无硬件pos通交易开始
+ DEBUG|20180907102402|_____posinf.cpp:1557|posinf|加载postrans.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\postrans.dll]
+ DEBUG|20180907102402|_____posinf.cpp:1564|posinf|load postrans.dll ok
+ DEBUG|20180907102402|_____posinf.cpp:1573|posinf|load postrans.dll end
+ DEBUG|20180907102402|____postrans.cpp:617|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ ERROR|20180907102402|_____postrans.cpp:48|ptrans|bankall_inter begin
+ALWAYS|20180907102402|____postrans.cpp:635|ptrans|InitCfg begin
+ALWAYS|20180907102402|____postrans.cpp:722|ptrans|InitCfg end
+ DEBUG|20180907102402|____postrans.cpp:744|ptrans|noposComm.dll PATH=[C:\Users\leis\Desktop\513GMC\gmc\nopos\noposComm.dll]
+ DEBUG|20180907102402|____postrans.cpp:751|ptrans|load postrans.dll ok
+ DEBUG|20180907102402|____postrans.cpp:760|ptrans|load postrans.dll end
+ALWAYS|20180907102402|____postrans.cpp:118|ptrans|随机生成ERP订单号=[20180907102402381226]
+ALWAYS|20180907102402|____postrans.cpp:358|ptrans|退货开始
+ DEBUG|20180907102402|_________comm.cpp:80|ptrans|LOG_LEVEL=[5],DLOG_LEVEL=[5]
+ALWAYS|20180907102402|_______comm.cpp:1008|ptrans|noposComm begin
+ALWAYS|20180907102402|_________comm.cpp:98|ptrans|InitCfg begin
+ DEBUG|20180907102402|________comm.cpp:107|ptrans|url=[https://api-mop.chinaums.com]
+ALWAYS|20180907102402|________comm.cpp:159|ptrans|InitCfg end
+ALWAYS|20180907102402|_______comm.cpp:1048|ptrans|校验appid和appkey成功
+ALWAYS|20180907102402|________comm.cpp:751|ptrans|[UMS_Refund begin]
+ALWAYS|20180907102402|________comm.cpp:424|ptrans|发送消息体=[{"merchantCode":"898220160120193","terminalCode":"66017502","originalOrderId":"20180907095817007112181985","refundRequestId":"381226","transactionAmount":"000000006100"}]
+ALWAYS|20180907102402|________comm.cpp:427|ptrans|后台地址=[https://api-mop.chinaums.com/v2/poslink/transaction/refund]
+  HINT|20180907102404|________comm.cpp:461|ptrans|接收返回=[{"errCode":"00","errInfo":"10000成功响应码","transactionTime":"102413","transactionDate":"0907","settlementDate":"0907","retrievalRefNum":"07112181985W","thirdPartyName":"支付宝钱包"}]
+ALWAYS|20180907102404|________comm.cpp:810|ptrans|[UMS_Refund end]=[00|10000成功响应码|151742|07112181985W|0907|102413|支付宝钱包|]
+ALWAYS|20180907102404|_______comm.cpp:1095|ptrans|noposComm end
+ALWAYS|20180907102404|____postrans.cpp:371|ptrans|退货成功
+ALWAYS|20180907102404|____postrans.cpp:390|ptrans|退货结束
+ALWAYS|20180907102404|____postrans.cpp:531|ptrans|写流水文件
+ALWAYS|20180907102404|____postrans.cpp:536|ptrans|生成签购单文件=[1]
+ ERROR|20180907102404|___postrans.cpp:1557|ptrans|获取签购单文件名=[.\receipt.txt]
+ ERROR|20180907102404|___postrans.cpp:1582|ptrans|获取签购单模板文件名=[.\receiptfmt\receipt_emv.fmt]
+ ERROR|20180907102404|___postrans.cpp:1621|ptrans|end
+ ERROR|20180907102404|____postrans.cpp:554|ptrans|bankall_inter end
+ALWAYS|20180907102404|______posinf.cpp:665|posinf|无硬件pos通交易结束
+
+
+
+
+

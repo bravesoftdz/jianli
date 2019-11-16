@@ -1,0 +1,13 @@
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\bin\Debug\VBRepObjectDemo.exe
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\bin\Debug\VBRepObjectDemo.pdb
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\bin\Debug\VBRepObjectDemo.xml
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.vbproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.Form1.resources
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.Resources.resources
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.vbproj.GenerateResource.Cache
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.exe
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.xml
+E:\work\source\ACreport\COM\demos\VB.net\表格对象编程\VBRepObjectDemo\VBRepObjectDemo\obj\Debug\VBRepObjectDemo.pdb

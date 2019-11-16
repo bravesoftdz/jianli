@@ -1,0 +1,1692 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B334307B-DB56-4A0D-A98F-49C2B1EC4D9C}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="LibrarySupport\VclSkin5.6\package\WinSkinD2010.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibrarySupport\Nova-rpc-src\NovaJsonRpc.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Interfaces\Interfaces.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="MainAPP\NvBUS.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="system\printtemplate\PrintTemplate.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="public\ICcardRW\ICcardRW.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Vehicleseatplan\Vehicleseatplan.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\SelfDepartinvoices\SelfDepartinvoices.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="system\ConnectCFG\ConnectCFG.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="public\IDCardReader\IDCardReader.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="login\login.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Archive\Driver\Driver.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Dispatch\DispatchManage\DispatchManage.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\checktickets\CheckTicket.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\Departinvoices\Departinvoicesmanager.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\Billtype\Billtype.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Initcard\Initcard.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\TicketSale\TicketSale.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\Outstationupmoney\Outstationupmoney.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\TicketReturn\TicketReturn.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\TicketQuery\TicketQuery.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Archive\Employee\Employee.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Archive\RechargePromotionAct\RechargePromotionAct.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\Ticketsellprint\Ticketsellprint.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Archive\Driverrewardpenalize\Driverrewardpenalize.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Archive\Steward\Steward.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\TicketFundsCheck\TicketFundsCheck.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Complexfee\Complexfee.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Scheduleminimum\Scheduleminimum.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Ticketturnover\Ticketturnover.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Balance\Balance.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\QueryBalanced\QueryBalanced.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Balanceformulaapply\Balanceformulaapply.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Vehicleturnover\Vehicleturnover.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\BalanceDivide\BalanceDivide.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Balanceformula\Balanceformula.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\DeductManage\DeductManage.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Deductitem\DeductItem.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\Vehicleviolation\Vehicleviolation.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\VIPRecharge\VipRecharge.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\DeductitemApply\DeductitemApply.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\DeductRoutestop\DeductRoutestop.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\station\station.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Route\Route.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\RoutePrice\RoutePrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Insurer\Insurer.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Ticketentrance\Ticketentrance.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Tickettype\Tickettype.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Vehiclespacesoldpicture\Vehiclespacesoldpicture.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Unit\VehicleUnit.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Cardissue\Cardissue.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\PCticketentrance\PCticketentrace.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Schedule\Schedule.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\ScheduleSelltickettype\ScheduleSelltickettype.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Seatstatuspicture\Seatstatuspicture.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Ticketdiscount\Ticketdiscount.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\ScheduleDiscountPrice\ScheduleDiscountPrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Schedulediscount\Schedulediscount.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Ticketoutlet\Ticketoutlet.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Ticketoutletssellschedule\Ticketoutletssellschedule.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\TicketReturnRateCfg\TicketReturnRateCfg.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Tickettypepermission\Tickettypepermission.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Vehicle\Vehicle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Vehicletype\Vehicletype.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\PCcontrol\PCsellschedule.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\ScheduleCycle\ScheduleCycle.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Schedulestationcontrol\Schedulestationcontrol.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Vehiclebrandmodel\Vehiclebrandmodel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\ScheduleSellDays\ScheduleSellDays.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Vehiclepark\Vehiclepark.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="base\Insurertype\Insuretype.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\BillAmountDestroy\BillAmountDestroy.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\Billstorage\Billstorage.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\Billdestroy\Billdestroy.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\InitBillNo\InitBillNo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\TicketChargeoff\TicketChargeoff.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\Billinventory\Billinventory.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\Billinuse\Billinuse.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="public\finger\Finger.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\Outstationcheck\Outstationcheck.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\RouteChecktime\RouteChecktime.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\Departinvoicesother\Departinvoicesother.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CheckTicket\onecard\onecard.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Dispatch\Schedulemerge\Schedulemerge.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Dispatch\Schedulestatus\schedulestatus.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="hirebus\hirebusaccept\hirebusaccept.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\Client\Client.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\packaccept\packaccept.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\Goods\PackGoods.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\PackPayment\PackPayment.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\packfee\packfee.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\packpick\PackPickup.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\PackStock\packStock.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="pack\packWarehousing\packWarehousing.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\HandPrice\HandPrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\Departinvoicededuct\Departinvoicededuct.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\QueryTicketReport\TicketReport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\TakeTicket\TakeTicket.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\Seatreserve\Seatreserve.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\TicketCancel\TicketCancel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\Billdamaged\Billdamaged.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\NovaTakeTicket\NovaTakeTicket.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\Ticketdeliver\Ticketdeliver.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="system\Organization\Organization.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\Ticketoutletsprice\TicketoutletsPrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\Fuelfeegrade\Fuelfeegrade.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\HandHolidayPrice\HandHolidayPrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\Holiday\Holiday.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\TicketPriceformula\TicketPriceFormula.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\ExecutePrice\ExecutePrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\StandardPrice\StandardPrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\StatinPrice\StationPrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TicketPrice\TicketPriceItem\TicketPriceItem.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="vehicleCheck\Gpscheck\Gpscheck.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="vehicleCheck\Securitycheck\Securitycheck.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="vehicleCheck\Securitycheckitem\Securitycheckitem.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="vehicleCheck\Securitycheckplan\Securitycheckplan.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="vehicleCheck\VehicleDistanceActive\VehicleDistanceActive.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="bill\Billupmoney\Billupmoney.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\ScheduleOperationReport\ScheduleOperationReport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\SchedulePeikeReport\SchedulePeikeReport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="system\user\User.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\StationBalanceReport\StationBalanceReport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\QueryRouteDynamic\QueryRouteDynamic.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Dispatch\TicketLoss\TicketLoss.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\TicketSaleQry\TicketSaleQry.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\QuerySchedulePrice\QuerySchedulePrice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\PublicQry\PublicQry.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="system\FunctionManager\FunctionManager.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="system\Parameter\Parameter.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\QueryInsurance\QueryInsurance.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\InsuranceReport\InsuranceReport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Sale\InsureSale\InsureSale.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\QueryCheckTicket\QueryScheduleCheck\QueryScheduleCheckSum.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Balance\TicketStaticsQuery\TicketStaticsQuery.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Dispatch\PlusSchedule\PlusSchedule.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\RouteBalanceRpt\RouteBalanceRpt.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Report\SalerdayReport\SalerdayReport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Query\TicketDetailQry\QueryTicketDetail.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="WinSkinD2010">
+			<MSBuild Projects="LibrarySupport\VclSkin5.6\package\WinSkinD2010.dproj"/>
+		</Target>
+		<Target Name="WinSkinD2010:Clean">
+			<MSBuild Targets="Clean" Projects="LibrarySupport\VclSkin5.6\package\WinSkinD2010.dproj"/>
+		</Target>
+		<Target Name="WinSkinD2010:Make">
+			<MSBuild Targets="Make" Projects="LibrarySupport\VclSkin5.6\package\WinSkinD2010.dproj"/>
+		</Target>
+		<Target Name="NovaJsonRpc">
+			<MSBuild Projects="LibrarySupport\Nova-rpc-src\NovaJsonRpc.dproj"/>
+		</Target>
+		<Target Name="NovaJsonRpc:Clean">
+			<MSBuild Targets="Clean" Projects="LibrarySupport\Nova-rpc-src\NovaJsonRpc.dproj"/>
+		</Target>
+		<Target Name="NovaJsonRpc:Make">
+			<MSBuild Targets="Make" Projects="LibrarySupport\Nova-rpc-src\NovaJsonRpc.dproj"/>
+		</Target>
+		<Target Name="Interfaces">
+			<MSBuild Projects="Interfaces\Interfaces.dproj"/>
+		</Target>
+		<Target Name="Interfaces:Clean">
+			<MSBuild Targets="Clean" Projects="Interfaces\Interfaces.dproj"/>
+		</Target>
+		<Target Name="Interfaces:Make">
+			<MSBuild Targets="Make" Projects="Interfaces\Interfaces.dproj"/>
+		</Target>
+		<Target Name="NvBUS">
+			<MSBuild Projects="MainAPP\NvBUS.dproj"/>
+		</Target>
+		<Target Name="NvBUS:Clean">
+			<MSBuild Targets="Clean" Projects="MainAPP\NvBUS.dproj"/>
+		</Target>
+		<Target Name="NvBUS:Make">
+			<MSBuild Targets="Make" Projects="MainAPP\NvBUS.dproj"/>
+		</Target>
+		<Target Name="PrintTemplate">
+			<MSBuild Projects="system\printtemplate\PrintTemplate.dproj"/>
+		</Target>
+		<Target Name="PrintTemplate:Clean">
+			<MSBuild Targets="Clean" Projects="system\printtemplate\PrintTemplate.dproj"/>
+		</Target>
+		<Target Name="PrintTemplate:Make">
+			<MSBuild Targets="Make" Projects="system\printtemplate\PrintTemplate.dproj"/>
+		</Target>
+		<Target Name="ICcardRW">
+			<MSBuild Projects="public\ICcardRW\ICcardRW.dproj"/>
+		</Target>
+		<Target Name="ICcardRW:Clean">
+			<MSBuild Targets="Clean" Projects="public\ICcardRW\ICcardRW.dproj"/>
+		</Target>
+		<Target Name="ICcardRW:Make">
+			<MSBuild Targets="Make" Projects="public\ICcardRW\ICcardRW.dproj"/>
+		</Target>
+		<Target Name="Vehicleseatplan">
+			<MSBuild Projects="base\Vehicleseatplan\Vehicleseatplan.dproj"/>
+		</Target>
+		<Target Name="Vehicleseatplan:Clean">
+			<MSBuild Targets="Clean" Projects="base\Vehicleseatplan\Vehicleseatplan.dproj"/>
+		</Target>
+		<Target Name="Vehicleseatplan:Make">
+			<MSBuild Targets="Make" Projects="base\Vehicleseatplan\Vehicleseatplan.dproj"/>
+		</Target>
+		<Target Name="SelfDepartinvoices">
+			<MSBuild Projects="CheckTicket\SelfDepartinvoices\SelfDepartinvoices.dproj"/>
+		</Target>
+		<Target Name="SelfDepartinvoices:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\SelfDepartinvoices\SelfDepartinvoices.dproj"/>
+		</Target>
+		<Target Name="SelfDepartinvoices:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\SelfDepartinvoices\SelfDepartinvoices.dproj"/>
+		</Target>
+		<Target Name="ConnectCFG">
+			<MSBuild Projects="system\ConnectCFG\ConnectCFG.dproj"/>
+		</Target>
+		<Target Name="ConnectCFG:Clean">
+			<MSBuild Targets="Clean" Projects="system\ConnectCFG\ConnectCFG.dproj"/>
+		</Target>
+		<Target Name="ConnectCFG:Make">
+			<MSBuild Targets="Make" Projects="system\ConnectCFG\ConnectCFG.dproj"/>
+		</Target>
+		<Target Name="IDCardReader">
+			<MSBuild Projects="public\IDCardReader\IDCardReader.dproj"/>
+		</Target>
+		<Target Name="IDCardReader:Clean">
+			<MSBuild Targets="Clean" Projects="public\IDCardReader\IDCardReader.dproj"/>
+		</Target>
+		<Target Name="IDCardReader:Make">
+			<MSBuild Targets="Make" Projects="public\IDCardReader\IDCardReader.dproj"/>
+		</Target>
+		<Target Name="login">
+			<MSBuild Projects="login\login.dproj"/>
+		</Target>
+		<Target Name="login:Clean">
+			<MSBuild Targets="Clean" Projects="login\login.dproj"/>
+		</Target>
+		<Target Name="login:Make">
+			<MSBuild Targets="Make" Projects="login\login.dproj"/>
+		</Target>
+		<Target Name="Driver">
+			<MSBuild Projects="Archive\Driver\Driver.dproj"/>
+		</Target>
+		<Target Name="Driver:Clean">
+			<MSBuild Targets="Clean" Projects="Archive\Driver\Driver.dproj"/>
+		</Target>
+		<Target Name="Driver:Make">
+			<MSBuild Targets="Make" Projects="Archive\Driver\Driver.dproj"/>
+		</Target>
+		<Target Name="DispatchManage">
+			<MSBuild Projects="Dispatch\DispatchManage\DispatchManage.dproj"/>
+		</Target>
+		<Target Name="DispatchManage:Clean">
+			<MSBuild Targets="Clean" Projects="Dispatch\DispatchManage\DispatchManage.dproj"/>
+		</Target>
+		<Target Name="DispatchManage:Make">
+			<MSBuild Targets="Make" Projects="Dispatch\DispatchManage\DispatchManage.dproj"/>
+		</Target>
+		<Target Name="CheckTicket">
+			<MSBuild Projects="CheckTicket\checktickets\CheckTicket.dproj"/>
+		</Target>
+		<Target Name="CheckTicket:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\checktickets\CheckTicket.dproj"/>
+		</Target>
+		<Target Name="CheckTicket:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\checktickets\CheckTicket.dproj"/>
+		</Target>
+		<Target Name="Departinvoicesmanager">
+			<MSBuild Projects="CheckTicket\Departinvoices\Departinvoicesmanager.dproj"/>
+		</Target>
+		<Target Name="Departinvoicesmanager:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\Departinvoices\Departinvoicesmanager.dproj"/>
+		</Target>
+		<Target Name="Departinvoicesmanager:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\Departinvoices\Departinvoicesmanager.dproj"/>
+		</Target>
+		<Target Name="Billtype">
+			<MSBuild Projects="bill\Billtype\Billtype.dproj"/>
+		</Target>
+		<Target Name="Billtype:Clean">
+			<MSBuild Targets="Clean" Projects="bill\Billtype\Billtype.dproj"/>
+		</Target>
+		<Target Name="Billtype:Make">
+			<MSBuild Targets="Make" Projects="bill\Billtype\Billtype.dproj"/>
+		</Target>
+		<Target Name="Initcard">
+			<MSBuild Projects="base\Initcard\Initcard.dproj"/>
+		</Target>
+		<Target Name="Initcard:Clean">
+			<MSBuild Targets="Clean" Projects="base\Initcard\Initcard.dproj"/>
+		</Target>
+		<Target Name="Initcard:Make">
+			<MSBuild Targets="Make" Projects="base\Initcard\Initcard.dproj"/>
+		</Target>
+		<Target Name="TicketSale">
+			<MSBuild Projects="Sale\TicketSale\TicketSale.dproj"/>
+		</Target>
+		<Target Name="TicketSale:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\TicketSale\TicketSale.dproj"/>
+		</Target>
+		<Target Name="TicketSale:Make">
+			<MSBuild Targets="Make" Projects="Sale\TicketSale\TicketSale.dproj"/>
+		</Target>
+		<Target Name="Outstationupmoney">
+			<MSBuild Projects="CheckTicket\Outstationupmoney\Outstationupmoney.dproj"/>
+		</Target>
+		<Target Name="Outstationupmoney:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\Outstationupmoney\Outstationupmoney.dproj"/>
+		</Target>
+		<Target Name="Outstationupmoney:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\Outstationupmoney\Outstationupmoney.dproj"/>
+		</Target>
+		<Target Name="TicketReturn">
+			<MSBuild Projects="Sale\TicketReturn\TicketReturn.dproj"/>
+		</Target>
+		<Target Name="TicketReturn:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\TicketReturn\TicketReturn.dproj"/>
+		</Target>
+		<Target Name="TicketReturn:Make">
+			<MSBuild Targets="Make" Projects="Sale\TicketReturn\TicketReturn.dproj"/>
+		</Target>
+		<Target Name="TicketQuery">
+			<MSBuild Projects="Sale\TicketQuery\TicketQuery.dproj"/>
+		</Target>
+		<Target Name="TicketQuery:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\TicketQuery\TicketQuery.dproj"/>
+		</Target>
+		<Target Name="TicketQuery:Make">
+			<MSBuild Targets="Make" Projects="Sale\TicketQuery\TicketQuery.dproj"/>
+		</Target>
+		<Target Name="Employee">
+			<MSBuild Projects="Archive\Employee\Employee.dproj"/>
+		</Target>
+		<Target Name="Employee:Clean">
+			<MSBuild Targets="Clean" Projects="Archive\Employee\Employee.dproj"/>
+		</Target>
+		<Target Name="Employee:Make">
+			<MSBuild Targets="Make" Projects="Archive\Employee\Employee.dproj"/>
+		</Target>
+		<Target Name="RechargePromotionAct">
+			<MSBuild Projects="Archive\RechargePromotionAct\RechargePromotionAct.dproj"/>
+		</Target>
+		<Target Name="RechargePromotionAct:Clean">
+			<MSBuild Targets="Clean" Projects="Archive\RechargePromotionAct\RechargePromotionAct.dproj"/>
+		</Target>
+		<Target Name="RechargePromotionAct:Make">
+			<MSBuild Targets="Make" Projects="Archive\RechargePromotionAct\RechargePromotionAct.dproj"/>
+		</Target>
+		<Target Name="Ticketsellprint">
+			<MSBuild Projects="Sale\Ticketsellprint\Ticketsellprint.dproj"/>
+		</Target>
+		<Target Name="Ticketsellprint:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\Ticketsellprint\Ticketsellprint.dproj"/>
+		</Target>
+		<Target Name="Ticketsellprint:Make">
+			<MSBuild Targets="Make" Projects="Sale\Ticketsellprint\Ticketsellprint.dproj"/>
+		</Target>
+		<Target Name="Driverrewardpenalize">
+			<MSBuild Projects="Archive\Driverrewardpenalize\Driverrewardpenalize.dproj"/>
+		</Target>
+		<Target Name="Driverrewardpenalize:Clean">
+			<MSBuild Targets="Clean" Projects="Archive\Driverrewardpenalize\Driverrewardpenalize.dproj"/>
+		</Target>
+		<Target Name="Driverrewardpenalize:Make">
+			<MSBuild Targets="Make" Projects="Archive\Driverrewardpenalize\Driverrewardpenalize.dproj"/>
+		</Target>
+		<Target Name="Steward">
+			<MSBuild Projects="Archive\Steward\Steward.dproj"/>
+		</Target>
+		<Target Name="Steward:Clean">
+			<MSBuild Targets="Clean" Projects="Archive\Steward\Steward.dproj"/>
+		</Target>
+		<Target Name="Steward:Make">
+			<MSBuild Targets="Make" Projects="Archive\Steward\Steward.dproj"/>
+		</Target>
+		<Target Name="TicketFundsCheck">
+			<MSBuild Projects="Balance\TicketFundsCheck\TicketFundsCheck.dproj"/>
+		</Target>
+		<Target Name="TicketFundsCheck:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\TicketFundsCheck\TicketFundsCheck.dproj"/>
+		</Target>
+		<Target Name="TicketFundsCheck:Make">
+			<MSBuild Targets="Make" Projects="Balance\TicketFundsCheck\TicketFundsCheck.dproj"/>
+		</Target>
+		<Target Name="Complexfee">
+			<MSBuild Projects="Balance\Complexfee\Complexfee.dproj"/>
+		</Target>
+		<Target Name="Complexfee:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Complexfee\Complexfee.dproj"/>
+		</Target>
+		<Target Name="Complexfee:Make">
+			<MSBuild Targets="Make" Projects="Balance\Complexfee\Complexfee.dproj"/>
+		</Target>
+		<Target Name="Scheduleminimum">
+			<MSBuild Projects="Balance\Scheduleminimum\Scheduleminimum.dproj"/>
+		</Target>
+		<Target Name="Scheduleminimum:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Scheduleminimum\Scheduleminimum.dproj"/>
+		</Target>
+		<Target Name="Scheduleminimum:Make">
+			<MSBuild Targets="Make" Projects="Balance\Scheduleminimum\Scheduleminimum.dproj"/>
+		</Target>
+		<Target Name="Ticketturnover">
+			<MSBuild Projects="Balance\Ticketturnover\Ticketturnover.dproj"/>
+		</Target>
+		<Target Name="Ticketturnover:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Ticketturnover\Ticketturnover.dproj"/>
+		</Target>
+		<Target Name="Ticketturnover:Make">
+			<MSBuild Targets="Make" Projects="Balance\Ticketturnover\Ticketturnover.dproj"/>
+		</Target>
+		<Target Name="Balance">
+			<MSBuild Projects="Balance\Balance\Balance.dproj"/>
+		</Target>
+		<Target Name="Balance:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Balance\Balance.dproj"/>
+		</Target>
+		<Target Name="Balance:Make">
+			<MSBuild Targets="Make" Projects="Balance\Balance\Balance.dproj"/>
+		</Target>
+		<Target Name="QueryBalanced">
+			<MSBuild Projects="Balance\QueryBalanced\QueryBalanced.dproj"/>
+		</Target>
+		<Target Name="QueryBalanced:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\QueryBalanced\QueryBalanced.dproj"/>
+		</Target>
+		<Target Name="QueryBalanced:Make">
+			<MSBuild Targets="Make" Projects="Balance\QueryBalanced\QueryBalanced.dproj"/>
+		</Target>
+		<Target Name="Balanceformulaapply">
+			<MSBuild Projects="Balance\Balanceformulaapply\Balanceformulaapply.dproj"/>
+		</Target>
+		<Target Name="Balanceformulaapply:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Balanceformulaapply\Balanceformulaapply.dproj"/>
+		</Target>
+		<Target Name="Balanceformulaapply:Make">
+			<MSBuild Targets="Make" Projects="Balance\Balanceformulaapply\Balanceformulaapply.dproj"/>
+		</Target>
+		<Target Name="Vehicleturnover">
+			<MSBuild Projects="Balance\Vehicleturnover\Vehicleturnover.dproj"/>
+		</Target>
+		<Target Name="Vehicleturnover:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Vehicleturnover\Vehicleturnover.dproj"/>
+		</Target>
+		<Target Name="Vehicleturnover:Make">
+			<MSBuild Targets="Make" Projects="Balance\Vehicleturnover\Vehicleturnover.dproj"/>
+		</Target>
+		<Target Name="BalanceDivide">
+			<MSBuild Projects="Balance\BalanceDivide\BalanceDivide.dproj"/>
+		</Target>
+		<Target Name="BalanceDivide:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\BalanceDivide\BalanceDivide.dproj"/>
+		</Target>
+		<Target Name="BalanceDivide:Make">
+			<MSBuild Targets="Make" Projects="Balance\BalanceDivide\BalanceDivide.dproj"/>
+		</Target>
+		<Target Name="Balanceformula">
+			<MSBuild Projects="Balance\Balanceformula\Balanceformula.dproj"/>
+		</Target>
+		<Target Name="Balanceformula:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Balanceformula\Balanceformula.dproj"/>
+		</Target>
+		<Target Name="Balanceformula:Make">
+			<MSBuild Targets="Make" Projects="Balance\Balanceformula\Balanceformula.dproj"/>
+		</Target>
+		<Target Name="DeductManage">
+			<MSBuild Projects="Balance\DeductManage\DeductManage.dproj"/>
+		</Target>
+		<Target Name="DeductManage:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\DeductManage\DeductManage.dproj"/>
+		</Target>
+		<Target Name="DeductManage:Make">
+			<MSBuild Targets="Make" Projects="Balance\DeductManage\DeductManage.dproj"/>
+		</Target>
+		<Target Name="DeductItem">
+			<MSBuild Projects="Balance\Deductitem\DeductItem.dproj"/>
+		</Target>
+		<Target Name="DeductItem:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Deductitem\DeductItem.dproj"/>
+		</Target>
+		<Target Name="DeductItem:Make">
+			<MSBuild Targets="Make" Projects="Balance\Deductitem\DeductItem.dproj"/>
+		</Target>
+		<Target Name="Vehicleviolation">
+			<MSBuild Projects="Balance\Vehicleviolation\Vehicleviolation.dproj"/>
+		</Target>
+		<Target Name="Vehicleviolation:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\Vehicleviolation\Vehicleviolation.dproj"/>
+		</Target>
+		<Target Name="Vehicleviolation:Make">
+			<MSBuild Targets="Make" Projects="Balance\Vehicleviolation\Vehicleviolation.dproj"/>
+		</Target>
+		<Target Name="VipRecharge">
+			<MSBuild Projects="Query\VIPRecharge\VipRecharge.dproj"/>
+		</Target>
+		<Target Name="VipRecharge:Clean">
+			<MSBuild Targets="Clean" Projects="Query\VIPRecharge\VipRecharge.dproj"/>
+		</Target>
+		<Target Name="VipRecharge:Make">
+			<MSBuild Targets="Make" Projects="Query\VIPRecharge\VipRecharge.dproj"/>
+		</Target>
+		<Target Name="DeductitemApply">
+			<MSBuild Projects="Balance\DeductitemApply\DeductitemApply.dproj"/>
+		</Target>
+		<Target Name="DeductitemApply:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\DeductitemApply\DeductitemApply.dproj"/>
+		</Target>
+		<Target Name="DeductitemApply:Make">
+			<MSBuild Targets="Make" Projects="Balance\DeductitemApply\DeductitemApply.dproj"/>
+		</Target>
+		<Target Name="DeductRoutestop">
+			<MSBuild Projects="Balance\DeductRoutestop\DeductRoutestop.dproj"/>
+		</Target>
+		<Target Name="DeductRoutestop:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\DeductRoutestop\DeductRoutestop.dproj"/>
+		</Target>
+		<Target Name="DeductRoutestop:Make">
+			<MSBuild Targets="Make" Projects="Balance\DeductRoutestop\DeductRoutestop.dproj"/>
+		</Target>
+		<Target Name="station">
+			<MSBuild Projects="base\station\station.dproj"/>
+		</Target>
+		<Target Name="station:Clean">
+			<MSBuild Targets="Clean" Projects="base\station\station.dproj"/>
+		</Target>
+		<Target Name="station:Make">
+			<MSBuild Targets="Make" Projects="base\station\station.dproj"/>
+		</Target>
+		<Target Name="Route">
+			<MSBuild Projects="base\Route\Route.dproj"/>
+		</Target>
+		<Target Name="Route:Clean">
+			<MSBuild Targets="Clean" Projects="base\Route\Route.dproj"/>
+		</Target>
+		<Target Name="Route:Make">
+			<MSBuild Targets="Make" Projects="base\Route\Route.dproj"/>
+		</Target>
+		<Target Name="RoutePrice">
+			<MSBuild Projects="TicketPrice\RoutePrice\RoutePrice.dproj"/>
+		</Target>
+		<Target Name="RoutePrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\RoutePrice\RoutePrice.dproj"/>
+		</Target>
+		<Target Name="RoutePrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\RoutePrice\RoutePrice.dproj"/>
+		</Target>
+		<Target Name="Insurer">
+			<MSBuild Projects="base\Insurer\Insurer.dproj"/>
+		</Target>
+		<Target Name="Insurer:Clean">
+			<MSBuild Targets="Clean" Projects="base\Insurer\Insurer.dproj"/>
+		</Target>
+		<Target Name="Insurer:Make">
+			<MSBuild Targets="Make" Projects="base\Insurer\Insurer.dproj"/>
+		</Target>
+		<Target Name="Ticketentrance">
+			<MSBuild Projects="base\Ticketentrance\Ticketentrance.dproj"/>
+		</Target>
+		<Target Name="Ticketentrance:Clean">
+			<MSBuild Targets="Clean" Projects="base\Ticketentrance\Ticketentrance.dproj"/>
+		</Target>
+		<Target Name="Ticketentrance:Make">
+			<MSBuild Targets="Make" Projects="base\Ticketentrance\Ticketentrance.dproj"/>
+		</Target>
+		<Target Name="Tickettype">
+			<MSBuild Projects="base\Tickettype\Tickettype.dproj"/>
+		</Target>
+		<Target Name="Tickettype:Clean">
+			<MSBuild Targets="Clean" Projects="base\Tickettype\Tickettype.dproj"/>
+		</Target>
+		<Target Name="Tickettype:Make">
+			<MSBuild Targets="Make" Projects="base\Tickettype\Tickettype.dproj"/>
+		</Target>
+		<Target Name="Vehiclespacesoldpicture">
+			<MSBuild Projects="base\Vehiclespacesoldpicture\Vehiclespacesoldpicture.dproj"/>
+		</Target>
+		<Target Name="Vehiclespacesoldpicture:Clean">
+			<MSBuild Targets="Clean" Projects="base\Vehiclespacesoldpicture\Vehiclespacesoldpicture.dproj"/>
+		</Target>
+		<Target Name="Vehiclespacesoldpicture:Make">
+			<MSBuild Targets="Make" Projects="base\Vehiclespacesoldpicture\Vehiclespacesoldpicture.dproj"/>
+		</Target>
+		<Target Name="VehicleUnit">
+			<MSBuild Projects="base\Unit\VehicleUnit.dproj"/>
+		</Target>
+		<Target Name="VehicleUnit:Clean">
+			<MSBuild Targets="Clean" Projects="base\Unit\VehicleUnit.dproj"/>
+		</Target>
+		<Target Name="VehicleUnit:Make">
+			<MSBuild Targets="Make" Projects="base\Unit\VehicleUnit.dproj"/>
+		</Target>
+		<Target Name="Cardissue">
+			<MSBuild Projects="base\Cardissue\Cardissue.dproj"/>
+		</Target>
+		<Target Name="Cardissue:Clean">
+			<MSBuild Targets="Clean" Projects="base\Cardissue\Cardissue.dproj"/>
+		</Target>
+		<Target Name="Cardissue:Make">
+			<MSBuild Targets="Make" Projects="base\Cardissue\Cardissue.dproj"/>
+		</Target>
+		<Target Name="PCticketentrace">
+			<MSBuild Projects="base\PCticketentrance\PCticketentrace.dproj"/>
+		</Target>
+		<Target Name="PCticketentrace:Clean">
+			<MSBuild Targets="Clean" Projects="base\PCticketentrance\PCticketentrace.dproj"/>
+		</Target>
+		<Target Name="PCticketentrace:Make">
+			<MSBuild Targets="Make" Projects="base\PCticketentrance\PCticketentrace.dproj"/>
+		</Target>
+		<Target Name="Schedule">
+			<MSBuild Projects="base\Schedule\Schedule.dproj"/>
+		</Target>
+		<Target Name="Schedule:Clean">
+			<MSBuild Targets="Clean" Projects="base\Schedule\Schedule.dproj"/>
+		</Target>
+		<Target Name="Schedule:Make">
+			<MSBuild Targets="Make" Projects="base\Schedule\Schedule.dproj"/>
+		</Target>
+		<Target Name="ScheduleSelltickettype">
+			<MSBuild Projects="base\ScheduleSelltickettype\ScheduleSelltickettype.dproj"/>
+		</Target>
+		<Target Name="ScheduleSelltickettype:Clean">
+			<MSBuild Targets="Clean" Projects="base\ScheduleSelltickettype\ScheduleSelltickettype.dproj"/>
+		</Target>
+		<Target Name="ScheduleSelltickettype:Make">
+			<MSBuild Targets="Make" Projects="base\ScheduleSelltickettype\ScheduleSelltickettype.dproj"/>
+		</Target>
+		<Target Name="Seatstatuspicture">
+			<MSBuild Projects="base\Seatstatuspicture\Seatstatuspicture.dproj"/>
+		</Target>
+		<Target Name="Seatstatuspicture:Clean">
+			<MSBuild Targets="Clean" Projects="base\Seatstatuspicture\Seatstatuspicture.dproj"/>
+		</Target>
+		<Target Name="Seatstatuspicture:Make">
+			<MSBuild Targets="Make" Projects="base\Seatstatuspicture\Seatstatuspicture.dproj"/>
+		</Target>
+		<Target Name="Ticketdiscount">
+			<MSBuild Projects="base\Ticketdiscount\Ticketdiscount.dproj"/>
+		</Target>
+		<Target Name="Ticketdiscount:Clean">
+			<MSBuild Targets="Clean" Projects="base\Ticketdiscount\Ticketdiscount.dproj"/>
+		</Target>
+		<Target Name="Ticketdiscount:Make">
+			<MSBuild Targets="Make" Projects="base\Ticketdiscount\Ticketdiscount.dproj"/>
+		</Target>
+		<Target Name="ScheduleDiscountPrice">
+			<MSBuild Projects="TicketPrice\ScheduleDiscountPrice\ScheduleDiscountPrice.dproj"/>
+		</Target>
+		<Target Name="ScheduleDiscountPrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\ScheduleDiscountPrice\ScheduleDiscountPrice.dproj"/>
+		</Target>
+		<Target Name="ScheduleDiscountPrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\ScheduleDiscountPrice\ScheduleDiscountPrice.dproj"/>
+		</Target>
+		<Target Name="Schedulediscount">
+			<MSBuild Projects="base\Schedulediscount\Schedulediscount.dproj"/>
+		</Target>
+		<Target Name="Schedulediscount:Clean">
+			<MSBuild Targets="Clean" Projects="base\Schedulediscount\Schedulediscount.dproj"/>
+		</Target>
+		<Target Name="Schedulediscount:Make">
+			<MSBuild Targets="Make" Projects="base\Schedulediscount\Schedulediscount.dproj"/>
+		</Target>
+		<Target Name="Ticketoutlet">
+			<MSBuild Projects="base\Ticketoutlet\Ticketoutlet.dproj"/>
+		</Target>
+		<Target Name="Ticketoutlet:Clean">
+			<MSBuild Targets="Clean" Projects="base\Ticketoutlet\Ticketoutlet.dproj"/>
+		</Target>
+		<Target Name="Ticketoutlet:Make">
+			<MSBuild Targets="Make" Projects="base\Ticketoutlet\Ticketoutlet.dproj"/>
+		</Target>
+		<Target Name="Ticketoutletssellschedule">
+			<MSBuild Projects="base\Ticketoutletssellschedule\Ticketoutletssellschedule.dproj"/>
+		</Target>
+		<Target Name="Ticketoutletssellschedule:Clean">
+			<MSBuild Targets="Clean" Projects="base\Ticketoutletssellschedule\Ticketoutletssellschedule.dproj"/>
+		</Target>
+		<Target Name="Ticketoutletssellschedule:Make">
+			<MSBuild Targets="Make" Projects="base\Ticketoutletssellschedule\Ticketoutletssellschedule.dproj"/>
+		</Target>
+		<Target Name="TicketReturnRateCfg">
+			<MSBuild Projects="base\TicketReturnRateCfg\TicketReturnRateCfg.dproj"/>
+		</Target>
+		<Target Name="TicketReturnRateCfg:Clean">
+			<MSBuild Targets="Clean" Projects="base\TicketReturnRateCfg\TicketReturnRateCfg.dproj"/>
+		</Target>
+		<Target Name="TicketReturnRateCfg:Make">
+			<MSBuild Targets="Make" Projects="base\TicketReturnRateCfg\TicketReturnRateCfg.dproj"/>
+		</Target>
+		<Target Name="Tickettypepermission">
+			<MSBuild Projects="base\Tickettypepermission\Tickettypepermission.dproj"/>
+		</Target>
+		<Target Name="Tickettypepermission:Clean">
+			<MSBuild Targets="Clean" Projects="base\Tickettypepermission\Tickettypepermission.dproj"/>
+		</Target>
+		<Target Name="Tickettypepermission:Make">
+			<MSBuild Targets="Make" Projects="base\Tickettypepermission\Tickettypepermission.dproj"/>
+		</Target>
+		<Target Name="Vehicle">
+			<MSBuild Projects="base\Vehicle\Vehicle.dproj"/>
+		</Target>
+		<Target Name="Vehicle:Clean">
+			<MSBuild Targets="Clean" Projects="base\Vehicle\Vehicle.dproj"/>
+		</Target>
+		<Target Name="Vehicle:Make">
+			<MSBuild Targets="Make" Projects="base\Vehicle\Vehicle.dproj"/>
+		</Target>
+		<Target Name="Vehicletype">
+			<MSBuild Projects="base\Vehicletype\Vehicletype.dproj"/>
+		</Target>
+		<Target Name="Vehicletype:Clean">
+			<MSBuild Targets="Clean" Projects="base\Vehicletype\Vehicletype.dproj"/>
+		</Target>
+		<Target Name="Vehicletype:Make">
+			<MSBuild Targets="Make" Projects="base\Vehicletype\Vehicletype.dproj"/>
+		</Target>
+		<Target Name="PCsellschedule">
+			<MSBuild Projects="base\PCcontrol\PCsellschedule.dproj"/>
+		</Target>
+		<Target Name="PCsellschedule:Clean">
+			<MSBuild Targets="Clean" Projects="base\PCcontrol\PCsellschedule.dproj"/>
+		</Target>
+		<Target Name="PCsellschedule:Make">
+			<MSBuild Targets="Make" Projects="base\PCcontrol\PCsellschedule.dproj"/>
+		</Target>
+		<Target Name="ScheduleCycle">
+			<MSBuild Projects="base\ScheduleCycle\ScheduleCycle.dproj"/>
+		</Target>
+		<Target Name="ScheduleCycle:Clean">
+			<MSBuild Targets="Clean" Projects="base\ScheduleCycle\ScheduleCycle.dproj"/>
+		</Target>
+		<Target Name="ScheduleCycle:Make">
+			<MSBuild Targets="Make" Projects="base\ScheduleCycle\ScheduleCycle.dproj"/>
+		</Target>
+		<Target Name="Schedulestationcontrol">
+			<MSBuild Projects="base\Schedulestationcontrol\Schedulestationcontrol.dproj"/>
+		</Target>
+		<Target Name="Schedulestationcontrol:Clean">
+			<MSBuild Targets="Clean" Projects="base\Schedulestationcontrol\Schedulestationcontrol.dproj"/>
+		</Target>
+		<Target Name="Schedulestationcontrol:Make">
+			<MSBuild Targets="Make" Projects="base\Schedulestationcontrol\Schedulestationcontrol.dproj"/>
+		</Target>
+		<Target Name="Vehiclebrandmodel">
+			<MSBuild Projects="base\Vehiclebrandmodel\Vehiclebrandmodel.dproj"/>
+		</Target>
+		<Target Name="Vehiclebrandmodel:Clean">
+			<MSBuild Targets="Clean" Projects="base\Vehiclebrandmodel\Vehiclebrandmodel.dproj"/>
+		</Target>
+		<Target Name="Vehiclebrandmodel:Make">
+			<MSBuild Targets="Make" Projects="base\Vehiclebrandmodel\Vehiclebrandmodel.dproj"/>
+		</Target>
+		<Target Name="ScheduleSellDays">
+			<MSBuild Projects="base\ScheduleSellDays\ScheduleSellDays.dproj"/>
+		</Target>
+		<Target Name="ScheduleSellDays:Clean">
+			<MSBuild Targets="Clean" Projects="base\ScheduleSellDays\ScheduleSellDays.dproj"/>
+		</Target>
+		<Target Name="ScheduleSellDays:Make">
+			<MSBuild Targets="Make" Projects="base\ScheduleSellDays\ScheduleSellDays.dproj"/>
+		</Target>
+		<Target Name="Vehiclepark">
+			<MSBuild Projects="base\Vehiclepark\Vehiclepark.dproj"/>
+		</Target>
+		<Target Name="Vehiclepark:Clean">
+			<MSBuild Targets="Clean" Projects="base\Vehiclepark\Vehiclepark.dproj"/>
+		</Target>
+		<Target Name="Vehiclepark:Make">
+			<MSBuild Targets="Make" Projects="base\Vehiclepark\Vehiclepark.dproj"/>
+		</Target>
+		<Target Name="Insuretype">
+			<MSBuild Projects="base\Insurertype\Insuretype.dproj"/>
+		</Target>
+		<Target Name="Insuretype:Clean">
+			<MSBuild Targets="Clean" Projects="base\Insurertype\Insuretype.dproj"/>
+		</Target>
+		<Target Name="Insuretype:Make">
+			<MSBuild Targets="Make" Projects="base\Insurertype\Insuretype.dproj"/>
+		</Target>
+		<Target Name="BillAmountDestroy">
+			<MSBuild Projects="bill\BillAmountDestroy\BillAmountDestroy.dproj"/>
+		</Target>
+		<Target Name="BillAmountDestroy:Clean">
+			<MSBuild Targets="Clean" Projects="bill\BillAmountDestroy\BillAmountDestroy.dproj"/>
+		</Target>
+		<Target Name="BillAmountDestroy:Make">
+			<MSBuild Targets="Make" Projects="bill\BillAmountDestroy\BillAmountDestroy.dproj"/>
+		</Target>
+		<Target Name="Billstorage">
+			<MSBuild Projects="bill\Billstorage\Billstorage.dproj"/>
+		</Target>
+		<Target Name="Billstorage:Clean">
+			<MSBuild Targets="Clean" Projects="bill\Billstorage\Billstorage.dproj"/>
+		</Target>
+		<Target Name="Billstorage:Make">
+			<MSBuild Targets="Make" Projects="bill\Billstorage\Billstorage.dproj"/>
+		</Target>
+		<Target Name="Billdestroy">
+			<MSBuild Projects="bill\Billdestroy\Billdestroy.dproj"/>
+		</Target>
+		<Target Name="Billdestroy:Clean">
+			<MSBuild Targets="Clean" Projects="bill\Billdestroy\Billdestroy.dproj"/>
+		</Target>
+		<Target Name="Billdestroy:Make">
+			<MSBuild Targets="Make" Projects="bill\Billdestroy\Billdestroy.dproj"/>
+		</Target>
+		<Target Name="InitBillNo">
+			<MSBuild Projects="bill\InitBillNo\InitBillNo.dproj"/>
+		</Target>
+		<Target Name="InitBillNo:Clean">
+			<MSBuild Targets="Clean" Projects="bill\InitBillNo\InitBillNo.dproj"/>
+		</Target>
+		<Target Name="InitBillNo:Make">
+			<MSBuild Targets="Make" Projects="bill\InitBillNo\InitBillNo.dproj"/>
+		</Target>
+		<Target Name="TicketChargeoff">
+			<MSBuild Projects="bill\TicketChargeoff\TicketChargeoff.dproj"/>
+		</Target>
+		<Target Name="TicketChargeoff:Clean">
+			<MSBuild Targets="Clean" Projects="bill\TicketChargeoff\TicketChargeoff.dproj"/>
+		</Target>
+		<Target Name="TicketChargeoff:Make">
+			<MSBuild Targets="Make" Projects="bill\TicketChargeoff\TicketChargeoff.dproj"/>
+		</Target>
+		<Target Name="Billinventory">
+			<MSBuild Projects="bill\Billinventory\Billinventory.dproj"/>
+		</Target>
+		<Target Name="Billinventory:Clean">
+			<MSBuild Targets="Clean" Projects="bill\Billinventory\Billinventory.dproj"/>
+		</Target>
+		<Target Name="Billinventory:Make">
+			<MSBuild Targets="Make" Projects="bill\Billinventory\Billinventory.dproj"/>
+		</Target>
+		<Target Name="Billinuse">
+			<MSBuild Projects="bill\Billinuse\Billinuse.dproj"/>
+		</Target>
+		<Target Name="Billinuse:Clean">
+			<MSBuild Targets="Clean" Projects="bill\Billinuse\Billinuse.dproj"/>
+		</Target>
+		<Target Name="Billinuse:Make">
+			<MSBuild Targets="Make" Projects="bill\Billinuse\Billinuse.dproj"/>
+		</Target>
+		<Target Name="Finger">
+			<MSBuild Projects="public\finger\Finger.dproj"/>
+		</Target>
+		<Target Name="Finger:Clean">
+			<MSBuild Targets="Clean" Projects="public\finger\Finger.dproj"/>
+		</Target>
+		<Target Name="Finger:Make">
+			<MSBuild Targets="Make" Projects="public\finger\Finger.dproj"/>
+		</Target>
+		<Target Name="Outstationcheck">
+			<MSBuild Projects="CheckTicket\Outstationcheck\Outstationcheck.dproj"/>
+		</Target>
+		<Target Name="Outstationcheck:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\Outstationcheck\Outstationcheck.dproj"/>
+		</Target>
+		<Target Name="Outstationcheck:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\Outstationcheck\Outstationcheck.dproj"/>
+		</Target>
+		<Target Name="RouteChecktime">
+			<MSBuild Projects="CheckTicket\RouteChecktime\RouteChecktime.dproj"/>
+		</Target>
+		<Target Name="RouteChecktime:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\RouteChecktime\RouteChecktime.dproj"/>
+		</Target>
+		<Target Name="RouteChecktime:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\RouteChecktime\RouteChecktime.dproj"/>
+		</Target>
+		<Target Name="Departinvoicesother">
+			<MSBuild Projects="CheckTicket\Departinvoicesother\Departinvoicesother.dproj"/>
+		</Target>
+		<Target Name="Departinvoicesother:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\Departinvoicesother\Departinvoicesother.dproj"/>
+		</Target>
+		<Target Name="Departinvoicesother:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\Departinvoicesother\Departinvoicesother.dproj"/>
+		</Target>
+		<Target Name="onecard">
+			<MSBuild Projects="CheckTicket\onecard\onecard.dproj"/>
+		</Target>
+		<Target Name="onecard:Clean">
+			<MSBuild Targets="Clean" Projects="CheckTicket\onecard\onecard.dproj"/>
+		</Target>
+		<Target Name="onecard:Make">
+			<MSBuild Targets="Make" Projects="CheckTicket\onecard\onecard.dproj"/>
+		</Target>
+		<Target Name="Schedulemerge">
+			<MSBuild Projects="Dispatch\Schedulemerge\Schedulemerge.dproj"/>
+		</Target>
+		<Target Name="Schedulemerge:Clean">
+			<MSBuild Targets="Clean" Projects="Dispatch\Schedulemerge\Schedulemerge.dproj"/>
+		</Target>
+		<Target Name="Schedulemerge:Make">
+			<MSBuild Targets="Make" Projects="Dispatch\Schedulemerge\Schedulemerge.dproj"/>
+		</Target>
+		<Target Name="schedulestatus">
+			<MSBuild Projects="Dispatch\Schedulestatus\schedulestatus.dproj"/>
+		</Target>
+		<Target Name="schedulestatus:Clean">
+			<MSBuild Targets="Clean" Projects="Dispatch\Schedulestatus\schedulestatus.dproj"/>
+		</Target>
+		<Target Name="schedulestatus:Make">
+			<MSBuild Targets="Make" Projects="Dispatch\Schedulestatus\schedulestatus.dproj"/>
+		</Target>
+		<Target Name="hirebusaccept">
+			<MSBuild Projects="hirebus\hirebusaccept\hirebusaccept.dproj"/>
+		</Target>
+		<Target Name="hirebusaccept:Clean">
+			<MSBuild Targets="Clean" Projects="hirebus\hirebusaccept\hirebusaccept.dproj"/>
+		</Target>
+		<Target Name="hirebusaccept:Make">
+			<MSBuild Targets="Make" Projects="hirebus\hirebusaccept\hirebusaccept.dproj"/>
+		</Target>
+		<Target Name="Client">
+			<MSBuild Projects="pack\Client\Client.dproj"/>
+		</Target>
+		<Target Name="Client:Clean">
+			<MSBuild Targets="Clean" Projects="pack\Client\Client.dproj"/>
+		</Target>
+		<Target Name="Client:Make">
+			<MSBuild Targets="Make" Projects="pack\Client\Client.dproj"/>
+		</Target>
+		<Target Name="packaccept">
+			<MSBuild Projects="pack\packaccept\packaccept.dproj"/>
+		</Target>
+		<Target Name="packaccept:Clean">
+			<MSBuild Targets="Clean" Projects="pack\packaccept\packaccept.dproj"/>
+		</Target>
+		<Target Name="packaccept:Make">
+			<MSBuild Targets="Make" Projects="pack\packaccept\packaccept.dproj"/>
+		</Target>
+		<Target Name="PackGoods">
+			<MSBuild Projects="pack\Goods\PackGoods.dproj"/>
+		</Target>
+		<Target Name="PackGoods:Clean">
+			<MSBuild Targets="Clean" Projects="pack\Goods\PackGoods.dproj"/>
+		</Target>
+		<Target Name="PackGoods:Make">
+			<MSBuild Targets="Make" Projects="pack\Goods\PackGoods.dproj"/>
+		</Target>
+		<Target Name="PackPayment">
+			<MSBuild Projects="pack\PackPayment\PackPayment.dproj"/>
+		</Target>
+		<Target Name="PackPayment:Clean">
+			<MSBuild Targets="Clean" Projects="pack\PackPayment\PackPayment.dproj"/>
+		</Target>
+		<Target Name="PackPayment:Make">
+			<MSBuild Targets="Make" Projects="pack\PackPayment\PackPayment.dproj"/>
+		</Target>
+		<Target Name="packfee">
+			<MSBuild Projects="pack\packfee\packfee.dproj"/>
+		</Target>
+		<Target Name="packfee:Clean">
+			<MSBuild Targets="Clean" Projects="pack\packfee\packfee.dproj"/>
+		</Target>
+		<Target Name="packfee:Make">
+			<MSBuild Targets="Make" Projects="pack\packfee\packfee.dproj"/>
+		</Target>
+		<Target Name="PackPickup">
+			<MSBuild Projects="pack\packpick\PackPickup.dproj"/>
+		</Target>
+		<Target Name="PackPickup:Clean">
+			<MSBuild Targets="Clean" Projects="pack\packpick\PackPickup.dproj"/>
+		</Target>
+		<Target Name="PackPickup:Make">
+			<MSBuild Targets="Make" Projects="pack\packpick\PackPickup.dproj"/>
+		</Target>
+		<Target Name="packStock">
+			<MSBuild Projects="pack\PackStock\packStock.dproj"/>
+		</Target>
+		<Target Name="packStock:Clean">
+			<MSBuild Targets="Clean" Projects="pack\PackStock\packStock.dproj"/>
+		</Target>
+		<Target Name="packStock:Make">
+			<MSBuild Targets="Make" Projects="pack\PackStock\packStock.dproj"/>
+		</Target>
+		<Target Name="packWarehousing">
+			<MSBuild Projects="pack\packWarehousing\packWarehousing.dproj"/>
+		</Target>
+		<Target Name="packWarehousing:Clean">
+			<MSBuild Targets="Clean" Projects="pack\packWarehousing\packWarehousing.dproj"/>
+		</Target>
+		<Target Name="packWarehousing:Make">
+			<MSBuild Targets="Make" Projects="pack\packWarehousing\packWarehousing.dproj"/>
+		</Target>
+		<Target Name="HandPrice">
+			<MSBuild Projects="TicketPrice\HandPrice\HandPrice.dproj"/>
+		</Target>
+		<Target Name="HandPrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\HandPrice\HandPrice.dproj"/>
+		</Target>
+		<Target Name="HandPrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\HandPrice\HandPrice.dproj"/>
+		</Target>
+		<Target Name="Departinvoicededuct">
+			<MSBuild Projects="Report\Departinvoicededuct\Departinvoicededuct.dproj"/>
+		</Target>
+		<Target Name="Departinvoicededuct:Clean">
+			<MSBuild Targets="Clean" Projects="Report\Departinvoicededuct\Departinvoicededuct.dproj"/>
+		</Target>
+		<Target Name="Departinvoicededuct:Make">
+			<MSBuild Targets="Make" Projects="Report\Departinvoicededuct\Departinvoicededuct.dproj"/>
+		</Target>
+		<Target Name="TicketReport">
+			<MSBuild Projects="Report\QueryTicketReport\TicketReport.dproj"/>
+		</Target>
+		<Target Name="TicketReport:Clean">
+			<MSBuild Targets="Clean" Projects="Report\QueryTicketReport\TicketReport.dproj"/>
+		</Target>
+		<Target Name="TicketReport:Make">
+			<MSBuild Targets="Make" Projects="Report\QueryTicketReport\TicketReport.dproj"/>
+		</Target>
+		<Target Name="TakeTicket">
+			<MSBuild Projects="Sale\TakeTicket\TakeTicket.dproj"/>
+		</Target>
+		<Target Name="TakeTicket:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\TakeTicket\TakeTicket.dproj"/>
+		</Target>
+		<Target Name="TakeTicket:Make">
+			<MSBuild Targets="Make" Projects="Sale\TakeTicket\TakeTicket.dproj"/>
+		</Target>
+		<Target Name="Seatreserve">
+			<MSBuild Projects="Sale\Seatreserve\Seatreserve.dproj"/>
+		</Target>
+		<Target Name="Seatreserve:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\Seatreserve\Seatreserve.dproj"/>
+		</Target>
+		<Target Name="Seatreserve:Make">
+			<MSBuild Targets="Make" Projects="Sale\Seatreserve\Seatreserve.dproj"/>
+		</Target>
+		<Target Name="TicketCancel">
+			<MSBuild Projects="Sale\TicketCancel\TicketCancel.dproj"/>
+		</Target>
+		<Target Name="TicketCancel:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\TicketCancel\TicketCancel.dproj"/>
+		</Target>
+		<Target Name="TicketCancel:Make">
+			<MSBuild Targets="Make" Projects="Sale\TicketCancel\TicketCancel.dproj"/>
+		</Target>
+		<Target Name="Billdamaged">
+			<MSBuild Projects="Sale\Billdamaged\Billdamaged.dproj"/>
+		</Target>
+		<Target Name="Billdamaged:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\Billdamaged\Billdamaged.dproj"/>
+		</Target>
+		<Target Name="Billdamaged:Make">
+			<MSBuild Targets="Make" Projects="Sale\Billdamaged\Billdamaged.dproj"/>
+		</Target>
+		<Target Name="NovaTakeTicket">
+			<MSBuild Projects="Sale\NovaTakeTicket\NovaTakeTicket.dproj"/>
+		</Target>
+		<Target Name="NovaTakeTicket:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\NovaTakeTicket\NovaTakeTicket.dproj"/>
+		</Target>
+		<Target Name="NovaTakeTicket:Make">
+			<MSBuild Targets="Make" Projects="Sale\NovaTakeTicket\NovaTakeTicket.dproj"/>
+		</Target>
+		<Target Name="Ticketdeliver">
+			<MSBuild Projects="Sale\Ticketdeliver\Ticketdeliver.dproj"/>
+		</Target>
+		<Target Name="Ticketdeliver:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\Ticketdeliver\Ticketdeliver.dproj"/>
+		</Target>
+		<Target Name="Ticketdeliver:Make">
+			<MSBuild Targets="Make" Projects="Sale\Ticketdeliver\Ticketdeliver.dproj"/>
+		</Target>
+		<Target Name="Organization">
+			<MSBuild Projects="system\Organization\Organization.dproj"/>
+		</Target>
+		<Target Name="Organization:Clean">
+			<MSBuild Targets="Clean" Projects="system\Organization\Organization.dproj"/>
+		</Target>
+		<Target Name="Organization:Make">
+			<MSBuild Targets="Make" Projects="system\Organization\Organization.dproj"/>
+		</Target>
+		<Target Name="TicketoutletsPrice">
+			<MSBuild Projects="TicketPrice\Ticketoutletsprice\TicketoutletsPrice.dproj"/>
+		</Target>
+		<Target Name="TicketoutletsPrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\Ticketoutletsprice\TicketoutletsPrice.dproj"/>
+		</Target>
+		<Target Name="TicketoutletsPrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\Ticketoutletsprice\TicketoutletsPrice.dproj"/>
+		</Target>
+		<Target Name="Fuelfeegrade">
+			<MSBuild Projects="TicketPrice\Fuelfeegrade\Fuelfeegrade.dproj"/>
+		</Target>
+		<Target Name="Fuelfeegrade:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\Fuelfeegrade\Fuelfeegrade.dproj"/>
+		</Target>
+		<Target Name="Fuelfeegrade:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\Fuelfeegrade\Fuelfeegrade.dproj"/>
+		</Target>
+		<Target Name="HandHolidayPrice">
+			<MSBuild Projects="TicketPrice\HandHolidayPrice\HandHolidayPrice.dproj"/>
+		</Target>
+		<Target Name="HandHolidayPrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\HandHolidayPrice\HandHolidayPrice.dproj"/>
+		</Target>
+		<Target Name="HandHolidayPrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\HandHolidayPrice\HandHolidayPrice.dproj"/>
+		</Target>
+		<Target Name="Holiday">
+			<MSBuild Projects="TicketPrice\Holiday\Holiday.dproj"/>
+		</Target>
+		<Target Name="Holiday:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\Holiday\Holiday.dproj"/>
+		</Target>
+		<Target Name="Holiday:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\Holiday\Holiday.dproj"/>
+		</Target>
+		<Target Name="TicketPriceFormula">
+			<MSBuild Projects="TicketPrice\TicketPriceformula\TicketPriceFormula.dproj"/>
+		</Target>
+		<Target Name="TicketPriceFormula:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\TicketPriceformula\TicketPriceFormula.dproj"/>
+		</Target>
+		<Target Name="TicketPriceFormula:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\TicketPriceformula\TicketPriceFormula.dproj"/>
+		</Target>
+		<Target Name="ExecutePrice">
+			<MSBuild Projects="TicketPrice\ExecutePrice\ExecutePrice.dproj"/>
+		</Target>
+		<Target Name="ExecutePrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\ExecutePrice\ExecutePrice.dproj"/>
+		</Target>
+		<Target Name="ExecutePrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\ExecutePrice\ExecutePrice.dproj"/>
+		</Target>
+		<Target Name="StandardPrice">
+			<MSBuild Projects="TicketPrice\StandardPrice\StandardPrice.dproj"/>
+		</Target>
+		<Target Name="StandardPrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\StandardPrice\StandardPrice.dproj"/>
+		</Target>
+		<Target Name="StandardPrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\StandardPrice\StandardPrice.dproj"/>
+		</Target>
+		<Target Name="StationPrice">
+			<MSBuild Projects="TicketPrice\StatinPrice\StationPrice.dproj"/>
+		</Target>
+		<Target Name="StationPrice:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\StatinPrice\StationPrice.dproj"/>
+		</Target>
+		<Target Name="StationPrice:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\StatinPrice\StationPrice.dproj"/>
+		</Target>
+		<Target Name="TicketPriceItem">
+			<MSBuild Projects="TicketPrice\TicketPriceItem\TicketPriceItem.dproj"/>
+		</Target>
+		<Target Name="TicketPriceItem:Clean">
+			<MSBuild Targets="Clean" Projects="TicketPrice\TicketPriceItem\TicketPriceItem.dproj"/>
+		</Target>
+		<Target Name="TicketPriceItem:Make">
+			<MSBuild Targets="Make" Projects="TicketPrice\TicketPriceItem\TicketPriceItem.dproj"/>
+		</Target>
+		<Target Name="Gpscheck">
+			<MSBuild Projects="vehicleCheck\Gpscheck\Gpscheck.dproj"/>
+		</Target>
+		<Target Name="Gpscheck:Clean">
+			<MSBuild Targets="Clean" Projects="vehicleCheck\Gpscheck\Gpscheck.dproj"/>
+		</Target>
+		<Target Name="Gpscheck:Make">
+			<MSBuild Targets="Make" Projects="vehicleCheck\Gpscheck\Gpscheck.dproj"/>
+		</Target>
+		<Target Name="Securitycheck">
+			<MSBuild Projects="vehicleCheck\Securitycheck\Securitycheck.dproj"/>
+		</Target>
+		<Target Name="Securitycheck:Clean">
+			<MSBuild Targets="Clean" Projects="vehicleCheck\Securitycheck\Securitycheck.dproj"/>
+		</Target>
+		<Target Name="Securitycheck:Make">
+			<MSBuild Targets="Make" Projects="vehicleCheck\Securitycheck\Securitycheck.dproj"/>
+		</Target>
+		<Target Name="Securitycheckitem">
+			<MSBuild Projects="vehicleCheck\Securitycheckitem\Securitycheckitem.dproj"/>
+		</Target>
+		<Target Name="Securitycheckitem:Clean">
+			<MSBuild Targets="Clean" Projects="vehicleCheck\Securitycheckitem\Securitycheckitem.dproj"/>
+		</Target>
+		<Target Name="Securitycheckitem:Make">
+			<MSBuild Targets="Make" Projects="vehicleCheck\Securitycheckitem\Securitycheckitem.dproj"/>
+		</Target>
+		<Target Name="Securitycheckplan">
+			<MSBuild Projects="vehicleCheck\Securitycheckplan\Securitycheckplan.dproj"/>
+		</Target>
+		<Target Name="Securitycheckplan:Clean">
+			<MSBuild Targets="Clean" Projects="vehicleCheck\Securitycheckplan\Securitycheckplan.dproj"/>
+		</Target>
+		<Target Name="Securitycheckplan:Make">
+			<MSBuild Targets="Make" Projects="vehicleCheck\Securitycheckplan\Securitycheckplan.dproj"/>
+		</Target>
+		<Target Name="VehicleDistanceActive">
+			<MSBuild Projects="vehicleCheck\VehicleDistanceActive\VehicleDistanceActive.dproj"/>
+		</Target>
+		<Target Name="VehicleDistanceActive:Clean">
+			<MSBuild Targets="Clean" Projects="vehicleCheck\VehicleDistanceActive\VehicleDistanceActive.dproj"/>
+		</Target>
+		<Target Name="VehicleDistanceActive:Make">
+			<MSBuild Targets="Make" Projects="vehicleCheck\VehicleDistanceActive\VehicleDistanceActive.dproj"/>
+		</Target>
+		<Target Name="Billupmoney">
+			<MSBuild Projects="bill\Billupmoney\Billupmoney.dproj"/>
+		</Target>
+		<Target Name="Billupmoney:Clean">
+			<MSBuild Targets="Clean" Projects="bill\Billupmoney\Billupmoney.dproj"/>
+		</Target>
+		<Target Name="Billupmoney:Make">
+			<MSBuild Targets="Make" Projects="bill\Billupmoney\Billupmoney.dproj"/>
+		</Target>
+		<Target Name="ScheduleOperationReport">
+			<MSBuild Projects="Report\ScheduleOperationReport\ScheduleOperationReport.dproj"/>
+		</Target>
+		<Target Name="ScheduleOperationReport:Clean">
+			<MSBuild Targets="Clean" Projects="Report\ScheduleOperationReport\ScheduleOperationReport.dproj"/>
+		</Target>
+		<Target Name="ScheduleOperationReport:Make">
+			<MSBuild Targets="Make" Projects="Report\ScheduleOperationReport\ScheduleOperationReport.dproj"/>
+		</Target>
+		<Target Name="SchedulePeikeReport">
+			<MSBuild Projects="Report\SchedulePeikeReport\SchedulePeikeReport.dproj"/>
+		</Target>
+		<Target Name="SchedulePeikeReport:Clean">
+			<MSBuild Targets="Clean" Projects="Report\SchedulePeikeReport\SchedulePeikeReport.dproj"/>
+		</Target>
+		<Target Name="SchedulePeikeReport:Make">
+			<MSBuild Targets="Make" Projects="Report\SchedulePeikeReport\SchedulePeikeReport.dproj"/>
+		</Target>
+		<Target Name="User">
+			<MSBuild Projects="system\user\User.dproj"/>
+		</Target>
+		<Target Name="User:Clean">
+			<MSBuild Targets="Clean" Projects="system\user\User.dproj"/>
+		</Target>
+		<Target Name="User:Make">
+			<MSBuild Targets="Make" Projects="system\user\User.dproj"/>
+		</Target>
+		<Target Name="StationBalanceReport">
+			<MSBuild Projects="Report\StationBalanceReport\StationBalanceReport.dproj"/>
+		</Target>
+		<Target Name="StationBalanceReport:Clean">
+			<MSBuild Targets="Clean" Projects="Report\StationBalanceReport\StationBalanceReport.dproj"/>
+		</Target>
+		<Target Name="StationBalanceReport:Make">
+			<MSBuild Targets="Make" Projects="Report\StationBalanceReport\StationBalanceReport.dproj"/>
+		</Target>
+		<Target Name="QueryRouteDynamic">
+			<MSBuild Projects="Report\QueryRouteDynamic\QueryRouteDynamic.dproj"/>
+		</Target>
+		<Target Name="QueryRouteDynamic:Clean">
+			<MSBuild Targets="Clean" Projects="Report\QueryRouteDynamic\QueryRouteDynamic.dproj"/>
+		</Target>
+		<Target Name="QueryRouteDynamic:Make">
+			<MSBuild Targets="Make" Projects="Report\QueryRouteDynamic\QueryRouteDynamic.dproj"/>
+		</Target>
+		<Target Name="TicketLoss">
+			<MSBuild Projects="Dispatch\TicketLoss\TicketLoss.dproj"/>
+		</Target>
+		<Target Name="TicketLoss:Clean">
+			<MSBuild Targets="Clean" Projects="Dispatch\TicketLoss\TicketLoss.dproj"/>
+		</Target>
+		<Target Name="TicketLoss:Make">
+			<MSBuild Targets="Make" Projects="Dispatch\TicketLoss\TicketLoss.dproj"/>
+		</Target>
+		<Target Name="TicketSaleQry">
+			<MSBuild Projects="Query\TicketSaleQry\TicketSaleQry.dproj"/>
+		</Target>
+		<Target Name="TicketSaleQry:Clean">
+			<MSBuild Targets="Clean" Projects="Query\TicketSaleQry\TicketSaleQry.dproj"/>
+		</Target>
+		<Target Name="TicketSaleQry:Make">
+			<MSBuild Targets="Make" Projects="Query\TicketSaleQry\TicketSaleQry.dproj"/>
+		</Target>
+		<Target Name="QuerySchedulePrice">
+			<MSBuild Projects="Query\QuerySchedulePrice\QuerySchedulePrice.dproj"/>
+		</Target>
+		<Target Name="QuerySchedulePrice:Clean">
+			<MSBuild Targets="Clean" Projects="Query\QuerySchedulePrice\QuerySchedulePrice.dproj"/>
+		</Target>
+		<Target Name="QuerySchedulePrice:Make">
+			<MSBuild Targets="Make" Projects="Query\QuerySchedulePrice\QuerySchedulePrice.dproj"/>
+		</Target>
+		<Target Name="PublicQry">
+			<MSBuild Projects="Query\PublicQry\PublicQry.dproj"/>
+		</Target>
+		<Target Name="PublicQry:Clean">
+			<MSBuild Targets="Clean" Projects="Query\PublicQry\PublicQry.dproj"/>
+		</Target>
+		<Target Name="PublicQry:Make">
+			<MSBuild Targets="Make" Projects="Query\PublicQry\PublicQry.dproj"/>
+		</Target>
+		<Target Name="FunctionManager">
+			<MSBuild Projects="system\FunctionManager\FunctionManager.dproj"/>
+		</Target>
+		<Target Name="FunctionManager:Clean">
+			<MSBuild Targets="Clean" Projects="system\FunctionManager\FunctionManager.dproj"/>
+		</Target>
+		<Target Name="FunctionManager:Make">
+			<MSBuild Targets="Make" Projects="system\FunctionManager\FunctionManager.dproj"/>
+		</Target>
+		<Target Name="Parameter">
+			<MSBuild Projects="system\Parameter\Parameter.dproj"/>
+		</Target>
+		<Target Name="Parameter:Clean">
+			<MSBuild Targets="Clean" Projects="system\Parameter\Parameter.dproj"/>
+		</Target>
+		<Target Name="Parameter:Make">
+			<MSBuild Targets="Make" Projects="system\Parameter\Parameter.dproj"/>
+		</Target>
+		<Target Name="QueryInsurance">
+			<MSBuild Projects="Query\QueryInsurance\QueryInsurance.dproj"/>
+		</Target>
+		<Target Name="QueryInsurance:Clean">
+			<MSBuild Targets="Clean" Projects="Query\QueryInsurance\QueryInsurance.dproj"/>
+		</Target>
+		<Target Name="QueryInsurance:Make">
+			<MSBuild Targets="Make" Projects="Query\QueryInsurance\QueryInsurance.dproj"/>
+		</Target>
+		<Target Name="InsuranceReport">
+			<MSBuild Projects="Report\InsuranceReport\InsuranceReport.dproj"/>
+		</Target>
+		<Target Name="InsuranceReport:Clean">
+			<MSBuild Targets="Clean" Projects="Report\InsuranceReport\InsuranceReport.dproj"/>
+		</Target>
+		<Target Name="InsuranceReport:Make">
+			<MSBuild Targets="Make" Projects="Report\InsuranceReport\InsuranceReport.dproj"/>
+		</Target>
+		<Target Name="InsureSale">
+			<MSBuild Projects="Sale\InsureSale\InsureSale.dproj"/>
+		</Target>
+		<Target Name="InsureSale:Clean">
+			<MSBuild Targets="Clean" Projects="Sale\InsureSale\InsureSale.dproj"/>
+		</Target>
+		<Target Name="InsureSale:Make">
+			<MSBuild Targets="Make" Projects="Sale\InsureSale\InsureSale.dproj"/>
+		</Target>
+		<Target Name="QueryScheduleCheckSum">
+			<MSBuild Projects="Query\QueryCheckTicket\QueryScheduleCheck\QueryScheduleCheckSum.dproj"/>
+		</Target>
+		<Target Name="QueryScheduleCheckSum:Clean">
+			<MSBuild Targets="Clean" Projects="Query\QueryCheckTicket\QueryScheduleCheck\QueryScheduleCheckSum.dproj"/>
+		</Target>
+		<Target Name="QueryScheduleCheckSum:Make">
+			<MSBuild Targets="Make" Projects="Query\QueryCheckTicket\QueryScheduleCheck\QueryScheduleCheckSum.dproj"/>
+		</Target>
+		<Target Name="TicketStaticsQuery">
+			<MSBuild Projects="Balance\TicketStaticsQuery\TicketStaticsQuery.dproj"/>
+		</Target>
+		<Target Name="TicketStaticsQuery:Clean">
+			<MSBuild Targets="Clean" Projects="Balance\TicketStaticsQuery\TicketStaticsQuery.dproj"/>
+		</Target>
+		<Target Name="TicketStaticsQuery:Make">
+			<MSBuild Targets="Make" Projects="Balance\TicketStaticsQuery\TicketStaticsQuery.dproj"/>
+		</Target>
+		<Target Name="PlusSchedule">
+			<MSBuild Projects="Dispatch\PlusSchedule\PlusSchedule.dproj"/>
+		</Target>
+		<Target Name="PlusSchedule:Clean">
+			<MSBuild Targets="Clean" Projects="Dispatch\PlusSchedule\PlusSchedule.dproj"/>
+		</Target>
+		<Target Name="PlusSchedule:Make">
+			<MSBuild Targets="Make" Projects="Dispatch\PlusSchedule\PlusSchedule.dproj"/>
+		</Target>
+		<Target Name="RouteBalanceRpt">
+			<MSBuild Projects="Report\RouteBalanceRpt\RouteBalanceRpt.dproj"/>
+		</Target>
+		<Target Name="RouteBalanceRpt:Clean">
+			<MSBuild Targets="Clean" Projects="Report\RouteBalanceRpt\RouteBalanceRpt.dproj"/>
+		</Target>
+		<Target Name="RouteBalanceRpt:Make">
+			<MSBuild Targets="Make" Projects="Report\RouteBalanceRpt\RouteBalanceRpt.dproj"/>
+		</Target>
+		<Target Name="SalerdayReport">
+			<MSBuild Projects="Report\SalerdayReport\SalerdayReport.dproj"/>
+		</Target>
+		<Target Name="SalerdayReport:Clean">
+			<MSBuild Targets="Clean" Projects="Report\SalerdayReport\SalerdayReport.dproj"/>
+		</Target>
+		<Target Name="SalerdayReport:Make">
+			<MSBuild Targets="Make" Projects="Report\SalerdayReport\SalerdayReport.dproj"/>
+		</Target>
+		<Target Name="QueryTicketDetail">
+			<MSBuild Projects="Query\TicketDetailQry\QueryTicketDetail.dproj"/>
+		</Target>
+		<Target Name="QueryTicketDetail:Clean">
+			<MSBuild Targets="Clean" Projects="Query\TicketDetailQry\QueryTicketDetail.dproj"/>
+		</Target>
+		<Target Name="QueryTicketDetail:Make">
+			<MSBuild Targets="Make" Projects="Query\TicketDetailQry\QueryTicketDetail.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="WinSkinD2010;NovaJsonRpc;Interfaces;NvBUS;PrintTemplate;ICcardRW;Vehicleseatplan;SelfDepartinvoices;ConnectCFG;IDCardReader;login;Driver;DispatchManage;CheckTicket;Departinvoicesmanager;Billtype;Initcard;TicketSale;Outstationupmoney;TicketReturn;TicketQuery;Employee;RechargePromotionAct;Ticketsellprint;Driverrewardpenalize;Steward;TicketFundsCheck;Complexfee;Scheduleminimum;Ticketturnover;Balance;QueryBalanced;Balanceformulaapply;Vehicleturnover;BalanceDivide;Balanceformula;DeductManage;DeductItem;Vehicleviolation;VipRecharge;DeductitemApply;DeductRoutestop;station;Route;RoutePrice;Insurer;Ticketentrance;Tickettype;Vehiclespacesoldpicture;VehicleUnit;Cardissue;PCticketentrace;Schedule;ScheduleSelltickettype;Seatstatuspicture;Ticketdiscount;ScheduleDiscountPrice;Schedulediscount;Ticketoutlet;Ticketoutletssellschedule;TicketReturnRateCfg;Tickettypepermission;Vehicle;Vehicletype;PCsellschedule;ScheduleCycle;Schedulestationcontrol;Vehiclebrandmodel;ScheduleSellDays;Vehiclepark;Insuretype;BillAmountDestroy;Billstorage;Billdestroy;InitBillNo;TicketChargeoff;Billinventory;Billinuse;Finger;Outstationcheck;RouteChecktime;Departinvoicesother;onecard;Schedulemerge;schedulestatus;hirebusaccept;Client;packaccept;PackGoods;PackPayment;packfee;PackPickup;packStock;packWarehousing;HandPrice;Departinvoicededuct;TicketReport;TakeTicket;Seatreserve;TicketCancel;Billdamaged;NovaTakeTicket;Ticketdeliver;Organization;TicketoutletsPrice;Fuelfeegrade;HandHolidayPrice;Holiday;TicketPriceFormula;ExecutePrice;StandardPrice;StationPrice;TicketPriceItem;Gpscheck;Securitycheck;Securitycheckitem;Securitycheckplan;VehicleDistanceActive;Billupmoney;ScheduleOperationReport;SchedulePeikeReport;User;StationBalanceReport;QueryRouteDynamic;TicketLoss;TicketSaleQry;QuerySchedulePrice;PublicQry;FunctionManager;Parameter;QueryInsurance;InsuranceReport;InsureSale;QueryScheduleCheckSum;TicketStaticsQuery;PlusSchedule;RouteBalanceRpt;SalerdayReport;QueryTicketDetail"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="WinSkinD2010:Clean;NovaJsonRpc:Clean;Interfaces:Clean;NvBUS:Clean;PrintTemplate:Clean;ICcardRW:Clean;Vehicleseatplan:Clean;SelfDepartinvoices:Clean;ConnectCFG:Clean;IDCardReader:Clean;login:Clean;Driver:Clean;DispatchManage:Clean;CheckTicket:Clean;Departinvoicesmanager:Clean;Billtype:Clean;Initcard:Clean;TicketSale:Clean;Outstationupmoney:Clean;TicketReturn:Clean;TicketQuery:Clean;Employee:Clean;RechargePromotionAct:Clean;Ticketsellprint:Clean;Driverrewardpenalize:Clean;Steward:Clean;TicketFundsCheck:Clean;Complexfee:Clean;Scheduleminimum:Clean;Ticketturnover:Clean;Balance:Clean;QueryBalanced:Clean;Balanceformulaapply:Clean;Vehicleturnover:Clean;BalanceDivide:Clean;Balanceformula:Clean;DeductManage:Clean;DeductItem:Clean;Vehicleviolation:Clean;VipRecharge:Clean;DeductitemApply:Clean;DeductRoutestop:Clean;station:Clean;Route:Clean;RoutePrice:Clean;Insurer:Clean;Ticketentrance:Clean;Tickettype:Clean;Vehiclespacesoldpicture:Clean;VehicleUnit:Clean;Cardissue:Clean;PCticketentrace:Clean;Schedule:Clean;ScheduleSelltickettype:Clean;Seatstatuspicture:Clean;Ticketdiscount:Clean;ScheduleDiscountPrice:Clean;Schedulediscount:Clean;Ticketoutlet:Clean;Ticketoutletssellschedule:Clean;TicketReturnRateCfg:Clean;Tickettypepermission:Clean;Vehicle:Clean;Vehicletype:Clean;PCsellschedule:Clean;ScheduleCycle:Clean;Schedulestationcontrol:Clean;Vehiclebrandmodel:Clean;ScheduleSellDays:Clean;Vehiclepark:Clean;Insuretype:Clean;BillAmountDestroy:Clean;Billstorage:Clean;Billdestroy:Clean;InitBillNo:Clean;TicketChargeoff:Clean;Billinventory:Clean;Billinuse:Clean;Finger:Clean;Outstationcheck:Clean;RouteChecktime:Clean;Departinvoicesother:Clean;onecard:Clean;Schedulemerge:Clean;schedulestatus:Clean;hirebusaccept:Clean;Client:Clean;packaccept:Clean;PackGoods:Clean;PackPayment:Clean;packfee:Clean;PackPickup:Clean;packStock:Clean;packWarehousing:Clean;HandPrice:Clean;Departinvoicededuct:Clean;TicketReport:Clean;TakeTicket:Clean;Seatreserve:Clean;TicketCancel:Clean;Billdamaged:Clean;NovaTakeTicket:Clean;Ticketdeliver:Clean;Organization:Clean;TicketoutletsPrice:Clean;Fuelfeegrade:Clean;HandHolidayPrice:Clean;Holiday:Clean;TicketPriceFormula:Clean;ExecutePrice:Clean;StandardPrice:Clean;StationPrice:Clean;TicketPriceItem:Clean;Gpscheck:Clean;Securitycheck:Clean;Securitycheckitem:Clean;Securitycheckplan:Clean;VehicleDistanceActive:Clean;Billupmoney:Clean;ScheduleOperationReport:Clean;SchedulePeikeReport:Clean;User:Clean;StationBalanceReport:Clean;QueryRouteDynamic:Clean;TicketLoss:Clean;TicketSaleQry:Clean;QuerySchedulePrice:Clean;PublicQry:Clean;FunctionManager:Clean;Parameter:Clean;QueryInsurance:Clean;InsuranceReport:Clean;InsureSale:Clean;QueryScheduleCheckSum:Clean;TicketStaticsQuery:Clean;PlusSchedule:Clean;RouteBalanceRpt:Clean;SalerdayReport:Clean;QueryTicketDetail:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="WinSkinD2010:Make;NovaJsonRpc:Make;Interfaces:Make;NvBUS:Make;PrintTemplate:Make;ICcardRW:Make;Vehicleseatplan:Make;SelfDepartinvoices:Make;ConnectCFG:Make;IDCardReader:Make;login:Make;Driver:Make;DispatchManage:Make;CheckTicket:Make;Departinvoicesmanager:Make;Billtype:Make;Initcard:Make;TicketSale:Make;Outstationupmoney:Make;TicketReturn:Make;TicketQuery:Make;Employee:Make;RechargePromotionAct:Make;Ticketsellprint:Make;Driverrewardpenalize:Make;Steward:Make;TicketFundsCheck:Make;Complexfee:Make;Scheduleminimum:Make;Ticketturnover:Make;Balance:Make;QueryBalanced:Make;Balanceformulaapply:Make;Vehicleturnover:Make;BalanceDivide:Make;Balanceformula:Make;DeductManage:Make;DeductItem:Make;Vehicleviolation:Make;VipRecharge:Make;DeductitemApply:Make;DeductRoutestop:Make;station:Make;Route:Make;RoutePrice:Make;Insurer:Make;Ticketentrance:Make;Tickettype:Make;Vehiclespacesoldpicture:Make;VehicleUnit:Make;Cardissue:Make;PCticketentrace:Make;Schedule:Make;ScheduleSelltickettype:Make;Seatstatuspicture:Make;Ticketdiscount:Make;ScheduleDiscountPrice:Make;Schedulediscount:Make;Ticketoutlet:Make;Ticketoutletssellschedule:Make;TicketReturnRateCfg:Make;Tickettypepermission:Make;Vehicle:Make;Vehicletype:Make;PCsellschedule:Make;ScheduleCycle:Make;Schedulestationcontrol:Make;Vehiclebrandmodel:Make;ScheduleSellDays:Make;Vehiclepark:Make;Insuretype:Make;BillAmountDestroy:Make;Billstorage:Make;Billdestroy:Make;InitBillNo:Make;TicketChargeoff:Make;Billinventory:Make;Billinuse:Make;Finger:Make;Outstationcheck:Make;RouteChecktime:Make;Departinvoicesother:Make;onecard:Make;Schedulemerge:Make;schedulestatus:Make;hirebusaccept:Make;Client:Make;packaccept:Make;PackGoods:Make;PackPayment:Make;packfee:Make;PackPickup:Make;packStock:Make;packWarehousing:Make;HandPrice:Make;Departinvoicededuct:Make;TicketReport:Make;TakeTicket:Make;Seatreserve:Make;TicketCancel:Make;Billdamaged:Make;NovaTakeTicket:Make;Ticketdeliver:Make;Organization:Make;TicketoutletsPrice:Make;Fuelfeegrade:Make;HandHolidayPrice:Make;Holiday:Make;TicketPriceFormula:Make;ExecutePrice:Make;StandardPrice:Make;StationPrice:Make;TicketPriceItem:Make;Gpscheck:Make;Securitycheck:Make;Securitycheckitem:Make;Securitycheckplan:Make;VehicleDistanceActive:Make;Billupmoney:Make;ScheduleOperationReport:Make;SchedulePeikeReport:Make;User:Make;StationBalanceReport:Make;QueryRouteDynamic:Make;TicketLoss:Make;TicketSaleQry:Make;QuerySchedulePrice:Make;PublicQry:Make;FunctionManager:Make;Parameter:Make;QueryInsurance:Make;InsuranceReport:Make;InsureSale:Make;QueryScheduleCheckSum:Make;TicketStaticsQuery:Make;PlusSchedule:Make;RouteBalanceRpt:Make;SalerdayReport:Make;QueryTicketDetail:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

@@ -1,0 +1,1270 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (f06d92da).
+//
+// acreport.tlh
+//
+// C++ source equivalent of Win32 type library E:\controls\ACreport\COM\com\acreport.dll
+// compiler-generated file created 02/01/12 at 21:20:17 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\Program Files\Common Files\system\ado\msado25.tlb"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("a888b5e7-d62d-4c43-9452-dcd227e1cf86"))
+/* dual interface */ ICustDataBuilder;
+struct /* coclass */ CustDataBuilder;
+struct __declspec(uuid("78dd38d7-b85e-4075-893e-6639c23ea85e"))
+/* dual interface */ IAcRptEngine;
+struct __declspec(uuid("8da3e9e6-eddf-4476-b365-37ae086d86b2"))
+/* dispinterface */ IAcRptEngineEvent;
+struct __declspec(uuid("f3fcc57f-c4f1-4d79-abbb-08f2221c21e0"))
+/* dispinterface */ IAcRptEngineEventDispatch;
+struct /* coclass */ AcRptEngine;
+struct __declspec(uuid("5fc54d86-74b9-46f4-b1dd-24c8127ec5e0"))
+/* dual interface */ IAcFunctionLib;
+struct __declspec(uuid("6f6230e0-99a0-4585-a091-0490a3fca98b"))
+/* dual interface */ IAcCell;
+struct __declspec(uuid("b4fba785-0ed1-49b1-8eea-03990448ed41"))
+/* dual interface */ IAcLine;
+struct __declspec(uuid("2cf7026d-4b4a-441f-86ba-07856e31371b"))
+/* dual interface */ IAcRptPage;
+struct __declspec(uuid("27d6df05-6fc9-4614-86e3-b9fc0b5b25e8"))
+/* dual interface */ IAcModifyLogList;
+struct __declspec(uuid("da567ca9-bd8e-44cb-b2bf-17ea6f6dbb34"))
+/* dual interface */ IAcNetStream;
+struct __declspec(uuid("a70299cb-3c46-4204-a87c-7de7cfca801d"))
+/* dual interface */ IPreviewOptions;
+struct __declspec(uuid("5ac9f2df-fe94-49b0-b176-a8f4a030b2cc"))
+/* dual interface */ IAcRecordset;
+struct __declspec(uuid("29cb3935-9584-458a-9738-ec6e155278bd"))
+/* dual interface */ IAcFields;
+struct __declspec(uuid("a4be28c9-1150-44ca-b1dd-e9671c1a8a9b"))
+/* dual interface */ IAcField;
+struct __declspec(uuid("54a174b4-e793-43c9-994e-d8972bb5eb1f"))
+/* dual interface */ IAcDataProps;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICustDataBuilder, __uuidof(ICustDataBuilder));
+_COM_SMARTPTR_TYPEDEF(IAcRptEngine, __uuidof(IAcRptEngine));
+_COM_SMARTPTR_TYPEDEF(IAcRptEngineEvent, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IAcRptEngineEventDispatch, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IAcFunctionLib, __uuidof(IAcFunctionLib));
+_COM_SMARTPTR_TYPEDEF(IAcCell, __uuidof(IAcCell));
+_COM_SMARTPTR_TYPEDEF(IAcLine, __uuidof(IAcLine));
+_COM_SMARTPTR_TYPEDEF(IAcRptPage, __uuidof(IAcRptPage));
+_COM_SMARTPTR_TYPEDEF(IAcModifyLogList, __uuidof(IAcModifyLogList));
+_COM_SMARTPTR_TYPEDEF(IAcNetStream, __uuidof(IAcNetStream));
+_COM_SMARTPTR_TYPEDEF(IPreviewOptions, __uuidof(IPreviewOptions));
+_COM_SMARTPTR_TYPEDEF(IAcRecordset, __uuidof(IAcRecordset));
+_COM_SMARTPTR_TYPEDEF(IAcFields, __uuidof(IAcFields));
+_COM_SMARTPTR_TYPEDEF(IAcField, __uuidof(IAcField));
+_COM_SMARTPTR_TYPEDEF(IAcDataProps, __uuidof(IAcDataProps));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("a888b5e7-d62d-4c43-9452-dcd227e1cf86"))
+ICustDataBuilder : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT RemoveAllTables ( );
+    HRESULT NewTable (
+        _bstr_t aTableName );
+    HRESULT RemoveTable (
+        _bstr_t aTableName );
+    HRESULT OpenTable (
+        _bstr_t aTableName );
+    HRESULT CloseTable (
+        _bstr_t aTableName );
+    HRESULT AddStringField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName,
+        long aLength );
+    HRESULT AddIntegerField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName );
+    HRESULT AddFloatField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName );
+    HRESULT AddDateTimeField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName );
+    HRESULT AppendRow (
+        _bstr_t aTableName,
+        const _variant_t & FieldValues );
+    HRESULT SetCurrentRowValues (
+        _bstr_t aTableName,
+        const _variant_t & FieldValues );
+    HRESULT AppendEmptyRow (
+        _bstr_t aTableName );
+    HRESULT DeleteRow (
+        _bstr_t aTableName );
+    HRESULT MoveFirst (
+        _bstr_t aTableName );
+    HRESULT MoveLast (
+        _bstr_t aTableName );
+    HRESULT MoveNext (
+        _bstr_t aTableName );
+    HRESULT MovePrior (
+        _bstr_t aTableName );
+    HRESULT SetFieldValue (
+        const _variant_t & aTableId,
+        const _variant_t & aFieldId,
+        const _variant_t & Value );
+    _variant_t GetFieldValue (
+        const _variant_t & aTableId,
+        const _variant_t & aFieldId );
+    _bstr_t GetTableName (
+        long aIndex );
+    long GetTableCount ( );
+    long GetRecordCount (
+        _bstr_t aTableName );
+    VARIANT_BOOL IsBOF (
+        _bstr_t aTableName );
+    VARIANT_BOOL IsEOF (
+        _bstr_t aTableName );
+    HRESULT SetStringFieldValue (
+        _bstr_t aTableName,
+        _bstr_t aFieldName,
+        _bstr_t Value );
+    VARIANT_BOOL TableExist (
+        _bstr_t TableName );
+    HRESULT SetBlobField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName,
+        struct IAcNetStream * aStream );
+    HRESULT GetblobField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName,
+        struct IAcNetStream * aStream );
+    HRESULT AddBlobField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName );
+    long SetCurrentTable (
+        _bstr_t TableName );
+    long GetTableIndex (
+        _bstr_t TableName );
+    HRESULT AddVariantField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName );
+    HRESULT SetFieldAsString (
+        const _variant_t & aTableId,
+        const _variant_t & aFieldId,
+        _bstr_t Value );
+    HRESULT AddBooleanField (
+        _bstr_t aTableName,
+        _bstr_t aFieldName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_RemoveAllTables ( ) = 0;
+    virtual HRESULT __stdcall raw_NewTable (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_RemoveTable (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_OpenTable (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_CloseTable (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_AddStringField (
+        BSTR aTableName,
+        BSTR aFieldName,
+        long aLength ) = 0;
+    virtual HRESULT __stdcall raw_AddIntegerField (
+        BSTR aTableName,
+        BSTR aFieldName ) = 0;
+    virtual HRESULT __stdcall raw_AddFloatField (
+        BSTR aTableName,
+        BSTR aFieldName ) = 0;
+    virtual HRESULT __stdcall raw_AddDateTimeField (
+        BSTR aTableName,
+        BSTR aFieldName ) = 0;
+    virtual HRESULT __stdcall raw_AppendRow (
+        BSTR aTableName,
+        VARIANT FieldValues ) = 0;
+    virtual HRESULT __stdcall raw_SetCurrentRowValues (
+        BSTR aTableName,
+        VARIANT FieldValues ) = 0;
+    virtual HRESULT __stdcall raw_AppendEmptyRow (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_DeleteRow (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_MoveFirst (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_MoveLast (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_MoveNext (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_MovePrior (
+        BSTR aTableName ) = 0;
+    virtual HRESULT __stdcall raw_SetFieldValue (
+        VARIANT aTableId,
+        VARIANT aFieldId,
+        VARIANT Value,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldValue (
+        VARIANT aTableId,
+        VARIANT aFieldId,
+        VARIANT * aValue ) = 0;
+    virtual HRESULT __stdcall raw_GetTableName (
+        long aIndex,
+        BSTR * aName ) = 0;
+    virtual HRESULT __stdcall raw_GetTableCount (
+        long * aCount ) = 0;
+    virtual HRESULT __stdcall raw_GetRecordCount (
+        BSTR aTableName,
+        long * aCount ) = 0;
+    virtual HRESULT __stdcall raw_IsBOF (
+        BSTR aTableName,
+        VARIANT_BOOL * aBof ) = 0;
+    virtual HRESULT __stdcall raw_IsEOF (
+        BSTR aTableName,
+        VARIANT_BOOL * aEof ) = 0;
+    virtual HRESULT __stdcall raw_SetStringFieldValue (
+        BSTR aTableName,
+        BSTR aFieldName,
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall raw_TableExist (
+        BSTR TableName,
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall raw_SetBlobField (
+        BSTR aTableName,
+        BSTR aFieldName,
+        struct IAcNetStream * aStream ) = 0;
+    virtual HRESULT __stdcall raw_GetblobField (
+        BSTR aTableName,
+        BSTR aFieldName,
+        struct IAcNetStream * aStream ) = 0;
+    virtual HRESULT __stdcall raw_AddBlobField (
+        BSTR aTableName,
+        BSTR aFieldName ) = 0;
+    virtual HRESULT __stdcall raw_SetCurrentTable (
+        BSTR TableName,
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_GetTableIndex (
+        BSTR TableName,
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_AddVariantField (
+        BSTR aTableName,
+        BSTR aFieldName ) = 0;
+    virtual HRESULT __stdcall raw_SetFieldAsString (
+        VARIANT aTableId,
+        VARIANT aFieldId,
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall raw_AddBooleanField (
+        BSTR aTableName,
+        BSTR aFieldName ) = 0;
+};
+
+struct __declspec(uuid("6627df35-535b-486b-9923-42582f6cc739"))
+CustDataBuilder;
+    // [ default ] interface ICustDataBuilder
+
+struct __declspec(uuid("78dd38d7-b85e-4075-893e-6639c23ea85e"))
+IAcRptEngine : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLinesCount))
+    long LinesCount;
+    __declspec(property(get=GetSubPageCount))
+    long SubPageCount;
+    __declspec(property(get=GetDisableSaveToFile,put=PutDisableSaveToFile))
+    VARIANT_BOOL DisableSaveToFile;
+    __declspec(property(get=GetShowPreviewOnPrepare,put=PutShowPreviewOnPrepare))
+    VARIANT_BOOL ShowPreviewOnPrepare;
+    __declspec(property(get=GetShowProgress,put=PutShowProgress))
+    VARIANT_BOOL ShowProgress;
+    __declspec(property(get=GetCustDataBuilder))
+    ICustDataBuilderPtr CustDataBuilder;
+    __declspec(property(get=GetPreparedPagesCount))
+    long PreparedPagesCount;
+    __declspec(property(get=GetGlobalCustDataBuilder))
+    ICustDataBuilderPtr GlobalCustDataBuilder;
+    __declspec(property(get=GetPreviewOptions))
+    IPreviewOptionsPtr PreviewOptions;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init ( );
+    HRESULT AddDataset (
+        _bstr_t DatasetName,
+        const _variant_t & AdoRecord );
+    HRESULT AddVariable (
+        _bstr_t VarName,
+        const _variant_t & Value );
+    HRESULT AddGlobalVariable (
+        _bstr_t VarName,
+        const _variant_t & Value );
+    HRESULT SetReportFile (
+        _bstr_t AptFileName );
+    long AddDatasetRelation (
+        _bstr_t MasterName,
+        _bstr_t DetailName,
+        _bstr_t Relation );
+    HRESULT PrepareReport ( );
+    HRESULT Print ( );
+    HRESULT PrintReport ( );
+    HRESULT PrintPrepared (
+        long BeginPage,
+        long EndPage,
+        long Copies );
+    HRESULT Preview ( );
+    VARIANT_BOOL ShowDesigner ( );
+    HRESULT ExportToXls (
+        _bstr_t aFileName );
+    _variant_t Calac (
+        _bstr_t aExpr );
+    _variant_t CalacOPZ (
+        _bstr_t aExpr );
+    long GetPreparedPagesCount ( );
+    ICustDataBuilderPtr GetCustDataBuilder ( );
+    ICustDataBuilderPtr GetGlobalCustDataBuilder ( );
+    HRESULT ExportToACR (
+        _bstr_t aFileName );
+    HRESULT ExportToHTML (
+        _bstr_t aFileName );
+    HRESULT AddFunctionLib (
+        struct IAcFunctionLib * aFuncLib,
+        long aGroupID );
+    HRESULT RemoveFuncionLib (
+        struct IAcFunctionLib * aFuncLib );
+    HRESULT RemoveFuncLibGroup (
+        long aGroup );
+    HRESULT AddFunctionName (
+        long aFuncKind,
+        _bstr_t aFuncName,
+        _bstr_t aParamDesc,
+        _bstr_t aFuncDesc );
+    long GetLinesCount ( );
+    IAcLinePtr GetLineX (
+        long aIndex );
+    IAcCellPtr GetCellX (
+        long Row,
+        long Col );
+    long GetSubPageCount ( );
+    IAcRptPagePtr GetSubPage (
+        long aIndex );
+    HRESULT LoadFromFile (
+        _bstr_t aFileName );
+    HRESULT SaveToFile (
+        _bstr_t aFileName );
+    HRESULT LoadFromBlobField (
+        const _variant_t & AdoRecord,
+        _bstr_t BlobFieldName,
+        _bstr_t RepTitle );
+    HRESULT SaveToBlobField (
+        const _variant_t & AdoRecord,
+        _bstr_t BlobFieldName );
+    HRESULT LoadFromStream (
+        IUnknown * aStream );
+    HRESULT SaveToStream (
+        IUnknown * aStream );
+    HRESULT GetLastError (
+        long * ErrorCode,
+        BSTR * ErrorMsg );
+    HRESULT LoadFromURL (
+        _bstr_t URL );
+    HRESULT ClearDataRelations ( );
+    HRESULT SetAppConnectionString (
+        _bstr_t ConnString );
+    HRESULT SetRegisterInfo (
+        _bstr_t RegCode,
+        _bstr_t UserName,
+        _bstr_t AttachCode,
+        _bstr_t Addr,
+        _bstr_t EMail,
+        _bstr_t Phone,
+        _bstr_t Fax,
+        long * ErrCode,
+        BSTR * ErrMsg );
+    HRESULT SetDataFieldAliasName (
+        _bstr_t DatasetName,
+        _bstr_t FieldNames,
+        _bstr_t FieldAliasNames );
+    VARIANT_BOOL GetDisableSaveToFile ( );
+    void PutDisableSaveToFile (
+        VARIANT_BOOL Value );
+    HRESULT ClearContents ( );
+    VARIANT_BOOL GetShowPreviewOnPrepare ( );
+    void PutShowPreviewOnPrepare (
+        VARIANT_BOOL Value );
+    HRESULT ExportToAcrStream (
+        struct IAcNetStream * aStream );
+    VARIANT_BOOL GetShowProgress ( );
+    void PutShowProgress (
+        VARIANT_BOOL Value );
+    HRESULT SetCurrentPrinter (
+        _bstr_t PrinterName );
+    HRESULT PrintWithSet ( );
+    HRESULT PrintOddOrEvenPages (
+        VARIANT_BOOL OddPages );
+    HRESULT PrintOnDoubleSide ( );
+    HRESULT ExportToXlsWithOptions (
+        _bstr_t aFileName,
+        long aBeginPage,
+        long aEndPage,
+        long aImageOpt,
+        VARIANT_BOOL aIfMultSheet,
+        VARIANT_BOOL aReconfirm,
+        VARIANT_BOOL aShowProgress,
+        VARIANT_BOOL aOpenAfterExport );
+    IPreviewOptionsPtr GetPreviewOptions ( );
+    HRESULT AddNetAdoData (
+        _bstr_t DatasetName,
+        struct IAcRecordset * AdoRecord );
+    HRESULT SetCustInfo (
+        _bstr_t Title_DesignerWnd,
+        _bstr_t Title_PreviewWnd,
+        _bstr_t Title_PrinterTask,
+        _bstr_t FileExt_apt,
+        _bstr_t FileExt_acr,
+        _bstr_t HideMenuItems,
+        _bstr_t HideSubMenuItems,
+        _bstr_t IconFile_Wnd,
+        long * AErrCode,
+        BSTR * AErrMsg );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Init ( ) = 0;
+    virtual HRESULT __stdcall raw_AddDataset (
+        BSTR DatasetName,
+        VARIANT AdoRecord ) = 0;
+    virtual HRESULT __stdcall raw_AddVariable (
+        BSTR VarName,
+        VARIANT Value ) = 0;
+    virtual HRESULT __stdcall raw_AddGlobalVariable (
+        BSTR VarName,
+        VARIANT Value ) = 0;
+    virtual HRESULT __stdcall raw_SetReportFile (
+        BSTR AptFileName ) = 0;
+    virtual HRESULT __stdcall raw_AddDatasetRelation (
+        BSTR MasterName,
+        BSTR DetailName,
+        BSTR Relation,
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_PrepareReport (
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_Print ( ) = 0;
+    virtual HRESULT __stdcall raw_PrintReport ( ) = 0;
+    virtual HRESULT __stdcall raw_PrintPrepared (
+        long BeginPage,
+        long EndPage,
+        long Copies ) = 0;
+    virtual HRESULT __stdcall raw_Preview ( ) = 0;
+    virtual HRESULT __stdcall raw_ShowDesigner (
+        VARIANT_BOOL * AResult ) = 0;
+    virtual HRESULT __stdcall raw_ExportToXls (
+        BSTR aFileName ) = 0;
+    virtual HRESULT __stdcall raw_Calac (
+        BSTR aExpr,
+        VARIANT * aValue ) = 0;
+    virtual HRESULT __stdcall raw_CalacOPZ (
+        BSTR aExpr,
+        VARIANT * aValue ) = 0;
+    virtual HRESULT __stdcall get_PreparedPagesCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_CustDataBuilder (
+        struct ICustDataBuilder * * Value ) = 0;
+    virtual HRESULT __stdcall get_GlobalCustDataBuilder (
+        struct ICustDataBuilder * * Value ) = 0;
+    virtual HRESULT __stdcall raw_ExportToACR (
+        BSTR aFileName ) = 0;
+    virtual HRESULT __stdcall raw_ExportToHTML (
+        BSTR aFileName ) = 0;
+    virtual HRESULT __stdcall raw_AddFunctionLib (
+        struct IAcFunctionLib * aFuncLib,
+        long aGroupID ) = 0;
+    virtual HRESULT __stdcall raw_RemoveFuncionLib (
+        struct IAcFunctionLib * aFuncLib ) = 0;
+    virtual HRESULT __stdcall raw_RemoveFuncLibGroup (
+        long aGroup ) = 0;
+    virtual HRESULT __stdcall raw_AddFunctionName (
+        long aFuncKind,
+        BSTR aFuncName,
+        BSTR aParamDesc,
+        BSTR aFuncDesc ) = 0;
+    virtual HRESULT __stdcall get_LinesCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall raw_GetLineX (
+        long aIndex,
+        struct IAcLine * * aValue ) = 0;
+    virtual HRESULT __stdcall raw_GetCellX (
+        long Row,
+        long Col,
+        struct IAcCell * * Value ) = 0;
+    virtual HRESULT __stdcall get_SubPageCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall raw_GetSubPage (
+        long aIndex,
+        struct IAcRptPage * * aValue ) = 0;
+    virtual HRESULT __stdcall raw_LoadFromFile (
+        BSTR aFileName,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_SaveToFile (
+        BSTR aFileName,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_LoadFromBlobField (
+        VARIANT AdoRecord,
+        BSTR BlobFieldName,
+        BSTR RepTitle,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_SaveToBlobField (
+        VARIANT AdoRecord,
+        BSTR BlobFieldName,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_LoadFromStream (
+        IUnknown * aStream,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_SaveToStream (
+        IUnknown * aStream,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_GetLastError (
+        long * ErrorCode,
+        BSTR * ErrorMsg ) = 0;
+    virtual HRESULT __stdcall raw_LoadFromURL (
+        BSTR URL,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_ClearDataRelations (
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_SetAppConnectionString (
+        BSTR ConnString ) = 0;
+    virtual HRESULT __stdcall raw_SetRegisterInfo (
+        BSTR RegCode,
+        BSTR UserName,
+        BSTR AttachCode,
+        BSTR Addr,
+        BSTR EMail,
+        BSTR Phone,
+        BSTR Fax,
+        long * ErrCode,
+        BSTR * ErrMsg ) = 0;
+    virtual HRESULT __stdcall raw_SetDataFieldAliasName (
+        BSTR DatasetName,
+        BSTR FieldNames,
+        BSTR FieldAliasNames,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall get_DisableSaveToFile (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_DisableSaveToFile (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall raw_ClearContents (
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall get_ShowPreviewOnPrepare (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShowPreviewOnPrepare (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall raw_ExportToAcrStream (
+        struct IAcNetStream * aStream,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall get_ShowProgress (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ShowProgress (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall raw_SetCurrentPrinter (
+        BSTR PrinterName,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall raw_PrintWithSet ( ) = 0;
+    virtual HRESULT __stdcall raw_PrintOddOrEvenPages (
+        VARIANT_BOOL OddPages ) = 0;
+    virtual HRESULT __stdcall raw_PrintOnDoubleSide ( ) = 0;
+    virtual HRESULT __stdcall raw_ExportToXlsWithOptions (
+        BSTR aFileName,
+        long aBeginPage,
+        long aEndPage,
+        long aImageOpt,
+        VARIANT_BOOL aIfMultSheet,
+        VARIANT_BOOL aReconfirm,
+        VARIANT_BOOL aShowProgress,
+        VARIANT_BOOL aOpenAfterExport,
+        HRESULT * Result ) = 0;
+    virtual HRESULT __stdcall get_PreviewOptions (
+        struct IPreviewOptions * * Value ) = 0;
+    virtual HRESULT __stdcall raw_AddNetAdoData (
+        BSTR DatasetName,
+        struct IAcRecordset * AdoRecord ) = 0;
+    virtual HRESULT __stdcall raw_SetCustInfo (
+        BSTR Title_DesignerWnd,
+        BSTR Title_PreviewWnd,
+        BSTR Title_PrinterTask,
+        BSTR FileExt_apt,
+        BSTR FileExt_acr,
+        BSTR HideMenuItems,
+        BSTR HideSubMenuItems,
+        BSTR IconFile_Wnd,
+        long * AErrCode,
+        BSTR * AErrMsg ) = 0;
+};
+
+struct __declspec(uuid("8da3e9e6-eddf-4476-b365-37ae086d86b2"))
+IAcRptEngineEvent : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnFunction (
+        struct IAcRptEngine * RptEngine,
+        _bstr_t FuncName,
+        const _variant_t & P1,
+        const _variant_t & P2,
+        const _variant_t & P3,
+        VARIANT * Value );
+    HRESULT OnGetValue (
+        _bstr_t VarName,
+        VARIANT * Value );
+    HRESULT AfterPrint (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT BeforePrint (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT BeforeDesign (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT AfterDesign (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT BeforePrepare (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT AfterPrepare (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT BeforePreview (
+        struct IAcRptEngine * aRptEngine );
+    HRESULT OnCellModify (
+        struct IAcRptEngine * aRptEngine,
+        long aRow,
+        long aCol,
+        _bstr_t aOldText,
+        _bstr_t aNewText );
+    HRESULT OnGetCellModifyLog (
+        struct IAcRptEngine * aRptEgine,
+        long aRow,
+        long aCol,
+        struct IAcModifyLogList * aLogList );
+    HRESULT OnMeasureCellModifyLog (
+        struct IAcRptEngine * aRptEngine,
+        long aRow,
+        long aCol,
+        VARIANT_BOOL * IfModiLogExist );
+};
+
+struct __declspec(uuid("f3fcc57f-c4f1-4d79-abbb-08f2221c21e0"))
+IAcRptEngineEventDispatch : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnFunction (
+        _bstr_t FuncName,
+        const _variant_t & P1,
+        const _variant_t & P2,
+        const _variant_t & P3,
+        VARIANT * Value );
+};
+
+struct __declspec(uuid("c84df69c-0227-4846-919b-6b31168fe68a"))
+AcRptEngine;
+    // [ default ] interface IAcRptEngine
+    // [ default, source ] dispinterface IAcRptEngineEvent
+    // [ source ] dispinterface IAcRptEngineEventDispatch
+
+struct __declspec(uuid("5fc54d86-74b9-46f4-b1dd-24c8127ec5e0"))
+IAcFunctionLib : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetFuncCount ( );
+    HRESULT GetFuncInfo (
+        long aFuncID,
+        long * aFuncKind,
+        BSTR * aFuncName,
+        BSTR * aParamDesc,
+        BSTR * aFuncDesc );
+    _variant_t DoFunction (
+        struct IAcRptEngine * aRptEgine,
+        long aFuncID,
+        _bstr_t aFuncName,
+        const _variant_t & aParam1,
+        const _variant_t & aParam2,
+        const _variant_t & aParam3 );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_GetFuncCount (
+        long * aValue ) = 0;
+    virtual HRESULT __stdcall raw_GetFuncInfo (
+        long aFuncID,
+        long * aFuncKind,
+        BSTR * aFuncName,
+        BSTR * aParamDesc,
+        BSTR * aFuncDesc ) = 0;
+    virtual HRESULT __stdcall raw_DoFunction (
+        struct IAcRptEngine * aRptEgine,
+        long aFuncID,
+        BSTR aFuncName,
+        VARIANT aParam1,
+        VARIANT aParam2,
+        VARIANT aParam3,
+        VARIANT * aRetValue ) = 0;
+};
+
+struct __declspec(uuid("6f6230e0-99a0-4585-a091-0490a3fca98b"))
+IAcCell : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetTextColor,put=PutTextColor))
+    long TextColor;
+    __declspec(property(get=GetBkColor,put=PutBkColor))
+    long BkColor;
+    __declspec(property(get=GetValue,put=PutValue))
+    _variant_t Value;
+    __declspec(property(get=GetAsString,put=PutAsString))
+    _bstr_t AsString;
+    __declspec(property(get=GetCellText,put=PutCellText))
+    _bstr_t CellText;
+    __declspec(property(get=GetAsNumeric,put=PutAsNumeric))
+    float AsNumeric;
+    __declspec(property(get=GetAsInteger,put=PutAsInteger))
+    long AsInteger;
+    __declspec(property(get=GetAutoMerge,put=PutAutoMerge))
+    VARIANT_BOOL AutoMerge;
+    __declspec(property(get=GetOwnedCellCount))
+    long OwnedCellCount;
+    __declspec(property(get=GetTextSize,put=PutTextSize))
+    int TextSize;
+    __declspec(property(get=GetTextFontName,put=PutTextFontName))
+    _bstr_t TextFontName;
+    __declspec(property(get=GetTextStyleBold,put=PutTextStyleBold))
+    VARIANT_BOOL TextStyleBold;
+    __declspec(property(get=GetTextStyleItalic,put=PutTextStyleItalic))
+    VARIANT_BOOL TextStyleItalic;
+    __declspec(property(get=GetTextStyleUnderline,put=PutTextStyleUnderline))
+    VARIANT_BOOL TextStyleUnderline;
+    __declspec(property(get=GetTextStyleStrikeout,put=PutTextStyleStrikeout))
+    VARIANT_BOOL TextStyleStrikeout;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetTextColor ( );
+    void PutTextColor (
+        long Value );
+    long GetBkColor ( );
+    void PutBkColor (
+        long Value );
+    _variant_t GetValue ( );
+    void PutValue (
+        const _variant_t & Value );
+    _bstr_t GetAsString ( );
+    void PutAsString (
+        _bstr_t Value );
+    _bstr_t GetCellText ( );
+    void PutCellText (
+        _bstr_t Value );
+    float GetAsNumeric ( );
+    void PutAsNumeric (
+        float Value );
+    long GetAsInteger ( );
+    void PutAsInteger (
+        long Value );
+    VARIANT_BOOL GetAutoMerge ( );
+    void PutAutoMerge (
+        VARIANT_BOOL Value );
+    long GetOwnedCellCount ( );
+    HRESULT CalcCellValue ( );
+    int GetTextSize ( );
+    void PutTextSize (
+        int Value );
+    _bstr_t GetTextFontName ( );
+    void PutTextFontName (
+        _bstr_t Value );
+    VARIANT_BOOL GetTextStyleBold ( );
+    void PutTextStyleBold (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetTextStyleItalic ( );
+    void PutTextStyleItalic (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetTextStyleUnderline ( );
+    void PutTextStyleUnderline (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetTextStyleStrikeout ( );
+    void PutTextStyleStrikeout (
+        VARIANT_BOOL Value );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_TextColor (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_TextColor (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_BkColor (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_BkColor (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * Value ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        VARIANT Value ) = 0;
+    virtual HRESULT __stdcall get_AsString (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_AsString (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_CellText (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_CellText (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_AsNumeric (
+        float * Value ) = 0;
+    virtual HRESULT __stdcall put_AsNumeric (
+        float Value ) = 0;
+    virtual HRESULT __stdcall get_AsInteger (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall put_AsInteger (
+        long Value ) = 0;
+    virtual HRESULT __stdcall get_AutoMerge (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_AutoMerge (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_OwnedCellCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall raw_CalcCellValue ( ) = 0;
+    virtual HRESULT __stdcall get_TextSize (
+        int * Value ) = 0;
+    virtual HRESULT __stdcall put_TextSize (
+        int Value ) = 0;
+    virtual HRESULT __stdcall get_TextFontName (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_TextFontName (
+        BSTR Value ) = 0;
+    virtual HRESULT __stdcall get_TextStyleBold (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_TextStyleBold (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_TextStyleItalic (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_TextStyleItalic (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_TextStyleUnderline (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_TextStyleUnderline (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_TextStyleStrikeout (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_TextStyleStrikeout (
+        VARIANT_BOOL Value ) = 0;
+};
+
+struct __declspec(uuid("b4fba785-0ed1-49b1-8eea-03990448ed41"))
+IAcLine : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCellsCount))
+    long CellsCount;
+    __declspec(property(get=GetIndex))
+    long Index;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCellsCount ( );
+    IAcCellPtr GetCell (
+        long aIndex );
+    HRESULT CalcLineCellValues ( );
+    long GetIndex ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_CellsCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall raw_GetCell (
+        long aIndex,
+        struct IAcCell * * aValue ) = 0;
+    virtual HRESULT __stdcall raw_CalcLineCellValues ( ) = 0;
+    virtual HRESULT __stdcall get_Index (
+        long * Value ) = 0;
+};
+
+struct __declspec(uuid("2cf7026d-4b4a-441f-86ba-07856e31371b"))
+IAcRptPage : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLineCount))
+    long LineCount;
+    __declspec(property(get=GetPageType))
+    enum AcPageType PageType;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAcLinePtr GetLineX (
+        long aIndex );
+    IAcCellPtr GetCellX (
+        long Row,
+        long Col );
+    long GetLineCount ( );
+    enum AcPageType GetPageType ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_GetLineX (
+        long aIndex,
+        struct IAcLine * * aValue ) = 0;
+    virtual HRESULT __stdcall raw_GetCellX (
+        long Row,
+        long Col,
+        struct IAcCell * * aValue ) = 0;
+    virtual HRESULT __stdcall get_LineCount (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall get_PageType (
+        enum AcPageType * Value ) = 0;
+};
+
+struct __declspec(uuid("27d6df05-6fc9-4614-86e3-b9fc0b5b25e8"))
+IAcModifyLogList : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    HRESULT AddLogItem (
+        long aRow,
+        long aCol,
+        _bstr_t aOldText,
+        _bstr_t aNewText,
+        _bstr_t aModifiedBy,
+        DATE aDateTime );
+    HRESULT ClearItems ( );
+    HRESULT RemoveLogItem (
+        long aIndex );
+    HRESULT GetLogItem (
+        long aIndex,
+        long * aRow,
+        long * aCol,
+        BSTR * aOldText,
+        BSTR * aNewText,
+        BSTR * aModifiedBy,
+        DATE * aDateTime );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Count (
+        long * Value ) = 0;
+    virtual HRESULT __stdcall raw_AddLogItem (
+        long aRow,
+        long aCol,
+        BSTR aOldText,
+        BSTR aNewText,
+        BSTR aModifiedBy,
+        DATE aDateTime ) = 0;
+    virtual HRESULT __stdcall raw_ClearItems ( ) = 0;
+    virtual HRESULT __stdcall raw_RemoveLogItem (
+        long aIndex ) = 0;
+    virtual HRESULT __stdcall raw_GetLogItem (
+        long aIndex,
+        long * aRow,
+        long * aCol,
+        BSTR * aOldText,
+        BSTR * aNewText,
+        BSTR * aModifiedBy,
+        DATE * aDateTime ) = 0;
+};
+
+struct __declspec(uuid("da567ca9-bd8e-44cb-b2bf-17ea6f6dbb34"))
+IAcNetStream : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long Read (
+        BSTR * Buffer,
+        long Count );
+    long Write (
+        _bstr_t Buffer,
+        long Count );
+    long Seek (
+        long Offset,
+        enum SeekOrg Origin );
+    long GetSize ( );
+    HRESULT SetSize (
+        long NewSize );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Read (
+        BSTR * Buffer,
+        long Count,
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_Write (
+        BSTR Buffer,
+        long Count,
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_Seek (
+        long Offset,
+        enum SeekOrg Origin,
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_GetSize (
+        long * Result ) = 0;
+    virtual HRESULT __stdcall raw_SetSize (
+        long NewSize ) = 0;
+};
+
+struct __declspec(uuid("a70299cb-3c46-4204-a87c-7de7cfca801d"))
+IPreviewOptions : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetButtonVisible_Open,put=PutButtonVisible_Open))
+    VARIANT_BOOL ButtonVisible_Open;
+    __declspec(property(get=GetButtonVisible_Save,put=PutButtonVisible_Save))
+    VARIANT_BOOL ButtonVisible_Save;
+    __declspec(property(get=GetButtonVisible_PageSet,put=PutButtonVisible_PageSet))
+    VARIANT_BOOL ButtonVisible_PageSet;
+    __declspec(property(get=GetButtonVisible_ApplyEdit,put=PutButtonVisible_ApplyEdit))
+    VARIANT_BOOL ButtonVisible_ApplyEdit;
+    __declspec(property(get=GetButtonVisible_ExportXLS,put=PutButtonVisible_ExportXLS))
+    VARIANT_BOOL ButtonVisible_ExportXLS;
+    __declspec(property(get=GetButtonVisible_Print,put=PutButtonVisible_Print))
+    VARIANT_BOOL ButtonVisible_Print;
+    __declspec(property(get=GetButtonVisible_PrintCurPage,put=PutButtonVisible_PrintCurPage))
+    VARIANT_BOOL ButtonVisible_PrintCurPage;
+    __declspec(property(get=GetButtonVisible_Cancel,put=PutButtonVisible_Cancel))
+    VARIANT_BOOL ButtonVisible_Cancel;
+    __declspec(property(get=GetButtonVisible_PageSize,put=PutButtonVisible_PageSize))
+    VARIANT_BOOL ButtonVisible_PageSize;
+    __declspec(property(get=GetButtonVisible_ZoomIn,put=PutButtonVisible_ZoomIn))
+    VARIANT_BOOL ButtonVisible_ZoomIn;
+    __declspec(property(get=GetButtonVisible_ZoomOut,put=PutButtonVisible_ZoomOut))
+    VARIANT_BOOL ButtonVisible_ZoomOut;
+    __declspec(property(get=GetButtonVisible_First,put=PutButtonVisible_First))
+    VARIANT_BOOL ButtonVisible_First;
+    __declspec(property(get=GetButtonVisible_Prior,put=PutButtonVisible_Prior))
+    VARIANT_BOOL ButtonVisible_Prior;
+    __declspec(property(get=GetButtonVisible_Next,put=PutButtonVisible_Next))
+    VARIANT_BOOL ButtonVisible_Next;
+    __declspec(property(get=GetButtonVisible_Last,put=PutButtonVisible_Last))
+    VARIANT_BOOL ButtonVisible_Last;
+    __declspec(property(get=GetWindowTitle,put=PutWindowTitle))
+    _bstr_t WindowTitle;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL GetButtonVisible_Open ( );
+    void PutButtonVisible_Open (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_Save ( );
+    void PutButtonVisible_Save (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_PageSet ( );
+    void PutButtonVisible_PageSet (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_ApplyEdit ( );
+    void PutButtonVisible_ApplyEdit (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_ExportXLS ( );
+    void PutButtonVisible_ExportXLS (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_Print ( );
+    void PutButtonVisible_Print (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_PrintCurPage ( );
+    void PutButtonVisible_PrintCurPage (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_Cancel ( );
+    void PutButtonVisible_Cancel (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_PageSize ( );
+    void PutButtonVisible_PageSize (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_ZoomIn ( );
+    void PutButtonVisible_ZoomIn (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_ZoomOut ( );
+    void PutButtonVisible_ZoomOut (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_First ( );
+    void PutButtonVisible_First (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_Prior ( );
+    void PutButtonVisible_Prior (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_Next ( );
+    void PutButtonVisible_Next (
+        VARIANT_BOOL Value );
+    VARIANT_BOOL GetButtonVisible_Last ( );
+    void PutButtonVisible_Last (
+        VARIANT_BOOL Value );
+    _bstr_t GetWindowTitle ( );
+    void PutWindowTitle (
+        _bstr_t Value );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ButtonVisible_Open (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Open (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_Save (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Save (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_PageSet (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_PageSet (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_ApplyEdit (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_ApplyEdit (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_ExportXLS (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_ExportXLS (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_Print (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Print (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_PrintCurPage (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_PrintCurPage (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_Cancel (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Cancel (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_PageSize (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_PageSize (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_ZoomIn (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_ZoomIn (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_ZoomOut (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_ZoomOut (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_First (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_First (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_Prior (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Prior (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_Next (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Next (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_ButtonVisible_Last (
+        VARIANT_BOOL * Value ) = 0;
+    virtual HRESULT __stdcall put_ButtonVisible_Last (
+        VARIANT_BOOL Value ) = 0;
+    virtual HRESULT __stdcall get_WindowTitle (
+        BSTR * Value ) = 0;
+    virtual HRESULT __stdcall put_WindowTitle (
+        BSTR Value ) = 0;
+};
+
+struct __declspec(uuid("5ac9f2df-fe94-49b0-b176-a8f4a030b2cc"))
+IAcRecordset : _Recordset
+{};
+
+struct __declspec(uuid("29cb3935-9584-458a-9738-ec6e155278bd"))
+IAcFields : Fields
+{};
+
+struct __declspec(uuid("a4be28c9-1150-44ca-b1dd-e9671c1a8a9b"))
+IAcField : Field
+{};
+
+struct __declspec(uuid("54a174b4-e793-43c9-994e-d8972bb5eb1f"))
+IAcDataProps : Properties
+{};
+
+enum AcPageType
+{
+    aptReport = 0,
+    aptDialog = 1
+};
+
+enum SeekOrg
+{
+    asoFromBeginning = 0,
+    asoFromCurrent = 1,
+    asoFromEnd = 2
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "acreport.tli"
+
+#pragma pack(pop)

@@ -1,0 +1,39 @@
+package ScheduleDiscountPrice;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  Interfaces;
+
+contains
+  ScheduleDiscountPriceManager in 'ScheduleDiscountPriceManager.pas',
+  ScheduleDiscountPricePlugin in 'ScheduleDiscountPricePlugin.pas',
+  UFrmScheduleDiscountPrice in 'UFrmScheduleDiscountPrice.pas' {FrmScheduleDiscountPrice},
+  UFrmScheduleDiscountPriceEdt in 'UFrmScheduleDiscountPriceEdt.pas' {FrmScheduleDiscountPriceEdt},
+  UFrmScheduleDiscountPriceAdd in 'UFrmScheduleDiscountPriceAdd.pas' {FrmScheduleDiscountPriceAdd};
+
+end.

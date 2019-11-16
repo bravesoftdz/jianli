@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\AcNetUtils.csproj.ResolveComReference.cache
+bin\Debug\AcNetUtils.dll
+bin\Debug\AcNetUtils.pdb
+bin\Debug\Interop.AcReport.dll
+obj\Debug\AcNetUtils.dll
+obj\Debug\AcNetUtils.pdb

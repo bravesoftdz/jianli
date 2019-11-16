@@ -1,0 +1,74 @@
+package Interfaces;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  rtl,
+  vcl,
+  EhLib140,
+  soaprtl,
+  dsnap,
+  NovaJsonRpc,
+  vclimg,
+  vclie;
+
+contains
+  AuthoritySvrIntf in 'AuthoritySvrIntf.pas',
+  DialogIntf in 'DialogIntf.pas',
+  EncdDecdIntf in 'EncdDecdIntf.pas',
+  LoginIntf in 'LoginIntf.pas',
+  LogIntf in 'LogIntf.pas',
+  MainFormIntf in 'MainFormIntf.pas',
+  ProgressFormIntf in 'ProgressFormIntf.pas',
+  RegPluginIntf in 'RegPluginIntf.pas',
+  SplashFormIntf in 'SplashFormIntf.pas',
+  SysInfoIntf in 'SysInfoIntf.pas',
+  Constant in 'Constant.pas',
+  FactoryIntf in 'FactoryIntf.pas',
+  Services in 'Services.pas',
+  PubFn in 'PubFn.pas',
+  SysFactoryEx in 'SysFactoryEx.pas',
+  SysFactory in 'SysFactory.pas',
+  SystemInstance in 'SystemInstance.pas',
+  SysFactoryMgr in 'SysFactoryMgr.pas',
+  FunctionItemIntf in 'FunctionItemIntf.pas',
+  ConnectCFGIntf in 'ConnectCFGIntf.pas',
+  LoginUser in 'LoginUser.pas',
+  uBaseForm in 'parents\uBaseForm.pas' {BaseForm},
+  USimpleCRUDForm in 'parents\USimpleCRUDForm.pas' {SimpleCRUDForm},
+  UDMPublic in 'UDMPublic.pas' {DMPublic: TDataModule},
+  GdiPlusHelpers in 'GdiPlusHelpers.pas',
+  GdiPlus in 'GdiPlus.pas',
+  TreeUnit in 'TreeUnit.pas',
+  UpdateIntf in 'UpdateIntf.pas',
+  CardManage in 'CardManage.pas',
+  UFrmInfo in 'UFrmInfo.pas' {FrmInfo},
+  USimpleEditForm in 'parents\USimpleEditForm.pas' {SimpleEditForm};
+
+end.

@@ -1,0 +1,50 @@
+由于要使用报表，所以下载了FastReport 4.7.91，由于是第一次安装和使用FastReport报表，所以在安装的时候走了点弯路。把心得写一下吧。
+
+我是第安装第二遍才完全理解安装过程，也可以定制安装，即安装你需要的部分。
+
+1：当然是下载FastReport控件的安装包了，然后解压。
+
+2：将解压出来的包，考入Delphi所在的目录的source\FastReport下，我是这么考的，Demos目录我没有考。
+
+3：运行recompile.exe文件，
+
+  （1）选择你的Delphi版本；（2）选择你的Delphi版本；（3）选择你的TeeChart的版本；（4）选择你的TeeChart的源代码路径。
+
+点击编译，就对当前版本进行编译了。现在的工作才开始。
+
+4：使用Delphi添加Library路径
+
+Tools|Options|Environmet Options|Delphi Options|Library - Win32"中的"Directories"标签面下"Library path"添加FastReport的各个路径。
+      FastReport.v4\FastScript
+      FastReport.v4\FastQB
+      FastReport.v4\Source
+      FastReport.v4\Source\BDE
+      FastReport.v4\Source\ADO
+      FastReport.v4\Source\IBX
+      FastReport.v4\Source\DBX
+      FastReport.v4\Source\ExportPack
+
+这里，如果你不使用IBX就不用添加IBX，呵呵，偷个懒。别的同理。当然，只能是连接方法的。
+
+注第5步与第6步可以重复的执行，就可以定制你想要的控件了，不用全部安装。
+
+5：现在进行编译包了。
+
+在source\FastReport目录下搜索f*11*.dpk文件（我的是2007所以是110），我这里有16个文件找到，
+
+我先编译fqb110.dpk
+
+在C:\Documents and Settings\All Users\Documents\RAD Studio\5.0\Bpl（如果不对的话，那么查找一下fqb*.bpl，这个文件所在的位置），将bpl文件考到C:\WINDOWS\system32目录下。
+
+6：新建一个搜索，与第5步的同时存在，这样好找文件。
+
+在source\FastReport目录下搜索dcl*11*.dpk文件（我的是2007所以是110），我这里有15个文件找到，
+
+我先编译dclfs11.dpk并安装。
+
+在之后的进程中，你安装什么的时候差什么包文件，就使用第5、6步的方法安装需要的基础包，这样就可以选择安装了。
+
+呵呵，可能简单了点，但是，你试了就知道很简单的啦。
+
+Script部分我都没有安装，不知道以后有没有什么问题。
+

@@ -1,0 +1,17 @@
+[09:23:30]  参数设置使用正式版或测试版未启动，进入使用正式版......useVerify=0, nvbusVerifyStarted=0
+[09:23:30]  当前服务器版本号: FIX5.2_05_09
+[09:23:30]  当前客户端版本号: FIX5.2_05_09
+[09:23:30]  未发现更新,跳过....
+[09:23:30]  Ini.Free
+[09:25:05]  服务器返回出错：httpStatus:500 Internal Server ErrorInternal Error (check logs)
+[09:26:34]  补录添加：Could not convert variant of type (Null) into type (OleStr)
+[09:40:27]  补录添加：Could not convert variant of type (Null) into type (OleStr)
+[09:40:50]  结算单补录添加失败：灾难性故障
+[09:41:23]  结算单补录添加失败：灾难性故障
+[09:42:31]  补录添加：Could not convert variant of type (Null) into type (OleStr)
+[09:42:42]  结算单补录添加失败：灾难性故障
+[09:43:03]  结算单补录添加失败：灾难性故障
+[09:48:50]  结算单补录添加失败：灾难性故障
+[09:52:03]  结算单补录添加失败：灾难性故障
+[10:14:26]  TNovaHelp:没有"unitname"这个字段
+[10:47:14]  服务器返回出错：httpStatus:500 Internal Server ErrorInternal Error (check logs)

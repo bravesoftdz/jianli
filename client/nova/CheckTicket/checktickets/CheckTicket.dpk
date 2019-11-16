@@ -1,0 +1,58 @@
+package CheckTicket;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  Interfaces,
+  Vehicleseatplan,
+  PrintTemplate,
+  ICcardRW,
+  IDCardReader,
+  rtl;
+
+contains
+  CheckTicketExport in 'CheckTicketExport.pas',
+  CheckTicketPlugin in 'CheckTicketPlugin.pas',
+  UFrmCheckTicket in 'UFrmCheckTicket.pas' {FrmCheckTicket},
+  UFrmChecktickets in 'UFrmChecktickets.pas' {FrmChecktickets},
+  UFrmMixCheckticket in 'UFrmMixCheckticket.pas' {FrmMixCheckticket},
+  UFrmCheckticketInfo in 'UFrmCheckticketInfo.pas' {FrmCheckticketInfo},
+  UFrmCancelCheckticket in 'UFrmCancelCheckticket.pas' {FrmCancelCheckticket},
+  UFrmDepartManagerEdit in 'UFrmDepartManagerEdit.pas' {FrmDepartManagerEdit},
+  UFrmBroadcast in 'UFrmBroadcast.pas' {FrmBroadcast},
+  UFrmHandInvoicesNo in 'UFrmHandInvoicesNo.pas' {FrmHandInvoicesNo},
+  UFrmNoTicketCheck in 'UFrmNoTicketCheck.pas' {FrmNoTicketCheck},
+  UFrmCheckNTickets in 'UFrmCheckNTickets.pas' {FrmCheckNTickets},
+  UFrmRemoteCheckTicket in 'UFrmRemoteCheckTicket.pas' {FrmRemoteCheckTicket},
+  UFrmSumticketInfo in 'UFrmSumticketInfo.pas' {FrmSumticketInfo},
+  UFrmReprintByOldOrNewBillno in 'UFrmReprintByOldOrNewBillno.pas' {FrmReprintByOldOrNewBillno},
+  UFrmchoosecheckticket in 'UFrmchoosecheckticket.pas' {Frmchoosecheckticket};
+
+end.
+

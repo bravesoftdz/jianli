@@ -1,0 +1,13 @@
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\bin\Debug\VBAcStreamDemo.exe
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\bin\Debug\VBAcStreamDemo.pdb
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\bin\Debug\VBAcStreamDemo.xml
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.vbproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.Form1.resources
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.Resources.resources
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.vbproj.GenerateResource.Cache
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.exe
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.xml
+E:\work\source\ACreport\COM\demos\VB.net\流操作\VBAcStreamDemo\VBAcStreamDemo\obj\Debug\VBAcStreamDemo.pdb

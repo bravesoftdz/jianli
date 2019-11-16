@@ -1,0 +1,178 @@
+ DEBUG|20180827130846|_____posinf.cpp:1495|posinf|postrans.dll PATH=[C:\gmc\bank\postrans.dll]
+ DEBUG|20180827130846|_____posinf.cpp:1502|posinf|load postrans.dll ok
+ DEBUG|20180827130846|_____posinf.cpp:1518|posinf|load postrans.dll end
+ DEBUG|20180827130846|______posinf.cpp:859|posinf|ums_auto_login_settle开始
+ DEBUG|20180827130846|_____posinf.cpp:6580|ptrans|auto_login_settle begin..........
+ DEBUG|20180827130846|______posinf.cpp:861|posinf|ums_auto_login_settle结束[0]
+ALWAYS|20180827130846|_____posinf.cpp:1446|posinf|数据交互结构体 begin
+ALWAYS|20180827130846|_____posinf.cpp:1447|posinf|trans=[1]
+ALWAYS|20180827130846|_____posinf.cpp:1448|posinf|rspcode=[]
+ALWAYS|20180827130846|_____posinf.cpp:1449|posinf|amount=[000000000001]
+ALWAYS|20180827130846|_____posinf.cpp:1450|posinf|operid=[23456789]
+ALWAYS|20180827130846|_____posinf.cpp:1451|posinf|posid=[12345678]
+ALWAYS|20180827130846|_____posinf.cpp:1452|posinf|cardno=[]
+ALWAYS|20180827130846|_____posinf.cpp:1453|posinf|old_reference=[]
+ALWAYS|20180827130846|_____posinf.cpp:1454|posinf|old_date=[]
+ALWAYS|20180827130846|_____posinf.cpp:1455|posinf|old_batch=[]
+ALWAYS|20180827130846|_____posinf.cpp:1456|posinf|old_trace=[]
+ALWAYS|20180827130846|_____posinf.cpp:1457|posinf|issbank=[]
+ALWAYS|20180827130846|_____posinf.cpp:1458|posinf|issbankname=[]
+ALWAYS|20180827130846|_____posinf.cpp:1459|posinf|resp_chin=[]
+ALWAYS|20180827130846|_____posinf.cpp:1460|posinf|resF042=[]
+ALWAYS|20180827130846|_____posinf.cpp:1461|posinf|resF041=[]
+ALWAYS|20180827130846|_____posinf.cpp:1462|posinf|resF060=[]
+ALWAYS|20180827130846|_____posinf.cpp:1463|posinf|resF011=[]
+ALWAYS|20180827130846|_____posinf.cpp:1464|posinf|resF037=[]
+ALWAYS|20180827130846|_____posinf.cpp:1465|posinf|resF013=[]
+ALWAYS|20180827130846|_____posinf.cpp:1466|posinf|resF012=[]
+ALWAYS|20180827130846|_____posinf.cpp:1467|posinf|resF015=[]
+ALWAYS|20180827130846|_____posinf.cpp:1468|posinf|resF038=[]
+ALWAYS|20180827130846|_____posinf.cpp:1469|posinf|acptbank=[]
+ALWAYS|20180827130846|_____posinf.cpp:1470|posinf|acptbankname=[]
+ALWAYS|20180827130846|_____posinf.cpp:1471|posinf|brcode=[                                                  ]
+ALWAYS|20180827130846|_____posinf.cpp:1472|posinf|erpMerchant=[                                                  ]
+ALWAYS|20180827130846|_____posinf.cpp:1473|posinf|cardtype=[]
+ALWAYS|20180827130846|_____posinf.cpp:1475|posinf|数据交互结构体 end
+ DEBUG|20180827130846|______posinf.cpp:912|ptrans|------BEGIN ums_bankpos------
+ DEBUG|20180827130846|______posinf.cpp:913|ptrans|传入参数[]
+ DEBUG|20180827130846|______posinf.cpp:297|ptrans|begin InitCfg
+ DEBUG|20180827130846|______posinf.cpp:724|ptrans|InitCfg end
+ DEBUG|20180827130846|______posinf.cpp:972|ptrans|cfgdata:ip[210.22.91.77]port[5201]type[2]
+ DEBUG|20180827130846|______posinf.cpp:981|ptrans|SerialOpen1 over return(0)
+ DEBUG|20180827130846|_____posinf.cpp:1012|ptrans|begin tratype[1][000000000001][20180827130846009611][12345678]
+ DEBUG|20180827130846|_____WPinPad.cpp:260|ptrans|向串口发送数据len[11]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+01 01 31 33 30 38 34 36 39 39 1d                      ..13084699.
+
+
+ DEBUG|20180827130846|_____WPinPad.cpp:341|ptrans|成功接收串口数据len[14]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+01 01 31 33 30 38 34 36 06 1c 30 30 1c 1c             ..130846..00..
+
+
+ DEBUG|20180827130846|_____posinf.cpp:6244|ptrans|ping_EMVPOS[0]=[0],packid=[130846],recvid=[130846]
+ DEBUG|20180827130846|_____posinf.cpp:1068|ptrans|smerbuf(540871434FE7EFC7CB9B02DAA355C1AE069D7FF73F2AE50ECBCE4AADFD00A0FB)
+ DEBUG|20180827130846|_____WPinPad.cpp:260|ptrans|向串口发送数据len[46]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+03 01 31 33 30 38 34 36 35 37 1c 31 32 33 34 35       ..13084657.12345
+36 37 38 39 39 30 30 30 38 32 1c 31 32 33 34 35       6789900082.12345
+30 38 32 1c b2 e2 ca d4 c9 cc bb a7 1c 1c             082.********..
+
+
+ DEBUG|20180827130847|_____WPinPad.cpp:341|ptrans|成功接收串口数据len[39]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+04 01 31 33 30 38 34 36 35 37 1c 1c 1c 1c 38 39       ..13084657....89
+38 32 32 30 31 36 30 31 32 30 31 37 35 1c 30 31       8220160120175.01
+30 31 37 35 30 33 1c                                  017503.
+
+
+ DEBUG|20180827130847|_____posinf.cpp:1085|ptrans|有效商户号:smiddata[898220160120175]
+ DEBUG|20180827130847|_____authdes.cpp:787|ptrans|解密成功[32]
+ DEBUG|20180827130847|_____authdes.cpp:796|ptrans|decstr[898220160120175 898220141310255 尾瓻]
+ DEBUG|20180827130847|_____posinf.cpp:1100|ptrans|版本校验成功 ret(0)
+ DEBUG|20180827130847|_____posinf.cpp:1691|ptrans|TEST EMV POS 成功!向pos机发送交易信息!
+ DEBUG|20180827130847|_____WPinPad.cpp:260|ptrans|向串口发送数据len[102]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+03 01 31 33 30 38 34 36 30 31 1c 38 39 38 32 32       ..13084601.89822
+30 31 36 30 31 32 30 31 37 35 1c 30 31 30 31 37       0160120175.01017
+35 30 33 1c b2 e2 ca d4 c9 cc bb a7 1c 1c 30 30       503.********..00
+30 30 30 30 30 30 30 30 30 31 1c 1c 1c 31 32 33       0000000001...123
+34 35 36 37 38 1c 32 33 34 35 36 37 38 39 1c 32       45678.23456789.2
+30 31 38 30 38 32 37 31 33 30 38 34 36 30 30 39       0180827130846009
+36 31 31 1c 1c 1c                                     611...
+
+
+ DEBUG|20180827130847|_____posinf.cpp:1699|ptrans|sendtocom_RS232 1st (0)
+ ERROR|20180827130847|_______posinf.cpp:89|ptrans|dll所在的全路径=[C:\gmc\bank\umscomm.dll]
+ DEBUG|20180827130847|_______posinf.cpp:96|ptrans|[CommToSrv_Inter]加载通讯库成功
+ DEBUG|20180827130847|______posinf.cpp:105|ptrans|[CommToSrv_Inter]加载HLP_CommToSrv成功
+ DEBUG|20180827134325|_____posinf.cpp:1495|posinf|postrans.dll PATH=[C:\gmc\bank\postrans.dll]
+ DEBUG|20180827134325|_____posinf.cpp:1502|posinf|load postrans.dll ok
+ DEBUG|20180827134325|_____posinf.cpp:1518|posinf|load postrans.dll end
+ DEBUG|20180827134325|______posinf.cpp:859|posinf|ums_auto_login_settle开始
+ DEBUG|20180827134325|_____posinf.cpp:6580|ptrans|auto_login_settle begin..........
+ DEBUG|20180827134325|______posinf.cpp:861|posinf|ums_auto_login_settle结束[0]
+ALWAYS|20180827134325|_____posinf.cpp:1446|posinf|数据交互结构体 begin
+ALWAYS|20180827134325|_____posinf.cpp:1447|posinf|trans=[1]
+ALWAYS|20180827134325|_____posinf.cpp:1448|posinf|rspcode=[]
+ALWAYS|20180827134325|_____posinf.cpp:1449|posinf|amount=[000000000001]
+ALWAYS|20180827134325|_____posinf.cpp:1450|posinf|operid=[23456789]
+ALWAYS|20180827134325|_____posinf.cpp:1451|posinf|posid=[12345678]
+ALWAYS|20180827134325|_____posinf.cpp:1452|posinf|cardno=[]
+ALWAYS|20180827134325|_____posinf.cpp:1453|posinf|old_reference=[]
+ALWAYS|20180827134325|_____posinf.cpp:1454|posinf|old_date=[]
+ALWAYS|20180827134325|_____posinf.cpp:1455|posinf|old_batch=[]
+ALWAYS|20180827134325|_____posinf.cpp:1456|posinf|old_trace=[]
+ALWAYS|20180827134325|_____posinf.cpp:1457|posinf|issbank=[]
+ALWAYS|20180827134325|_____posinf.cpp:1458|posinf|issbankname=[]
+ALWAYS|20180827134325|_____posinf.cpp:1459|posinf|resp_chin=[]
+ALWAYS|20180827134325|_____posinf.cpp:1460|posinf|resF042=[]
+ALWAYS|20180827134325|_____posinf.cpp:1461|posinf|resF041=[]
+ALWAYS|20180827134325|_____posinf.cpp:1462|posinf|resF060=[]
+ALWAYS|20180827134325|_____posinf.cpp:1463|posinf|resF011=[]
+ALWAYS|20180827134325|_____posinf.cpp:1464|posinf|resF037=[]
+ALWAYS|20180827134325|_____posinf.cpp:1465|posinf|resF013=[]
+ALWAYS|20180827134325|_____posinf.cpp:1466|posinf|resF012=[]
+ALWAYS|20180827134325|_____posinf.cpp:1467|posinf|resF015=[]
+ALWAYS|20180827134325|_____posinf.cpp:1468|posinf|resF038=[]
+ALWAYS|20180827134325|_____posinf.cpp:1469|posinf|acptbank=[]
+ALWAYS|20180827134325|_____posinf.cpp:1470|posinf|acptbankname=[]
+ALWAYS|20180827134325|_____posinf.cpp:1471|posinf|brcode=[                                                  ]
+ALWAYS|20180827134325|_____posinf.cpp:1472|posinf|erpMerchant=[                                                  ]
+ALWAYS|20180827134325|_____posinf.cpp:1473|posinf|cardtype=[]
+ALWAYS|20180827134325|_____posinf.cpp:1475|posinf|数据交互结构体 end
+ DEBUG|20180827134325|______posinf.cpp:912|ptrans|------BEGIN ums_bankpos------
+ DEBUG|20180827134325|______posinf.cpp:913|ptrans|传入参数[]
+ DEBUG|20180827134325|______posinf.cpp:297|ptrans|begin InitCfg
+ DEBUG|20180827134325|______posinf.cpp:724|ptrans|InitCfg end
+ DEBUG|20180827134325|______posinf.cpp:972|ptrans|cfgdata:ip[210.22.91.77]port[5201]type[2]
+ DEBUG|20180827134325|______posinf.cpp:981|ptrans|SerialOpen1 over return(0)
+ DEBUG|20180827134325|_____posinf.cpp:1012|ptrans|begin tratype[1][000000000001][20180827134325003632][12345678]
+ DEBUG|20180827134325|_____WPinPad.cpp:260|ptrans|向串口发送数据len[11]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+01 01 31 33 34 33 32 35 39 39 1d                      ..13432599.
+
+
+ DEBUG|20180827134325|_____WPinPad.cpp:341|ptrans|成功接收串口数据len[18]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+02 01 31 33 34 33 32 35 06 1c 30 30 1c b3 c9 b9       ..134325..00.***
+a6 1c                                                 *.
+
+
+ DEBUG|20180827134325|_____posinf.cpp:6244|ptrans|ping_EMVPOS[0]=[0],packid=[134325],recvid=[134325]
+ DEBUG|20180827134325|_____posinf.cpp:1068|ptrans|smerbuf(540871434FE7EFC7CB9B02DAA355C1AE)
+ DEBUG|20180827134325|_____WPinPad.cpp:260|ptrans|向串口发送数据len[46]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+03 01 31 33 34 33 32 35 35 37 1c 31 32 33 34 35       ..13432557.12345
+36 37 38 39 39 30 30 30 38 32 1c 31 32 33 34 35       6789900082.12345
+30 38 32 1c b2 e2 ca d4 c9 cc bb a7 1c 1c             082.********..
+
+
+ DEBUG|20180827134325|_____WPinPad.cpp:341|ptrans|成功接收串口数据len[54]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+04 01 31 33 34 33 32 35 35 37 1c d2 f8 c1 aa c9       ..13432557.*****
+cc ce f1 1c 1c 76 33 33 30 30 30 35 1c 38 39 38       ***..v330005.898
+32 32 30 31 36 30 31 32 30 31 37 35 1c 30 31 30       220160120175.010
+31 37 35 30 33 1c                                     17503.
+
+
+ DEBUG|20180827134325|_____posinf.cpp:1085|ptrans|有效商户号:smiddata[898220160120175]
+ DEBUG|20180827134325|_____authdes.cpp:787|ptrans|解密成功[16]
+ DEBUG|20180827134325|_____authdes.cpp:796|ptrans|decstr[898220160120175 ]
+ DEBUG|20180827134325|_____posinf.cpp:1100|ptrans|版本校验成功 ret(0)
+ DEBUG|20180827134325|_____posinf.cpp:1691|ptrans|TEST EMV POS 成功!向pos机发送交易信息!
+ DEBUG|20180827134325|_____WPinPad.cpp:260|ptrans|向串口发送数据len[102]:
+-1--2--3--4--5--6--7--8-Hex-2--3--4--5--6--7--8  ---------ASCII CODE---------
+03 01 31 33 34 33 32 35 30 31 1c 38 39 38 32 32       ..13432501.89822
+30 31 36 30 31 32 30 31 37 35 1c 30 31 30 31 37       0160120175.01017
+35 30 33 1c b2 e2 ca d4 c9 cc bb a7 1c 1c 30 30       503.********..00
+30 30 30 30 30 30 30 30 30 31 1c 1c 1c 31 32 33       0000000001...123
+34 35 36 37 38 1c 32 33 34 35 36 37 38 39 1c 32       45678.23456789.2
+30 31 38 30 38 32 37 31 33 34 33 32 35 30 30 33       0180827134325003
+36 33 32 1c 1c 1c                                     632...
+
+
+ DEBUG|20180827134325|_____posinf.cpp:1699|ptrans|sendtocom_RS232 1st (0)
+ ERROR|20180827134325|_______posinf.cpp:89|ptrans|dll所在的全路径=[C:\gmc\bank\umscomm.dll]
+ DEBUG|20180827134325|_______posinf.cpp:96|ptrans|[CommToSrv_Inter]加载通讯库成功
+ DEBUG|20180827134325|______posinf.cpp:105|ptrans|[CommToSrv_Inter]加载HLP_CommToSrv成功

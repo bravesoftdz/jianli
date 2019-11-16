@@ -1,0 +1,63 @@
+package DispatchManage;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  Interfaces,
+  PrintTemplate,
+  Vehicleseatplan,
+  rtl,
+  ICcardRW,
+  zkf;
+
+contains
+  DispatchManageExport in 'DispatchManageExport.pas',
+  DispatchManagePlugin in 'DispatchManagePlugin.pas',
+  UFrmDispatchManage in 'UFrmDispatchManage.pas' {FrmDispatchManage},
+  UFrmVehicleReport in 'UFrmVehicleReport.pas' {FrmVehicleReport},
+  UFrmVehicleLater in 'UFrmVehicleLater.pas' {FrmVehicleLater},
+  UFrmCancelReport in 'UFrmCancelReport.pas' {FrmCancelReport},
+  UFrmVehicleLost in 'UFrmVehicleLost.pas' {FrmVehicleLost},
+  UFrmChanageVehicleplan in 'UFrmChanageVehicleplan.pas' {FrmChanageVehicleplan},
+  UFrmPrintRoadInfo in 'UFrmPrintRoadInfo.pas' {FrmPrintRoadInfo},
+  UFrmInitRoadBill in 'UFrmInitRoadBill.pas' {FrmInitRoadBill},
+  UFrmScheduleReport in 'UFrmScheduleReport.pas' {FrmScheduleReport},
+  UFrmScheduleReserveseat in 'UFrmScheduleReserveseat.pas' {FrmScheduleReserveseat},
+  UFrmChangeVehicle in 'UFrmChangeVehicle.pas' {FrmChangeVehicle},
+  UFrmVehicleRunPlan in 'UFrmVehicleRunPlan.pas' {FrmVehicleRunPlan},
+  UFrmEmployeeReport in 'UFrmEmployeeReport.pas' {FrmEmployeeReport},
+  UFrmAddTempVehi in 'UFrmAddTempVehi.pas' {FrmAddTempVehi},
+  UFrmCardValidate in 'UFrmCardValidate.pas' {FrmCardValidate},
+  UFrmAutoReportResult in 'UFrmAutoReportResult.pas' {FrmAutoReportResult},
+  Dispatch in 'Dispatch.pas';
+
+end.
+
+
+

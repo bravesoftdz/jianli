@@ -1,0 +1,17 @@
+﻿body
+{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.page_list_header
+{
+    font-size: 12px;
+    background: #cccccc url("/images/Page_top1.gif") repeat-x bottom;
+}
+a
+{
+    font-size: 12px;
+    margin-right: 2px;
+}

@@ -1,0 +1,39 @@
+package Insuretype;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  Interfaces;
+
+contains
+  UFrmInsuretype in 'UFrmInsuretype.pas' {FrmInsuretype},
+  UFrmInsuretypeEdit in 'UFrmInsuretypeEdit.pas' {FrmInsuretypeEdit},
+  InsuretypeManagerExport in 'InsuretypeManagerExport.pas',
+  InsuretypeManagerPlugin in 'InsuretypeManagerPlugin.pas',
+  UFrmInsuretypedetail in 'UFrmInsuretypedetail.pas' {FrmInsuretypedetail};
+
+end.

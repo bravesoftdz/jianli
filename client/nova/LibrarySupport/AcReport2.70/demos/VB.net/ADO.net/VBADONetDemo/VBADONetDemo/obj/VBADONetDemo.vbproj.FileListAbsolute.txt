@@ -1,0 +1,13 @@
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.vbproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.Form1.resources
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.Resources.resources
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.vbproj.GenerateResource.Cache
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\bin\Debug\VBADONetDemo.exe
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\bin\Debug\VBADONetDemo.pdb
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\bin\Debug\VBADONetDemo.xml
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.exe
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.xml
+E:\work\source\ACreport\COM\demos\VB.net\ADO.net\VBADONetDemo\VBADONetDemo\obj\Debug\VBADONetDemo.pdb

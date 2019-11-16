@@ -1,0 +1,5 @@
+本文件夹下是AC Report在各种常用开发工具下的Demo源程序。
+
+所有Demo工程中的exe文件都可以直接运行，如果运行报错，请重新编译程序。
+
+AdoNetUtils 下的 AcNetUtils.dll 是.net下专用的工具类库，在.net下开发，如果用ado.net或Stream，请引用此dll，具体用法可以参考demo。 

@@ -1,0 +1,189 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{F20AEFD6-3F14-4992-AD06-392BD02151D2}</ProjectGuid>
+			<MainSource>parameter.dpk</MainSource>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+			<DCC_UnitSearchPath>..\DCP;..\DCU;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_DcuOutput>..\..\DCU\</DCC_DcuOutput>
+			<DCC_BplOutput>..\..\BIN\</DCC_BplOutput>
+			<DesignOnlyPackage>false</DesignOnlyPackage>
+			<DCC_DcpOutput>..\..\DCP\</DCC_DcpOutput>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<GenPackage>true</GenPackage>
+			<DCC_DependencyCheckOutputName>..\..\BIN\parameter.bpl</DCC_DependencyCheckOutputName>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_E>false</DCC_E>
+			<DCC_S>false</DCC_S>
+			<GenDll>true</GenDll>
+			<DCC_N>false</DCC_N>
+			<DCC_F>false</DCC_F>
+			<DCC_K>false</DCC_K>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''"/>
+		<ItemGroup>
+			<DelphiCompile Include="parameter.dpk">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="vcl.dcp"/>
+			<DCCReference Include="dbrtl.dcp"/>
+			<DCCReference Include="vcldb.dcp"/>
+			<DCCReference Include="EhLib140.dcp"/>
+			<DCCReference Include="Interfaces.dcp"/>
+			<DCCReference Include="vclimg.dcp"/>
+			<DCCReference Include="UFrmParameterAdd.pas">
+				<Form>FrmParameterAdd</Form>
+			</DCCReference>
+			<DCCReference Include="paramExport.pas"/>
+			<DCCReference Include="paramPlugin.pas"/>
+			<DCCReference Include="UFrmParameter.pas">
+				<Form>FrmParameter</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+						<Parameters Name="HostApplication">..\..\BIN\NvBUS.exe</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">2052</VersionInfo>
+						<VersionInfo Name="CodePage">936</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">parameter.dpk</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dclofficexp140.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k140.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+					<DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="CLASSPATH">&apos;.;C:\Program Files\Java\jdk1.6.0_06\lib\dt.jar;C:\Program Files\Java\jdk1.6.0_06\lib\tools.jar;D:\apache-tomcat-6.0.26\common\lib\servlet.jar;&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="JAVA_HOME">&apos;C:\Program Files\Java\jdk1.6.0_06&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="Path">&apos;C:\Program Files\Embarcadero\RAD Studio\7.0\bin;C:\Documents and Settings\All Users\Documents\RAD Studio\7.0\Bpl;c:\oracle\product\11.2.0\client_11\bin;C:\Program Files\Java\jdk1.6.0_06\bin;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="EL_PATHS">&apos;;C:\Program Files\EurekaLog 6\Delphi7;C:\Program Files\EurekaLog 6\Delphi14;C:\Program Files\EurekaLog 6\CBuilder14&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="HOME">&apos;C:\Documents and Settings\Administrator&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="NUT_SUFFIXED_SEARCHING">&apos;1&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="NUTSUFFIX">&apos;1&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="RATL_RTHOME">&apos;D:\Program Files\Rational\Rational Test&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="TMPDIR">&apos;C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="ALLUSERSPROFILE">&apos;C:\Documents and Settings\All Users&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="APPDATA">&apos;C:\Documents and Settings\Administrator\Application Data&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="BDS">&apos;c:\program files\embarcadero\rad studio\7.0&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="BDSCOMMONDIR">&apos;C:\Documents and Settings\All Users\Documents\RAD Studio\7.0&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="BDSPROJECTSDIR">&apos;D:\Backup\我的文档\RAD Studio\Projects&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="BDSUSERDIR">&apos;D:\Backup\我的文档\RAD Studio\7.0&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="CATALINA_BASE">&apos;D:\apache-tomcat-6.0.26&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="CATALINA_HOME">&apos;D:\apache-tomcat-6.0.26&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="CG_BOOST_ROOT">&apos;C:\Program Files\Embarcadero\RAD Studio\7.0\include\boost_1_39&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="CLIENTNAME">&apos;Console&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="CommonProgramFiles">&apos;C:\Program Files\Common Files&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="COMPUTERNAME">&apos;MICROSOF-2C0BA9&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="DELPHI">&apos;c:\program files\embarcadero\rad studio\7.0&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="HOMEPATH">&apos;\Documents and Settings\Administrator&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="JBOSS_HOME">&apos;D:\tools\jboss-6.0.0.20101110-CR1&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="LOGONSERVER">&apos;\\MICROSOF-2C0BA9&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="NUMBER_OF_PROCESSORS">&apos;2&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="PATHEXT">&apos;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="PROCESSOR_IDENTIFIER">&apos;x86 Family 6 Model 15 Stepping 13, GenuineIntel&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="PROCESSOR_REVISION">&apos;0f0d&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="ProgramFiles">&apos;C:\Program Files&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="TEMP">&apos;C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="TMP">&apos;C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="TOMCAT_HOME">&apos;D:\svn\apache-tomcat-6.0.26&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="USERDOMAIN">&apos;MICROSOF-2C0BA9&apos;</DebugEnvironmentVariables>
+						<DebugEnvironmentVariables Name="USERPROFILE">&apos;C:\Documents and Settings\Administrator&apos;</DebugEnvironmentVariables>
+					</DebugEnvironmentVariables>
+					<DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="BDSAppDataBaseDir">&apos;BDS&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="CommonProgramFiles(x86)">&apos;C:\Program Files (x86)\Common Files&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="CommonProgramW6432">&apos;C:\Program Files\Common Files&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="ComSpec">&apos;C:\Windows\system32\cmd.exe&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="FP_NO_HOST_CHECK">&apos;NO&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="HOMEDRIVE">&apos;C:&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="LOCALAPPDATA">&apos;C:\Users\Administrator\AppData\Local&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="OS">&apos;Windows_NT&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="PROCESSOR_ARCHITECTURE">&apos;x86&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="PROCESSOR_ARCHITEW6432">&apos;AMD64&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="PROCESSOR_LEVEL">&apos;6&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="ProgramData">&apos;C:\ProgramData&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="ProgramFiles(x86)">&apos;C:\Program Files (x86)&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="ProgramW6432">&apos;C:\Program Files&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="PSModulePath">&apos;C:\Windows\system32\WindowsPowerShell\v1.0\Modules\&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="PUBLIC">&apos;C:\Users\Public&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="SESSIONNAME">&apos;Console&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="SystemDrive">&apos;C:&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="SystemRoot">&apos;C:\Windows&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="USERNAME">&apos;Administrator&apos;</DebugSysEnvironmentVariables>
+						<DebugSysEnvironmentVariables Name="windir">&apos;C:\Windows&apos;</DebugSysEnvironmentVariables>
+					</DebugSysEnvironmentVariables>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

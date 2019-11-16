@@ -1,0 +1,396 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{7C691BEA-F52D-4A63-A601-27A0E454A355}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="LibD15\dclfrx15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxADO15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxBDE15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxcs15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxDB15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxDBX15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxe15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxIBX15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfrxTee15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfs15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfsADO15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfsBDE15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfsDB15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfsIBX15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\dclfsTee15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fqb150.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frx15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxADO15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxBDE15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxcs15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxDB15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxDBX15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxe15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxIBX15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\frxTee15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fs15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fsADO15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fsBDE15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fsDB15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fsIBX15.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD15\fsTee15.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="dclfrx15">
+			<MSBuild Projects="LibD15\dclfrx15.dproj"/>
+		</Target>
+		<Target Name="dclfrx15:Clean">
+			<MSBuild Projects="LibD15\dclfrx15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrx15:Make">
+			<MSBuild Projects="LibD15\dclfrx15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxADO15">
+			<MSBuild Projects="LibD15\dclfrxADO15.dproj"/>
+		</Target>
+		<Target Name="dclfrxADO15:Clean">
+			<MSBuild Projects="LibD15\dclfrxADO15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxADO15:Make">
+			<MSBuild Projects="LibD15\dclfrxADO15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxBDE15">
+			<MSBuild Projects="LibD15\dclfrxBDE15.dproj"/>
+		</Target>
+		<Target Name="dclfrxBDE15:Clean">
+			<MSBuild Projects="LibD15\dclfrxBDE15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxBDE15:Make">
+			<MSBuild Projects="LibD15\dclfrxBDE15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxcs15">
+			<MSBuild Projects="LibD15\dclfrxcs15.dproj"/>
+		</Target>
+		<Target Name="dclfrxcs15:Clean">
+			<MSBuild Projects="LibD15\dclfrxcs15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxcs15:Make">
+			<MSBuild Projects="LibD15\dclfrxcs15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxDB15">
+			<MSBuild Projects="LibD15\dclfrxDB15.dproj"/>
+		</Target>
+		<Target Name="dclfrxDB15:Clean">
+			<MSBuild Projects="LibD15\dclfrxDB15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxDB15:Make">
+			<MSBuild Projects="LibD15\dclfrxDB15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxDBX15">
+			<MSBuild Projects="LibD15\dclfrxDBX15.dproj"/>
+		</Target>
+		<Target Name="dclfrxDBX15:Clean">
+			<MSBuild Projects="LibD15\dclfrxDBX15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxDBX15:Make">
+			<MSBuild Projects="LibD15\dclfrxDBX15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxe15">
+			<MSBuild Projects="LibD15\dclfrxe15.dproj"/>
+		</Target>
+		<Target Name="dclfrxe15:Clean">
+			<MSBuild Projects="LibD15\dclfrxe15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxe15:Make">
+			<MSBuild Projects="LibD15\dclfrxe15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxIBX15">
+			<MSBuild Projects="LibD15\dclfrxIBX15.dproj"/>
+		</Target>
+		<Target Name="dclfrxIBX15:Clean">
+			<MSBuild Projects="LibD15\dclfrxIBX15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxIBX15:Make">
+			<MSBuild Projects="LibD15\dclfrxIBX15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfrxTee15">
+			<MSBuild Projects="LibD15\dclfrxTee15.dproj"/>
+		</Target>
+		<Target Name="dclfrxTee15:Clean">
+			<MSBuild Projects="LibD15\dclfrxTee15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfrxTee15:Make">
+			<MSBuild Projects="LibD15\dclfrxTee15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfs15">
+			<MSBuild Projects="LibD15\dclfs15.dproj"/>
+		</Target>
+		<Target Name="dclfs15:Clean">
+			<MSBuild Projects="LibD15\dclfs15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfs15:Make">
+			<MSBuild Projects="LibD15\dclfs15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfsADO15">
+			<MSBuild Projects="LibD15\dclfsADO15.dproj"/>
+		</Target>
+		<Target Name="dclfsADO15:Clean">
+			<MSBuild Projects="LibD15\dclfsADO15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfsADO15:Make">
+			<MSBuild Projects="LibD15\dclfsADO15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfsBDE15">
+			<MSBuild Projects="LibD15\dclfsBDE15.dproj"/>
+		</Target>
+		<Target Name="dclfsBDE15:Clean">
+			<MSBuild Projects="LibD15\dclfsBDE15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfsBDE15:Make">
+			<MSBuild Projects="LibD15\dclfsBDE15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfsDB15">
+			<MSBuild Projects="LibD15\dclfsDB15.dproj"/>
+		</Target>
+		<Target Name="dclfsDB15:Clean">
+			<MSBuild Projects="LibD15\dclfsDB15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfsDB15:Make">
+			<MSBuild Projects="LibD15\dclfsDB15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfsIBX15">
+			<MSBuild Projects="LibD15\dclfsIBX15.dproj"/>
+		</Target>
+		<Target Name="dclfsIBX15:Clean">
+			<MSBuild Projects="LibD15\dclfsIBX15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfsIBX15:Make">
+			<MSBuild Projects="LibD15\dclfsIBX15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclfsTee15">
+			<MSBuild Projects="LibD15\dclfsTee15.dproj"/>
+		</Target>
+		<Target Name="dclfsTee15:Clean">
+			<MSBuild Projects="LibD15\dclfsTee15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclfsTee15:Make">
+			<MSBuild Projects="LibD15\dclfsTee15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fqb150">
+			<MSBuild Projects="LibD15\fqb150.dproj"/>
+		</Target>
+		<Target Name="fqb150:Clean">
+			<MSBuild Projects="LibD15\fqb150.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fqb150:Make">
+			<MSBuild Projects="LibD15\fqb150.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frx15">
+			<MSBuild Projects="LibD15\frx15.dproj"/>
+		</Target>
+		<Target Name="frx15:Clean">
+			<MSBuild Projects="LibD15\frx15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frx15:Make">
+			<MSBuild Projects="LibD15\frx15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxADO15">
+			<MSBuild Projects="LibD15\frxADO15.dproj"/>
+		</Target>
+		<Target Name="frxADO15:Clean">
+			<MSBuild Projects="LibD15\frxADO15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxADO15:Make">
+			<MSBuild Projects="LibD15\frxADO15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxBDE15">
+			<MSBuild Projects="LibD15\frxBDE15.dproj"/>
+		</Target>
+		<Target Name="frxBDE15:Clean">
+			<MSBuild Projects="LibD15\frxBDE15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxBDE15:Make">
+			<MSBuild Projects="LibD15\frxBDE15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxcs15">
+			<MSBuild Projects="LibD15\frxcs15.dproj"/>
+		</Target>
+		<Target Name="frxcs15:Clean">
+			<MSBuild Projects="LibD15\frxcs15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxcs15:Make">
+			<MSBuild Projects="LibD15\frxcs15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxDB15">
+			<MSBuild Projects="LibD15\frxDB15.dproj"/>
+		</Target>
+		<Target Name="frxDB15:Clean">
+			<MSBuild Projects="LibD15\frxDB15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxDB15:Make">
+			<MSBuild Projects="LibD15\frxDB15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxDBX15">
+			<MSBuild Projects="LibD15\frxDBX15.dproj"/>
+		</Target>
+		<Target Name="frxDBX15:Clean">
+			<MSBuild Projects="LibD15\frxDBX15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxDBX15:Make">
+			<MSBuild Projects="LibD15\frxDBX15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxe15">
+			<MSBuild Projects="LibD15\frxe15.dproj"/>
+		</Target>
+		<Target Name="frxe15:Clean">
+			<MSBuild Projects="LibD15\frxe15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxe15:Make">
+			<MSBuild Projects="LibD15\frxe15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxIBX15">
+			<MSBuild Projects="LibD15\frxIBX15.dproj"/>
+		</Target>
+		<Target Name="frxIBX15:Clean">
+			<MSBuild Projects="LibD15\frxIBX15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxIBX15:Make">
+			<MSBuild Projects="LibD15\frxIBX15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="frxTee15">
+			<MSBuild Projects="LibD15\frxTee15.dproj"/>
+		</Target>
+		<Target Name="frxTee15:Clean">
+			<MSBuild Projects="LibD15\frxTee15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="frxTee15:Make">
+			<MSBuild Projects="LibD15\frxTee15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fs15">
+			<MSBuild Projects="LibD15\fs15.dproj"/>
+		</Target>
+		<Target Name="fs15:Clean">
+			<MSBuild Projects="LibD15\fs15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fs15:Make">
+			<MSBuild Projects="LibD15\fs15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fsADO15">
+			<MSBuild Projects="LibD15\fsADO15.dproj"/>
+		</Target>
+		<Target Name="fsADO15:Clean">
+			<MSBuild Projects="LibD15\fsADO15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fsADO15:Make">
+			<MSBuild Projects="LibD15\fsADO15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fsBDE15">
+			<MSBuild Projects="LibD15\fsBDE15.dproj"/>
+		</Target>
+		<Target Name="fsBDE15:Clean">
+			<MSBuild Projects="LibD15\fsBDE15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fsBDE15:Make">
+			<MSBuild Projects="LibD15\fsBDE15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fsDB15">
+			<MSBuild Projects="LibD15\fsDB15.dproj"/>
+		</Target>
+		<Target Name="fsDB15:Clean">
+			<MSBuild Projects="LibD15\fsDB15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fsDB15:Make">
+			<MSBuild Projects="LibD15\fsDB15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fsIBX15">
+			<MSBuild Projects="LibD15\fsIBX15.dproj"/>
+		</Target>
+		<Target Name="fsIBX15:Clean">
+			<MSBuild Projects="LibD15\fsIBX15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fsIBX15:Make">
+			<MSBuild Projects="LibD15\fsIBX15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="fsTee15">
+			<MSBuild Projects="LibD15\fsTee15.dproj"/>
+		</Target>
+		<Target Name="fsTee15:Clean">
+			<MSBuild Projects="LibD15\fsTee15.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="fsTee15:Make">
+			<MSBuild Projects="LibD15\fsTee15.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="dclfrx15;dclfrxADO15;dclfrxBDE15;dclfrxcs15;dclfrxDB15;dclfrxDBX15;dclfrxe15;dclfrxIBX15;dclfrxTee15;dclfs15;dclfsADO15;dclfsBDE15;dclfsDB15;dclfsIBX15;dclfsTee15;fqb150;frx15;frxADO15;frxBDE15;frxcs15;frxDB15;frxDBX15;frxe15;frxIBX15;frxTee15;fs15;fsADO15;fsBDE15;fsDB15;fsIBX15;fsTee15"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="dclfrx15:Clean;dclfrxADO15:Clean;dclfrxBDE15:Clean;dclfrxcs15:Clean;dclfrxDB15:Clean;dclfrxDBX15:Clean;dclfrxe15:Clean;dclfrxIBX15:Clean;dclfrxTee15:Clean;dclfs15:Clean;dclfsADO15:Clean;dclfsBDE15:Clean;dclfsDB15:Clean;dclfsIBX15:Clean;dclfsTee15:Clean;fqb150:Clean;frx15:Clean;frxADO15:Clean;frxBDE15:Clean;frxcs15:Clean;frxDB15:Clean;frxDBX15:Clean;frxe15:Clean;frxIBX15:Clean;frxTee15:Clean;fs15:Clean;fsADO15:Clean;fsBDE15:Clean;fsDB15:Clean;fsIBX15:Clean;fsTee15:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="dclfrx15:Make;dclfrxADO15:Make;dclfrxBDE15:Make;dclfrxcs15:Make;dclfrxDB15:Make;dclfrxDBX15:Make;dclfrxe15:Make;dclfrxIBX15:Make;dclfrxTee15:Make;dclfs15:Make;dclfsADO15:Make;dclfsBDE15:Make;dclfsDB15:Make;dclfsIBX15:Make;dclfsTee15:Make;fqb150:Make;frx15:Make;frxADO15:Make;frxBDE15:Make;frxcs15:Make;frxDB15:Make;frxDBX15:Make;frxe15:Make;frxIBX15:Make;frxTee15:Make;fs15:Make;fsADO15:Make;fsBDE15:Make;fsDB15:Make;fsIBX15:Make;fsTee15:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

@@ -1,0 +1,14 @@
+obj\Debug\VBADONetDemo.exe
+obj\Debug\VBADONetDemo.xml
+obj\Debug\VBADONetDemo.pdb
+bin\Debug\VBADONetDemo.exe
+bin\Debug\VBADONetDemo.pdb
+bin\Debug\VBADONetDemo.xml
+bin\Debug\Interop.AcReport.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\VBADONetDemo.vbproj.ResolveComReference.cache
+obj\Debug\VBADONetDemo.Form1.resources
+obj\Debug\VBADONetDemo.Resources.resources
+obj\Debug\VBADONetDemo.vbproj.GenerateResource.Cache
+bin\Debug\AcNetUtils.dll

@@ -1,0 +1,46 @@
+package ExecutePrice;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  Interfaces,
+  Vehicleseatplan,
+  rtl;
+
+contains
+  ExecutePriceExport in 'ExecutePriceExport.pas',
+  ExecutePricePlugin in 'ExecutePricePlugin.pas',
+  UFrmExecutePrice in 'UFrmExecutePrice.pas' {FrmExecutePrice},
+  UFrmGenExecutePrice in 'UFrmGenExecutePrice.pas' {FrmGenExecutePrice},
+  UFrmGenLog in 'UFrmGenLog.pas' {FrmGenLog},
+  UFrmExecutepriceItem in 'UFrmExecutepriceItem.pas' {FrmExecutepriceItem},
+  UFrmSchedulePlanSeatInfo in 'UFrmSchedulePlanSeatInfo.pas' {FrmSchedulePlanSeatInfo},
+  UFrmScheduledeparttime in 'UFrmScheduledeparttime.pas' {FrmScheduledeparttime};
+
+end.

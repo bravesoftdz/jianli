@@ -1,0 +1,13 @@
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.vbproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.Form1.resources
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.Resources.resources
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.vbproj.GenerateResource.Cache
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\bin\Debug\VBCustFuncDemo1.exe
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\bin\Debug\VBCustFuncDemo1.pdb
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\bin\Debug\VBCustFuncDemo1.xml
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.exe
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.xml
+E:\work\source\ACreport\COM\demos\VB.net\扩充自定义函数\OnFunction事件方式\VBCustFuncDemo1\VBCustFuncDemo1\obj\Debug\VBCustFuncDemo1.pdb

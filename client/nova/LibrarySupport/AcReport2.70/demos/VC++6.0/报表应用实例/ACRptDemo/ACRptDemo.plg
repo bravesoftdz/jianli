@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ACRptDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/ACRptDemo.res" /d "_DEBUG" /d "_AFXDLL" "E:\controls\ACreport\COM\demos\VC++6.0\报表应用实例\ACRptDemo\ACRptDemo.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ACRptDemo.pdb" /debug /machine:I386 /out:"Debug/ACRptDemo.exe" /pdbtype:sept  ".\Debug\ACRptDemo.obj" ".\Debug\ACRptDemoDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\ACRptDemo.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+ACRptDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

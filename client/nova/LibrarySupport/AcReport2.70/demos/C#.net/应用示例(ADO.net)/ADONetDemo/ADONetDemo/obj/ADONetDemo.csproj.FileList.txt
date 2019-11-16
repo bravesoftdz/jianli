@@ -1,0 +1,12 @@
+bin\Debug\ADONetDemo.exe
+bin\Debug\ADONetDemo.pdb
+bin\Debug\Interop.AcReport.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\ADONetDemo.csproj.ResolveComReference.cache
+obj\Debug\ADONetDemo.Form1.resources
+obj\Debug\ADONetDemo.Properties.Resources.resources
+obj\Debug\ADONetDemo.csproj.GenerateResource.Cache
+obj\Debug\ADONetDemo.exe
+obj\Debug\ADONetDemo.pdb
+bin\Debug\AcNetUtils.dll

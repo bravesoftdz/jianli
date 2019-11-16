@@ -1,0 +1,247 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ACRptDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ACRptDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ACRptDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ACRptDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ACRPTDEMO_DIALOG DIALOGEX 0, 0, 446, 295
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AC Report 报表应用示例 (ADO)"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "常用报表",IDC_STATIC,10,8,133,233
+    GROUPBOX        "对话框和脚本",IDC_STATIC,151,7,133,104
+    GROUPBOX        "内部数据",IDC_STATIC,151,115,134,77
+    GROUPBOX        "动作",IDC_STATIC,9,246,423,36
+    CONTROL         "预览报表",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,22,261,
+                    48,10
+    CONTROL         "设计报表",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,96,261,
+                    48,10
+    CONTROL         "打印报表",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,158,
+                    261,48,10
+    PUSHBUTTON      "关闭",IDC_EXIT,372,258,50,14
+    PUSHBUTTON      "多种单元格样式展示",IDC_BUTTON2,17,22,117,19
+    PUSHBUTTON      "普通清单",IDC_BUTTON3,17,43,117,19
+    PUSHBUTTON      "自动合并/销售明细表",IDC_BUTTON4,17,64,117,19
+    PUSHBUTTON      "主从报表",IDC_BUTTON5,17,85,117,19
+    PUSHBUTTON      "分组报表",IDC_BUTTON6,17,106,117,19
+    PUSHBUTTON      "子报表",IDC_BUTTON7,17,127,117,19
+    PUSHBUTTON      "多级嵌套子报表",IDC_BUTTON8,17,148,117,19
+    PUSHBUTTON      "图表",IDC_BUTTON9,17,169,117,19
+    PUSHBUTTON      "图像分栏报表/工作证打印",IDC_BUTTON10,17,190,117,19
+    PUSHBUTTON      "动态的Rich文本/批量信函",IDC_BUTTON11,17,211,117,19
+    PUSHBUTTON      "打印输入的内容",IDC_BUTTON12,161,19,117,19
+    PUSHBUTTON      "有口令的报表",IDC_BUTTON13,161,42,117,19
+    PUSHBUTTON      "现行间颜色变化",IDC_BUTTON14,161,62,117,19
+    PUSHBUTTON      "动态隐藏行",IDC_BUTTON15,161,83,117,19
+    PUSHBUTTON      "ADO Table",IDC_BUTTON16,159,127,117,19
+    PUSHBUTTON      "ADO简单查询",IDC_BUTTON17,159,148,117,19
+    PUSHBUTTON      "带参数的报表",IDC_BUTTON18,159,168,117,19
+    GROUPBOX        "变量",IDC_STATIC,152,196,133,46
+    LTEXT           "变量1",IDC_STATIC,163,209,21,8
+    EDITTEXT        IDC_EDIT1,198,206,79,14,ES_AUTOHSCROLL
+    LTEXT           "变量2",IDC_STATIC,163,226,21,8
+    EDITTEXT        IDC_EDIT2,198,222,79,14,ES_AUTOHSCROLL
+    GROUPBOX        "新版特性",IDC_STATIC,294,7,138,235
+    PUSHBUTTON      "自定义字间距和行间距",IDC_BUTTON19,301,19,117,19
+    PUSHBUTTON      "报表视图 - 并列的明细",IDC_BUTTON20,301,43,117,19
+    PUSHBUTTON      "报表视图 - 单元格 拖动对象",IDC_BUTTON21,301,66,117,19
+    PUSHBUTTON      "报表视图 - 拖动对象",IDC_BUTTON22,302,90,117,19
+    PUSHBUTTON      "基于可拖动对象的报表",IDC_BUTTON23,302,113,117,19
+    PUSHBUTTON      "含数据模块的报表",IDC_BUTTON24,302,140,117,19
+    PUSHBUTTON      "设置字段别名",IDC_BUTTON25,303,163,117,19
+    PUSHBUTTON      "明细分两栏打印(横向顺序分栏)",IDC_BUTTON26,303,189,117,
+                    19
+    PUSHBUTTON      "套打辅助设计(不打印背景图案",IDC_BUTTON27,304,213,117,
+                    19
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ACRptDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ACRptDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ACRptDemo.EXE\0"
+            VALUE "ProductName", "ACRptDemo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ACRPTDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ACRptDemo(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ACRptDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

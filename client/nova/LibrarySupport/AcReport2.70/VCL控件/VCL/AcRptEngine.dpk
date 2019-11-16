@@ -1,0 +1,55 @@
+package AcRptEngine;
+
+{$R *.res}
+{$R 'AcReportVCL.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  vclx,
+  bdertl,
+  dcldb,
+  VclSmp,
+  dclbde,
+  adortl,
+  designide,
+  vclactnband,
+  vcldesigner,
+  designdgm,
+  dclstd,
+  vcldb;
+
+contains
+  AcReportVCL in 'AcReportVCL.pas',
+  AcReport_TLB_Int in 'AcReport_TLB_Int.pas',
+  ADOInt_AC in 'ADOInt_AC.pas',
+  ADODB_TLB in 'ADODB_TLB.pas',
+  CustAdoInt in 'CustAdoInt.pas',
+  ACEditorEx in 'ACEditorEx.pas';
+
+end.

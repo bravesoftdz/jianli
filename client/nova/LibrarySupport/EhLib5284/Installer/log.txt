@@ -1,0 +1,399 @@
+
+------2013-11-6 上午 10:43:24------
+
+Installation log
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\Common\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\RADStudio2010\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DEMOS C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataDrivers C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataService C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\HLP C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\*.* C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources\Simplified Chinese\*.* C:\Program 
+Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib :Ok
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+65 lines, 0.17 seconds, 1036324 bytes code, 2308 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+118 lines, 1.06 seconds, 175620 bytes code, 784 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+2602 lines, 1.05 seconds, 28000 bytes code, 108 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+DclEhLib140.dpk(52) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+EhLibDataDrivers140.dpk(46) 
+EhLib.Inc(130)               
+IBXDataDriverDesignEh.pas(552) 
+EhLib.Inc(130)               
+ADODataDriverDesignEh.pas(1178) 
+EhLib.Inc(130)               
+SQLConnEdEh.pas(223) 
+DBXDataDriverDesignEh.pas(585) 
+EhLib.Inc(130)               
+BDEDataDriverDesignEh.pas(832) 
+6595 lines, 5.03 seconds, 52828 bytes code, 132 bytes data.
+
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpl to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Bpl :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.dcp to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpi to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.lib to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Reg: Path - "C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib" already present in Search Path
+Installation completed.
+
+------2013-10-15 上午 01:25:19------
+
+Installation log
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\Common\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\RADStudio2010\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DEMOS C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataDrivers C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataService C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\HLP C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\*.* C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources\Simplified Chinese\*.* C:\Program 
+Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib :Ok
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+65 lines, 0.50 seconds, 1036324 bytes code, 2308 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+118 lines, 1.08 seconds, 175620 bytes code, 784 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+2602 lines, 1.06 seconds, 28000 bytes code, 108 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+DclEhLib140.dpk(52) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+EhLibDataDrivers140.dpk(46) 
+EhLib.Inc(130)               
+IBXDataDriverDesignEh.pas(552) 
+EhLib.Inc(130)               
+ADODataDriverDesignEh.pas(1178) 
+EhLib.Inc(130)               
+SQLConnEdEh.pas(223) 
+DBXDataDriverDesignEh.pas(585) 
+EhLib.Inc(130)               
+BDEDataDriverDesignEh.pas(832) 
+6595 lines, 5.08 seconds, 52828 bytes code, 132 bytes data.
+
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpl to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Bpl :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.dcp to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpi to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.lib to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Reg: Path - "C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib" added in Search Path: OK
+Installation completed.
+
+------2013-10-14 17:25:08------
+
+Installation log
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\Common\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\RADStudio2010\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DEMOS C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataDrivers C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataService C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\HLP C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\*.* C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources\Simplified Chinese\*.* C:\Program 
+Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib :Ok
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+65 lines, 0.31 seconds, 1036324 bytes code, 2308 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+118 lines, 1.06 seconds, 175620 bytes code, 784 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+2602 lines, 1.05 seconds, 28000 bytes code, 108 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+DclEhLib140.dpk(52) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+EhLibDataDrivers140.dpk(46) 
+EhLib.Inc(130)               
+IBXDataDriverDesignEh.pas(552) 
+EhLib.Inc(130)               
+ADODataDriverDesignEh.pas(1178) 
+EhLib.Inc(130)               
+SQLConnEdEh.pas(223) 
+DBXDataDriverDesignEh.pas(585) 
+EhLib.Inc(130)               
+BDEDataDriverDesignEh.pas(832) 
+6595 lines, 5.05 seconds, 52828 bytes code, 132 bytes data.
+
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpl to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Bpl :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.dcp to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpi to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.lib to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Reg: Path - "C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib" added in Search Path: OK
+Installation completed.
+
+------2013-1-5 下午 02:17:02------
+
+Installation log
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\Common\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\RADStudio2010\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DEMOS C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataDrivers C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataService C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\HLP C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\*.* C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources\Simplified Chinese\*.* C:\Program 
+Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib :Ok
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+65 lines, 0.16 seconds, 1036324 bytes code, 2308 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+118 lines, 1.06 seconds, 175620 bytes code, 784 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+2602 lines, 1.03 seconds, 28000 bytes code, 108 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+DclEhLib140.dpk(52) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+EhLibDataDrivers140.dpk(46) 
+EhLib.Inc(130)               
+IBXDataDriverDesignEh.pas(552) 
+EhLib.Inc(130)               
+ADODataDriverDesignEh.pas(1178) 
+EhLib.Inc(130)               
+SQLConnEdEh.pas(223) 
+DBXDataDriverDesignEh.pas(585) 
+EhLib.Inc(130)               
+BDEDataDriverDesignEh.pas(832) 
+6595 lines, 5.03 seconds, 52828 bytes code, 132 bytes data.
+
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpl to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Bpl :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.dcp to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpi to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.lib to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Reg: Path - "C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib" already present in Search Path
+Installation completed.
+
+------2013-1-2 下午 04:39:28------
+
+Installation log
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\Common\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\RADStudio2010\*.* C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib\Lib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DEMOS C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataDrivers C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\DataService C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\HLP C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources C:\Program Files\Embarcadero\RAD 
+Studio\7.0\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\*.* C:\Program Files\Embarcadero\RAD Studio\7.0
+\Components\EhLib :Ok
+Copy D:\svn\sz_201001_kyzw\06SRC\novabus\LibrarySupport\EhLib5284\LangResources\Simplified Chinese\*.* C:\Program 
+Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib :Ok
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+65 lines, 0.25 seconds, 1036324 bytes code, 2308 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLib140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+118 lines, 1.06 seconds, 175620 bytes code, 784 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B EhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+2602 lines, 1.05 seconds, 28000 bytes code, 108 bytes data.
+
+C:\Program Files\Embarcadero\RAD Studio\7.0\Bin\dcc32.exe -B DclEhLibDataDrivers140.dpk
+Copyright (c) 1983,2009 Embarcadero Technologies, Inc.
+EhLib140.dpk(64) 
+DclEhLib140.dpk(52) 
+EhLib.Inc(130)         
+IBXDataDriverEh.pas(405) 
+EhLib.Inc(130)         
+ADODataDriverEh.pas(711) 
+EhLib.Inc(130)         
+BDEDataDriverEh.pas(468) 
+EhLib.Inc(130)         
+DBXDataDriverEh.pas(386) 
+EhLibDataDrivers140.dpk(46) 
+EhLib.Inc(130)               
+IBXDataDriverDesignEh.pas(552) 
+EhLib.Inc(130)               
+ADODataDriverDesignEh.pas(1178) 
+EhLib.Inc(130)               
+SQLConnEdEh.pas(223) 
+DBXDataDriverDesignEh.pas(585) 
+EhLib.Inc(130)               
+BDEDataDriverDesignEh.pas(832) 
+6595 lines, 5.05 seconds, 52828 bytes code, 132 bytes data.
+
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpl to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Bpl :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.dcp to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.bpi to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Copy C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib\*.lib to C:\Documents and Settings\All 
+Users\Documents\RAD Studio\7.0\Dcp :Ok
+Reg: Path - "C:\Program Files\Embarcadero\RAD Studio\7.0\Components\EhLib\Lib" added in Search Path: OK
+Installation completed.
+
+------2013-1-2 下午 04:36:46------
+
+Installation log

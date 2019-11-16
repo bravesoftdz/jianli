@@ -1,0 +1,10 @@
+AcUtils中提供的是接口类型库文件，请直在的工程中包含这两个单元。
+
+其中AcReport_TLB.pas可以按照如下的方法自动生成：
+
+
+打开delphi工程后，执行：Project -> Import Type Libray
+
+在对话框中找到AcReportEngine一项，然后执行“Create Unit”，即可以得到最新的 AcReport_TLB.pas
+
+执行上述操作前，请确保最新的AcReport.dll已经注册，如果未注册，请运行 Regsvr32 路径\AcReport.dll 注册（或运行随AcReport.dll一起发布的.bat文件）

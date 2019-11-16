@@ -1,0 +1,48 @@
+package organization;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vcldb,
+  EhLib140,
+  vclimg,
+  Interfaces,
+  VirtualTreesR;
+
+contains
+  OrgManagerPlugin in 'OrgManagerPlugin.pas',
+  OrgManagerExport in 'OrgManagerExport.pas',
+  UFrmOrgEdit in 'UFrmOrgEdit.pas' {FrmOrgEdit},
+  UFrmDepEdit in 'UFrmDepEdit.pas' {FrmDepEdit},
+  UFrmOrganization in 'UFrmOrganization.pas' {FrmOrganization};
+
+end.

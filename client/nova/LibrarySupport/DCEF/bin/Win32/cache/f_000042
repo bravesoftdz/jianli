@@ -1,0 +1,385 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>踢狗网--厦门麻将,泉州麻将,福州麻将,龙岩麻将,龙岩牌九,斗地主,510K,跑的快,炸金花,十三水,同花顺,拱猪,四国军旗,连连看,龙珠,80分,台球,象棋,牛牛,疯狂台球,南平麻将</title>
+		<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<meta content="厦门麻将,泉州麻将,福州麻将,斗地主,510K,跑的快,炸金花,十三水,梭哈,拱猪,四国军旗,连连看,牛牛,龙珠,80分,台球,象棋,game,踢狗,棋牌,游戏,休闲游戏,喜金,厦门,泉州,福建,龙岩"
+			name="keywords">
+		<link type="text/css" href="css/main.css" rel="stylesheet">
+		<script language="javascript" src="js/nav.js"></script>
+        <script language="javascript" src="js/jquery-1.4.1.min.js"></script>
+	</HEAD>
+	<body>
+		<form method="post" action="" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MTA0ODI2NzMPZBYCAgEPZBYEAgEPZBYCAgMPFgIeB1Zpc2libGVoZAILD2QWAgIDDxYCHwBoZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUOVG9wMSRidG5fbG9naW5xjB0neI6nImmTZglWfPfYzXkVxQTQ4SR+lRd1sp6Rwg==" />
+</div>
+
+			
+<div id="top">
+	<div id="Top1_login" class="userinfo">用户名<input name="Top1$username" type="text" id="Top1_username" class="input" style="WIDTH: 64px" maxlength="32" />
+		密码<input name="Top1$password" type="password" id="Top1_password" style="WIDTH: 64px" maxlength="32" />
+		<!--动态密码 <input name="Top1$dynamic" type="text" id="Top1_dynamic" style="WIDTH:72px; COLOR:#aaaaaa" maxlength="8" onclick="onsnlogin(this)" value="没有可以不填" onblur="outsnlogin(this)" />-->
+		验证码 <input name="Top1$verify" type="text" id="Top1_verify" style="WIDTH: 32px" maxlength="4" />&nbsp;&nbsp;<img id="Top1_Image1" class="img" src="verifycode.aspx" /><input type="image" name="Top1$btn_login" id="Top1_btn_login" src="imgs/top/btn_login.gif" style="border-width:0px;height:17px;width:42px;" />
+	</div>
+	
+</div>
+
+            <!--[if IE 6]>
+<script src="/Scripts/DD_belatedPNG_0.0.7a-min.js"></script>
+<script>
+/*png透明图片IE6解决方案*/
+DD_belatedPNG.fix('.link,.close');
+</script>
+<![endif]-->
+<style type="text/css">
+<!--
+	.huodong {
+		height: 800px;
+		width: 1024px;
+		position:relative;
+		margin:0px auto;
+	}
+	.huodong .link
+	{
+	    display:block;
+		position:absolute;
+		width:271px;
+		height:115px;
+		top:369px;
+		left:652px;
+		background-image:url(/imgad/mibao/yanzheng.png);
+		text-indent:-999em;
+		overflow:hidden;
+	}
+	.huodong .link:hover{ background-position:-271px 0;}
+	.huodong .close
+	{
+	    display:block;
+		position:absolute;
+		width:36px;
+		height:36px;
+		top:2px;
+		right:5px;
+		background-image:url(/imgad/mibao/close.png);
+		text-indent:-999em;
+		overflow:hidden;
+	}
+	.huodong .close:hover{ background-position:-36px 0;}
+	-->
+</style>
+<div id="huodong" class="huodong" style="display:none;">
+<img src="/imgad/mibao/ad.jpg" width="1024" height="800" />
+<a href="/centeruser/sms/pay.aspx" class="link"></a>
+<a href="javascript:closehuodong();" class="close"></a>
+</div>
+<script language="javascript">
+function closehuodong() {
+    $("#huodong").slideUp(1000);
+    $("#tigouad").fadeIn(2000);
+    if (timerid) {
+        clearTimeout(timerid);
+    }
+}
+var timerid;
+$(document).ready(function () {
+    sethuodong();
+    $("#tigouad").slideUp(20);
+    $("#huodong").slideDown(1000); //.css("top",($(window).height()-676)/2)
+    setTimeout("closehuodong()", 10000);
+});
+
+
+function sethuodong() {
+    //$("#huodong").append("<img src='/imgad/mibao/ad.jpg'>")   
+}
+
+
+</script>
+			
+<a href="http://active.tigou.net/match/ddz_s4/content.aspx"><div id="tigouad" style="cursor:pointer;"></div></a>
+
+			
+<div id="menu">
+	<div class="logo"><a href="/index/index.aspx"><img src="/imgs/logo.gif"></a></div>
+	<div class="catelog">
+		<div style="WIDTH:80px"><a href="/default.aspx"><img src="/imgs/menu/index.gif" width="78" height="36" border="0" id="index" onMouseOver="menu_index_over(this)" onMouseOut="menu_index_out(this)"></a></div>
+		<div style="WIDTH:80px"><a href="/cz_new_pay.aspx"><img src="/imgs/menu/money.gif" width="78" height="36" border="0" id="money" onMouseOver="menu_money_over(this)" onMouseOut="menu_money_out(this)"></a></div>
+		<div style="WIDTH:111px"><a href="/centeruser/sms/pay.aspx"><img src="/imgs/menu/sn.gif" height="36" border="0" id="sn" onMouseOver="menu_sn_over(this)" onMouseOut="menu_sn_out(this)"></a></div>
+		<div style="WIDTH:111px"><a href="/jiazhang/index.html" target="_blank"><img src="/imgs/menu/home.gif" width="109" height="36" border="0" id="home" onMouseOver="menu_home_over(this)" onMouseOut="menu_home_out(this)"></a></div>
+		<div style="WIDTH:111px"><a href="/centeruser/center_user.aspx"><img src="/imgs/menu/center.gif" width="109" height="36" border="0" id="center" onMouseOver="menu_center_over(this)" onMouseOut="menu_center_out(this)"></a></div>
+		<div><a href="/service.aspx"><img src="/imgs/menu/service.gif" width="78" height="36" border="0" id="service" onMouseOver="menu_service_over(this)" onMouseOut="menu_service_out(this)"></a></div>
+		<div class="hot"><a href="/agreement.aspx"><img src="/imgs/menu/menu_shop.gif" width="104" height="28" /></a><a href="/register.aspx"><img src="/imgs/menu/register.gif" width="104" height="28" /></a><a href="/huiyuan.aspx"><img src="/imgs/menu/zhaoshang.jpg" width="97" height="28" /></a><a href="http://active.tigou.net/13shui/index.aspx"><img src="/imgs/menu/tuiguang.jpg"/></a><a href="/friendlink.aspx"><img src="/imgs/menu/link.jpg"/></a><img src="/imgs/menu/hotgame.jpg" width="20" height="28" /></div>
+	</div>
+</div>
+
+			
+			<div id="main">
+				<div id="left_main">
+					
+<div id="left_login"><div id="Login1_unlogin"><a href="login.aspx"><img src="imgs/login/btn_login.jpg" border="0"></a><a href="register.aspx"><img src="imgs/login/btn_register.jpg" border="0"></a><a href="download.aspx"><img src="imgs/login/btn_download.jpg" border="0"></a><a href="cz_new_pay.aspx"><img src="imgs/login/btn_rechange.jpg" border="0"></a></div>
+	
+</div>
+
+					
+<div id="left_service">
+						<div class="top"></div>
+						<div class="main">
+                        <div class="contact">
+							全国统一24小时客服电话：<br>
+							<font color="#ff0000">400-621-8238</font><br>
+							邮箱：xmtigou@tigou1.net<br>
+							QQ:4006218238&nbsp;&nbsp;&nbsp;&nbsp;
+							<!-- WPA Button Begin -->
+<script type="text/javascript" src="http://static.b.qq.com/account/bizqq/js/wpa.js?wty=1&type=2&kfuin=4006218238&ws=http%3A%2F%2Fwww.tigou.net&btn1=QQ%E5%9C%A8%E7%BA%BF&aty=0&a=&key=X1%032SfRa%006%00g%06%3E%03h%03%60So%04%3DP%3EVe%02l%5C%3AP4%09a%0D8%033%007"></script>
+<!-- WPA Button END -->
+                        </div>
+                        <div class="btn"><a href="service_select.aspx"><img src="/imgs/service/btn_service_question.gif" width="106" height="25"></a><a href="service_faq.aspx"><img src="/imgs/service/btn_service_rule.gif" width="87" height="25"></a><a href="service_downtable.aspx"><img src="/imgs/service/btn_service_table.gif" width="106" height="25"></a><a href="getpassword_username.aspx"><img src="/imgs/service/btn_service_forgetpassword.gif" width="87" height="25"></a></div>
+                        </div>
+						<div class="bottom"></div>
+					</div>
+					
+					<div id="left_help">
+						<div class="top"></div>
+						<div class="main">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img id="question_install" src="/imgs/question/btn_question_install.gif" width="206" height="45" onmouseover="question_install_over(this)" onmouseout="question_install_out(this)" onclick="installdisplay()" border="0"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="table" id="install" style="display:none; height: auto; overflow:hidden">
+  <tr>
+    <td width="206" height="21" valign="middle" class="tdtop"><a href="/help_hall_down.aspx?id=install">如何下载游戏大厅</a></td>
+  </tr>
+  <tr>
+    <td height="23" valign="middle" class="tdbtm" width="206" ><a href="/help_hall_install.aspx?id=install">如何安装游戏大厅</a></td>
+  </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><img id="question_money" src="/imgs/question/btn_question_money.gif" width="206" height="43" onmouseover="question_money_over(this)" onmouseout="question_money_out(this)" border="0"  onclick="moneydisplay()" ><table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table" id="recharge" style="display:none; height: auto; overflow:hidden" align="center">
+    <tr>
+    <td height="21" valign="middle" class="tdtop" width="206"><a href="/help_cz_resume.aspx?id=recharge">免费充值</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_cz_card.aspx?id=recharge">游戏点卡充值</a></td>
+  </tr> 
+     <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_cz_phone.aspx?id=recharge">声讯充值</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_cz_ips.aspx?id=recharge">银行卡充值</a></td>
+  </tr>
+  <tr>
+    <td height="23" valign="middle" class="tdbtm" width="206" ><a href="/help_cz_shenzhoufu.aspx?id=recharge">神州行卡充值</a></td>
+  </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="/imgs/question/btn_question_account.gif" width="206" height="44" id="question_account" onmouseover="question_account_over(this)" onmouseout="question_account_out(this)" border="0" onclick="accountdisplay()" /><table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table" id="account" style="display:none; height: auto; overflow:hidden">
+  <tr>
+    <td width="206" height="21" valign="middle" class="tdtop"><a href="/help_account_reg.aspx?id=account">如何注册成为踢狗游戏玩家</a> </td>
+  </tr>
+    <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_account_protect.aspx?id=account">如何申请密码保护服务</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_account_bank.aspx?id=account">如何申请喜金银行服务</a></td>
+  </tr> 
+     <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_account_pass.aspx?id=account">如何修改密码</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_account_name.aspx?id=account">如何修改用户名</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_account_editemail.aspx?id=account">如何修改安全电子邮件地址</a></td>
+  </tr>
+  <tr>
+    <td height="23" valign="middle" class="tdbtm" width="206" ><a href="/help_account_getpass.aspx?id=account">如何找回密码</a></td>
+  </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="/imgs/question/btn_question_play.gif" width="206" height="45" id="question_play" onmouseover="question_play_over(this)" onmouseout="question_play_out(this)" border="0" onclick="playdisplay()"><table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table" id="play" style="display:none; height: auto; overflow:hidden">
+  <tr>
+    <td width="206" height="21" valign="middle" class="tdtop"><a href="/help_game_login.aspx?id=play">如何登陆游戏</a></td>
+  </tr>
+    <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_add.aspx?id=play">如何寻找游戏加入</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_start.aspx?id=play">如何开始游戏</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_exit.aspx?id=play">如何离开游戏</a></td>
+  </tr> 
+     <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_info.aspx?id=play">如何查看他人游戏状态</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_invite.aspx?id=play">如何邀请别人一起进行游戏</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_look.aspx?id=play">如何旁观他人游戏</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_chat.aspx?id=play">如何在游戏中与他人聊天</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_black.aspx?id=play">如何在游戏中添加黑名单</a></td>
+  </tr>
+      <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_friend.aspx?id=play">如何在游戏中添加游戏好友</a></td>
+  </tr>
+        <tr>
+    <td height="23" valign="middle" class="tdmid" width="206" ><a href="/help_game_orderby.aspx?id=play">如何使用排序功能</a></td>
+  </tr> 
+  <tr>
+    <td height="23" valign="middle" class="tdbtm" width="206" ><a href="/help_game_set.aspx?id=play">如何使用游戏大厅设置</a></td>
+  </tr>
+   </table></td></tr>
+  <tr>
+    <td align="center"><img src="/imgs/question/question_btn_bottom.gif" width="206" height="6" /></td>
+  </tr>
+   
+   
+                          </table>
+				    </div>
+						<div class="bottom"></div>
+					</div>
+                    <script>
+                    function default_install(obj)
+					{
+					//	alert(1)
+					//	obj="install"
+						switch (obj)
+						{
+							case "install":
+							window.location.href="/help_hall_down.aspx?id=install";
+							break;
+							case "recharge":
+							window.location.href="/help_cz_ips.aspx?id=recharge";
+							break;
+							case "play":
+							window.location.href="/help_game_add.aspx?id=play";
+							break;
+							case "account":
+							window.location.href="/help_account_reg.aspx?id=account";
+							break;
+						}
+					}
+                    </script>
+					
+					<script>document.getElementById("question_install").onclick=function(){default_install("install");};document.getElementById("question_money").onclick=function(){default_install("recharge");};document.getElementById("question_play").onclick=function(){default_install("play");};document.getElementById("question_account").onclick=function(){default_install("account");};</script>
+				</div>
+				<div id="right_main">
+					
+<div id="flash">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="540" height="253" id="dsfds" VIEWASTEXT>
+    <param name="movie" value="jpgrotator.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <embed src="jpgrotator.swf" quality="high" wmode="opaque" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="540" height="253" id="dsfds"></embed>
+  </object>
+</div>
+						<div id="news"><br><br><br><br><img class="img" src="imgs/loading.gif">&nbsp;正在加载公告</div>
+					<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+		<link type="text/css" href="css/main.css" rel="stylesheet">
+<body>
+<div id="news">
+	<div class="menu" id="newstitle">
+		<img src="imgs/news/menu_news_locate.jpg"onClick="newslist()"><img src="imgs/news/menu_news_sp2.jpg" width="2" height="62"><img src="imgs/news/menu_game.jpg" onClick="gamelist()" onMouseOver="gameover(this)" onMouseOut="gameout(this)">
+	</div>
+	<div class="more"><a href="newstitle.aspx"><img src="imgs/news/menu_news_more.jpg" width="104" height="62" border="0"></a></div>
+	<div id="newscontent" class="content">
+		
+	</div>
+	<div id="gamecontent" class="content" style="DISPLAY:none">
+		
+	</div>
+</div>
+
+</body>
+</html>
+-->
+					
+				<div id="games">
+						<div class="menu" id="gamelisttitle">
+							<img src="imgs/gamelist/menu_newgame_locate.jpg" onClick="newgamelist()"><img src="imgs/gamelist/menu_card.jpg" onClick="cardlist()" onMouseOver="cardover(this)" onMouseOut="cardout(this)"><img src="imgs/gamelist/menu_sp.jpg" width="5" height="62"><img src="imgs/gamelist/menu_chess.jpg" onClick="chesslist()" onMouseOver="chessover(this)" onMouseOut="chessout(this)"><img src="imgs/gamelist/menu_sp.jpg" width="5" height="62"><img src="imgs/gamelist/menu_relax.jpg" onClick="relaxlist()" onMouseOver="relaxover(this)" onMouseOut="relaxout(this)"><img src="imgs/gamelist/menu_sp.jpg" width="5" height="62">
+						</div>
+						<div class="more"><a target=_blank  target=_blank href="download.aspx"><img src="imgs/gamelist/menu_game_more.jpg" border="0"></a></div>
+						<div class="contect" id="gamelistcontent">
+							<div><a target=_blank  href="gameintro/intro101.htm"><img src="imgs/gamelist/pic_yamengmajiang.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro97.htm"><img src="imgs/gamelist/pic_napingmajiang.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro99.htm"><img src="imgs/gamelist/pic_longyanmajiang.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro33.htm"><img src="imgs/gamelist/pic_doudizhu.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro71.htm"><img src="imgs/gamelist/pic_sinuoke.jpg"></a></div>
+						    <div><a target=_blank  href="gameintro/intro23.htm"><img src="imgs/gamelist/pic_taiqiu.jpg"></a></div>
+							<div><a target=_blank  href="gameintro/intro16.htm"><img src="imgs/gamelist/pic_xiangqi.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro119.htm"><img src="imgs/gamelist/pic_fuzhoumajiang.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro57.htm"><img src="imgs/gamelist/pic_zhangzhoumajiang.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro113.htm"><img src="imgs/gamelist/pic_quanzhoumajiang.jpg" width="111" height="61" border="0"></a></div>
+							<div><a target=_blank  href="gameintro/intro13.htm"><img src="imgs/gamelist/pic_bashifen.jpg" width="111" height="61" border="0"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mainbottom"></div>
+
+
+			
+<div id="bottom">
+
+<br>
+	健康游戏忠告： 抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+	<br>
+	<br>
+	<br>
+	沪ICP备10041824号-3&nbsp;&nbsp;<a href="/index/zhengshu.aspx" style="COLOR:#2c4880">文网文编号:【2013】0582-057号</a>
+	<br>
+	友情链接:<a href="http://www.fad3.cn/" target="_blank">fad3时尚网</a> | <a href="http://www.17717.com" target="_blank">
+		一起去游戏</a> | <a href="http://www.popyoo.com/" target="_blank">泡泡游</a> | <a href="http://main.ips.com.cn/" target="_blank">
+		环迅</a> | <a href="http://www.xiaake.cn/" target="_blank">qq头像</a> | <a href="http://www.88yy.com" target="_blank">
+		88yy小游戏</a>| <a href="http://yx.ok173.com/" target="_blank">
+		好一起上小游戏</a> | <a href="http://tool.ok173.com/" target="_blank">OK173工具大全</a>
+	<br>
+	<a href="http://www.duouoo.com/" target="_blank">多游网</a> | <a href="http://www.rexue.com/" target="_blank">
+		热血网</a> | <a href="http://www.86wan.com/" target="_blank">86wan网页游戏</a> | <a href="http://www.twoedu.com/" target="_blank">
+		双联游戏</a> | <a href="http://www.ftwlzx.com/" target="_blank">凤天网络在线</a> | <a href="http://www.ty366.com/" target="_blank">
+		天游网页游戏</a> | <a href="http://www.ufojoy.com/" target="_blank">星碟游戏</a> | <a href="http://www.97jr.com/" target="_blank">
+		杰瑞网</a> | <a href="http://suandsilversz.tmall.com/shop/viewShop.htm?prc=2" target="_blank">素之银</a> | <a href="../friendlink.aspx">更多&gt;&gt;&gt;</a><BR>
+	<a href="/downloads/docs/投诉信箱.doc">投诉信箱</a> | <a href="/downloads/docs/网络游戏服务格式化协议必备条款.doc">
+		服务格式化协议必备条款</a> | <a href="http://www.tigou.net/">上海光时信息技术有限公司</a>
+
+
+<br>
+<img src="/index/imgs/plice.jpg" width="57" height="57">
+<a href='http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120326181456205'><img src='/index/imgs/business.gif'  width="47" height="47" border=0></a>
+
+
+
+</div>
+
+		</form>
+	</body>
+</HTML>
+<script language="javascript">
+    function init() {
+        try {
+            $("#news").load('newsboard.aspx');
+        }
+        catch (e){ }
+    }
+    $(document).ready(function () {
+        init();
+    });
+    
+</script>

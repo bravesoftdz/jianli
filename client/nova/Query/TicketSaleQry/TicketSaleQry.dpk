@@ -1,0 +1,49 @@
+package TicketSaleQry;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  Interfaces,
+  IDCardReader;
+
+contains
+  TicketSaleQryExport in 'TicketSaleQryExport.pas',
+  TicketSaleQryPlugin in 'TicketSaleQryPlugin.pas',
+  UFrmTicketSaleQry in 'UFrmTicketSaleQry.pas' {frmTicketSaleQry},
+  UFrmPresellTicketQry in 'UFrmPresellTicketQry.pas' {frmPresellTicketQry},
+  UFrmReserveTicketQry in 'UFrmReserveTicketQry.pas' {frmReserveTicketQry},
+  UFrmSaleLocalTicketQry in 'UFrmSaleLocalTicketQry.pas' {frmSaleLocalTicketQry},
+  UFrmSaleOtherTicketQry in 'UFrmSaleOtherTicketQry.pas' {frmSaleOtherTicketQry},
+  UFrmTicketCancleQry in 'UFrmTicketCancleQry.pas' {frmTicketCancleQry},
+  UFrmTicketChangeQry in 'UFrmTicketChangeQry.pas' {frmTicketChangeQry},
+  UFrmTicketReturnQry in 'UFrmTicketReturnQry.pas' {frmTicketReturnQry},
+  UFrmQueryBilldamaged in 'UFrmQueryBilldamaged.pas' {frmQueryBilldamaged},
+  UFrmReturnLocalQry in 'UFrmReturnLocalQry.pas' {frmReturnLocalQry},
+  UFrmChangeCustomerInfo in 'UFrmChangeCustomerInfo.pas' {FrmChangeCustomerInfo};
+
+end.

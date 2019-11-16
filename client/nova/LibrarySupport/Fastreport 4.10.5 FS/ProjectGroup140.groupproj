@@ -1,0 +1,144 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{22B062E9-7D9B-40E0-9342-4F14613C58E6}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="LibD14\frx14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\frxe14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\fs14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\fqb140.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\frxDB14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\fsDB14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\dclfs14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\dclfrx14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\dclfrxDB14.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="LibD14\dclfrxe14.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="frx14">
+			<MSBuild Projects="LibD14\frx14.dproj"/>
+		</Target>
+		<Target Name="frx14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\frx14.dproj"/>
+		</Target>
+		<Target Name="frx14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\frx14.dproj"/>
+		</Target>
+		<Target Name="frxe14">
+			<MSBuild Projects="LibD14\frxe14.dproj"/>
+		</Target>
+		<Target Name="frxe14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\frxe14.dproj"/>
+		</Target>
+		<Target Name="frxe14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\frxe14.dproj"/>
+		</Target>
+		<Target Name="fs14">
+			<MSBuild Projects="LibD14\fs14.dproj"/>
+		</Target>
+		<Target Name="fs14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\fs14.dproj"/>
+		</Target>
+		<Target Name="fs14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\fs14.dproj"/>
+		</Target>
+		<Target Name="fqb140">
+			<MSBuild Projects="LibD14\fqb140.dproj"/>
+		</Target>
+		<Target Name="fqb140:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\fqb140.dproj"/>
+		</Target>
+		<Target Name="fqb140:Make">
+			<MSBuild Targets="Make" Projects="LibD14\fqb140.dproj"/>
+		</Target>
+		<Target Name="frxDB14">
+			<MSBuild Projects="LibD14\frxDB14.dproj"/>
+		</Target>
+		<Target Name="frxDB14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\frxDB14.dproj"/>
+		</Target>
+		<Target Name="frxDB14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\frxDB14.dproj"/>
+		</Target>
+		<Target Name="fsDB14">
+			<MSBuild Projects="LibD14\fsDB14.dproj"/>
+		</Target>
+		<Target Name="fsDB14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\fsDB14.dproj"/>
+		</Target>
+		<Target Name="fsDB14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\fsDB14.dproj"/>
+		</Target>
+		<Target Name="dclfs14">
+			<MSBuild Projects="LibD14\dclfs14.dproj"/>
+		</Target>
+		<Target Name="dclfs14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\dclfs14.dproj"/>
+		</Target>
+		<Target Name="dclfs14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\dclfs14.dproj"/>
+		</Target>
+		<Target Name="dclfrx14">
+			<MSBuild Projects="LibD14\dclfrx14.dproj"/>
+		</Target>
+		<Target Name="dclfrx14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\dclfrx14.dproj"/>
+		</Target>
+		<Target Name="dclfrx14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\dclfrx14.dproj"/>
+		</Target>
+		<Target Name="dclfrxDB14">
+			<MSBuild Projects="LibD14\dclfrxDB14.dproj"/>
+		</Target>
+		<Target Name="dclfrxDB14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\dclfrxDB14.dproj"/>
+		</Target>
+		<Target Name="dclfrxDB14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\dclfrxDB14.dproj"/>
+		</Target>
+		<Target Name="dclfrxe14">
+			<MSBuild Projects="LibD14\dclfrxe14.dproj"/>
+		</Target>
+		<Target Name="dclfrxe14:Clean">
+			<MSBuild Targets="Clean" Projects="LibD14\dclfrxe14.dproj"/>
+		</Target>
+		<Target Name="dclfrxe14:Make">
+			<MSBuild Targets="Make" Projects="LibD14\dclfrxe14.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="frx14;frxe14;fs14;fqb140;frxDB14;fsDB14;dclfs14;dclfrx14;dclfrxDB14;dclfrxe14"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="frx14:Clean;frxe14:Clean;fs14:Clean;fqb140:Clean;frxDB14:Clean;fsDB14:Clean;dclfs14:Clean;dclfrx14:Clean;dclfrxDB14:Clean;dclfrxe14:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="frx14:Make;frxe14:Make;fs14:Make;fqb140:Make;frxDB14:Make;fsDB14:Make;dclfs14:Make;dclfrx14:Make;dclfrxDB14:Make;dclfrxe14:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

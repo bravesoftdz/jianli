@@ -1,0 +1,11 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\StreamDemo.csproj.ResolveComReference.cache
+obj\Debug\StreamDemo.Form1.resources
+obj\Debug\StreamDemo.Properties.Resources.resources
+obj\Debug\StreamDemo.csproj.GenerateResource.Cache
+bin\Debug\StreamDemo.exe
+bin\Debug\StreamDemo.pdb
+bin\Debug\Interop.AcReport.dll
+obj\Debug\StreamDemo.exe
+obj\Debug\StreamDemo.pdb

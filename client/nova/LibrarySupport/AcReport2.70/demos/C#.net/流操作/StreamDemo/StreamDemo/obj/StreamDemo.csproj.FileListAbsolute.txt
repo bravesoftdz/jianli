@@ -1,0 +1,11 @@
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\StreamDemo.exe
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\StreamDemo.pdb
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\bin\Debug\StreamDemo.exe
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\bin\Debug\StreamDemo.pdb
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\StreamDemo.csproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\StreamDemo.Form1.resources
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\StreamDemo.Properties.Resources.resources
+E:\work\source\ACreport\COM\demos\C#.net\流操作\StreamDemo\StreamDemo\obj\Debug\StreamDemo.csproj.GenerateResource.Cache

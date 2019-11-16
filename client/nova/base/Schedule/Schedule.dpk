@@ -1,0 +1,49 @@
+package Schedule;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE DEBUG}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+
+requires
+  Interfaces,
+  Vehicleseatplan,
+  rtl;
+
+contains
+  SchedulePlugin in 'SchedulePlugin.pas',
+  ScheduleExport in 'ScheduleExport.pas',
+  UFrmScheduleEdit in 'UFrmScheduleEdit.pas' {FrmSchdeuleEdit},
+  UFrmScheduleStop in 'UFrmScheduleStop.pas' {FrmScheduleStop},
+  UFrmScheduleLongStop in 'UFrmScheduleLongStop.pas' {FrmScheduleLongStop},
+  UFrmScheduleSeatAllocation in 'UFrmScheduleSeatAllocation.pas' {FrmScheduleSeatAllocation},
+  UFrmSchedule in 'UFrmSchedule.pas' {FrmScheduel},
+  UFrmScheduleLongStopInfo in 'UFrmScheduleLongStopInfo.pas' {FrmScheduleLongStopInfo},
+  UFrmScheduleSeatReserve in 'UFrmScheduleSeatReserve.pas' {FrmScheduleSeatReserve},
+  UFrmScheduleSeatReserveEdt in 'UFrmScheduleSeatReserveEdt.pas' {FrmScheduleSeatReserveEdt},
+  UFrmScheduleBatchEdt in 'UFrmScheduleBatchEdt.pas' {FrmScheduleBatchEdt};
+
+end.

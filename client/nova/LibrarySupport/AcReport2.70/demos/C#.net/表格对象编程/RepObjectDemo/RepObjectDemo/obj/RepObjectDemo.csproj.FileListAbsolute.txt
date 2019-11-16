@@ -1,0 +1,11 @@
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\RepObjectDemo.exe
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\RepObjectDemo.pdb
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\bin\Debug\RepObjectDemo.exe
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\bin\Debug\RepObjectDemo.pdb
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\bin\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\Interop.AcReport.dll
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\RepObjectDemo.csproj.ResolveComReference.cache
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\RepObjectDemo.Form1.resources
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\RepObjectDemo.Properties.Resources.resources
+E:\work\source\ACreport\COM\demos\C#.net\表格对象编程\RepObjectDemo\RepObjectDemo\obj\Debug\RepObjectDemo.csproj.GenerateResource.Cache

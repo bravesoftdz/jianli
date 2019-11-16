@@ -1,0 +1,42 @@
+package PlusSchedule;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  Interfaces,
+  HandPrice,
+  rtl;
+
+contains
+  PlusScheduleExport in 'PlusScheduleExport.pas',
+  PlusSchedulePlugin in 'PlusSchedulePlugin.pas',
+  UPlusSchedule in 'UPlusSchedule.pas' {FrmPlusSchedule},
+  UPlusScheduleEdt in 'UPlusScheduleEdt.pas' {FrmPlusScheduleEdt},
+  UFrmOvertimeLog in 'UFrmOvertimeLog.pas' {FrmOvertimeLog},
+  UFrmOvertimePlaninfo in 'UFrmOvertimePlaninfo.pas' {FrmOvertimePlaninfo},
+  UFrmPlusScheduleStation in 'UFrmPlusScheduleStation.pas' {FrmPlusScheduleStaion};
+
+end.

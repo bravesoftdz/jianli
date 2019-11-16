@@ -1,0 +1,42 @@
+package WinSkinD2010;
+
+{$R *.res}
+{$R '..\Source\WinSkinReg.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'VCLSkin 2010'}
+{$IMPLICITBUILD ON}
+{$DEFINE EUREKALOG}
+{$DEFINE EUREKALOG_VER6}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  vcl,
+  designide;
+
+contains
+  WinSkinReg in '..\Source\WinSkinReg.pas',
+  WinSkinStore in '..\Source\WinSkinStore.pas',
+  WinSkinForm in '..\source\WinSkinForm.pas';
+
+end.

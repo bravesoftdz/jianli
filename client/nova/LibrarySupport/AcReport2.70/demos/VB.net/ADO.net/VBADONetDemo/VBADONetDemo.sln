@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBADONetDemo", "VBADONetDemo\VBADONetDemo.vbproj", "{EF1B0E0F-7FF2-4E8F-A4AD-DEE7C0C7BF0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF1B0E0F-7FF2-4E8F-A4AD-DEE7C0C7BF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1B0E0F-7FF2-4E8F-A4AD-DEE7C0C7BF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1B0E0F-7FF2-4E8F-A4AD-DEE7C0C7BF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1B0E0F-7FF2-4E8F-A4AD-DEE7C0C7BF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

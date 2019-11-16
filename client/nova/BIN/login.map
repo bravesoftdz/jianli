@@ -1,0 +1,1473 @@
+
+ Start         Length     Name                   Class
+ 0001:00401000 00009278H .text                   CODE
+ 0002:0040B000 00000294H .itext                  ICODE
+ 0003:0040C000 00000050H .data                   DATA
+ 0004:0040D000 00000028H .bss                    BSS
+ 0005:00000000 00000000H .tls                    TLS
+
+
+Detailed map of segments
+
+ 0001:00000000 000001CE C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:000001D0 000001C3 C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:00000394 00000076 C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:0000040C 000000A1 C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:000004B0 00000116 C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:000005C8 00000006 C=CODE     S=.text    G=(none)   M=SyncObjs ACBP=A9
+ 0001:000005D0 0000004E C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:00000620 00000006 C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:00000628 0000003E C=CODE     S=.text    G=(none)   M=Variants ACBP=A9
+ 0001:00000668 00000006 C=CODE     S=.text    G=(none)   M=VarUtils ACBP=A9
+ 0001:00000670 00000006 C=CODE     S=.text    G=(none)   M=TimeSpan ACBP=A9
+ 0001:00000678 00000006 C=CODE     S=.text    G=(none)   M=ActnList ACBP=A9
+ 0001:00000680 00000006 C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:00000688 00000006 C=CODE     S=.text    G=(none)   M=Registry ACBP=A9
+ 0001:00000690 0000000E C=CODE     S=.text    G=(none)   M=IniFiles ACBP=A9
+ 0001:000006A0 0000000E C=CODE     S=.text    G=(none)   M=IOUtils  ACBP=A9
+ 0001:000006B0 00000006 C=CODE     S=.text    G=(none)   M=Themes   ACBP=A9
+ 0001:000006B8 00000006 C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:000006C0 00000006 C=CODE     S=.text    G=(none)   M=UxTheme  ACBP=A9
+ 0001:000006C8 00000006 C=CODE     S=.text    G=(none)   M=MultiMon ACBP=A9
+ 0001:000006D0 0000014E C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:00000820 00000006 C=CODE     S=.text    G=(none)   M=HelpIntfs ACBP=A9
+ 0001:00000828 00000006 C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:00000830 00000006 C=CODE     S=.text    G=(none)   M=ComCtrls ACBP=A9
+ 0001:00000838 00000006 C=CODE     S=.text    G=(none)   M=GraphUtil ACBP=A9
+ 0001:00000840 00000006 C=CODE     S=.text    G=(none)   M=ShellAPI ACBP=A9
+ 0001:00000848 00000016 C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:00000860 00000006 C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:00000868 00000006 C=CODE     S=.text    G=(none)   M=Clipbrd  ACBP=A9
+ 0001:00000870 00000006 C=CODE     S=.text    G=(none)   M=FlatSB   ACBP=A9
+ 0001:00000878 00000036 C=CODE     S=.text    G=(none)   M=Services ACBP=A9
+ 0001:000008B0 00000006 C=CODE     S=.text    G=(none)   M=Generics.Defaults ACBP=A9
+ 0001:000008B8 00000006 C=CODE     S=.text    G=(none)   M=Generics.Collections ACBP=A9
+ 0001:000008C0 00000016 C=CODE     S=.text    G=(none)   M=PubFn    ACBP=A9
+ 0001:000008D8 00000006 C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
+ 0001:000008E0 00000006 C=CODE     S=.text    G=(none)   M=GdiPlus  ACBP=A9
+ 0001:000008E8 00000006 C=CODE     S=.text    G=(none)   M=CheckLst ACBP=A9
+ 0001:000008F0 0000000E C=CODE     S=.text    G=(none)   M=jsonClientDataSet ACBP=A9
+ 0001:00000900 00000006 C=CODE     S=.text    G=(none)   M=ComObj   ACBP=A9
+ 0001:00000908 00000006 C=CODE     S=.text    G=(none)   M=DSIntf   ACBP=A9
+ 0001:00000910 00000006 C=CODE     S=.text    G=(none)   M=SqlTimSt ACBP=A9
+ 0001:00000918 00000046 C=CODE     S=.text    G=(none)   M=DB       ACBP=A9
+ 0001:00000960 00000006 C=CODE     S=.text    G=(none)   M=WideStrings ACBP=A9
+ 0001:00000968 00000006 C=CODE     S=.text    G=(none)   M=FMTBcd   ACBP=A9
+ 0001:00000970 00000006 C=CODE     S=.text    G=(none)   M=Provider ACBP=A9
+ 0001:00000978 00000006 C=CODE     S=.text    G=(none)   M=DBClient ACBP=A9
+ 0001:00000980 00000006 C=CODE     S=.text    G=(none)   M=WinSkinData ACBP=A9
+ 0001:00000988 00000006 C=CODE     S=.text    G=(none)   M=WinSkinIni ACBP=A9
+ 0001:00000990 00000006 C=CODE     S=.text    G=(none)   M=ImgUtil  ACBP=A9
+ 0001:00000998 00000006 C=CODE     S=.text    G=(none)   M=Buttons  ACBP=A9
+ 0001:000009A0 00000006 C=CODE     S=.text    G=(none)   M=Tabs     ACBP=A9
+ 0001:000009A8 00000006 C=CODE     S=.text    G=(none)   M=WinSkinDlg ACBP=A9
+ 0001:000009B0 00000006 C=CODE     S=.text    G=(none)   M=WinSkinForm ACBP=A9
+ 0001:000009B8 00000006 C=CODE     S=.text    G=(none)   M=superobject ACBP=A9
+ 0001:000009C0 00000006 C=CODE     S=.text    G=(none)   M=Rtti     ACBP=A9
+ 0001:000009C8 00000006 C=CODE     S=.text    G=(none)   M=LoginUser ACBP=A9
+ 0001:000009D0 00000006 C=CODE     S=.text    G=(none)   M=SysFactoryMgr ACBP=A9
+ 0001:000009D8 00000006 C=CODE     S=.text    G=(none)   M=CardManage ACBP=A9
+ 0001:000009E0 00000006 C=CODE     S=.text    G=(none)   M=SystemInstance ACBP=A9
+ 0001:000009E8 00000006 C=CODE     S=.text    G=(none)   M=SysFactory ACBP=A9
+ 0001:000009F0 0000000E C=CODE     S=.text    G=(none)   M=uBaseForm ACBP=A9
+ 0001:00000A00 00000006 C=CODE     S=.text    G=(none)   M=GIFImg   ACBP=A9
+ 0001:00000A08 0000000E C=CODE     S=.text    G=(none)   M=USimpleEditForm ACBP=A9
+ 0001:00000A18 00000006 C=CODE     S=.text    G=(none)   M=DBGridEh ACBP=A9
+ 0001:00000A20 00000006 C=CODE     S=.text    G=(none)   M=ToolCtrlsEh ACBP=A9
+ 0001:00000A28 00000006 C=CODE     S=.text    G=(none)   M=DBCtrls  ACBP=A9
+ 0001:00000A30 00000006 C=CODE     S=.text    G=(none)   M=DBPWDlg  ACBP=A9
+ 0001:00000A38 00000006 C=CODE     S=.text    G=(none)   M=DBLogDlg ACBP=A9
+ 0001:00000A40 00000006 C=CODE     S=.text    G=(none)   M=PropFilerEh ACBP=A9
+ 0001:00000A48 00000006 C=CODE     S=.text    G=(none)   M=ConvUtils ACBP=A9
+ 0001:00000A50 00000006 C=CODE     S=.text    G=(none)   M=DBCtrlsEh ACBP=A9
+ 0001:00000A58 00000006 C=CODE     S=.text    G=(none)   M=DbUtilsEh ACBP=A9
+ 0001:00000A60 00000006 C=CODE     S=.text    G=(none)   M=DBGridEhFindDlgs ACBP=A9
+ 0001:00000A68 00000006 C=CODE     S=.text    G=(none)   M=DBGridEhImpExp ACBP=A9
+ 0001:00000A70 0000000E C=CODE     S=.text    G=(none)   M=NovaHComboBox ACBP=A9
+ 0001:00000A80 00004B60 C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
+ 0001:000055E0 00000567 C=CODE     S=.text    G=(none)   M=LoginImpl ACBP=A9
+ 0001:00005B48 00002FAB C=CODE     S=.text    G=(none)   M=LoginPlugin ACBP=A9
+ 0001:00008AF4 00000153 C=CODE     S=.text    G=(none)   M=LoginExport ACBP=A9
+ 0001:00008C48 0000062F C=CODE     S=.text    G=(none)   M=.login   ACBP=A9
+ 0002:00000000 00000006 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
+ 0002:00000008 0000001E C=ICODE    S=.itext   G=(none)   M=SysUtils ACBP=A9
+ 0002:00000028 00000016 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
+ 0002:00000040 00000006 C=ICODE    S=.itext   G=(none)   M=Controls ACBP=A9
+ 0002:00000048 00000006 C=ICODE    S=.itext   G=(none)   M=SyncObjs ACBP=A9
+ 0002:00000050 0000000E C=ICODE    S=.itext   G=(none)   M=Classes  ACBP=A9
+ 0002:00000060 00000006 C=ICODE    S=.itext   G=(none)   M=TypInfo  ACBP=A9
+ 0002:00000068 00000006 C=ICODE    S=.itext   G=(none)   M=Variants ACBP=A9
+ 0002:00000070 00000006 C=ICODE    S=.itext   G=(none)   M=VarUtils ACBP=A9
+ 0002:00000078 00000006 C=ICODE    S=.itext   G=(none)   M=TimeSpan ACBP=A9
+ 0002:00000080 00000006 C=ICODE    S=.itext   G=(none)   M=ActnList ACBP=A9
+ 0002:00000088 00000006 C=ICODE    S=.itext   G=(none)   M=Graphics ACBP=A9
+ 0002:00000090 00000006 C=ICODE    S=.itext   G=(none)   M=Registry ACBP=A9
+ 0002:00000098 00000006 C=ICODE    S=.itext   G=(none)   M=IniFiles ACBP=A9
+ 0002:000000A0 0000000E C=ICODE    S=.itext   G=(none)   M=IOUtils  ACBP=A9
+ 0002:000000B0 00000006 C=ICODE    S=.itext   G=(none)   M=Themes   ACBP=A9
+ 0002:000000B8 00000006 C=ICODE    S=.itext   G=(none)   M=Menus    ACBP=A9
+ 0002:000000C0 00000006 C=ICODE    S=.itext   G=(none)   M=UxTheme  ACBP=A9
+ 0002:000000C8 00000006 C=ICODE    S=.itext   G=(none)   M=MultiMon ACBP=A9
+ 0002:000000D0 00000006 C=ICODE    S=.itext   G=(none)   M=Forms    ACBP=A9
+ 0002:000000D8 00000006 C=ICODE    S=.itext   G=(none)   M=HelpIntfs ACBP=A9
+ 0002:000000E0 00000006 C=ICODE    S=.itext   G=(none)   M=Dialogs  ACBP=A9
+ 0002:000000E8 00000006 C=ICODE    S=.itext   G=(none)   M=ComCtrls ACBP=A9
+ 0002:000000F0 00000006 C=ICODE    S=.itext   G=(none)   M=GraphUtil ACBP=A9
+ 0002:000000F8 00000006 C=ICODE    S=.itext   G=(none)   M=ExtCtrls ACBP=A9
+ 0002:00000100 00000006 C=ICODE    S=.itext   G=(none)   M=Printers ACBP=A9
+ 0002:00000108 00000006 C=ICODE    S=.itext   G=(none)   M=Clipbrd  ACBP=A9
+ 0002:00000110 00000006 C=ICODE    S=.itext   G=(none)   M=FlatSB   ACBP=A9
+ 0002:00000118 00000006 C=ICODE    S=.itext   G=(none)   M=Services ACBP=A9
+ 0002:00000120 00000006 C=ICODE    S=.itext   G=(none)   M=PubFn    ACBP=A9
+ 0002:00000128 00000006 C=ICODE    S=.itext   G=(none)   M=jpeg     ACBP=A9
+ 0002:00000130 00000006 C=ICODE    S=.itext   G=(none)   M=GdiPlus  ACBP=A9
+ 0002:00000138 00000006 C=ICODE    S=.itext   G=(none)   M=CheckLst ACBP=A9
+ 0002:00000140 00000006 C=ICODE    S=.itext   G=(none)   M=ComObj   ACBP=A9
+ 0002:00000148 00000006 C=ICODE    S=.itext   G=(none)   M=DSIntf   ACBP=A9
+ 0002:00000150 00000006 C=ICODE    S=.itext   G=(none)   M=SqlTimSt ACBP=A9
+ 0002:00000158 00000006 C=ICODE    S=.itext   G=(none)   M=DB       ACBP=A9
+ 0002:00000160 00000006 C=ICODE    S=.itext   G=(none)   M=WideStrings ACBP=A9
+ 0002:00000168 00000006 C=ICODE    S=.itext   G=(none)   M=FMTBcd   ACBP=A9
+ 0002:00000170 00000006 C=ICODE    S=.itext   G=(none)   M=Provider ACBP=A9
+ 0002:00000178 00000006 C=ICODE    S=.itext   G=(none)   M=DBClient ACBP=A9
+ 0002:00000180 00000006 C=ICODE    S=.itext   G=(none)   M=WinSkinData ACBP=A9
+ 0002:00000188 00000006 C=ICODE    S=.itext   G=(none)   M=WinSkinIni ACBP=A9
+ 0002:00000190 00000006 C=ICODE    S=.itext   G=(none)   M=ImgUtil  ACBP=A9
+ 0002:00000198 00000006 C=ICODE    S=.itext   G=(none)   M=Buttons  ACBP=A9
+ 0002:000001A0 00000006 C=ICODE    S=.itext   G=(none)   M=Tabs     ACBP=A9
+ 0002:000001A8 00000006 C=ICODE    S=.itext   G=(none)   M=WinSkinDlg ACBP=A9
+ 0002:000001B0 00000006 C=ICODE    S=.itext   G=(none)   M=WinSkinForm ACBP=A9
+ 0002:000001B8 00000006 C=ICODE    S=.itext   G=(none)   M=superobject ACBP=A9
+ 0002:000001C0 00000006 C=ICODE    S=.itext   G=(none)   M=Rtti     ACBP=A9
+ 0002:000001C8 00000006 C=ICODE    S=.itext   G=(none)   M=SysFactoryMgr ACBP=A9
+ 0002:000001D0 00000006 C=ICODE    S=.itext   G=(none)   M=CardManage ACBP=A9
+ 0002:000001D8 00000006 C=ICODE    S=.itext   G=(none)   M=SystemInstance ACBP=A9
+ 0002:000001E0 00000006 C=ICODE    S=.itext   G=(none)   M=GIFImg   ACBP=A9
+ 0002:000001E8 00000006 C=ICODE    S=.itext   G=(none)   M=DBGridEh ACBP=A9
+ 0002:000001F0 00000006 C=ICODE    S=.itext   G=(none)   M=ToolCtrlsEh ACBP=A9
+ 0002:000001F8 00000006 C=ICODE    S=.itext   G=(none)   M=DBCtrls  ACBP=A9
+ 0002:00000200 00000006 C=ICODE    S=.itext   G=(none)   M=DBPWDlg  ACBP=A9
+ 0002:00000208 00000006 C=ICODE    S=.itext   G=(none)   M=DBLogDlg ACBP=A9
+ 0002:00000210 00000006 C=ICODE    S=.itext   G=(none)   M=PropFilerEh ACBP=A9
+ 0002:00000218 00000006 C=ICODE    S=.itext   G=(none)   M=ConvUtils ACBP=A9
+ 0002:00000220 00000006 C=ICODE    S=.itext   G=(none)   M=DBCtrlsEh ACBP=A9
+ 0002:00000228 00000006 C=ICODE    S=.itext   G=(none)   M=DbUtilsEh ACBP=A9
+ 0002:00000230 00000006 C=ICODE    S=.itext   G=(none)   M=DBGridEhFindDlgs ACBP=A9
+ 0002:00000238 00000006 C=ICODE    S=.itext   G=(none)   M=DBGridEhImpExp ACBP=A9
+ 0002:00000240 00000008 C=ICODE    S=.itext   G=(none)   M=UFrmLogin ACBP=A9
+ 0002:00000248 00000034 C=ICODE    S=.itext   G=(none)   M=LoginImpl ACBP=A9
+ 0002:0000027C 00000008 C=ICODE    S=.itext   G=(none)   M=LoginPlugin ACBP=A9
+ 0002:00000284 00000008 C=ICODE    S=.itext   G=(none)   M=LoginExport ACBP=A9
+ 0002:0000028C 00000005 C=ICODE    S=.itext   G=(none)   M=.login   ACBP=A9
+ 0003:00000000 00000030 C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0003:00000030 0000000C C=DATA     S=.data    G=DGROUP   M=Windows  ACBP=A9
+ 0004:00000000 0000000C C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0004:0000000C 00000008 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0004:00000014 00000008 C=BSS      S=.bss     G=DGROUP   M=UFrmLogin ACBP=A9
+ 0004:0000001C 00000004 C=BSS      S=.bss     G=DGROUP   M=LoginImpl ACBP=A9
+ 0004:00000020 00000004 C=BSS      S=.bss     G=DGROUP   M=LoginPlugin ACBP=A9
+ 0004:00000024 00000004 C=BSS      S=.bss     G=DGROUP   M=LoginExport ACBP=A9
+
+
+  Address             Publics by Name
+
+ 0002:0000028C       .login..login
+ 0001:00009258       .login.@GetPackageInfoTable
+ 0001:00009260       .login.@PackageLoad
+ 0001:0000926C       .login.@PackageUnload
+ 0002:00000080       ActnList.ActnList
+ 0001:00000678       ActnList.Finalization
+ 0002:00000198       Buttons.Buttons
+ 0001:00000998       Buttons.Finalization
+ 0002:000001D0       CardManage.CardManage
+ 0001:000009D8       CardManage.Finalization
+ 0002:00000138       CheckLst.CheckLst
+ 0001:000008E8       CheckLst.Finalization
+ 0002:00000058       Classes.Classes
+ 0001:00000618       Classes.Finalization
+ 0001:000005D0       Classes.Point
+ 0001:00000608       Classes.TComponent.SafeCallException
+ 0001:00000600       Classes.TComponent.UpdateAction
+ 0001:00000610       Classes.TComponent.UpdateRegistry
+ 0001:000005F8       Classes.TComponent.WriteState
+ 0001:000005D8       Classes.TPersistent.Assign
+ 0001:000005E8       Classes.TStringList.Create
+ 0001:000005E0       Classes.TStrings.SetCommaText
+ 0002:00000050       Classes.TThread.Create@
+ 0001:000005F0       Classes.TThread.Destroy@
+ 0002:00000108       Clipbrd.Clipbrd
+ 0001:00000868       Clipbrd.Finalization
+ 0002:000000E8       ComCtrls.ComCtrls
+ 0001:00000830       ComCtrls.Finalization
+ 0002:00000140       ComObj.ComObj
+ 0001:00000900       ComObj.Finalization
+ 0002:00000040       Controls.Controls
+ 0001:000005C0       Controls.Finalization
+ 0001:00000500       Controls.TControl.CreateTouchManager
+ 0001:000004C0       Controls.TControl.GetAction
+ 0001:000004B0       Controls.TControl.GetDragImages
+ 0001:000004B8       Controls.TControl.GetEnabled
+ 0001:00000508       Controls.TControl.GetFloatingDockSiteClass
+ 0001:000004E8       Controls.TControl.GetText
+ 0001:00000510       Controls.TControl.InitiateAction
+ 0001:000004D0       Controls.TControl.SetAutoSize
+ 0001:000004F8       Controls.TControl.SetBiDiMode
+ 0001:000004C8       Controls.TControl.SetDragMode
+ 0001:000004E0       Controls.TControl.SetEnabled
+ 0001:000004D8       Controls.TControl.SetName
+ 0001:000004F0       Controls.TControl.SetText
+ 0001:00000598       Controls.TWinControl.AssignTo
+ 0001:000005A0       Controls.TWinControl.CanAutoSize
+ 0001:00000588       Controls.TWinControl.CanResize
+ 0001:00000590       Controls.TWinControl.ConstrainedResize
+ 0001:00000520       Controls.TWinControl.CreateHandle
+ 0001:00000528       Controls.TWinControl.CustomAlignInsertBefore
+ 0001:00000530       Controls.TWinControl.CustomAlignPosition
+ 0001:00000518       Controls.TWinControl.DestroyWnd
+ 0001:000005B0       Controls.TWinControl.DockReplaceDockClient
+ 0001:00000580       Controls.TWinControl.GetClientOrigin
+ 0001:00000578       Controls.TWinControl.GetControlExtents
+ 0001:00000550       Controls.TWinControl.GetDeviceContext
+ 0001:00000570       Controls.TWinControl.GetHandle
+ 0001:00000558       Controls.TWinControl.Invalidate
+ 0001:00000568       Controls.TWinControl.Repaint
+ 0001:00000540       Controls.TWinControl.SetBounds
+ 0001:000005A8       Controls.TWinControl.SetParentBackground
+ 0001:00000538       Controls.TWinControl.SetParentDoubleBuffered
+ 0001:00000548       Controls.TWinControl.ShowControl
+ 0001:00000560       Controls.TWinControl.Update
+ 0001:000005B8       Controls.TWinControl.UpdateControlOriginalParentSize
+ 0002:00000218       ConvUtils.ConvUtils
+ 0001:00000A48       ConvUtils.Finalization
+ 0002:00000158       DB.DB
+ 0001:00000958       DB.Finalization
+ 0001:00000938       DB.TDataSet.Close
+ 0001:00000940       DB.TDataSet.FieldByName
+ 0001:00000948       DB.TDataSet.First
+ 0001:00000950       DB.TDataSet.Next
+ 0001:00000930       DB.TParam.GetAsVariant
+ 0001:00000928       DB.TParam.SetAsVariant
+ 0001:00000918       DB.TParams.CreateParam
+ 0001:00000920       DB.TParams.ParamByName
+ 0002:00000178       DBClient.DBClient
+ 0001:00000978       DBClient.Finalization
+ 0002:000001F8       DBCtrls.DBCtrls
+ 0001:00000A28       DBCtrls.Finalization
+ 0002:00000220       DBCtrlsEh.DBCtrlsEh
+ 0001:00000A50       DBCtrlsEh.Finalization
+ 0002:000001E8       DBGridEh.DBGridEh
+ 0001:00000A18       DBGridEh.Finalization
+ 0002:00000230       DBGridEhFindDlgs.DBGridEhFindDlgs
+ 0001:00000A60       DBGridEhFindDlgs.Finalization
+ 0002:00000238       DBGridEhImpExp.DBGridEhImpExp
+ 0001:00000A68       DBGridEhImpExp.Finalization
+ 0002:00000208       DBLogDlg.DBLogDlg
+ 0001:00000A38       DBLogDlg.Finalization
+ 0002:00000200       DBPWDlg.DBPWDlg
+ 0001:00000A30       DBPWDlg.Finalization
+ 0002:00000228       DbUtilsEh.DbUtilsEh
+ 0001:00000A58       DbUtilsEh.Finalization
+ 0002:000000E0       Dialogs.Dialogs
+ 0001:00000828       Dialogs.Finalization
+ 0002:00000148       DSIntf.DSIntf
+ 0001:00000908       DSIntf.Finalization
+ 0002:000000F8       ExtCtrls.ExtCtrls
+ 0001:00000858       ExtCtrls.Finalization
+ 0001:00000848       ExtCtrls.TTimer.SetEnabled
+ 0001:00000850       ExtCtrls.TTimer.SetInterval
+ 0001:00000870       FlatSB.Finalization
+ 0002:00000110       FlatSB.FlatSB
+ 0001:00000968       FMTBcd.Finalization
+ 0002:00000168       FMTBcd.FMTBcd
+ 0001:00000818       Forms.Finalization
+ 0002:000000D0       Forms.Forms
+ 0001:00000808       Forms.TApplication.Restore
+ 0001:00000810       Forms.TApplication.Terminate
+ 0001:00000700       Forms.TCustomForm.AfterConstruction
+ 0001:00000788       Forms.TCustomForm.AlignControls
+ 0001:00000710       Forms.TCustomForm.BeforeDestruction
+ 0001:000007D8       Forms.TCustomForm.CloseQuery
+ 0001:000006F8       Forms.TCustomForm.Create
+ 0001:00000708       Forms.TCustomForm.CreateNew
+ 0001:00000790       Forms.TCustomForm.CreateParams
+ 0001:000007A0       Forms.TCustomForm.CreateWindowHandle
+ 0001:00000798       Forms.TCustomForm.CreateWnd
+ 0001:000007B8       Forms.TCustomForm.DefaultHandler
+ 0001:00000740       Forms.TCustomForm.DefineProperties
+ 0001:000007A8       Forms.TCustomForm.DestroyHandle
+ 0001:000007B0       Forms.TCustomForm.DestroyWindowHandle
+ 0001:00000718       Forms.TCustomForm.DoCreate
+ 0001:00000720       Forms.TCustomForm.DoDestroy
+ 0001:00000748       Forms.TCustomForm.GetClientRect
+ 0001:00000750       Forms.TCustomForm.GetFloating
+ 0001:00000728       Forms.TCustomForm.Loaded
+ 0001:00000730       Forms.TCustomForm.Notification
+ 0001:000007C8       Forms.TCustomForm.PaintWindow
+ 0001:00000800       Forms.TCustomForm.QueryInterface
+ 0001:00000738       Forms.TCustomForm.ReadState
+ 0001:000007F8       Forms.TCustomForm.RequestAlign
+ 0001:000007D0       Forms.TCustomForm.Resizing
+ 0001:000007E0       Forms.TCustomForm.SetFocus
+ 0001:000007C0       Forms.TCustomForm.SetFocusedControl
+ 0001:00000770       Forms.TCustomForm.SetParent
+ 0001:00000758       Forms.TCustomForm.SetParentBiDiMode
+ 0001:00000760       Forms.TCustomForm.SetVisible
+ 0001:000007E8       Forms.TCustomForm.ShowModal
+ 0001:000007F0       Forms.TCustomForm.UpdateActions
+ 0001:00000778       Forms.TCustomForm.ValidateRename
+ 0001:00000768       Forms.TCustomForm.WantChildKey
+ 0001:00000780       Forms.TCustomForm.WndProc
+ 0001:000006F0       Forms.TScrollingWinControl.AdjustClientRect
+ 0001:000006D0       Forms.TScrollingWinControl.AutoScrollEnabled
+ 0001:000006E8       Forms.TScrollingWinControl.AutoScrollInView
+ 0001:000006D8       Forms.TScrollingWinControl.DoGesture
+ 0001:000006E0       Forms.TScrollingWinControl.DoGetGestureOptions
+ 0001:000008E0       GdiPlus.Finalization
+ 0002:00000130       GdiPlus.GdiPlus
+ 0001:000008B8       Generics.Collections.InCircularRange
+ 0001:000008B0       Generics.Defaults._LookupVtableInfo
+ 0001:00000A00       GIFImg.Finalization
+ 0002:000001E0       GIFImg.GIFImg
+ 0001:00000680       Graphics.Finalization
+ 0002:00000088       Graphics.Graphics
+ 0001:00000838       GraphUtil.Finalization
+ 0002:000000F0       GraphUtil.GraphUtil
+ 0001:00000820       HelpIntfs.Finalization
+ 0002:000000D8       HelpIntfs.HelpIntfs
+ 0001:00000990       ImgUtil.Finalization
+ 0002:00000190       ImgUtil.ImgUtil
+ 0001:00000698       IniFiles.Finalization
+ 0002:00000098       IniFiles.IniFiles
+ 0001:00000690       IniFiles.TCustomIniFile.Create
+ 0001:000006A8       IOUtils.Finalization
+ 0002:000000A8       IOUtils.IOUtils
+ 0002:000000A0       IOUtils.TPath.Create@
+ 0001:000006A0       IOUtils.TPath.Destroy@
+ 0001:000008D8       jpeg.Finalization
+ 0002:00000128       jpeg.jpeg
+ 0001:000008F0       jsonClientDataSet.TjsonClientDataSet.Create
+ 0001:000008F8       jsonClientDataSet.TjsonClientDataSet.SetSaveAddress
+ 0004:00000024       LoginExport..1
+ 0001:00008C40       LoginExport.Finalization
+ 0002:00000284       LoginExport.LoginExport
+ 0001:00008C3C       LoginExport.PlugInFinal
+ 0001:00008AF4       LoginExport.PlugInit
+ 0004:0000001C       LoginImpl..2
+ 0001:0000565C       LoginImpl..TLogin
+ 0001:00005B10       LoginImpl.Create_LoginObj
+ 0001:00005B40       LoginImpl.Finalization
+ 0002:00000248       LoginImpl.LoginImpl
+ 0001:0000571C       LoginImpl.TLogin.ChangeUser
+ 0001:00005A8C       LoginImpl.TLogin.CheckLogin
+ 0001:00005720       LoginImpl.TLogin.LockSystem
+ 0001:00005794       LoginImpl.TLogin.Logout
+ 0001:000059F0       LoginImpl.TLogin.userLogout
+ 0004:00000020       LoginPlugin..5
+ 0001:00008774       LoginPlugin..TComparer<FunctionItemIntf.TSubfunction>
+ 0001:00008954       LoginPlugin..TDelegatedComparer<FunctionItemIntf.TSubfunction>
+ 0001:00006684       LoginPlugin..TEnumerable<FunctionItemIntf.TSubfunction>
+ 0001:0000654C       LoginPlugin..TEnumerator<FunctionItemIntf.TSubfunction>
+ 0001:00006B34       LoginPlugin..TList<FunctionItemIntf.TSubfunction>
+ 0001:00006988       LoginPlugin..TList<FunctionItemIntf.TSubfunction>.TEnumerator
+ 0001:0000629C       LoginPlugin..TLockSystemFunction
+ 0001:00005F48       LoginPlugin..TLoginOutFunction
+ 0001:00005BF4       LoginPlugin..TReLoginFunction
+ 0001:00007900       LoginPlugin.Finalization
+ 0002:0000027C       LoginPlugin.LoginPlugin
+ 0001:000084F0       LoginPlugin.TArray.BinarySearch<FunctionItemIntf.TSubfunction>
+ 0001:000085F0       LoginPlugin.TArray.QuickSort<FunctionItemIntf.TSubfunction>
+ 0001:00008488       LoginPlugin.TArray.Sort<FunctionItemIntf.TSubfunction>
+ 0001:000088D4       LoginPlugin.TComparer<FunctionItemIntf.TSubfunction>.Compare
+ 0001:00008460       LoginPlugin.TComparer<FunctionItemIntf.TSubfunction>.Construct
+ 0001:00008440       LoginPlugin.TComparer<FunctionItemIntf.TSubfunction>.Default
+ 0001:000085E4       LoginPlugin.TDelegatedComparer<FunctionItemIntf.TSubfunction>.Compare
+ 0001:000085A8       LoginPlugin.TDelegatedComparer<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007908       LoginPlugin.TEnumerable<FunctionItemIntf.TSubfunction>.GetEnumerator
+ 0001:00007910       LoginPlugin.TEnumerator<FunctionItemIntf.TSubfunction>.MoveNext
+ 0001:00007CEC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Add
+ 0001:00007D40       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.AddRange
+ 0001:00007D34       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.AddRange
+ 0001:00007D20       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.AddRange
+ 0001:00008364       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.BinarySearch
+ 0001:0000832C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.BinarySearch
+ 0001:00008200       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Clear
+ 0001:00008218       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Contains
+ 0001:00007B20       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007B98       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007C2C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007FC8       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Delete
+ 0001:00007FD0       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.DeleteRange
+ 0001:00007CBC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Destroy
+ 0001:00007A80       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.DoDelete
+ 0001:00007B00       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.DoGetEnumerator
+ 0001:00008130       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Exchange
+ 0001:00008104       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Extract
+ 0001:000081EC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.First
+ 0001:00007918       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GetCapacity
+ 0001:000083B0       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GetEnumerator
+ 0001:000079A4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GetItem
+ 0001:00007A1C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Grow
+ 0001:00007A54       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GrowCheck
+ 0001:00008230       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.IndexOf
+ 0001:00007D4C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Insert
+ 0001:00007F30       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.InsertRange
+ 0001:00007DCC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.InsertRange
+ 0001:00007EB8       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.InsertRange
+ 0001:000081F4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Last
+ 0001:0000826C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.LastIndexOf
+ 0001:00008150       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Move
+ 0001:00007B08       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Notify
+ 0001:00007FA8       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Remove
+ 0001:000082A4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Reverse
+ 0001:00007924       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.SetCapacity
+ 0001:00007954       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.SetCount
+ 0001:000079CC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.SetItem
+ 0001:000082D4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Sort
+ 0001:00008300       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Sort
+ 0001:000083DC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.Create
+ 0001:000083CC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.DoGetCurrent
+ 0001:000083D4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.DoMoveNext
+ 0001:000083C0       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.GetCurrent
+ 0001:00008420       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.MoveNext
+ 0001:000083A4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TrimExcess
+ 0001:000077A4       LoginPlugin.TLockSystemFunction.ChangeTheme
+ 0001:000077A8       LoginPlugin.TLockSystemFunction.Create
+ 0001:000077E4       LoginPlugin.TLockSystemFunction.Enter
+ 0001:00007854       LoginPlugin.TLockSystemFunction.getDescribe
+ 0001:00007880       LoginPlugin.TLockSystemFunction.getKey
+ 0001:000078F0       LoginPlugin.TLockSystemFunction.getSubFunctionList
+ 0001:000078F4       LoginPlugin.TLockSystemFunction.IsWorkState
+ 0001:000078F8       LoginPlugin.TLockSystemFunction.Leave
+ 0001:000078FC       LoginPlugin.TLockSystemFunction.refresh
+ 0001:00007660       LoginPlugin.TLoginOutFunction.ChangeTheme
+ 0001:00007664       LoginPlugin.TLoginOutFunction.Create
+ 0001:000076A0       LoginPlugin.TLoginOutFunction.Enter
+ 0001:000076F8       LoginPlugin.TLoginOutFunction.getDescribe
+ 0001:00007724       LoginPlugin.TLoginOutFunction.getKey
+ 0001:00007794       LoginPlugin.TLoginOutFunction.getSubFunctionList
+ 0001:00007798       LoginPlugin.TLoginOutFunction.IsWorkState
+ 0001:0000779C       LoginPlugin.TLoginOutFunction.Leave
+ 0001:000077A0       LoginPlugin.TLoginOutFunction.refresh
+ 0001:00007464       LoginPlugin.TReLoginFunction.ChangeTheme
+ 0001:00007468       LoginPlugin.TReLoginFunction.Create
+ 0001:000074A4       LoginPlugin.TReLoginFunction.Enter
+ 0001:000075B4       LoginPlugin.TReLoginFunction.getDescribe
+ 0001:000075E0       LoginPlugin.TReLoginFunction.getKey
+ 0001:00007650       LoginPlugin.TReLoginFunction.getSubFunctionList
+ 0001:00007654       LoginPlugin.TReLoginFunction.IsWorkState
+ 0001:00007658       LoginPlugin.TReLoginFunction.Leave
+ 0001:0000765C       LoginPlugin.TReLoginFunction.refresh
+ 0001:000009C8       LoginUser.TLoginUserInfo.Create
+ 0001:000006B8       Menus.Finalization
+ 0002:000000B8       Menus.Menus
+ 0001:000006C8       MultiMon.Finalization
+ 0002:000000C8       MultiMon.MultiMon
+ 0001:00000A70       NovaHComboBox.TNovaHComboBox.GetHelpFieldValue
+ 0001:00000A78       NovaHComboBox.TNovaHComboBox.SetItemIndexByField
+ 0001:00000860       Printers.Finalization
+ 0002:00000100       Printers.Printers
+ 0001:00000A40       PropFilerEh.Finalization
+ 0002:00000210       PropFilerEh.PropFilerEh
+ 0001:00000970       Provider.Finalization
+ 0002:00000170       Provider.Provider
+ 0001:000008D0       PubFn.Finalization
+ 0001:000008C8       PubFn.getWeekNum
+ 0001:000008C0       PubFn.nvl
+ 0002:00000120       PubFn.PubFn
+ 0001:00000688       Registry.Finalization
+ 0002:00000090       Registry.Registry
+ 0001:000009C0       Rtti.Finalization
+ 0002:000001C0       Rtti.Rtti
+ 0001:000008A8       Services.Finalization
+ 0002:00000118       Services.Services
+ 0001:00000880       Services.SysDialogs
+ 0001:000008A0       Services.SysFunctionMgr
+ 0001:00000890       Services.SysInfo
+ 0001:00000888       Services.SysLog
+ 0001:00000898       Services.SysMainForm
+ 0001:00000878       Services.SysService
+ 0001:00000840       ShellAPI.ShellExecute
+ 0001:00000910       SqlTimSt.Finalization
+ 0002:00000150       SqlTimSt.SqlTimSt
+ 0001:000009B8       superobject.Finalization
+ 0002:000001B8       superobject.superobject
+ 0001:000005C8       SyncObjs.Finalization
+ 0002:00000048       SyncObjs.SyncObjs
+ 0001:000009E8       SysFactory.TIntfFactory.Create
+ 0001:000009D0       SysFactoryMgr.Finalization
+ 0002:000001C8       SysFactoryMgr.SysFactoryMgr
+ 0001:00000318       SysInit.@InitPkg
+ 0001:0000037C       SysInit.@PackageLoad
+ 0001:00000388       SysInit.@PackageUnload
+ 0001:00000208       SysInit.AllocTlsBuffer
+ 0001:000002C4       SysInit.ExitProcessTLS
+ 0001:0000028C       SysInit.ExitThreadTLS
+ 0001:000001D0       SysInit.FreeLibrary
+ 0001:00000214       SysInit.GetTlsSize
+ 0004:00000004       SysInit.HInstance
+ 0001:000002E8       SysInit.InitializeModule
+ 0001:00000260       SysInit.InitProcessTLS
+ 0001:0000021C       SysInit.InitThreadTLS
+ 0001:000001D8       SysInit.LocalAlloc
+ 0001:000001E0       SysInit.LocalFree
+ 0003:00000004       SysInit.Module
+ 0004:00000000       SysInit.ModuleIsLib
+ 0004:00000001       SysInit.ModuleIsPackage
+ 0001:000001E8       SysInit.TlsAlloc
+ 0004:00000008       SysInit.tlsBuffer
+ 0001:000001F0       SysInit.TlsFree
+ 0001:000001F8       SysInit.TlsGetValue
+ 0003:00000000       SysInit.TlsIndex
+ 0005:00000000       SysInit.TlsLast
+ 0003:00000020       SysInit.TlsProc
+ 0001:00000200       SysInit.TlsSetValue
+ 0001:000002F4       SysInit.UninitializeModule
+ 0001:00000010       System.@AbstractError
+ 0001:00000098       System.@AfterConstruction
+ 0001:000000A0       System.@BeforeDestruction
+ 0001:00000088       System.@ClassCreate
+ 0001:00000090       System.@ClassDestroy
+ 0001:00000138       System.@CopyRecord
+ 0001:000000C0       System.@DoneExcept
+ 0001:00000160       System.@DynArrayAsg
+ 0001:00000158       System.@DynArrayClear
+ 0001:00000148       System.@DynArrayHigh
+ 0001:00000140       System.@DynArrayLength
+ 0001:00000150       System.@DynArraySetLength
+ 0001:00000018       System.@FillChar
+ 0001:00000130       System.@FinalizeArray
+ 0001:00000128       System.@FinalizeRecord
+ 0001:000000B0       System.@HandleFinally
+ 0001:000000A8       System.@HandleOnException
+ 0001:00000120       System.@InitializeRecord
+ 0001:00000190       System.@IntfAddRef
+ 0001:00000188       System.@IntfCast
+ 0001:00000178       System.@IntfClear
+ 0001:00000180       System.@IntfCopy
+ 0001:000000D0       System.@PackageLoad
+ 0001:000000D8       System.@PackageUnload
+ 0001:000000B8       System.@RaiseExcept
+ 0001:000000E0       System.@RunError
+ 0001:000000C8       System.@TryFinallyExit
+ 0001:000000F0       System.@UStrArrayClr
+ 0001:000000F8       System.@UStrAsg
+ 0001:00000108       System.@UStrCat
+ 0001:00000110       System.@UStrCat3
+ 0001:00000118       System.@UStrCatN
+ 0001:000000E8       System.@UStrClr
+ 0001:00000100       System.@UStrToPWChar
+ 0001:000001C8       System.Finalization
+ 0001:00000000       System.Move
+ 0001:00000008       System.ParamStr
+ 0001:00000168       System.RegisterModule
+ 0002:00000000       System.System
+ 0001:00000198       System.TInterfacedObject.AfterConstruction
+ 0001:000001A0       System.TInterfacedObject.BeforeDestruction
+ 0001:000001A8       System.TInterfacedObject.NewInstance
+ 0001:000001B0       System.TInterfacedObject.QueryInterface
+ 0001:000001B8       System.TInterfacedObject._AddRef
+ 0001:000001C0       System.TInterfacedObject._Release
+ 0001:00000070       System.TObject.AfterConstruction
+ 0001:00000078       System.TObject.BeforeDestruction
+ 0001:00000030       System.TObject.Create
+ 0001:00000068       System.TObject.DefaultHandler
+ 0001:00000038       System.TObject.Destroy
+ 0001:00000080       System.TObject.Dispatch
+ 0001:00000048       System.TObject.Equals
+ 0001:00000040       System.TObject.Free
+ 0001:00000028       System.TObject.FreeInstance
+ 0001:00000050       System.TObject.GetHashCode
+ 0001:00000020       System.TObject.NewInstance
+ 0001:00000058       System.TObject.SafeCallException
+ 0001:00000060       System.TObject.ToString
+ 0001:00000170       System.UnregisterModule
+ 0001:000009E0       SystemInstance.Finalization
+ 0002:000001D8       SystemInstance.SystemInstance
+ 0001:000003B4       SysUtils.Date
+ 0001:000003AC       SysUtils.DayOfWeek
+ 0002:00000018       SysUtils.Exception.Create@
+ 0001:000003DC       SysUtils.Exception.CreateRes
+ 0001:000003E4       SysUtils.Exception.Destroy@
+ 0001:000003A4       SysUtils.ExtractFilePath
+ 0001:00000404       SysUtils.Finalization
+ 0001:000003CC       SysUtils.FormatDateTime
+ 0001:000003EC       SysUtils.FreeAndNil
+ 0001:000003C4       SysUtils.Now
+ 0001:000003D4       SysUtils.OutOfMemoryError
+ 0001:00000394       SysUtils.StringToGUID
+ 0002:00000020       SysUtils.SysUtils
+ 0002:00000010       SysUtils.TEncoding.Create@
+ 0001:000003FC       SysUtils.TEncoding.Destroy@
+ 0001:000003BC       SysUtils.Time
+ 0002:00000008       SysUtils.TLanguages.Create@
+ 0001:000003F4       SysUtils.TLanguages.Destroy@
+ 0001:0000039C       SysUtils.Trim
+ 0001:000009A0       Tabs.Finalization
+ 0002:000001A0       Tabs.Tabs
+ 0001:000006B0       Themes.Finalization
+ 0002:000000B0       Themes.Themes
+ 0002:00000078       TimeSpan.TTimeSpan.Create@
+ 0001:00000670       TimeSpan.TTimeSpan.Destroy@
+ 0001:00000A20       ToolCtrlsEh.Finalization
+ 0002:000001F0       ToolCtrlsEh.ToolCtrlsEh
+ 0001:00000620       TypInfo.Finalization
+ 0002:00000060       TypInfo.TypInfo
+ 0001:000009F0       uBaseForm.TBaseForm.Destroy
+ 0001:000009F8       uBaseForm.TBaseForm.HandleAuthority
+ 0004:00000018       UFrmLogin..2
+ 0001:00004160       UFrmLogin..TDictionary<System.string,System.Integer>
+ 0001:00003864       UFrmLogin..TDictionary<System.string,System.Integer>.TKeyCollection
+ 0001:0000369C       UFrmLogin..TDictionary<System.string,System.Integer>.TKeyEnumerator
+ 0001:00003F98       UFrmLogin..TDictionary<System.string,System.Integer>.TPairEnumerator
+ 0001:00003DE0       UFrmLogin..TDictionary<System.string,System.Integer>.TValueCollection
+ 0001:00003C18       UFrmLogin..TDictionary<System.string,System.Integer>.TValueEnumerator
+ 0001:00003B28       UFrmLogin..TEnumerable<System.Integer>
+ 0001:000035B0       UFrmLogin..TEnumerable<System.string>
+ 0001:00003100       UFrmLogin..TEnumerable<TPair<System.string,System.Integer>>
+ 0001:00003A14       UFrmLogin..TEnumerator<System.Integer>
+ 0001:0000349C       UFrmLogin..TEnumerator<System.string>
+ 0001:00002FBC       UFrmLogin..TEnumerator<TPair<System.string,System.Integer>>
+ 0001:00000AC8       UFrmLogin..TfrmLogin
+ 0001:00002F54       UFrmLogin.Finalization
+ 0004:00000014       UFrmLogin.frmLogin
+ 0001:00004F5C       UFrmLogin.TDictionary<System.string,System.Integer>.Add
+ 0001:00005140       UFrmLogin.TDictionary<System.string,System.Integer>.AddOrSetValue
+ 0001:00005024       UFrmLogin.TDictionary<System.string,System.Integer>.Clear
+ 0001:0000519C       UFrmLogin.TDictionary<System.string,System.Integer>.ContainsKey
+ 0001:000051C0       UFrmLogin.TDictionary<System.string,System.Integer>.ContainsValue
+ 0001:00004C54       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004C8C       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004D44       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004E30       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004C1C       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004F20       UFrmLogin.TDictionary<System.string,System.Integer>.Destroy
+ 0001:00004A70       UFrmLogin.TDictionary<System.string,System.Integer>.DoAdd
+ 0001:00004BE4       UFrmLogin.TDictionary<System.string,System.Integer>.DoGetEnumerator
+ 0001:00004AF4       UFrmLogin.TDictionary<System.string,System.Integer>.DoRemove
+ 0001:00004AC0       UFrmLogin.TDictionary<System.string,System.Integer>.DoSetValue
+ 0001:00004FE0       UFrmLogin.TDictionary<System.string,System.Integer>.ExtractPair
+ 0001:00004984       UFrmLogin.TDictionary<System.string,System.Integer>.GetBucketIndex
+ 0001:00005294       UFrmLogin.TDictionary<System.string,System.Integer>.GetEnumerator
+ 0001:00005254       UFrmLogin.TDictionary<System.string,System.Integer>.GetKeys
+ 0001:00005274       UFrmLogin.TDictionary<System.string,System.Integer>.GetValues
+ 0001:00004960       UFrmLogin.TDictionary<System.string,System.Integer>.Grow
+ 0001:00004A00       UFrmLogin.TDictionary<System.string,System.Integer>.Hash
+ 0001:00004BEC       UFrmLogin.TDictionary<System.string,System.Integer>.KeyNotify
+ 0001:00004878       UFrmLogin.TDictionary<System.string,System.Integer>.Rehash
+ 0001:00004A20       UFrmLogin.TDictionary<System.string,System.Integer>.RehashAdd
+ 0001:00004FC0       UFrmLogin.TDictionary<System.string,System.Integer>.Remove
+ 0001:00004838       UFrmLogin.TDictionary<System.string,System.Integer>.SetCapacity
+ 0001:000052C4       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.Create
+ 0001:000052BC       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.DoGetEnumerator
+ 0001:000052B4       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.GetCount
+ 0001:00005300       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.GetEnumerator
+ 0001:0000534C       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.Create
+ 0001:00005330       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.DoGetCurrent
+ 0001:00005344       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.DoMoveNext
+ 0001:00005310       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.GetCurrent
+ 0001:00005390       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.MoveNext
+ 0001:00005524       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.Create
+ 0001:00005508       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.DoGetCurrent
+ 0001:0000551C       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.DoMoveNext
+ 0001:000054D4       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.GetCurrent
+ 0001:00005568       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.MoveNext
+ 0001:000050F4       UFrmLogin.TDictionary<System.string,System.Integer>.TrimExcess
+ 0001:00005100       UFrmLogin.TDictionary<System.string,System.Integer>.TryGetValue
+ 0001:000053E8       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.Create
+ 0001:000053E0       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.DoGetEnumerator
+ 0001:000053D8       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.GetCount
+ 0001:00005424       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.GetEnumerator
+ 0001:00005458       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.Create
+ 0001:00005448       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.DoGetCurrent
+ 0001:00005450       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.DoMoveNext
+ 0001:00005434       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.GetCurrent
+ 0001:0000549C       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.MoveNext
+ 0001:00004C04       UFrmLogin.TDictionary<System.string,System.Integer>.ValueNotify
+ 0001:000053C8       UFrmLogin.TEnumerable<System.Integer>.GetEnumerator
+ 0001:000052A4       UFrmLogin.TEnumerable<System.string>.GetEnumerator
+ 0001:00004828       UFrmLogin.TEnumerable<TPair<System.string,System.Integer>>.GetEnumerator
+ 0001:000053D0       UFrmLogin.TEnumerator<System.Integer>.MoveNext
+ 0001:000052AC       UFrmLogin.TEnumerator<System.string>.MoveNext
+ 0001:00004830       UFrmLogin.TEnumerator<TPair<System.string,System.Integer>>.MoveNext
+ 0001:000055C0       UFrmLogin.TEqualityComparer<System.Integer>.Default
+ 0001:000055A0       UFrmLogin.TEqualityComparer<System.string>.Default
+ 0001:00001C04       UFrmLogin.TfrmLogin.bbtnSaveClick
+ 0001:00001C0C       UFrmLogin.TfrmLogin.chkAutoLoginClick
+ 0001:00001C34       UFrmLogin.TfrmLogin.FormCloseQuery
+ 0001:00001D08       UFrmLogin.TfrmLogin.FormCreate
+ 0001:00001DE8       UFrmLogin.TfrmLogin.FormDeactivate
+ 0001:00001E04       UFrmLogin.TfrmLogin.FormShow
+ 0001:00001EB4       UFrmLogin.TfrmLogin.getAllBillLength
+ 0001:00001FD8       UFrmLogin.TfrmLogin.Label4Click
+ 0001:0000141C       UFrmLogin.TfrmLogin.lblSavePasswordClick
+ 0001:00001458       UFrmLogin.TfrmLogin.loadlogininfo
+ 0001:0000161C       UFrmLogin.TfrmLogin.loadMenuPermission
+ 0001:00002014       UFrmLogin.TfrmLogin.login
+ 0001:00002DC0       UFrmLogin.TfrmLogin.NovahticketoutChange
+ 0001:00002E44       UFrmLogin.TfrmLogin.tmrAutologinTimer
+ 0001:00002E78       UFrmLogin.TfrmLogin.tmrForegroundTimer
+ 0001:0000480C       UFrmLogin.TPair<System.string,System.Integer>.Create
+ 0002:00000240       UFrmLogin.UFrmLogin
+ 0001:00000A08       USimpleEditForm.TSimpleEditForm.Create
+ 0001:00000A10       USimpleEditForm.TSimpleEditForm.FormDeactivate
+ 0001:000006C0       UxTheme.Finalization
+ 0002:000000C0       UxTheme.UxTheme
+ 0001:00000628       Variants.@VarClr
+ 0001:00000658       Variants.@VarCmpNE
+ 0001:00000648       Variants.@VarFromUStr
+ 0001:00000638       Variants.@VarToInt64
+ 0001:00000630       Variants.@VarToInteger
+ 0001:00000640       Variants.@VarToUStr
+ 0001:00000660       Variants.Finalization
+ 0001:00000650       Variants.Null
+ 0002:00000068       Variants.Variants
+ 0001:00000668       VarUtils.Finalization
+ 0002:00000070       VarUtils.VarUtils
+ 0001:00000960       WideStrings.Finalization
+ 0002:00000160       WideStrings.WideStrings
+ 0004:0000000C       Windows..2
+ 0001:0000041C       Windows.ClientToScreen
+ 0001:00000490       Windows.Finalization
+ 0001:0000040C       Windows.FreeLibrary
+ 0001:00000424       Windows.GetCursorPos
+ 0001:00000414       Windows.GetVersionEx
+ 0004:00000010       Windows.HtmlHelpModule
+ 0001:00000454       Windows.InitVersionInfo
+ 0001:0000042C       Windows.IsIconic
+ 0001:0000044C       Windows.mouse_event
+ 0001:00000434       Windows.SetCursorPos
+ 0001:0000043C       Windows.SetWindowLong
+ 0001:00000444       Windows.SetWindowPos
+ 0003:00000030       Windows.Win32MajorVersion
+ 0003:00000034       Windows.Win32MinorVersion
+ 0003:00000038       Windows.Win32Platform
+ 0002:00000028       Windows.Windows
+ 0001:00000980       WinSkinData.Finalization
+ 0002:00000180       WinSkinData.WinSkinData
+ 0001:000009A8       WinSkinDlg.Finalization
+ 0002:000001A8       WinSkinDlg.WinSkinDlg
+ 0001:000009B0       WinSkinForm.Finalization
+ 0002:000001B0       WinSkinForm.WinSkinForm
+ 0001:00000988       WinSkinIni.Finalization
+ 0002:00000188       WinSkinIni.WinSkinIni
+
+
+  Address             Publics by Value
+
+ 0001:00000000       System.Move
+ 0001:00000008       System.ParamStr
+ 0001:00000010       System.@AbstractError
+ 0001:00000018       System.@FillChar
+ 0001:00000020       System.TObject.NewInstance
+ 0001:00000028       System.TObject.FreeInstance
+ 0001:00000030       System.TObject.Create
+ 0001:00000038       System.TObject.Destroy
+ 0001:00000040       System.TObject.Free
+ 0001:00000048       System.TObject.Equals
+ 0001:00000050       System.TObject.GetHashCode
+ 0001:00000058       System.TObject.SafeCallException
+ 0001:00000060       System.TObject.ToString
+ 0001:00000068       System.TObject.DefaultHandler
+ 0001:00000070       System.TObject.AfterConstruction
+ 0001:00000078       System.TObject.BeforeDestruction
+ 0001:00000080       System.TObject.Dispatch
+ 0001:00000088       System.@ClassCreate
+ 0001:00000090       System.@ClassDestroy
+ 0001:00000098       System.@AfterConstruction
+ 0001:000000A0       System.@BeforeDestruction
+ 0001:000000A8       System.@HandleOnException
+ 0001:000000B0       System.@HandleFinally
+ 0001:000000B8       System.@RaiseExcept
+ 0001:000000C0       System.@DoneExcept
+ 0001:000000C8       System.@TryFinallyExit
+ 0001:000000D0       System.@PackageLoad
+ 0001:000000D8       System.@PackageUnload
+ 0001:000000E0       System.@RunError
+ 0001:000000E8       System.@UStrClr
+ 0001:000000F0       System.@UStrArrayClr
+ 0001:000000F8       System.@UStrAsg
+ 0001:00000100       System.@UStrToPWChar
+ 0001:00000108       System.@UStrCat
+ 0001:00000110       System.@UStrCat3
+ 0001:00000118       System.@UStrCatN
+ 0001:00000120       System.@InitializeRecord
+ 0001:00000128       System.@FinalizeRecord
+ 0001:00000130       System.@FinalizeArray
+ 0001:00000138       System.@CopyRecord
+ 0001:00000140       System.@DynArrayLength
+ 0001:00000148       System.@DynArrayHigh
+ 0001:00000150       System.@DynArraySetLength
+ 0001:00000158       System.@DynArrayClear
+ 0001:00000160       System.@DynArrayAsg
+ 0001:00000168       System.RegisterModule
+ 0001:00000170       System.UnregisterModule
+ 0001:00000178       System.@IntfClear
+ 0001:00000180       System.@IntfCopy
+ 0001:00000188       System.@IntfCast
+ 0001:00000190       System.@IntfAddRef
+ 0001:00000198       System.TInterfacedObject.AfterConstruction
+ 0001:000001A0       System.TInterfacedObject.BeforeDestruction
+ 0001:000001A8       System.TInterfacedObject.NewInstance
+ 0001:000001B0       System.TInterfacedObject.QueryInterface
+ 0001:000001B8       System.TInterfacedObject._AddRef
+ 0001:000001C0       System.TInterfacedObject._Release
+ 0001:000001C8       System.Finalization
+ 0001:000001D0       SysInit.FreeLibrary
+ 0001:000001D8       SysInit.LocalAlloc
+ 0001:000001E0       SysInit.LocalFree
+ 0001:000001E8       SysInit.TlsAlloc
+ 0001:000001F0       SysInit.TlsFree
+ 0001:000001F8       SysInit.TlsGetValue
+ 0001:00000200       SysInit.TlsSetValue
+ 0001:00000208       SysInit.AllocTlsBuffer
+ 0001:00000214       SysInit.GetTlsSize
+ 0001:0000021C       SysInit.InitThreadTLS
+ 0001:00000260       SysInit.InitProcessTLS
+ 0001:0000028C       SysInit.ExitThreadTLS
+ 0001:000002C4       SysInit.ExitProcessTLS
+ 0001:000002E8       SysInit.InitializeModule
+ 0001:000002F4       SysInit.UninitializeModule
+ 0001:00000318       SysInit.@InitPkg
+ 0001:0000037C       SysInit.@PackageLoad
+ 0001:00000388       SysInit.@PackageUnload
+ 0001:00000394       SysUtils.StringToGUID
+ 0001:0000039C       SysUtils.Trim
+ 0001:000003A4       SysUtils.ExtractFilePath
+ 0001:000003AC       SysUtils.DayOfWeek
+ 0001:000003B4       SysUtils.Date
+ 0001:000003BC       SysUtils.Time
+ 0001:000003C4       SysUtils.Now
+ 0001:000003CC       SysUtils.FormatDateTime
+ 0001:000003D4       SysUtils.OutOfMemoryError
+ 0001:000003DC       SysUtils.Exception.CreateRes
+ 0001:000003E4       SysUtils.Exception.Destroy@
+ 0001:000003EC       SysUtils.FreeAndNil
+ 0001:000003F4       SysUtils.TLanguages.Destroy@
+ 0001:000003FC       SysUtils.TEncoding.Destroy@
+ 0001:00000404       SysUtils.Finalization
+ 0001:0000040C       Windows.FreeLibrary
+ 0001:00000414       Windows.GetVersionEx
+ 0001:0000041C       Windows.ClientToScreen
+ 0001:00000424       Windows.GetCursorPos
+ 0001:0000042C       Windows.IsIconic
+ 0001:00000434       Windows.SetCursorPos
+ 0001:0000043C       Windows.SetWindowLong
+ 0001:00000444       Windows.SetWindowPos
+ 0001:0000044C       Windows.mouse_event
+ 0001:00000454       Windows.InitVersionInfo
+ 0001:00000490       Windows.Finalization
+ 0001:000004B0       Controls.TControl.GetDragImages
+ 0001:000004B8       Controls.TControl.GetEnabled
+ 0001:000004C0       Controls.TControl.GetAction
+ 0001:000004C8       Controls.TControl.SetDragMode
+ 0001:000004D0       Controls.TControl.SetAutoSize
+ 0001:000004D8       Controls.TControl.SetName
+ 0001:000004E0       Controls.TControl.SetEnabled
+ 0001:000004E8       Controls.TControl.GetText
+ 0001:000004F0       Controls.TControl.SetText
+ 0001:000004F8       Controls.TControl.SetBiDiMode
+ 0001:00000500       Controls.TControl.CreateTouchManager
+ 0001:00000508       Controls.TControl.GetFloatingDockSiteClass
+ 0001:00000510       Controls.TControl.InitiateAction
+ 0001:00000518       Controls.TWinControl.DestroyWnd
+ 0001:00000520       Controls.TWinControl.CreateHandle
+ 0001:00000528       Controls.TWinControl.CustomAlignInsertBefore
+ 0001:00000530       Controls.TWinControl.CustomAlignPosition
+ 0001:00000538       Controls.TWinControl.SetParentDoubleBuffered
+ 0001:00000540       Controls.TWinControl.SetBounds
+ 0001:00000548       Controls.TWinControl.ShowControl
+ 0001:00000550       Controls.TWinControl.GetDeviceContext
+ 0001:00000558       Controls.TWinControl.Invalidate
+ 0001:00000560       Controls.TWinControl.Update
+ 0001:00000568       Controls.TWinControl.Repaint
+ 0001:00000570       Controls.TWinControl.GetHandle
+ 0001:00000578       Controls.TWinControl.GetControlExtents
+ 0001:00000580       Controls.TWinControl.GetClientOrigin
+ 0001:00000588       Controls.TWinControl.CanResize
+ 0001:00000590       Controls.TWinControl.ConstrainedResize
+ 0001:00000598       Controls.TWinControl.AssignTo
+ 0001:000005A0       Controls.TWinControl.CanAutoSize
+ 0001:000005A8       Controls.TWinControl.SetParentBackground
+ 0001:000005B0       Controls.TWinControl.DockReplaceDockClient
+ 0001:000005B8       Controls.TWinControl.UpdateControlOriginalParentSize
+ 0001:000005C0       Controls.Finalization
+ 0001:000005C8       SyncObjs.Finalization
+ 0001:000005D0       Classes.Point
+ 0001:000005D8       Classes.TPersistent.Assign
+ 0001:000005E0       Classes.TStrings.SetCommaText
+ 0001:000005E8       Classes.TStringList.Create
+ 0001:000005F0       Classes.TThread.Destroy@
+ 0001:000005F8       Classes.TComponent.WriteState
+ 0001:00000600       Classes.TComponent.UpdateAction
+ 0001:00000608       Classes.TComponent.SafeCallException
+ 0001:00000610       Classes.TComponent.UpdateRegistry
+ 0001:00000618       Classes.Finalization
+ 0001:00000620       TypInfo.Finalization
+ 0001:00000628       Variants.@VarClr
+ 0001:00000630       Variants.@VarToInteger
+ 0001:00000638       Variants.@VarToInt64
+ 0001:00000640       Variants.@VarToUStr
+ 0001:00000648       Variants.@VarFromUStr
+ 0001:00000650       Variants.Null
+ 0001:00000658       Variants.@VarCmpNE
+ 0001:00000660       Variants.Finalization
+ 0001:00000668       VarUtils.Finalization
+ 0001:00000670       TimeSpan.TTimeSpan.Destroy@
+ 0001:00000678       ActnList.Finalization
+ 0001:00000680       Graphics.Finalization
+ 0001:00000688       Registry.Finalization
+ 0001:00000690       IniFiles.TCustomIniFile.Create
+ 0001:00000698       IniFiles.Finalization
+ 0001:000006A0       IOUtils.TPath.Destroy@
+ 0001:000006A8       IOUtils.Finalization
+ 0001:000006B0       Themes.Finalization
+ 0001:000006B8       Menus.Finalization
+ 0001:000006C0       UxTheme.Finalization
+ 0001:000006C8       MultiMon.Finalization
+ 0001:000006D0       Forms.TScrollingWinControl.AutoScrollEnabled
+ 0001:000006D8       Forms.TScrollingWinControl.DoGesture
+ 0001:000006E0       Forms.TScrollingWinControl.DoGetGestureOptions
+ 0001:000006E8       Forms.TScrollingWinControl.AutoScrollInView
+ 0001:000006F0       Forms.TScrollingWinControl.AdjustClientRect
+ 0001:000006F8       Forms.TCustomForm.Create
+ 0001:00000700       Forms.TCustomForm.AfterConstruction
+ 0001:00000708       Forms.TCustomForm.CreateNew
+ 0001:00000710       Forms.TCustomForm.BeforeDestruction
+ 0001:00000718       Forms.TCustomForm.DoCreate
+ 0001:00000720       Forms.TCustomForm.DoDestroy
+ 0001:00000728       Forms.TCustomForm.Loaded
+ 0001:00000730       Forms.TCustomForm.Notification
+ 0001:00000738       Forms.TCustomForm.ReadState
+ 0001:00000740       Forms.TCustomForm.DefineProperties
+ 0001:00000748       Forms.TCustomForm.GetClientRect
+ 0001:00000750       Forms.TCustomForm.GetFloating
+ 0001:00000758       Forms.TCustomForm.SetParentBiDiMode
+ 0001:00000760       Forms.TCustomForm.SetVisible
+ 0001:00000768       Forms.TCustomForm.WantChildKey
+ 0001:00000770       Forms.TCustomForm.SetParent
+ 0001:00000778       Forms.TCustomForm.ValidateRename
+ 0001:00000780       Forms.TCustomForm.WndProc
+ 0001:00000788       Forms.TCustomForm.AlignControls
+ 0001:00000790       Forms.TCustomForm.CreateParams
+ 0001:00000798       Forms.TCustomForm.CreateWnd
+ 0001:000007A0       Forms.TCustomForm.CreateWindowHandle
+ 0001:000007A8       Forms.TCustomForm.DestroyHandle
+ 0001:000007B0       Forms.TCustomForm.DestroyWindowHandle
+ 0001:000007B8       Forms.TCustomForm.DefaultHandler
+ 0001:000007C0       Forms.TCustomForm.SetFocusedControl
+ 0001:000007C8       Forms.TCustomForm.PaintWindow
+ 0001:000007D0       Forms.TCustomForm.Resizing
+ 0001:000007D8       Forms.TCustomForm.CloseQuery
+ 0001:000007E0       Forms.TCustomForm.SetFocus
+ 0001:000007E8       Forms.TCustomForm.ShowModal
+ 0001:000007F0       Forms.TCustomForm.UpdateActions
+ 0001:000007F8       Forms.TCustomForm.RequestAlign
+ 0001:00000800       Forms.TCustomForm.QueryInterface
+ 0001:00000808       Forms.TApplication.Restore
+ 0001:00000810       Forms.TApplication.Terminate
+ 0001:00000818       Forms.Finalization
+ 0001:00000820       HelpIntfs.Finalization
+ 0001:00000828       Dialogs.Finalization
+ 0001:00000830       ComCtrls.Finalization
+ 0001:00000838       GraphUtil.Finalization
+ 0001:00000840       ShellAPI.ShellExecute
+ 0001:00000848       ExtCtrls.TTimer.SetEnabled
+ 0001:00000850       ExtCtrls.TTimer.SetInterval
+ 0001:00000858       ExtCtrls.Finalization
+ 0001:00000860       Printers.Finalization
+ 0001:00000868       Clipbrd.Finalization
+ 0001:00000870       FlatSB.Finalization
+ 0001:00000878       Services.SysService
+ 0001:00000880       Services.SysDialogs
+ 0001:00000888       Services.SysLog
+ 0001:00000890       Services.SysInfo
+ 0001:00000898       Services.SysMainForm
+ 0001:000008A0       Services.SysFunctionMgr
+ 0001:000008A8       Services.Finalization
+ 0001:000008B0       Generics.Defaults._LookupVtableInfo
+ 0001:000008B8       Generics.Collections.InCircularRange
+ 0001:000008C0       PubFn.nvl
+ 0001:000008C8       PubFn.getWeekNum
+ 0001:000008D0       PubFn.Finalization
+ 0001:000008D8       jpeg.Finalization
+ 0001:000008E0       GdiPlus.Finalization
+ 0001:000008E8       CheckLst.Finalization
+ 0001:000008F0       jsonClientDataSet.TjsonClientDataSet.Create
+ 0001:000008F8       jsonClientDataSet.TjsonClientDataSet.SetSaveAddress
+ 0001:00000900       ComObj.Finalization
+ 0001:00000908       DSIntf.Finalization
+ 0001:00000910       SqlTimSt.Finalization
+ 0001:00000918       DB.TParams.CreateParam
+ 0001:00000920       DB.TParams.ParamByName
+ 0001:00000928       DB.TParam.SetAsVariant
+ 0001:00000930       DB.TParam.GetAsVariant
+ 0001:00000938       DB.TDataSet.Close
+ 0001:00000940       DB.TDataSet.FieldByName
+ 0001:00000948       DB.TDataSet.First
+ 0001:00000950       DB.TDataSet.Next
+ 0001:00000958       DB.Finalization
+ 0001:00000960       WideStrings.Finalization
+ 0001:00000968       FMTBcd.Finalization
+ 0001:00000970       Provider.Finalization
+ 0001:00000978       DBClient.Finalization
+ 0001:00000980       WinSkinData.Finalization
+ 0001:00000988       WinSkinIni.Finalization
+ 0001:00000990       ImgUtil.Finalization
+ 0001:00000998       Buttons.Finalization
+ 0001:000009A0       Tabs.Finalization
+ 0001:000009A8       WinSkinDlg.Finalization
+ 0001:000009B0       WinSkinForm.Finalization
+ 0001:000009B8       superobject.Finalization
+ 0001:000009C0       Rtti.Finalization
+ 0001:000009C8       LoginUser.TLoginUserInfo.Create
+ 0001:000009D0       SysFactoryMgr.Finalization
+ 0001:000009D8       CardManage.Finalization
+ 0001:000009E0       SystemInstance.Finalization
+ 0001:000009E8       SysFactory.TIntfFactory.Create
+ 0001:000009F0       uBaseForm.TBaseForm.Destroy
+ 0001:000009F8       uBaseForm.TBaseForm.HandleAuthority
+ 0001:00000A00       GIFImg.Finalization
+ 0001:00000A08       USimpleEditForm.TSimpleEditForm.Create
+ 0001:00000A10       USimpleEditForm.TSimpleEditForm.FormDeactivate
+ 0001:00000A18       DBGridEh.Finalization
+ 0001:00000A20       ToolCtrlsEh.Finalization
+ 0001:00000A28       DBCtrls.Finalization
+ 0001:00000A30       DBPWDlg.Finalization
+ 0001:00000A38       DBLogDlg.Finalization
+ 0001:00000A40       PropFilerEh.Finalization
+ 0001:00000A48       ConvUtils.Finalization
+ 0001:00000A50       DBCtrlsEh.Finalization
+ 0001:00000A58       DbUtilsEh.Finalization
+ 0001:00000A60       DBGridEhFindDlgs.Finalization
+ 0001:00000A68       DBGridEhImpExp.Finalization
+ 0001:00000A70       NovaHComboBox.TNovaHComboBox.GetHelpFieldValue
+ 0001:00000A78       NovaHComboBox.TNovaHComboBox.SetItemIndexByField
+ 0001:00000AC8       UFrmLogin..TfrmLogin
+ 0001:0000141C       UFrmLogin.TfrmLogin.lblSavePasswordClick
+ 0001:00001458       UFrmLogin.TfrmLogin.loadlogininfo
+ 0001:0000161C       UFrmLogin.TfrmLogin.loadMenuPermission
+ 0001:00001C04       UFrmLogin.TfrmLogin.bbtnSaveClick
+ 0001:00001C0C       UFrmLogin.TfrmLogin.chkAutoLoginClick
+ 0001:00001C34       UFrmLogin.TfrmLogin.FormCloseQuery
+ 0001:00001D08       UFrmLogin.TfrmLogin.FormCreate
+ 0001:00001DE8       UFrmLogin.TfrmLogin.FormDeactivate
+ 0001:00001E04       UFrmLogin.TfrmLogin.FormShow
+ 0001:00001EB4       UFrmLogin.TfrmLogin.getAllBillLength
+ 0001:00001FD8       UFrmLogin.TfrmLogin.Label4Click
+ 0001:00002014       UFrmLogin.TfrmLogin.login
+ 0001:00002DC0       UFrmLogin.TfrmLogin.NovahticketoutChange
+ 0001:00002E44       UFrmLogin.TfrmLogin.tmrAutologinTimer
+ 0001:00002E78       UFrmLogin.TfrmLogin.tmrForegroundTimer
+ 0001:00002F54       UFrmLogin.Finalization
+ 0001:00002FBC       UFrmLogin..TEnumerator<TPair<System.string,System.Integer>>
+ 0001:00003100       UFrmLogin..TEnumerable<TPair<System.string,System.Integer>>
+ 0001:0000349C       UFrmLogin..TEnumerator<System.string>
+ 0001:000035B0       UFrmLogin..TEnumerable<System.string>
+ 0001:0000369C       UFrmLogin..TDictionary<System.string,System.Integer>.TKeyEnumerator
+ 0001:00003864       UFrmLogin..TDictionary<System.string,System.Integer>.TKeyCollection
+ 0001:00003A14       UFrmLogin..TEnumerator<System.Integer>
+ 0001:00003B28       UFrmLogin..TEnumerable<System.Integer>
+ 0001:00003C18       UFrmLogin..TDictionary<System.string,System.Integer>.TValueEnumerator
+ 0001:00003DE0       UFrmLogin..TDictionary<System.string,System.Integer>.TValueCollection
+ 0001:00003F98       UFrmLogin..TDictionary<System.string,System.Integer>.TPairEnumerator
+ 0001:00004160       UFrmLogin..TDictionary<System.string,System.Integer>
+ 0001:0000480C       UFrmLogin.TPair<System.string,System.Integer>.Create
+ 0001:00004828       UFrmLogin.TEnumerable<TPair<System.string,System.Integer>>.GetEnumerator
+ 0001:00004830       UFrmLogin.TEnumerator<TPair<System.string,System.Integer>>.MoveNext
+ 0001:00004838       UFrmLogin.TDictionary<System.string,System.Integer>.SetCapacity
+ 0001:00004878       UFrmLogin.TDictionary<System.string,System.Integer>.Rehash
+ 0001:00004960       UFrmLogin.TDictionary<System.string,System.Integer>.Grow
+ 0001:00004984       UFrmLogin.TDictionary<System.string,System.Integer>.GetBucketIndex
+ 0001:00004A00       UFrmLogin.TDictionary<System.string,System.Integer>.Hash
+ 0001:00004A20       UFrmLogin.TDictionary<System.string,System.Integer>.RehashAdd
+ 0001:00004A70       UFrmLogin.TDictionary<System.string,System.Integer>.DoAdd
+ 0001:00004AC0       UFrmLogin.TDictionary<System.string,System.Integer>.DoSetValue
+ 0001:00004AF4       UFrmLogin.TDictionary<System.string,System.Integer>.DoRemove
+ 0001:00004BE4       UFrmLogin.TDictionary<System.string,System.Integer>.DoGetEnumerator
+ 0001:00004BEC       UFrmLogin.TDictionary<System.string,System.Integer>.KeyNotify
+ 0001:00004C04       UFrmLogin.TDictionary<System.string,System.Integer>.ValueNotify
+ 0001:00004C1C       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004C54       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004C8C       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004D44       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004E30       UFrmLogin.TDictionary<System.string,System.Integer>.Create
+ 0001:00004F20       UFrmLogin.TDictionary<System.string,System.Integer>.Destroy
+ 0001:00004F5C       UFrmLogin.TDictionary<System.string,System.Integer>.Add
+ 0001:00004FC0       UFrmLogin.TDictionary<System.string,System.Integer>.Remove
+ 0001:00004FE0       UFrmLogin.TDictionary<System.string,System.Integer>.ExtractPair
+ 0001:00005024       UFrmLogin.TDictionary<System.string,System.Integer>.Clear
+ 0001:000050F4       UFrmLogin.TDictionary<System.string,System.Integer>.TrimExcess
+ 0001:00005100       UFrmLogin.TDictionary<System.string,System.Integer>.TryGetValue
+ 0001:00005140       UFrmLogin.TDictionary<System.string,System.Integer>.AddOrSetValue
+ 0001:0000519C       UFrmLogin.TDictionary<System.string,System.Integer>.ContainsKey
+ 0001:000051C0       UFrmLogin.TDictionary<System.string,System.Integer>.ContainsValue
+ 0001:00005254       UFrmLogin.TDictionary<System.string,System.Integer>.GetKeys
+ 0001:00005274       UFrmLogin.TDictionary<System.string,System.Integer>.GetValues
+ 0001:00005294       UFrmLogin.TDictionary<System.string,System.Integer>.GetEnumerator
+ 0001:000052A4       UFrmLogin.TEnumerable<System.string>.GetEnumerator
+ 0001:000052AC       UFrmLogin.TEnumerator<System.string>.MoveNext
+ 0001:000052B4       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.GetCount
+ 0001:000052BC       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.DoGetEnumerator
+ 0001:000052C4       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.Create
+ 0001:00005300       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyCollection.GetEnumerator
+ 0001:00005310       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.GetCurrent
+ 0001:00005330       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.DoGetCurrent
+ 0001:00005344       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.DoMoveNext
+ 0001:0000534C       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.Create
+ 0001:00005390       UFrmLogin.TDictionary<System.string,System.Integer>.TKeyEnumerator.MoveNext
+ 0001:000053C8       UFrmLogin.TEnumerable<System.Integer>.GetEnumerator
+ 0001:000053D0       UFrmLogin.TEnumerator<System.Integer>.MoveNext
+ 0001:000053D8       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.GetCount
+ 0001:000053E0       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.DoGetEnumerator
+ 0001:000053E8       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.Create
+ 0001:00005424       UFrmLogin.TDictionary<System.string,System.Integer>.TValueCollection.GetEnumerator
+ 0001:00005434       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.GetCurrent
+ 0001:00005448       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.DoGetCurrent
+ 0001:00005450       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.DoMoveNext
+ 0001:00005458       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.Create
+ 0001:0000549C       UFrmLogin.TDictionary<System.string,System.Integer>.TValueEnumerator.MoveNext
+ 0001:000054D4       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.GetCurrent
+ 0001:00005508       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.DoGetCurrent
+ 0001:0000551C       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.DoMoveNext
+ 0001:00005524       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.Create
+ 0001:00005568       UFrmLogin.TDictionary<System.string,System.Integer>.TPairEnumerator.MoveNext
+ 0001:000055A0       UFrmLogin.TEqualityComparer<System.string>.Default
+ 0001:000055C0       UFrmLogin.TEqualityComparer<System.Integer>.Default
+ 0001:0000565C       LoginImpl..TLogin
+ 0001:0000571C       LoginImpl.TLogin.ChangeUser
+ 0001:00005720       LoginImpl.TLogin.LockSystem
+ 0001:00005794       LoginImpl.TLogin.Logout
+ 0001:000059F0       LoginImpl.TLogin.userLogout
+ 0001:00005A8C       LoginImpl.TLogin.CheckLogin
+ 0001:00005B10       LoginImpl.Create_LoginObj
+ 0001:00005B40       LoginImpl.Finalization
+ 0001:00005BF4       LoginPlugin..TReLoginFunction
+ 0001:00005F48       LoginPlugin..TLoginOutFunction
+ 0001:0000629C       LoginPlugin..TLockSystemFunction
+ 0001:0000654C       LoginPlugin..TEnumerator<FunctionItemIntf.TSubfunction>
+ 0001:00006684       LoginPlugin..TEnumerable<FunctionItemIntf.TSubfunction>
+ 0001:00006988       LoginPlugin..TList<FunctionItemIntf.TSubfunction>.TEnumerator
+ 0001:00006B34       LoginPlugin..TList<FunctionItemIntf.TSubfunction>
+ 0001:00007464       LoginPlugin.TReLoginFunction.ChangeTheme
+ 0001:00007468       LoginPlugin.TReLoginFunction.Create
+ 0001:000074A4       LoginPlugin.TReLoginFunction.Enter
+ 0001:000075B4       LoginPlugin.TReLoginFunction.getDescribe
+ 0001:000075E0       LoginPlugin.TReLoginFunction.getKey
+ 0001:00007650       LoginPlugin.TReLoginFunction.getSubFunctionList
+ 0001:00007654       LoginPlugin.TReLoginFunction.IsWorkState
+ 0001:00007658       LoginPlugin.TReLoginFunction.Leave
+ 0001:0000765C       LoginPlugin.TReLoginFunction.refresh
+ 0001:00007660       LoginPlugin.TLoginOutFunction.ChangeTheme
+ 0001:00007664       LoginPlugin.TLoginOutFunction.Create
+ 0001:000076A0       LoginPlugin.TLoginOutFunction.Enter
+ 0001:000076F8       LoginPlugin.TLoginOutFunction.getDescribe
+ 0001:00007724       LoginPlugin.TLoginOutFunction.getKey
+ 0001:00007794       LoginPlugin.TLoginOutFunction.getSubFunctionList
+ 0001:00007798       LoginPlugin.TLoginOutFunction.IsWorkState
+ 0001:0000779C       LoginPlugin.TLoginOutFunction.Leave
+ 0001:000077A0       LoginPlugin.TLoginOutFunction.refresh
+ 0001:000077A4       LoginPlugin.TLockSystemFunction.ChangeTheme
+ 0001:000077A8       LoginPlugin.TLockSystemFunction.Create
+ 0001:000077E4       LoginPlugin.TLockSystemFunction.Enter
+ 0001:00007854       LoginPlugin.TLockSystemFunction.getDescribe
+ 0001:00007880       LoginPlugin.TLockSystemFunction.getKey
+ 0001:000078F0       LoginPlugin.TLockSystemFunction.getSubFunctionList
+ 0001:000078F4       LoginPlugin.TLockSystemFunction.IsWorkState
+ 0001:000078F8       LoginPlugin.TLockSystemFunction.Leave
+ 0001:000078FC       LoginPlugin.TLockSystemFunction.refresh
+ 0001:00007900       LoginPlugin.Finalization
+ 0001:00007908       LoginPlugin.TEnumerable<FunctionItemIntf.TSubfunction>.GetEnumerator
+ 0001:00007910       LoginPlugin.TEnumerator<FunctionItemIntf.TSubfunction>.MoveNext
+ 0001:00007918       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GetCapacity
+ 0001:00007924       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.SetCapacity
+ 0001:00007954       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.SetCount
+ 0001:000079A4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GetItem
+ 0001:000079CC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.SetItem
+ 0001:00007A1C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Grow
+ 0001:00007A54       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GrowCheck
+ 0001:00007A80       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.DoDelete
+ 0001:00007B00       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.DoGetEnumerator
+ 0001:00007B08       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Notify
+ 0001:00007B20       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007B98       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007C2C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Create
+ 0001:00007CBC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Destroy
+ 0001:00007CEC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Add
+ 0001:00007D20       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.AddRange
+ 0001:00007D34       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.AddRange
+ 0001:00007D40       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.AddRange
+ 0001:00007D4C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Insert
+ 0001:00007DCC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.InsertRange
+ 0001:00007EB8       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.InsertRange
+ 0001:00007F30       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.InsertRange
+ 0001:00007FA8       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Remove
+ 0001:00007FC8       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Delete
+ 0001:00007FD0       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.DeleteRange
+ 0001:00008104       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Extract
+ 0001:00008130       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Exchange
+ 0001:00008150       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Move
+ 0001:000081EC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.First
+ 0001:000081F4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Last
+ 0001:00008200       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Clear
+ 0001:00008218       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Contains
+ 0001:00008230       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.IndexOf
+ 0001:0000826C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.LastIndexOf
+ 0001:000082A4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Reverse
+ 0001:000082D4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Sort
+ 0001:00008300       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.Sort
+ 0001:0000832C       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.BinarySearch
+ 0001:00008364       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.BinarySearch
+ 0001:000083A4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TrimExcess
+ 0001:000083B0       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.GetEnumerator
+ 0001:000083C0       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.GetCurrent
+ 0001:000083CC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.DoGetCurrent
+ 0001:000083D4       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.DoMoveNext
+ 0001:000083DC       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.Create
+ 0001:00008420       LoginPlugin.TList<FunctionItemIntf.TSubfunction>.TEnumerator.MoveNext
+ 0001:00008440       LoginPlugin.TComparer<FunctionItemIntf.TSubfunction>.Default
+ 0001:00008460       LoginPlugin.TComparer<FunctionItemIntf.TSubfunction>.Construct
+ 0001:00008488       LoginPlugin.TArray.Sort<FunctionItemIntf.TSubfunction>
+ 0001:000084F0       LoginPlugin.TArray.BinarySearch<FunctionItemIntf.TSubfunction>
+ 0001:000085A8       LoginPlugin.TDelegatedComparer<FunctionItemIntf.TSubfunction>.Create
+ 0001:000085E4       LoginPlugin.TDelegatedComparer<FunctionItemIntf.TSubfunction>.Compare
+ 0001:000085F0       LoginPlugin.TArray.QuickSort<FunctionItemIntf.TSubfunction>
+ 0001:00008774       LoginPlugin..TComparer<FunctionItemIntf.TSubfunction>
+ 0001:000088D4       LoginPlugin.TComparer<FunctionItemIntf.TSubfunction>.Compare
+ 0001:00008954       LoginPlugin..TDelegatedComparer<FunctionItemIntf.TSubfunction>
+ 0001:00008AF4       LoginExport.PlugInit
+ 0001:00008C3C       LoginExport.PlugInFinal
+ 0001:00008C40       LoginExport.Finalization
+ 0001:00009258       .login.@GetPackageInfoTable
+ 0001:00009260       .login.@PackageLoad
+ 0001:0000926C       .login.@PackageUnload
+ 0002:00000000       System.System
+ 0002:00000008       SysUtils.TLanguages.Create@
+ 0002:00000010       SysUtils.TEncoding.Create@
+ 0002:00000018       SysUtils.Exception.Create@
+ 0002:00000020       SysUtils.SysUtils
+ 0002:00000028       Windows.Windows
+ 0002:00000040       Controls.Controls
+ 0002:00000048       SyncObjs.SyncObjs
+ 0002:00000050       Classes.TThread.Create@
+ 0002:00000058       Classes.Classes
+ 0002:00000060       TypInfo.TypInfo
+ 0002:00000068       Variants.Variants
+ 0002:00000070       VarUtils.VarUtils
+ 0002:00000078       TimeSpan.TTimeSpan.Create@
+ 0002:00000080       ActnList.ActnList
+ 0002:00000088       Graphics.Graphics
+ 0002:00000090       Registry.Registry
+ 0002:00000098       IniFiles.IniFiles
+ 0002:000000A0       IOUtils.TPath.Create@
+ 0002:000000A8       IOUtils.IOUtils
+ 0002:000000B0       Themes.Themes
+ 0002:000000B8       Menus.Menus
+ 0002:000000C0       UxTheme.UxTheme
+ 0002:000000C8       MultiMon.MultiMon
+ 0002:000000D0       Forms.Forms
+ 0002:000000D8       HelpIntfs.HelpIntfs
+ 0002:000000E0       Dialogs.Dialogs
+ 0002:000000E8       ComCtrls.ComCtrls
+ 0002:000000F0       GraphUtil.GraphUtil
+ 0002:000000F8       ExtCtrls.ExtCtrls
+ 0002:00000100       Printers.Printers
+ 0002:00000108       Clipbrd.Clipbrd
+ 0002:00000110       FlatSB.FlatSB
+ 0002:00000118       Services.Services
+ 0002:00000120       PubFn.PubFn
+ 0002:00000128       jpeg.jpeg
+ 0002:00000130       GdiPlus.GdiPlus
+ 0002:00000138       CheckLst.CheckLst
+ 0002:00000140       ComObj.ComObj
+ 0002:00000148       DSIntf.DSIntf
+ 0002:00000150       SqlTimSt.SqlTimSt
+ 0002:00000158       DB.DB
+ 0002:00000160       WideStrings.WideStrings
+ 0002:00000168       FMTBcd.FMTBcd
+ 0002:00000170       Provider.Provider
+ 0002:00000178       DBClient.DBClient
+ 0002:00000180       WinSkinData.WinSkinData
+ 0002:00000188       WinSkinIni.WinSkinIni
+ 0002:00000190       ImgUtil.ImgUtil
+ 0002:00000198       Buttons.Buttons
+ 0002:000001A0       Tabs.Tabs
+ 0002:000001A8       WinSkinDlg.WinSkinDlg
+ 0002:000001B0       WinSkinForm.WinSkinForm
+ 0002:000001B8       superobject.superobject
+ 0002:000001C0       Rtti.Rtti
+ 0002:000001C8       SysFactoryMgr.SysFactoryMgr
+ 0002:000001D0       CardManage.CardManage
+ 0002:000001D8       SystemInstance.SystemInstance
+ 0002:000001E0       GIFImg.GIFImg
+ 0002:000001E8       DBGridEh.DBGridEh
+ 0002:000001F0       ToolCtrlsEh.ToolCtrlsEh
+ 0002:000001F8       DBCtrls.DBCtrls
+ 0002:00000200       DBPWDlg.DBPWDlg
+ 0002:00000208       DBLogDlg.DBLogDlg
+ 0002:00000210       PropFilerEh.PropFilerEh
+ 0002:00000218       ConvUtils.ConvUtils
+ 0002:00000220       DBCtrlsEh.DBCtrlsEh
+ 0002:00000228       DbUtilsEh.DbUtilsEh
+ 0002:00000230       DBGridEhFindDlgs.DBGridEhFindDlgs
+ 0002:00000238       DBGridEhImpExp.DBGridEhImpExp
+ 0002:00000240       UFrmLogin.UFrmLogin
+ 0002:00000248       LoginImpl.LoginImpl
+ 0002:0000027C       LoginPlugin.LoginPlugin
+ 0002:00000284       LoginExport.LoginExport
+ 0002:0000028C       .login..login
+ 0003:00000000       SysInit.TlsIndex
+ 0003:00000004       SysInit.Module
+ 0003:00000020       SysInit.TlsProc
+ 0003:00000030       Windows.Win32MajorVersion
+ 0003:00000034       Windows.Win32MinorVersion
+ 0003:00000038       Windows.Win32Platform
+ 0004:00000000       SysInit.ModuleIsLib
+ 0004:00000001       SysInit.ModuleIsPackage
+ 0004:00000004       SysInit.HInstance
+ 0004:00000008       SysInit.tlsBuffer
+ 0004:0000000C       Windows..2
+ 0004:00000010       Windows.HtmlHelpModule
+ 0004:00000014       UFrmLogin.frmLogin
+ 0004:00000018       UFrmLogin..2
+ 0004:0000001C       LoginImpl..2
+ 0004:00000020       LoginPlugin..5
+ 0004:00000024       LoginExport..1
+ 0005:00000000       SysInit.TlsLast
+
+
+Line numbers for LoginIntf(LoginIntf.pas) segment .text
+
+    21 0001:00000000
+
+Line numbers for Constant(Constant.pas) segment .text
+
+    20 0001:00000000
+
+Line numbers for DialogIntf(DialogIntf.pas) segment .text
+
+    30 0001:00000000
+
+Line numbers for EncdDecdIntf(EncdDecdIntf.pas) segment .text
+
+    27 0001:00000000
+
+Line numbers for AuthoritySvrIntf(AuthoritySvrIntf.pas) segment .text
+
+    28 0001:00000000
+
+Line numbers for UFrmLogin(UFrmLogin.pas) segment .text
+
+    80 0001:0000141C    82 0001:0000141F    83 0001:00001431    85 0001:00001443
+    86 0001:00001453    91 0001:00001458    92 0001:0000147C    93 0001:000014B8
+    94 0001:000014C6    95 0001:000014DD    96 0001:000014FE   117 0001:0000154B
+   118 0001:00001559   121 0001:00001565   126 0001:0000161C   127 0001:0000163D
+   128 0001:00001643   130 0001:00001651   131 0001:0000165D   132 0001:00001669
+   135 0001:00001675   138 0001:000016B2   142 0001:000016B6   143 0001:000016C4
+   146 0001:000016E2   148 0001:000016FB   152 0001:00001740   153 0001:00001758
+   158 0001:000017A3   165 0001:00001812   168 0001:00001847   179 0001:0000190A
+   185 0001:00001981   133 0001:00001988   192 0001:000019B0   194 0001:000019B2
+   197 0001:000019E8   201 0001:00001C04   202 0001:00001C09   205 0001:00001C0C
+   207 0001:00001C0F   208 0001:00001C21   209 0001:00001C31   212 0001:00001C34
+   214 0001:00001C4E   216 0001:00001C60   217 0001:00001C9F   219 0001:00001CA2
+   223 0001:00001D08   225 0001:00001D22   229 0001:00001D36   230 0001:00001D43
+   231 0001:00001D50   233 0001:00001D5C   234 0001:00001D77   235 0001:00001D92
+   236 0001:00001DA2   237 0001:00001DAF   240 0001:00001DBF   243 0001:00001DE8
+   244 0001:00001DEB   245 0001:00001DF2   246 0001:00001DFF   249 0001:00001E04
+   253 0001:00001E1A   254 0001:00001E27   256 0001:00001E2E   258 0001:00001E37
+   259 0001:00001E55   260 0001:00001E62   261 0001:00001E6F   263 0001:00001E7B
+   270 0001:00001EB4   271 0001:00001ECC   273 0001:00001ED2   274 0001:00001EDE
+   275 0001:00001EEA   277 0001:00001EF8   278 0001:00001EFF   281 0001:00001F11
+   282 0001:00001F25   283 0001:00001F38   284 0001:00001F44   279 0001:00001F4B
+   286 0001:00001F54   289 0001:00001F66   292 0001:00001FD8   294 0001:00001FDB
+   295 0001:00001FED   297 0001:00001FFF   298 0001:0000200F   306 0001:00002014
+   307 0001:00002038   309 0001:00002046   324 0001:0000207F   325 0001:00002094
+   326 0001:000020A2   330 0001:000020B1   332 0001:000020BA   334 0001:000020E0
+   336 0001:000020EE   337 0001:000020F5   338 0001:0000212B   339 0001:00002161
+   342 0001:00002186   343 0001:00002190   344 0001:000021B0   346 0001:000021B3
+   347 0001:000021BD   348 0001:000021E0   349 0001:000021F3   350 0001:00002204
+   354 0001:0000220E   356 0001:0000221E   357 0001:0000223A   358 0001:00002248
+   360 0001:00002274   362 0001:0000229D   364 0001:000022C9   366 0001:000022F2
+   367 0001:0000231B   369 0001:00002347   371 0001:00002370   373 0001:0000239C
+   375 0001:000023C5   377 0001:000023F1   379 0001:0000241A   380 0001:00002443
+   382 0001:0000247E   383 0001:000024AA   386 0001:000024D3   388 0001:00002509
+   389 0001:000025AF   390 0001:000025E5   391 0001:0000261B   392 0001:00002651
+   393 0001:0000266A   394 0001:00002678   395 0001:0000267C   417 0001:00002694
+   420 0001:000026A0   422 0001:000026A8   423 0001:000026B0   424 0001:000026C6
+   426 0001:000026EB   429 0001:00002705   432 0001:0000270D   434 0001:00002728
+   437 0001:00002DC0   439 0001:00002DDB   440 0001:00002E07   443 0001:00002E44
+   445 0001:00002E47   446 0001:00002E54   448 0001:00002E66   449 0001:00002E6F
+   451 0001:00002E76   456 0001:00002E78   458 0001:00002E7E   466 0001:00002E8B
+   467 0001:00002EA2   468 0001:00002EAE   469 0001:00002EC7   471 0001:00002EE0
+   472 0001:00002EE6   473 0001:00002EF3   474 0001:00002F05   475 0001:00002F14
+   476 0001:00002F29   477 0001:00002F3E   478 0001:00002F4D
+
+Line numbers for UFrmLogin(UFrmLogin.pas) segment .itext
+
+   480 0002:00000240
+
+Line numbers for LoginImpl(LoginImpl.pas) segment .text
+
+    46 0001:0000571C    49 0001:00005720    50 0001:00005723    51 0001:00005745
+    52 0001:00005753    53 0001:00005761    55 0001:0000577D    58 0001:00005791
+    65 0001:00005794    66 0001:000057B5    67 0001:000057C6    68 0001:000057DD
+    69 0001:000057F4    70 0001:00005809    71 0001:00005816    74 0001:00005824
+    75 0001:0000582C    76 0001:00005837    77 0001:0000585C    78 0001:00005882
+    80 0001:00005885    81 0001:0000588D    83 0001:000058AC    86 0001:000058D3
+    88 0001:000058D5    89 0001:000058FA    90 0001:00005902    94 0001:00005913
+    97 0001:000059F0    98 0001:00005A07   100 0001:00005A25   102 0001:00005A2C
+   105 0001:00005A8C   106 0001:00005A8F   107 0001:00005AB1   108 0001:00005ABF
+   109 0001:00005ACD   112 0001:00005ADF   115 0001:00005AF8   117 0001:00005B0C
+   120 0001:00005B10   121 0001:00005B1E   122 0001:00005B3A   130 0001:00005B40
+
+Line numbers for LoginImpl(LoginImpl.pas) segment .itext
+
+   124 0002:00000248   126 0002:00000251   128 0002:00000268
+
+Line numbers for RegPluginIntf(RegPluginIntf.pas) segment .text
+
+    20 0001:00000000
+
+Line numbers for LoginPlugin(LoginPlugin.pas) segment .text
+
+    65 0001:00007464    68 0001:00007468    69 0001:0000747A    70 0001:00007489
+    74 0001:000074A4    76 0001:000074C1    77 0001:000074E5    81 0001:0000751C
+    84 0001:000075B4    85 0001:000075B7    86 0001:000075C3    89 0001:000075E0
+    90 0001:000075E3    91 0001:000075EF    95 0001:00007650    96 0001:00007653
+   100 0001:00007654   101 0001:00007656   106 0001:00007658   111 0001:0000765C
+   118 0001:00007660   121 0001:00007664   122 0001:00007676   123 0001:00007685
+   127 0001:000076A0   128 0001:000076B3   129 0001:000076D0   130 0001:000076D8
+   133 0001:000076F8   134 0001:000076FB   135 0001:00007707   138 0001:00007724
+   139 0001:00007727   140 0001:00007733   144 0001:00007794   145 0001:00007797
+   149 0001:00007798   150 0001:0000779A   155 0001:0000779C   160 0001:000077A0
+   167 0001:000077A4   170 0001:000077A8   171 0001:000077BA   172 0001:000077C9
+   175 0001:000077E4   176 0001:000077F9   177 0001:00007819   180 0001:00007854
+   181 0001:00007857   182 0001:00007863   185 0001:00007880   186 0001:00007883
+   187 0001:0000788F   191 0001:000078F0   192 0001:000078F3   197 0001:000078F4
+   202 0001:000078F8   208 0001:000078FC
+
+Line numbers for LoginPlugin(LoginPlugin.pas) segment .itext
+
+   210 0002:0000027C
+
+Line numbers for LoginExport(LoginExport.pas) segment .text
+
+    27 0001:00008AF4    29 0001:00008B1D    30 0001:00008B2B    31 0001:00008B3C
+    32 0001:00008B4A    33 0001:00008B5B    34 0001:00008B67    36 0001:00008B78
+    37 0001:00008B9E    39 0001:00008BC4    44 0001:00008C3C    50 0001:00008C40
+
+Line numbers for LoginExport(LoginExport.pas) segment .itext
+
+    46 0002:00000284    48 0002:0000028B
+
+Line numbers for .login(login.dpk) segment .itext
+
+    41 0002:0000028C
+
+Bound resource files
+
+UFrmLogin.dfm
+login.res
+login.drf
+
+
+Program entry point at 0002:0000028C

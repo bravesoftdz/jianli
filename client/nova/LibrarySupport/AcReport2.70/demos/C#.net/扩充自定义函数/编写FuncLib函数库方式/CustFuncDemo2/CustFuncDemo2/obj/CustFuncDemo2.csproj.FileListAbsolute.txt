@@ -1,0 +1,2 @@
+E:\work\source\ACreport\COM\demos\C#.net\扩充自定义函数\编写FuncLib函数库方式\CustFuncDemo2\CustFuncDemo2\obj\Debug\CustFuncDemo2.exe
+E:\work\source\ACreport\COM\demos\C#.net\扩充自定义函数\编写FuncLib函数库方式\CustFuncDemo2\CustFuncDemo2\obj\Debug\CustFuncDemo2.pdb

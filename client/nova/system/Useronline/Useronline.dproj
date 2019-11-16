@@ -1,0 +1,602 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{D19707F3-40F0-4540-AF6A-ED9CFFDDFCD6}</ProjectGuid>
+			<MainSource>Useronline.dpk</MainSource>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_Define>DEBUG;EUREKALOG;EUREKALOG_VER6;$(DCC_Define)</DCC_Define>
+			<DCC_DependencyCheckOutputName>..\..\BIN\Useronline.bpl</DCC_DependencyCheckOutputName>
+			<DCC_BplOutput>..\..\BIN\</DCC_BplOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+			<DesignOnlyPackage>false</DesignOnlyPackage>
+			<DCC_DcpOutput>..\..\DCP\</DCC_DcpOutput>
+			<GenDll>true</GenDll>
+			<GenPackage>true</GenPackage>
+			<DCC_DcuOutput>..\..\DCU\</DCC_DcuOutput>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_MapFile>3</DCC_MapFile>
+			<DCC_Define>DEBUG;EUREKALOG;EUREKALOG_VER6;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="Useronline.dpk">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="Interfaces.dcp"/>
+			<DCCReference Include="UFrmUseronline.pas">
+				<Form>FrmUseronline</Form>
+			</DCCReference>
+			<DCCReference Include="UFrmUseronlineEdit.pas">
+				<Form>FrmUseronlineEdit</Form>
+			</DCCReference>
+			<DCCReference Include="UseronlineManagerExport.pas"/>
+			<DCCReference Include="UseronlineManagerPlugin.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+						<Parameters Name="HostApplication">..\..\BIN\NvBUS.exe</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">2052</VersionInfo>
+						<VersionInfo Name="CodePage">936</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">Useronline.dpk</Source>
+					</Source>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
+
+<!-- EurekaLog First Line
+[Exception Log]
+EurekaLog Version=6020
+Activate=0
+Activate Handle=1
+Save Log File=1
+Foreground Tab=0
+Freeze Activate=0
+Freeze Timeout=60
+SMTP From=eurekalog@email.com
+SMTP Host=
+SMTP Port=25
+SMTP UserID=
+SMTP Password=
+Append to Log=0
+TerminateBtn Operation=2
+Errors Number=32
+Errors Terminate=3
+Email Address=
+Email Object=
+Email Send Options=0
+Output Path=
+Encrypt Password=
+AutoCloseDialogSecs=0
+WebSendMode=0
+SupportULR=
+HTMLLayout Count=15
+HTMLLine0="%U003Chtml%U003E"
+HTMLLine1="  %U003Chead%U003E"
+HTMLLine2="  %U003C/head%U003E"
+HTMLLine3="  %U003Cbody TopMargin=10 LeftMargin=10%U003E"
+HTMLLine4="    %U003Ctable width="100%%" border="0"%U003E"
+HTMLLine5="      %U003Ctr%U003E"
+HTMLLine6="        %U003Ctd nowrap%U003E"
+HTMLLine7="          %U003Cfont face="Lucida Console, Courier" size="2"%U003E"
+HTMLLine8="            %U003C%%HTML_TAG%%%U003E"
+HTMLLine9="          %U003C/font%U003E"
+HTMLLine10="        %U003C/td%U003E"
+HTMLLine11="      %U003C/tr%U003E"
+HTMLLine12="    %U003C/table%U003E"
+HTMLLine13="  %U003C/body%U003E"
+HTMLLine14="%U003C/html%U003E"
+AutoCrashOperation=2
+AutoCrashNumber=10
+AutoCrashMinutes=1
+WebURL=
+WebUserID=
+WebPassword=
+WebPort=0
+AttachedFiles=
+ProxyURL=
+ProxyUser=
+ProxyPassword=
+ProxyPort=8080
+TrakerUser=
+TrakerPassword=
+TrakerAssignTo=
+TrakerProject=
+TrakerCategory=
+TrakerTrialID=
+ZipPassword=
+PreBuildEvent=
+PostSuccessfulBuildEvent=
+PostFailureBuildEvent=
+ExceptionDialogType=2
+Count=0
+EMail Message Line Count=0
+loNoDuplicateErrors=0
+loAppendReproduceText=0
+loDeleteLogAtVersionChange=0
+loAddComputerNameInLogFileName=0
+loSaveModulesAndProcessesSections=1
+loSaveAssemblerAndCPUSections=1
+soAppStartDate=1
+soAppName=1
+soAppVersionNumber=1
+soAppParameters=1
+soAppCompilationDate=1
+soAppUpTime=1
+soExcDate=1
+soExcAddress=1
+soExcModuleName=1
+soExcModuleVersion=1
+soExcType=1
+soExcMessage=1
+soExcID=1
+soExcCount=1
+soExcStatus=1
+soExcNote=1
+soUserID=1
+soUserName=1
+soUserEmail=1
+soUserPrivileges=1
+soUserCompany=1
+soActCtlsFormClass=1
+soActCtlsFormText=1
+soActCtlsControlClass=1
+soActCtlsControlText=1
+soCmpName=1
+soCmpTotalMemory=1
+soCmpFreeMemory=1
+soCmpTotalDisk=1
+soCmpFreeDisk=1
+soCmpSysUpTime=1
+soCmpProcessor=1
+soCmpDisplayMode=1
+soCmpDisplayDPI=1
+soCmpVideoCard=1
+soCmpPrinter=1
+soOSType=1
+soOSBuildN=1
+soOSUpdate=1
+soOSLanguage=1
+soOSCharset=1
+soNetIP=1
+soNetSubmask=1
+soNetGateway=1
+soNetDNS1=1
+soNetDNS2=1
+soNetDHCP=1
+soCustomData=1
+sndShowSendDialog=1
+sndShowSuccessFailureMsg=0
+sndSendEntireLog=0
+sndSendXMLLogCopy=0
+sndSendScreenshot=1
+sndUseOnlyActiveWindow=0
+sndSendLastHTMLPage=1
+sndSendInSeparatedThread=0
+sndAddDateInFileName=0
+sndAddComputerNameInFileName=0
+edoSendErrorReportChecked=1
+edoAttachScreenshotChecked=1
+edoShowCopyToClipOption=1
+edoShowDetailsButton=1
+edoShowInDetailedMode=0
+edoShowInTopMostMode=0
+edoUseEurekaLogLookAndFeel=0
+edoShowSendErrorReportOption=1
+edoShowAttachScreenshotOption=1
+edoShowCustomButton=0
+csoShowDLLs=1
+csoShowBPLs=1
+csoShowBorlandThreads=1
+csoShowWindowsThreads=1
+csoDoNotStoreProcNames=0
+boPauseBorlandThreads=0
+boDoNotPauseMainThread=0
+boPauseWindowsThreads=0
+boUseMainModuleOptions=1
+boCopyLogInCaseOfError=1
+boSaveCompressedCopyInCaseOfError=0
+boHandleSafeCallExceptions=1
+boCallRTLExceptionEvent=0
+boCatchHandledExceptions=0
+loCatchLeaks=0
+loGroupsSonLeaks=1
+loHideBorlandLeaks=1
+loFreeAllLeaks=1
+loCatchLeaksExceptions=1
+cfoReduceFileSize=1
+cfoCheckFileCorruption=0
+Count mtInformationMsgCaption=1
+mtInformationMsgCaption0="%U63D0%U793A."
+Count mtQuestionMsgCaption=1
+mtQuestionMsgCaption0="%U8BE2%U95EE."
+Count mtErrorMsgCaption=1
+mtErrorMsgCaption0="%U9519%U8BEF."
+Count mtDialog_Caption=1
+mtDialog_Caption0="%U53D1%U751F%U9519%U8BEF"
+Count mtDialog_ErrorMsgCaption=2
+mtDialog_ErrorMsgCaption0="%U6267%U884C%U7A0B%U5E8F%U65F6%U53D1%U751F%U5F02%U5E38%U9519%U8BEF."
+mtDialog_ErrorMsgCaption1="%U8BE6%U60C5%U8BF7%U9605%U8BFB%U4EE5%U4E0B%U62A5%U544A."
+Count mtDialog_GeneralCaption=1
+mtDialog_GeneralCaption0="%U4E00%U822C"
+Count mtDialog_GeneralHeader=1
+mtDialog_GeneralHeader0="%U4E00%U822C%U4FE1%U606F"
+Count mtDialog_CallStackCaption=1
+mtDialog_CallStackCaption0="%U8C03%U7528%U5806%U6808"
+Count mtDialog_CallStackHeader=1
+mtDialog_CallStackHeader0="%U8C03%U7528%U5806%U6808%U4FE1%U606F"
+Count mtDialog_ModulesCaption=1
+mtDialog_ModulesCaption0="%U6A21%U5757"
+Count mtDialog_ModulesHeader=1
+mtDialog_ModulesHeader0="%U6A21%U5757%U4FE1%U606F"
+Count mtDialog_ProcessesCaption=1
+mtDialog_ProcessesCaption0="%U8FDB%U7A0B"
+Count mtDialog_ProcessesHeader=1
+mtDialog_ProcessesHeader0="%U8FDB%U7A0B%U4FE1%U606F"
+Count mtDialog_AsmCaption=1
+mtDialog_AsmCaption0="%U6C47%U7F16"
+Count mtDialog_AsmHeader=1
+mtDialog_AsmHeader0="%U6C47%U7F16%U4FE1%U606F"
+Count mtDialog_CPUCaption=1
+mtDialog_CPUCaption0="%U5904%U7406%U5668"
+Count mtDialog_CPUHeader=1
+mtDialog_CPUHeader0="%U5904%U7406%U5668%U4FE1%U606F"
+Count mtDialog_OKButtonCaption=1
+mtDialog_OKButtonCaption0="%U786E%U5B9A[%U0026O]"
+Count mtDialog_TerminateButtonCaption=1
+mtDialog_TerminateButtonCaption0="%U7EC8%U6B62[%U0026T]"
+Count mtDialog_RestartButtonCaption=1
+mtDialog_RestartButtonCaption0="%U91CD%U542F[%U0026R]"
+Count mtDialog_DetailsButtonCaption=1
+mtDialog_DetailsButtonCaption0="%U8BE6%U60C5[%U0026D]"
+Count mtDialog_CustomButtonCaption=1
+mtDialog_CustomButtonCaption0="%U5E2E%U52A9[%U0026H]"
+Count mtDialog_SendMessage=1
+mtDialog_SendMessage0="%U901A%U8FC7%U7F51%U7EDC%U53D1%U9001%U9519%U8BEF[%U0026S]"
+Count mtDialog_ScreenshotMessage=1
+mtDialog_ScreenshotMessage0="%U9644%U52A0%U5C4F%U5E55%U622A%U56FE%U6587%U4EF6[%U0026A]"
+Count mtDialog_CopyMessage=1
+mtDialog_CopyMessage0="%U590D%U5236%U5230%U526A%U5207%U677F[%U0026C]"
+Count mtDialog_SupportMessage=1
+mtDialog_SupportMessage0="%U8F6C%U5230%U6280%U672F%U652F%U6301%U9875%U9762"
+Count mtMSDialog_ErrorMsgCaption=1
+mtMSDialog_ErrorMsgCaption0="%U5E94%U7528%U7A0B%U5E8F%U9047%U5230%U95EE%U9898. %U5F88%U62B1%U6B49%U4E3A%U60A8%U7684%U5DE5%U4F5C%U5E26%U6765%U4E0D%U4FBF."
+Count mtMSDialog_RestartCaption=1
+mtMSDialog_RestartCaption0="%U91CD%U65B0%U542F%U52A8%U5E94%U7528%U7A0B%U5E8F."
+Count mtMSDialog_TerminateCaption=1
+mtMSDialog_TerminateCaption0="%U7EC8%U6B62%U5E94%U7528%U7A0B%U5E8F."
+Count mtMSDialog_PleaseCaption=1
+mtMSDialog_PleaseCaption0="%U5173%U4E8E%U8FD9%U4E2A%U95EE%U9898, %U8BF7%U53CD%U9988%U7ED9%U6211%U4EEC."
+Count mtMSDialog_DescriptionCaption=1
+mtMSDialog_DescriptionCaption0="%U6211%U4EEC%U5DF2%U7ECF%U521B%U5EFA%U4E86%U4E00%U4E2A%U9519%U8BEF%U62A5%U544A%UFF0C%U60A8%U53EF%U4EE5%U53D1%U9001%U7ED9%U6211%U4EEC. %U6211%U4EEC%U5C06%U5BF9%U6B64%U62A5%U544A%U8FDB%U884C%U4FDD%U5BC6%U5E76%U505A%U533F%U540D."
+Count mtMSDialog_SeeDetailsCaption=1
+mtMSDialog_SeeDetailsCaption0="%U770B%U770B%U6570%U636E%U9519%U8BEF%U62A5%U544A%U4E2D%U5305%U542B%U7684%U5185%U5BB9,"
+Count mtMSDialog_SeeClickCaption=1
+mtMSDialog_SeeClickCaption0="%U8BF7%U70B9%U51FB%U8FD9%U91CC."
+Count mtMSDialog_HowToReproduceCaption=1
+mtMSDialog_HowToReproduceCaption0="%U60A8%U505A%U4EC0%U4E48%U64CD%U4F5C%U53D1%U751F%U8BE5%U5F02%U5E38%U9519%U8BEF%U7684 (%U591A%U9009)?"
+Count mtMSDialog_EmailCaption=1
+mtMSDialog_EmailCaption0="%U7535%U5B50%U90AE%U4EF6%U5730%U5740 (%U591A%U9009):"
+Count mtMSDialog_SendButtonCaption=1
+mtMSDialog_SendButtonCaption0="%U53D1%U9001%U9519%U8BEF%U62A5%U544A[%U0026S]"
+Count mtMSDialog_NoSendButtonCaption=1
+mtMSDialog_NoSendButtonCaption0="%U4E0D%U53D1%U9001[%U0026D]"
+Count mtLog_AppHeader=1
+mtLog_AppHeader0="%U5E94%U7528%U7A0B%U5E8F"
+Count mtLog_AppStartDate=1
+mtLog_AppStartDate0="%U5F00%U59CB%U65E5%U671F"
+Count mtLog_AppName=1
+mtLog_AppName0="%U540D%U79F0/%U63CF%U8FF0"
+Count mtLog_AppVersionNumber=1
+mtLog_AppVersionNumber0="%U7248 %U672C %U53F7"
+Count mtLog_AppParameters=1
+mtLog_AppParameters0="%U53C2%U6570"
+Count mtLog_AppCompilationDate=1
+mtLog_AppCompilationDate0="%U7F16%U8BD1%U65E5%U671F"
+Count mtLog_AppUpTime=1
+mtLog_AppUpTime0="%U8FD0%U884C%U65F6%U95F4"
+Count mtLog_ExcHeader=1
+mtLog_ExcHeader0="%U5F02%U5E38"
+Count mtLog_ExcDate=1
+mtLog_ExcDate0="%U65E5%U671F"
+Count mtLog_ExcAddress=1
+mtLog_ExcAddress0="%U5730%U5740"
+Count mtLog_ExcModuleName=1
+mtLog_ExcModuleName0="%U6A21%U5757%U540D%U79F0"
+Count mtLog_ExcModuleVersion=1
+mtLog_ExcModuleVersion0="%U6A21%U5757%U7248%U672C"
+Count mtLog_ExcType=1
+mtLog_ExcType0="%U7C7B%U578B"
+Count mtLog_ExcMessage=1
+mtLog_ExcMessage0="%U4FE1%U606F"
+Count mtLog_ExcID=1
+mtLog_ExcID0="%U7F16%U53F7"
+Count mtLog_ExcCount=1
+mtLog_ExcCount0="%U8BA1%U6570"
+Count mtLog_ExcStatus=1
+mtLog_ExcStatus0="%U72B6%U6001"
+Count mtLog_ExcNote=1
+mtLog_ExcNote0="%U6CE8%U91CA"
+Count mtLog_UserHeader=1
+mtLog_UserHeader0="%U7528%U6237"
+Count mtLog_UserID=1
+mtLog_UserID0="%U7F16%U53F7"
+Count mtLog_UserName=1
+mtLog_UserName0="%U540D%U79F0"
+Count mtLog_UserEmail=1
+mtLog_UserEmail0="%U7535%U5B50%U90AE%U4EF6"
+Count mtLog_UserCompany=1
+mtLog_UserCompany0="%U516C%U53F8"
+Count mtLog_UserPrivileges=1
+mtLog_UserPrivileges0="%U6743%U9650"
+Count mtLog_ActCtrlsHeader=1
+mtLog_ActCtrlsHeader0="%U6FC0%U6D3B%U63A7%U4EF6"
+Count mtLog_ActCtrlsFormClass=1
+mtLog_ActCtrlsFormClass0="%U7A97 %U4F53 %U7C7B"
+Count mtLog_ActCtrlsFormText=1
+mtLog_ActCtrlsFormText0="%U7A97%U4F53%U6587%U672C"
+Count mtLog_ActCtrlsControlClass=1
+mtLog_ActCtrlsControlClass0="%U63A7 %U4EF6 %U7C7B"
+Count mtLog_ActCtrlsControlText=1
+mtLog_ActCtrlsControlText0="%U63A7%U4EF6%U6587%U672C"
+Count mtLog_CmpHeader=1
+mtLog_CmpHeader0="%U8BA1%U7B97%U673A"
+Count mtLog_CmpName=1
+mtLog_CmpName0="%U540D%U79F0"
+Count mtLog_CmpTotalMemory=1
+mtLog_CmpTotalMemory0="%U603B %U5185 %U5B58"
+Count mtLog_CmpFreeMemory=1
+mtLog_CmpFreeMemory0="%U7A7A%U95F2%U5185%U5B58"
+Count mtLog_CmpTotalDisk=1
+mtLog_CmpTotalDisk0="%U603B %U78C1 %U76D8"
+Count mtLog_CmpFreeDisk=1
+mtLog_CmpFreeDisk0="%U7A7A%U4F59%U78C1%U76D8"
+Count mtLog_CmpSystemUpTime=1
+mtLog_CmpSystemUpTime0="%U8FD0%U884C%U65F6%U95F4"
+Count mtLog_CmpProcessor=1
+mtLog_CmpProcessor0="%U5904 %U7406 %U5668"
+Count mtLog_CmpDisplayMode=1
+mtLog_CmpDisplayMode0="%U663E%U793A%U6A21%U5F0F"
+Count mtLog_CmpDisplayDPI=1
+mtLog_CmpDisplayDPI0="%U663E%U793A DPI"
+Count mtLog_CmpVideoCard=1
+mtLog_CmpVideoCard0="%U663E %U793A %U5361"
+Count mtLog_CmpPrinter=1
+mtLog_CmpPrinter0="%U6253 %U5370 %U673A"
+Count mtLog_OSHeader=1
+mtLog_OSHeader0="%U64CD%U4F5C%U7CFB%U7EDF"
+Count mtLog_OSType=1
+mtLog_OSType0="%U7C7B%U578B"
+Count mtLog_OSBuildN=1
+mtLog_OSBuildN0="%U7F16%U8BD1 #"
+Count mtLog_OSUpdate=1
+mtLog_OSUpdate0="%U66F4%U65B0"
+Count mtLog_OSLanguage=1
+mtLog_OSLanguage0="%U8BED%U8A00"
+Count mtLog_OSCharset=1
+mtLog_OSCharset0="%U5B57 %U7B26 %U96C6"
+Count mtLog_NetHeader=1
+mtLog_NetHeader0="%U7F51%U7EDC"
+Count mtLog_NetIP=1
+mtLog_NetIP0="IP %U5730%U5740"
+Count mtLog_NetSubmask=1
+mtLog_NetSubmask0="%U5B50%U7F51%U63A9%U7801"
+Count mtLog_NetGateway=1
+mtLog_NetGateway0="%U7F51%U5173"
+Count mtLog_NetDNS1=1
+mtLog_NetDNS10="DNS 1"
+Count mtLog_NetDNS2=1
+mtLog_NetDNS20="DNS 2"
+Count mtLog_NetDHCP=1
+mtLog_NetDHCP0="DHCP"
+Count mtLog_CustInfoHeader=1
+mtLog_CustInfoHeader0="%U81EA%U5B9A%U4E49%U4FE1%U606F"
+Count mtCallStack_Address=1
+mtCallStack_Address0="%U5730%U5740"
+Count mtCallStack_Name=1
+mtCallStack_Name0="%U6A21%U5757"
+Count mtCallStack_Unit=1
+mtCallStack_Unit0="%U5355%U5143"
+Count mtCallStack_Class=1
+mtCallStack_Class0="%U7C7B"
+Count mtCallStack_Procedure=1
+mtCallStack_Procedure0="%U8FC7%U7A0B/%U65B9%U6CD5"
+Count mtCallStack_Line=1
+mtCallStack_Line0="%U884C"
+Count mtCallStack_MainThread=1
+mtCallStack_MainThread0="%U4E3B%U7EBF%U7A0B"
+Count mtCallStack_ExceptionThread=1
+mtCallStack_ExceptionThread0="%U5F02%U5E38%U7EBF%U7A0B"
+Count mtCallStack_RunningThread=1
+mtCallStack_RunningThread0="%U8FD0%U884C%U7684%U7EBF%U7A0B"
+Count mtCallStack_CallingThread=1
+mtCallStack_CallingThread0="%U8C03%U7528%U7684%U7EBF%U7A0B"
+Count mtCallStack_ThreadID=1
+mtCallStack_ThreadID0="%U7F16%U53F7"
+Count mtCallStack_ThreadPriority=1
+mtCallStack_ThreadPriority0="%U4F18%U5148%U7EA7"
+Count mtCallStack_ThreadClass=1
+mtCallStack_ThreadClass0="%U7C7B"
+Count mtCallStack_LeakCaption=1
+mtCallStack_LeakCaption0="%U5185%U5B58%U6CC4%U6F0F"
+Count mtCallStack_LeakData=1
+mtCallStack_LeakData0="%U6570%U636E"
+Count mtCallStack_LeakType=1
+mtCallStack_LeakType0="%U7C7B%U578B"
+Count mtCallStack_LeakSize=1
+mtCallStack_LeakSize0="%U603B%U5927%U5C0F"
+Count mtCallStack_LeakCount=1
+mtCallStack_LeakCount0="%U8BA1%U6570"
+Count mtSendDialog_Caption=1
+mtSendDialog_Caption0="%U53D1%U9001."
+Count mtSendDialog_Message=1
+mtSendDialog_Message0="%U901A%U77E5%U90AE%U4EF6"
+Count mtSendDialog_Resolving=1
+mtSendDialog_Resolving0="%U6B63%U5728%U89E3%U91CA DNS..."
+Count mtSendDialog_Login=1
+mtSendDialog_Login0="%U6B63%U5728%U767B%U9646..."
+Count mtSendDialog_Connecting=1
+mtSendDialog_Connecting0="%U6B63%U5728%U8FDE%U63A5%U670D%U52A1%U5668..."
+Count mtSendDialog_Connected=1
+mtSendDialog_Connected0="%U5DF2%U7ECF%U8FDE%U63A5%U670D%U52A1%U5668."
+Count mtSendDialog_Sending=1
+mtSendDialog_Sending0="%U6B63%U5728%U53D1%U9001%U90AE%U4EF6..."
+Count mtSendDialog_Sent=1
+mtSendDialog_Sent0="%U53D1%U9001%U90AE%U4EF6%U5B8C%U6BD5."
+Count mtSendDialog_SelectProject=1
+mtSendDialog_SelectProject0="%U9009%U62E9%U9879%U76EE..."
+Count mtSendDialog_Searching=1
+mtSendDialog_Searching0="%U6B63%U5728%U641C%U7D22..."
+Count mtSendDialog_Modifying=1
+mtSendDialog_Modifying0="%U6B63%U5728%U4FEE%U6539..."
+Count mtSendDialog_Disconnecting=1
+mtSendDialog_Disconnecting0="%U6B63%U5728%U65AD%U5F00%U8FDE%U63A5..."
+Count mtSendDialog_Disconnected=1
+mtSendDialog_Disconnected0="%U65AD%U5F00%U8FDE%U63A5."
+Count mtReproduceDialog_Caption=1
+mtReproduceDialog_Caption0="%U8BF7%U6C42"
+Count mtReproduceDialog_Request=1
+mtReproduceDialog_Request0="%U8BF7%U8BE6%U7EC6%U63CF%U8FF0%U51FA%U73B0%U5F02%U5E38%U9519%U8BEF%U7684%U64CD%U4F5C%U6B65%U9AA4:"
+Count mtReproduceDialog_OKButtonCaption=1
+mtReproduceDialog_OKButtonCaption0="%U786E%U5B9A[%U0026O]"
+Count mtModules_Handle=1
+mtModules_Handle0="%U53E5%U67C4"
+Count mtModules_Name=1
+mtModules_Name0="%U540D%U79F0"
+Count mtModules_Description=1
+mtModules_Description0="%U63CF%U8FF0"
+Count mtModules_Version=1
+mtModules_Version0="%U7248%U672C"
+Count mtModules_Size=1
+mtModules_Size0="%U5927%U5C0F"
+Count mtModules_LastModified=1
+mtModules_LastModified0="%U5DF2%U4FEE%U6539"
+Count mtModules_Path=1
+mtModules_Path0="%U8DEF%U5F84"
+Count mtProcesses_ID=1
+mtProcesses_ID0="%U7F16%U53F7"
+Count mtProcesses_Name=1
+mtProcesses_Name0="%U540D%U79F0"
+Count mtProcesses_Description=1
+mtProcesses_Description0="%U63CF%U8FF0"
+Count mtProcesses_Version=1
+mtProcesses_Version0="%U7248%U672C"
+Count mtProcesses_Memory=1
+mtProcesses_Memory0="%U5185%U5B58"
+Count mtProcesses_Priority=1
+mtProcesses_Priority0="%U4F18%U5148%U7EA7"
+Count mtProcesses_Threads=1
+mtProcesses_Threads0="%U7EBF%U7A0B"
+Count mtProcesses_Path=1
+mtProcesses_Path0="%U8DEF%U5F84"
+Count mtCPU_Registers=1
+mtCPU_Registers0="%U6CE8%U518C%U8868"
+Count mtCPU_Stack=1
+mtCPU_Stack0="%U6808"
+Count mtCPU_MemoryDump=1
+mtCPU_MemoryDump0="%U5185%U5B58%U8F6C%U50A8"
+Count mtSend_SuccessMsg=1
+mtSend_SuccessMsg0="%U90AE%U4EF6%U6210%U529F%U53D1%U9001."
+Count mtSend_FailureMsg=1
+mtSend_FailureMsg0="%U5F88%U62B1%U6B49, %U90AE%U4EF6%U53D1%U9001%U5931%U8D25."
+Count mtSend_BugClosedMsg=2
+mtSend_BugClosedMsg0="%U8FD9%U4E9B BUG %U9519%U8BEF%U53EA%U80FD%U5173%U95ED%U7A0B%U5E8F."
+mtSend_BugClosedMsg1="%U8054%U7CFB%U8BE5%U7A0B%U5E8F%U7684%U4F5C%U8005%U4EE5%U83B7%U53D6%U6700%U65B0%U7684%U66F4%U65B0."
+Count mtSend_UnknownErrorMsg=1
+mtSend_UnknownErrorMsg0="%U672A%U77E5%U9519%U8BEF."
+Count mtSend_InvalidLoginMsg=1
+mtSend_InvalidLoginMsg0="%U65E0%U6548%U7684%U767B%U5F55."
+Count mtSend_InvalidSearchMsg=1
+mtSend_InvalidSearchMsg0="%U65E0%U6548%U7684%U641C%U7D22."
+Count mtSend_InvalidSelectionMsg=1
+mtSend_InvalidSelectionMsg0="%U65E0%U6548%U7684%U9009%U62E9."
+Count mtSend_InvalidInsertMsg=1
+mtSend_InvalidInsertMsg0="%U65E0%U6548%U7684%U63D2%U5165."
+Count mtSend_InvalidModifyMsg=1
+mtSend_InvalidModifyMsg0="%U65E0%U6548%U7684%U4FEE%U6539."
+Count mtFileCrackedMsg=2
+mtFileCrackedMsg0="%U6B64%U6587%U4EF6%U88AB%U7834%U89E3%U4FEE%U6539."
+mtFileCrackedMsg1="%U7A0B%U5E8F%U5C06%U88AB%U8FEB%U5173%U95ED, %U8BF7%U652F%U6301%U6B63%U7248."
+Count mtException_LeakMultiFree=1
+mtException_LeakMultiFree0="%U591A%U4E2A%U5185%U5B58%U6CC4%U6F0F."
+Count mtException_LeakMemoryOverrun=1
+mtException_LeakMemoryOverrun0="%U5185%U5B58%U6EA2%U51FA%U6CC4%U6F0F."
+Count mtException_AntiFreeze=1
+mtException_AntiFreeze0="%U5E94%U7528%U7A0B%U5E8F%U5047%U6B7B."
+Count mtInvalidEmailMsg=1
+mtInvalidEmailMsg0="%U65E0%U6548%U7684%U7535%U5B50%U90AE%U4EF6."
+TextsCollection=English
+EurekaLog Last Line -->

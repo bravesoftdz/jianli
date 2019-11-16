@@ -1,0 +1,15 @@
+<html>
+<body>ff
+<script language="javascript">  
+cef.test.test_param ='Assign and retrieve a value succeeded the first time.';  
+document.writeln(cef.test.test_param);  
+cef.test.test_param = 'Assign and retrieve a value succeeded the second time.';  
+document.writeln(cef.test.test_param);  
+var obj = cef.test.test_object();  
+document.writeln(obj.param);  
+document.writeln(obj.GetMessage());</script>
+<br>
+<a href="a.htm">back to a.html</a>
+<button onclick="myfunc1('b.html call native code');">call native code</button>
+</body>
+</html>

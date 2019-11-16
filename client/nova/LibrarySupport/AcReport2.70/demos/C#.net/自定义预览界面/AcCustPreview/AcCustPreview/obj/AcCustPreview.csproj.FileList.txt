@@ -1,0 +1,15 @@
+bin\Debug\AcCustPreview.exe
+bin\Debug\AcCustPreview.pdb
+bin\Debug\Interop.AcReport.dll
+bin\Debug\Interop.AcWebClient.dll
+bin\Debug\AxInterop.AcWebClient.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.AcReport.dll
+obj\Debug\Interop.AcWebClient.dll
+obj\Debug\AxInterop.AcWebClient.dll
+obj\Debug\AcCustPreview.csproj.ResolveComReference.cache
+obj\Debug\AcCustPreview.Form1.resources
+obj\Debug\AcCustPreview.Properties.Resources.resources
+obj\Debug\AcCustPreview.csproj.GenerateResource.Cache
+obj\Debug\AcCustPreview.exe
+obj\Debug\AcCustPreview.pdb
