@@ -13,9 +13,9 @@ BEGIN
 END
 
 /* UFrmException.dfm */
-/* E:\workspaces\repository\station\JMKYZ\nova\LibrarySupport\DCEF\demos\filescheme\ceffilescheme.res */
+/* F:\workspace\jianli\client\nova\LibrarySupport\DCEF\demos\filescheme\ceffilescheme.res */
 /* UFrmMain.dfm */
 /* UFrmSplash.dfm */
 /* ProgressForm.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\MainAPP\NvBUS.res */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\MainAPP\NvBUS.drf */
+/* F:\workspace\jianli\client\nova\MainAPP\NvBUS.res */
+/* F:\workspace\jianli\client\nova\MainAPP\NvBUS.drf */

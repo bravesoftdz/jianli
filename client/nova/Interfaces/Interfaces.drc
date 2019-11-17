@@ -12,10 +12,10 @@ STRINGTABLE
 BEGIN
 END
 
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\UDMPublic.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\parents\uBaseForm.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\parents\USimpleEditForm.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\UFrmInfo.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\parents\USimpleCRUDForm.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\Interfaces.res */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\Interfaces\Interfaces.drf */
+/* UDMPublic.dfm */
+/* parents\uBaseForm.dfm */
+/* parents\USimpleEditForm.dfm */
+/* UFrmInfo.dfm */
+/* parents\USimpleCRUDForm.dfm */
+/* F:\workspace\jianli\client\nova\Interfaces\Interfaces.res */
+/* F:\workspace\jianli\client\nova\Interfaces\Interfaces.drf */

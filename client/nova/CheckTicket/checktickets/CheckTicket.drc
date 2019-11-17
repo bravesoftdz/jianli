@@ -13,18 +13,18 @@ BEGIN
 END
 
 /* UFrmDepartManagerEdit.dfm */
-/* UFrmMixCheckticket.dfm */
-/* UFrmChecktickets.dfm */
-/* UFrmNoTicketCheck.dfm */
-/* UFrmCheckticketInfo.dfm */
-/* UFrmCancelCheckticket.dfm */
-/* UFrmBroadcast.dfm */
-/* UFrmHandInvoicesNo.dfm */
-/* UFrmCheckNTickets.dfm */
-/* UFrmRemoteCheckTicket.dfm */
-/* UFrmSumticketInfo.dfm */
-/* UFrmReprintByOldOrNewBillno.dfm */
 /* UFrmchoosecheckticket.dfm */
-/* D:\newgit\nova\5.041_fix\client\nova\CheckTicket\checktickets\UFrmCheckTicket.dfm */
-/* D:\newgit\nova\5.041_fix\client\nova\CheckTicket\checktickets\CheckTicket.res */
-/* D:\newgit\nova\5.041_fix\client\nova\CheckTicket\checktickets\CheckTicket.drf */
+/* UFrmReprintByOldOrNewBillno.dfm */
+/* UFrmNoTicketCheck.dfm */
+/* UFrmSumticketInfo.dfm */
+/* UFrmRemoteCheckTicket.dfm */
+/* UFrmCheckNTickets.dfm */
+/* UFrmHandInvoicesNo.dfm */
+/* UFrmBroadcast.dfm */
+/* UFrmCancelCheckticket.dfm */
+/* UFrmCheckticketInfo.dfm */
+/* UFrmChecktickets.dfm */
+/* UFrmMixCheckticket.dfm */
+/* UFrmCheckTicket.dfm */
+/* F:\workspace\jianli\client\nova\CheckTicket\checktickets\CheckTicket.res */
+/* F:\workspace\jianli\client\nova\CheckTicket\checktickets\CheckTicket.drf */

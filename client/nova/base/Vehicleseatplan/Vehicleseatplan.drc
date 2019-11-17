@@ -12,10 +12,10 @@ STRINGTABLE
 BEGIN
 END
 
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\UFrmVehiclespaceAdd.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\UFrmVehiclespace.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\UFrmsetVehicleSpace.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\UFrmVehicleseatplanAdd.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\UFrmVehicleseatplan.dfm */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\Vehicleseatplan.res */
-/* E:\workspaces\repository\01-盛威源码\客运站站务管理系统\client\nova\base\Vehicleseatplan\Vehicleseatplan.drf */
+/* UFrmVehiclespaceAdd.dfm */
+/* UFrmVehiclespace.dfm */
+/* UFrmsetVehicleSpace.dfm */
+/* UFrmVehicleseatplanAdd.dfm */
+/* UFrmVehicleseatplan.dfm */
+/* F:\workspace\jianli\client\nova\base\Vehicleseatplan\Vehicleseatplan.res */
+/* F:\workspace\jianli\client\nova\base\Vehicleseatplan\Vehicleseatplan.drf */
