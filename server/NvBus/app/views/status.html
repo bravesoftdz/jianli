@@ -1,0 +1,23 @@
+#{extends 'main.html' /}
+#{set title:'应用状态' /}
+<span style="font-size:49px;">${appName}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;${macCode}&gt;</span>
+<div>
+	<table >
+		<tr><td width="200px">Switch是否读取</td><td>${switchIsOk}</td></tr>
+		<tr><td width="200px">应用开始时间</td><td>${beginDate}</td></tr>
+	</table>
+		<br>
+	<table>
+		<tr><td width="200px">应用IP</td><td>${appIp}</td></tr>
+		<tr><td width="200px">操作系统</td><td>${osName}</td></tr>
+		<tr><td width="200px">Java版本</td><td>${javaVersion}</td></tr>
+		<tr><td width="200px">应用路径</td><td>${appRoute}</td></tr>
+	</table>
+		<br>
+	<table>
+		<tr><td width="200px">数据库地址</td><td>${dbUrl}</td></tr>
+		<tr><td width="200px">是否可用</td><td>${jpaEnabled}</td></tr>
+		<tr><td width="200px">缓存地址</td><td>${redisUrl}</td></tr>
+		<tr><td width="200px">是否可用</td><td>${rdEnabled}</td></tr>
+	</table>
+</div>

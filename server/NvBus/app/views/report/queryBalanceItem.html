@@ -1,0 +1,95 @@
+#{extends 'main.html' /}
+#{set title:'运费结算明细表.html' /}
+#{header /}
+<link rel="stylesheet" href="/public/stylesheets/common.css">
+<link rel="stylesheet" href="/public/bootstrap-3.0.3/css/bootstrap-multiselect.css">
+<script src="/public/javascripts/common.js"></script>
+<script src="/public/javascripts/autocomplete.js"></script>
+<!--<script src="/public/javascripts/exportUnconfigList.js"></script>-->
+<script src="/public/javascripts/report/queryBalanceItem.js"></script>
+<script src="/public/bootstrap-3.0.3/js/bootstrap-multiselect.js"></script>
+<style>
+.panel-body{overflow:initial}
+</style>
+<div class="panel panel-default" id="query">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-toggle="collapse" href="#collapseOne">
+          查询条件
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+      	<form id="searchform">
+      		#{authenticityToken/}
+      		<div class="row">
+      			<div class="col-xs-3">
+      				<div class="form-group">
+      					<label class="col-xs-4 control-label" for="branchorgid"><span class="title">分公司</span></label>
+						<div class="col-xs-8">
+							<select class="form-control input-sm self-multi" name="branchorgid" id="branchorgid" multiple="multiple" style="display: none;"></select>
+						</div>
+      				</div>
+      			</div>
+      			
+				<div class="col-xs-3">
+      				<div class="form-group">
+      					<label class="col-xs-4 control-label" for="orgid"><span class="title">所属机构</span></label>
+						<div class="col-xs-8">
+							<select class="form-control input-sm self-multi" name="orgid" id="orgid" multiple="multiple" style="display: none;"></select>
+						</div>
+      				</div>
+      			</div>
+      			
+	      		<div class="col-xs-3">
+      				<div class="form-group">
+      					<label class="col-xs-4 control-label" for="startdate"><span class="title">结算日期</span></label>
+						<div class="col-xs-8">
+							<input type="text" name="startdate" id="startdate" class="form-control input-sm">
+						</div>
+      				</div>
+      			</div>
+      			<div class="col-xs-3">
+      				<div class="form-group">
+      					<label class="col-xs-4 control-label" for="enddate"><span class="title">至</span></label>
+						<div class="col-xs-8">
+							<input type="text" name="enddate" id="enddate" class="form-control input-sm">
+						</div>
+      				</div>
+      			</div>	
+      			<div class="col-xs-3">
+						<div class="form-group">
+							<label class="col-xs-4 control-label" for="vehicleno">
+								<span class="title">车牌号</span>
+							</label>
+							<div class="col-xs-8">
+								<input class="form-control input-sm" id="vehicleno" name="vehicleno" type="text">
+							</div>
+						</div>
+				</div>
+      			<div class="col-xs-3">
+      				<div class="form-group">
+      					<label class="col-xs-4 control-label" for="unitid"><span class="title">结算单位</span></label>
+						<div class="col-xs-8">
+							<select class="form-control input-sm " name="unitid" id="unitid" style="display: none;"></select>
+						</div>
+      				</div>
+      			</div>
+
+      		</div>
+      	</form>	
+      </div>
+    </div>
+</div>
+<div id="operate">
+	<span class="title">操作</span>
+	<button class="btn btn-primary" id="search" type="button"><span class="glyphicon glyphicon-search"></span> 查询</button>	
+	<button class="btn btn-primary" id="exportexcel" type="button"><span class="glyphicon glyphicon-export"></span> 导出</button>
+</div>
+<div id="dataset" style="height:380px">
+<input type="hidden" id="hiddentype" value = "${hiddentype}"/>
+  	<table id="dg">
+  	</table>
+</div>
+

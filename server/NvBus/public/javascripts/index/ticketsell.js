@@ -1,0 +1,74 @@
+$(function(){
+	$('.a_title_1').click(function(){
+		getkeyvalue('{28C5062D-338E-4C4A-A4AF-0056355D2481}','0');
+	});
+	$('.a_title_2').click(function(){
+		getkeyvalue('{28C5062D-338E-4C4A-A4AF-0056355D2481}','1');
+	});
+	$('.a_title_3').click(function(){
+		getkeyvalue('{982B70E3-ED21-4931-B020-B113035BA65C}',''); 
+	});
+	$('.a_title_4').click(function(){
+		getkeyvalue('{E7535C96-EF93-4836-BA70-1AAFC5DEAA94}','2');
+	});
+	$('.a_title_5').click(function(){
+		getkeyvalue('{93370E13-F678-4A4C-A424-4FA831296D11}','');
+	});
+	$('.a_title_6').click(function(){
+		getkeyvalue('{08B3A000-9E55-428A-B621-F0F98F21ECC5}',''); 
+	});
+	$('.a_title_7').click(function(){
+		getkeyvalue('{E7535C96-EF93-4836-BA70-1AAFC5DEAA94}','1');
+	});
+	$('.a_title_8').click(function(){
+		getkeyvalue('{1872AE2C-3310-4EE4-8C73-95899E31675B}','');
+	});
+	
+	$('.a_title_9').click(function(){
+		getkeyvalue('{D2979EF9-4790-481A-A808-6DBB8D678806}',''); 
+	});
+	
+	$('.a_title_10').click(function(){
+		getkeyvalue('{32A8D9D5-4B42-4DEC-A709-98085A6BC54C}','');
+	});
+	
+	$('.a_title_11').click(function(){
+		getkeyvalue('{28C5062D-338E-4C4A-A4AF-0056355D2481}','4');
+	});
+	
+	$('.a_title_12').click(function(){
+		getkeyvalue('{62A3C55E-7A12-494D-B473-D662CC50C945}','');
+	});
+	
+	$('.a_title_13').click(function(){
+		getkeyvalue('{8F9E3669-D685-46B4-8973-9BF4741A6FB3}',''); 
+	});
+	
+	$('.a_title_14').click(function(){
+		getkeyvalue('{28C5062D-338E-4C4A-A4AF-0056355D2481}','8');
+	});
+	$('.a_title_15').click(function(){
+		getkeyvalue('{28C5062D-338E-4C4A-A4AF-0056355D2481}','6'); 
+	});
+	$('.a_title_16').click(function(){
+		getkeyvalue('{F06A57BC-10FA-4B32-A3F2-7FADB61DD264}','');
+	});
+	$('.a_title_17').click(function(){
+		getkeyvalue('{28864E7C-41DD-4F25-B893-E889ED546BCA}',''); 
+	});
+	$('.a_title_18').click(function(){
+		getkeyvalue('{D7FD56C8-888B-420C-87E4-63C312644C36}','');
+	});
+	$('.a_title_19').click(function(){
+		getkeyvalue('{107809D0-0931-49AF-A22A-F6DBB116B3D8}','');
+	});
+	$('.a_title_20').click(function(){
+		getkeyvalue('{66819FD6-D6AC-43A8-8F5A-49CB2E0D184F}','');
+	});
+	$('.a_title_21').click(function(){
+		getkeyvalue('{CF5F26C0-BD03-4A6D-ACCA-532EFFEA213A}','');
+	});
+	$('.a_title_22').click(function(){
+		getkeyvalue('{A6406192-0298-4873-92A2-34EA04BF0F77}',''); 
+	});
+});

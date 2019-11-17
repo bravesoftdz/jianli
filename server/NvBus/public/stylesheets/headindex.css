@@ -1,0 +1,8 @@
+.home{width:98%;height:60px;box-shadow: 0 0 1px #D2D2D4;border:1px solid #D2D2D4;margin:10px 0 0 10px;}
+.a_totle{width:90px;height:30px;margin-top:15px;text-align:center;line-height:30px;border-radius:6px;color:#0e56ae;}
+.a_totle_1{margin-left:1%;float:left;color:#616161;font-weight:bold;margin-top:18px;}
+.a_totle_2{float:left;margin-left:40px;}
+.a_totle_3,.a_totle_4,.a_totle_5,.a_totle_6,.a_totle_7{float:left;margin-left:20px;}
+.liudong{background:#6da7ee;color:#FFFFFF;cursor:pointer;font-weight:bold;}
+.a_totle_2:hover,.a_totle_3:hover,.a_totle_4:hover,.a_totle_5:hover,.a_totle_6:hover,.a_totle_7:hover{background:#6da7ee;color:#FFFFFF;cursor:pointer;font-weight:bold;}
+.minFrame{margin-top:40px;}

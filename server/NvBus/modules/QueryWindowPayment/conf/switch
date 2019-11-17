@@ -1,0 +1,5 @@
+/query/querypayment controllers.QueryWindowPayment.action.QueryWindowPaymentAction queryPayment
+/query/querypaymentsummary controllers.QueryWindowPayment.action.QueryWindowPaymentAction queryPaymentSummary
+/query/paymentlist controllers.QueryWindowPayment.action.QueryWindowPaymentAction payMentList
+/query/ticketEpayDetail controllers.QueryWindowPayment.action.QueryWindowPaymentAction ticketEpayDetail
+/query/queryEpaymentTicketsSum controllers.QueryWindowPayment.action.QueryWindowPaymentAction queryEpaymentTicketsSum

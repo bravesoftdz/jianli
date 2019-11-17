@@ -1,0 +1,35 @@
+$(function(){
+	$('.a_totle_2').addClass("liudong");
+	$('#iframehtml').attr("src","/ticketsell/index");
+	$('.a_totle_2').click(function(){
+		$('.a_totle').removeClass("liudong");
+		$('.a_totle_2').addClass("liudong");
+		$('#iframehtml').attr("src","/ticketsell/index");
+	});
+	$('.a_totle_3').click(function(){
+		$('.a_totle').removeClass("liudong");
+		$('.a_totle_3').addClass("liudong");
+		$('#iframehtml').attr("src","/ticketcheck/index");
+	});
+	$('.a_totle_4').click(function(){
+		$('.a_totle').removeClass("liudong");
+		$('.a_totle_4').addClass("liudong");
+		$('#iframehtml').attr("src","/control/index");
+	});
+	$('.a_totle_5').click(function(){
+		$('.a_totle').removeClass("liudong");
+		$('.a_totle_5').addClass("liudong");
+		$('#iframehtml').attr("src","/balance/index");
+	});
+	$('.a_totle_6').click(function(){
+		$('.a_totle').removeClass("liudong");
+		$('.a_totle_6').addClass("liudong");
+		$('#iframehtml').attr("src","/security/index");
+	});
+	$('.a_totle_7').click(function(){
+		$('.a_totle').removeClass("liudong");
+		$('.a_totle_7').addClass("liudong");
+		$('#iframehtml').attr("src","/ticket/index");
+	});
+});
+

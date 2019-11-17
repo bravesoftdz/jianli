@@ -1,0 +1,9 @@
+﻿--begin张磊2018年11月16日
+@repeat{SELECT COUNT(*) FROM menu where id=2018111611 }
+insert into menu (ID, NAME, FUNCTIONREGID, GRADE, ORDERNO, PARENTID, PARAMETER, CREATETIME, CREATEBY, UPDATETIME, UPDATEBY, CLICKNUM, CLAZZ, URL, ICON, SYSTYPE, MENUTYPE)
+values (2018111611, '线路电子票查询', 2018111611, 3, 15.00, 30, '',sysdate, 0,sysdate, 0, 0,'','','', '0', '1');
+
+@repeat{SELECT COUNT(*) FROM functionreg where id=2018111611 }
+insert into functionreg (ID, PACKAGENAME, NAME, FUNCTIONKEY, FUNCTIONDESCRIBE, PARAMETERDESCRIBE, CREATETIME, CREATEBY, UPDATETIME, UPDATEBY, INSTRUCTION)
+values (2018111611, 'QryRouteETicket.bpl', '线路电子票查询', '{00A7037A-6587-4EB7-8C16-DC805C610AC3}', '线路电子票查询', '',sysdate,0,sysdate,0,null);
+--end

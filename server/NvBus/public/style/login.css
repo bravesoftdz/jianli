@@ -1,0 +1,92 @@
+div.cmd2{
+text-align:center;
+background:#438AC9; 
+background-image:url(/public/images/login_btm_line.jpg);
+background-repeat:no-repeat;
+background-position:bottom center;
+height:40px; line-height:50px;
+}
+
+div.head {
+padding:5px;
+background:#E7EEF8;
+overflow:hidden;
+}
+
+#loginForm{
+background:#ffffff;
+width:326px;
+}
+#content{
+z-index:100;
+position:absolute;
+margin-top:8px;
+background-image:url(/public/images/login_03.png);
+background-repeat:no-repeat;
+overflow:hidden;
+}
+#a{
+float:right;
+margin-top:1px;
+cursor:pointer;
+}
+.row{
+margin-right:0px
+}
+div.rw2{
+	background:#E7EEF8; overflow:hidden;
+	border-top:3px solid #7c82b9;
+}
+div.cmd1{
+	height:400px;
+	background:url(/public/images/background.jpg) no-repeat  top center  #444a7e;
+	
+	
+	
+}
+div.col-sm-4{
+	margin-top:30px;
+	background:#ffffff;
+	width:326px;
+	height:326px;
+}
+div.rw1{
+	margin-right:-15px
+}
+div.cmd3{
+	text-align:center;
+	width:326px;
+}
+#lesseecode,#code,#password,#verifycode{
+	background:#ffffff;
+	border:0;
+	outline: none;
+}
+#verifycode{
+	width:120px;
+}
+#a1{
+	margin-left:55px
+}
+.inputButton{
+	border:0;
+	width:278px;
+	height:33px;
+	background-image:url(/public/images/login_btn_bg.jpg);
+	color:#ffffff;
+}
+div.rw3{
+	padding:5px;
+	background:#E7EEF8;
+	text-align:center;
+	overflow:hidden;
+}
+div.cmd5{
+	margin-top: 35px;
+}
+div.cmd6,div.cmd4{
+	margin-top:10px;
+}
+.img-rounded{float:left}
+.head h1{padding-left:25px;float:left;font-family:"微软雅黑";font-size:38px;}
+.head h1 span{font-size:30px;}

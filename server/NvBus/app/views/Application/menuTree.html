@@ -1,0 +1,159 @@
+#{extends 'main.html' /}
+#{set title:'站务系统' /}
+#{header /}
+
+<link rel="stylesheet" media="screen" href="/public/stylesheets/menuTree.css" />
+<script type="text/javascript" src="/public/javascripts/base.js"></script>
+<script src="/public/javascripts/jquery.cookie.js"></script>
+<style>
+.leftTree{
+z-index:200000;
+}
+img{
+margin-bottom:15px;}
+.cssSPlice{
+float:left;
+margin-right:0px;
+}
+.img-rounded{
+width:70px;
+height:40px;
+}
+.systion,.NewDate{
+font-weight:bold;
+}
+</style>
+
+<div class="roll_wrap20140318">
+		<ul class="tree" id="mtree">
+		#{list menutree.nodes, as:'root'}
+		*{*** #{if root_index < 50} ***}*
+		
+		#{set node23Count : 0 /}
+		#{list root.nodes, as:'item'}
+			#{set node23Count : node23Count + 1/}
+			#{list item.nodes, as:'node'}
+				#{set node23Count : node23Count + 1/}
+			#{/list}
+		#{/list}
+		
+		<div class="l${root.ico}">
+				<input class="ids" type="hidden" value="${root.id}" />
+				<input class="countclass" type="hidden" value="${root.count}" />
+				<div class="subMenu">
+					%{
+						for(i=0; i<Math.ceil(node23Count/18); i++){
+					}%
+					<div class="sub_wrap">
+						#{set count : 0/}
+						#{set size : 0/}
+						#{list root.nodes, as:'item'}
+							<dl>
+								#{set size : item.nodes.size /}
+								#{set count : count + 1/}
+								#{if count>i*18 && count<=(i+1)*18}
+								#{if size >0}
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >${item.name}</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								#{/if}
+								#{if size <= 0}
+								<dd><a href="javascript:void(0);" onclick="f(this,'${item.parentid}','${item.id}','${item.functionregid}','${item.parameter}');" >${item.name}</a></dd>								
+								#{/if}
+								#{/if}
+								#{list item.nodes,as:'node'}
+								#{set count : count + 1/}
+								#{if count>i*18 && count<=(i+1)*18}
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'${node.parentid}','${node.id}','${node.functionregid}','${node.parameter}');">${node.name}</a>
+								</dd>
+								#{/if}
+								#{/list}
+							</dl>
+						#{/list}
+			 		</div>
+			 		%{
+			 			}
+			 		}%
+					*{*** <div class="sub_wrap">
+						#{set count : 0/}
+						#{set size : 0 /}
+						#{list root.nodes, as:'item'}
+							<dl>
+								#{set size : item.nodes.size /}
+								#{set count : count + 1/}
+								#{if count > 18}
+								#{if count <=36}
+								#{if size >0}
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >${item.name}</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								#{/if}
+								
+								#{if size <= 0}
+								<dd><a href="javascript:void(0);" onclick="f(this,'${item.parentid}','${item.id}','${item.functionregid}','${item.parameter}');" >${item.name}</a></dd>								
+								#{/if}
+								#{/if}
+								#{/if}
+								#{list item.nodes,as:'node'}
+								#{set count : count + 1/}
+								#{if count > 18 }
+								#{if count <=36}
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'${node.parentid}','${node.id}','${node.functionregid}','${node.parameter}');">${node.name}</a>
+								</dd>
+								#{/if}
+								#{/if}
+								#{/list}
+							</dl>
+						#{/list}
+			 		</div>
+			 		<div class="sub_wrap">
+						#{set count : 0/}
+						#{set size : 0 /}
+						#{list root.nodes, as:'item'}
+							<dl>
+								#{set size : item.nodes.size /}
+								#{set count : count + 1/}
+								#{if count > 36}
+								#{if size >0}
+								<dt>
+									<div class='menu2head'>
+										<span><img src="/public/images/menu2head.png"></span><span class="fonts" >${item.name}</span>
+									</div>
+									<div>
+										<span><img src="/public/images/menu2splice.png"></span>
+									</div>
+								</dt>								
+								#{/if}
+								#{if size <= 0}
+								<dd><a href="javascript:void(0);" onclick="f(this,'${item.parentid}','${item.id}','${item.functionregid}','${item.parameter}');" >${item.name}</a></dd>								
+								#{/if}
+								#{/if}
+								#{list item.nodes,as:'node'}
+								#{set count : count + 1/}
+								#{if count > 36 }
+								<dd>
+									<a href="javascript:void(0);" onclick="f(this,'${node.parentid}','${node.id}','${node.functionregid}','${node.parameter}');">${node.name}</a>
+								</dd>
+								#{/if}
+								#{/list}
+							</dl>
+						#{/list}
+			 		</div> ***}*
+			 	</div>
+			 	</div>
+		*{*** #{/if} ***}*
+		#{/list}
+		</ul>
+</div>

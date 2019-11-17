@@ -1,0 +1,26 @@
+$(function(){
+	$('.a_title_2').click(function(){
+		getkeyvalue('{B2ECC99A-7644-452D-9CCB-982A7C81F51E}','BalanceBill');
+	});
+	$('.a_title_3').click(function(){
+		getkeyvalue('{A963B06B-2048-4368-8EBF-2EA79D9BE88A}','');
+	});
+	$('.a_title_4').click(function(){
+		getkeyvalue('{81C6415E-576D-47E7-B952-B9C883D7E9B6}','');
+	});
+	$('.a_title_5').click(function(){
+		getkeyvalue('{BB009896-E6AD-469F-AF6E-8C554B3E2E09}','');
+	});
+	$('.a_title_6').click(function(){
+		getkeyvalue('{7051F3FB-E600-4ED0-AF1E-C7241EA565F7}','');
+	});
+	$('.a_title_7').click(function(){
+		getkeyvalue('{64FF9C1A-B00F-4881-B1FE-4D697CFEDEE8}','');
+	});
+	$('.a_title_8').click(function(){
+		getkeyvalue('{3C42EA90-3A01-42D0-82F7-1D3B1273535C}','');
+	});
+	$('.a_title_9').click(function(){
+		getkeyvalue('{9661514A-FA79-4A75-8DB6-D0F2D1BE3980}','');
+	});
+});

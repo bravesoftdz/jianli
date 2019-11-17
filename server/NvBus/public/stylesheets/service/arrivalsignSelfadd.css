@@ -1,0 +1,83 @@
+body {
+	
+}
+.row {
+	margin:0;
+}
+.col-sm-3,
+.col-sm-4,
+.col-sm-6,
+.col-sm-8,
+.col-sm-9,
+.col-sm-12 {
+	padding-left:0;
+	padding-right:0;
+}
+.group {
+	margin-top:20px;
+	border-top:1px solid #539cdc;
+	border-right:1px solid #ced9e3;
+	border-bottom:1px solid #ced9e3;
+	border-left:1px solid #ced9e3;
+	background-color:#fafaf2;
+	position:relative;
+}
+.group .col-sm-3,
+.group .col-sm-6,
+.group .col-sm-9,
+.group .col-sm-12 {
+	height:34px;
+	overflow:hidden;
+	padding:6px 0 6px 16px;	
+}
+.group h6 {
+	color:#2972b2;
+	font-size:14px;
+	font-weight:bold;
+	background-color:#fff;
+	padding:0 14px;
+	position:absolute;
+	left:20px;
+	top:-25px;
+}
+.group > div{
+	padding:10px 12px;
+	overflow:hidden;
+}
+.item {
+	float:left;
+	width:100%;
+	background-color:#FFFFFF;
+} 
+.item div {
+	padding-left:90px;
+	background-color:#fafaf2;
+} 
+.item div input[type="text"],
+.item div select {
+	border:1px solid #9aa9cc;
+	height:22px;
+	width:100%;
+} 
+.prompt {
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	float:left;
+	height:22px;
+	width:85px;
+	margin-left:-100%;
+	background-color:#fafaf2;
+} 
+.clear{
+	clear:both;
+}
+
+#myModal .col-sm-3,
+#myModal .col-sm-6 {
+	padding-left:15px;
+	padding-right:15px;
+}
+.modal-dialog{
+	width:840px;
+}

@@ -1,0 +1,1 @@
+insert into version (id, versionnum, updatetime) values  (Seq_Pub.Nextval, 'FIX5.2',sysdate);

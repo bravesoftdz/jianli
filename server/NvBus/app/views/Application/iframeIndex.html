@@ -1,0 +1,77 @@
+#{extends 'main.html' /}
+#{set title:'小件快运' /}
+#{header /}
+
+<link rel="stylesheet" media="screen" href="/public/style/main.css" />
+<script type="text/javascript" src="/public/style/base.js"></script>
+<script src="/public/javascripts/jquery.cookie.js"></script>
+	<div id="tableWrap">
+	<input type="hidden" id="operatorinfoId" value="${operatorId}"/>
+	<div class="flex_colr">
+	<div class="tableWrap">
+		<table cellpadding="0" cellspacing="0" border="0" class="flexTabel">
+				#{list applist,as:'menu'}
+				#{if menu_index%3-1==0}
+				<tr>
+				#{/if}
+				
+				<td class="${menu.clazz}">
+					<input type="hidden"  value="${menu.parentid}"/>
+					<a href="javascript:;" onclick="indexf(this,'${menu.url}','${menu.name}');" class="bg">
+						<span></span>
+						<div class="num">${menu_index}</div>
+						<div class="C_ctn">
+							<img src="${menu.icon}" alt="" />
+							<p>${menu.name}</p>
+						</div>
+					</a>
+				</td>
+				#{if menu_index%3==0}
+				</tr>
+				#{/if}
+				#{/list}
+				#{if applist.size%3==0}
+				<tr>
+				#{/if}
+				<td class="tLast">
+					<a href="javascript:void(0);" class="bg">
+						<span></span>
+						+
+					</a>
+				</td>
+				#{if applist.size%3==0}
+				</tr>
+				#{/if}
+				#{if applist.size%3!=0}
+				</tr>
+				#{/if}
+		</table>
+	</div>
+	</div>
+	<div class="asideMode">
+		<div class="schedule">
+			<div class="titBar"><h2>个<br />人<br />统<br />计</h2></div>
+			<div class="statistics">
+				<div class="btm_line">
+					<ul>
+						<li class="lt">应缴金额(受理、提领费用)<b class="mo">100</b>元</li>
+					</ul>
+				</div>
+				<div class="btm_line">
+				</div>
+				<div class="lef_line"></div>
+				<ul class="l_name">
+					<li>受理件
+						<span class="s6 background"></span><span class="describe"></span>
+					</li>
+					<li>签发件
+						<span class="s7 background"></span><span class="describe"></span>
+					</li>
+					<li>已领取
+						<span class="s8 background"></span><span class="describe"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>

@@ -1,0 +1,166 @@
+#{extends 'main.html' /} #{set title:'测试开关设置' /}
+<form action="/testparam" id="creationForm" method="POST"
+	accept-charset="utf-8" enctype="multipart/form-data">
+	<h1>测试开关设置<span>&lt;${macCode}&gt;</span></h1>
+	<table>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>售票</label></td>
+			<td width="200px"><input name="testparams.sellTicket"
+				type="radio" value="0" #{if testparams.sellTicket== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.sellTicket"
+				type="radio" value="1" #{if testparams.sellTicket== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.sellTicket"
+				type="radio" value="2" #{if testparams.sellTicket== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.sellTicket"
+				type="radio" value="3" #{if testparams.sellTicket== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>废票</label></td>
+			<td width="200px"><input name="testparams.cancelTicket"
+				type="radio" value="0" #{if testparams.cancelTicket== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelTicket"
+				type="radio" value="1" #{if testparams.cancelTicket== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelTicket"
+				type="radio" value="2" #{if testparams.cancelTicket== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelTicket"
+				type="radio" value="3" #{if testparams.cancelTicket== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>退票</label></td>
+			<td width="200px"><input name="testparams.returnTicket"
+				type="radio" value="0" #{if testparams.returnTicket== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.returnTicket"
+				type="radio" value="1" #{if testparams.returnTicket== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.returnTicket"
+				type="radio" value="2" #{if testparams.returnTicket== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.returnTicket"
+				type="radio" value="3" #{if testparams.returnTicket== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>留位</label></td>
+			<td width="200px"><input name="testparams.reserveSeat"
+				type="radio" value="0" #{if testparams.reserveSeat== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.reserveSeat"
+				type="radio" value="1" #{if testparams.reserveSeat== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.reserveSeat"
+				type="radio" value="2" #{if testparams.reserveSeat== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.reserveSeat"
+				type="radio" value="3" #{if testparams.reserveSeat== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>取消留位</label></td>
+			<td width="200px"><input name="testparams.cancelSeat"
+				type="radio" value="0" #{if testparams.cancelSeat== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelSeat"
+				type="radio" value="1" #{if testparams.cancelSeat== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelSeat"
+				type="radio" value="2" #{if testparams.cancelSeat== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelSeat"
+				type="radio" value="3" #{if testparams.cancelSeat== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>混检</label></td>
+			<td width="200px"><input name="testparams.mixCheck" type="radio"
+				value="0" #{if testparams.mixCheck== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.mixCheck" type="radio"
+				value="1" #{if testparams.mixCheck== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.mixCheck" type="radio"
+				value="2" #{if testparams.mixCheck== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.mixCheck" type="radio"
+				value="3" #{if testparams.mixCheck== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>退检混检</label></td>
+			<td width="200px"><input name="testparams.cancelCheck"
+				type="radio" value="0" #{if testparams.cancelCheck== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelCheck"
+				type="radio" value="1" #{if testparams.cancelCheck== 1}checked #{/if}/>远程调用前
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelCheck"
+				type="radio" value="2" #{if testparams.cancelCheck== 2}checked #{/if}/>调用超时
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.cancelCheck"
+				type="radio" value="3" #{if testparams.cancelCheck== 3}checked #{/if}/>远程调用后</td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>被调用售票</label></td>
+			<td width="200px"><input name="testparams.remoteSellTicket"
+				type="radio" value="0" #{if testparams.remoteSellTicket== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.remoteSellTicket"
+				type="radio" value="1" #{if testparams.remoteSellTicket== 1}checked #{/if}/>开启测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"></td>
+			<td width="200px"></td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>被调用废票</label></td>
+			<td width="200px"><input name="testparams.remoteCancelTicket"
+				type="radio" value="0" #{if testparams.remoteCancelTicket== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.remoteCancelTicket"
+				type="radio" value="1" #{if testparams.remoteCancelTicket== 1}checked #{/if}/>开启测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"></td>
+			<td width="200px"></td>`
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"><label>被调用退票</label></td>
+			<td width="200px"><input name="testparams.remoteReturnTicket"
+				type="radio" value="0" #{if testparams.remoteReturnTicket== 0}checked #{/if}/>关闭测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"><input name="testparams.remoteReturnTicket"
+				type="radio" value="1" #{if testparams.remoteReturnTicket== 1}checked #{/if}/>开启测试
+				&nbsp;&nbsp;</td>
+			<td width="200px"></td>
+			<td width="200px"></td>
+		</tr>
+		<tr height="25px"></tr>
+		<tr height="25px">
+			<td width="100px"></td>
+			<td width="200px"><input name="closeall" type="checkbox"
+				value="1" />关闭所有测试开关</td>
+			<td width="200px"><input type="submit" value="提交"></td>
+			<td width="200px"></td>
+		</tr>
+	</table>
+</form>
+<br/><br/>
+<p>Tips</p>
+<ul>
+	<li>因为被调方是最终节点，所以被调用废票、被调用退票、被调用售票只有两个选项</li>
+	<li>所以选项中远程调用前与调用超时意义相同</li>
+	<li>售票、留位，混检是undo操作，会回滚数据</li>
+	<li>退票、取消留位，退检混检是redo操作，后台自动重复调用，直到成功</li>
+	<li>废票因为是售票员个人行为，所以不会后台redo,但是售票员可以重复操作</li>
+	<li>redo与undo的轮训时间设定为2min</li>
+</ul>

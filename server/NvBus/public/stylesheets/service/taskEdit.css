@@ -1,0 +1,72 @@
+body {
+} 
+.row{
+	margin-left:0;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+.col-xs-3, .col-xs-9{
+	padding-left:0;
+	padding-right:0;
+}
+.table{
+	margin-bottom:0;
+}
+.left.col-xs-3{
+	padding-right:15px;
+}
+.group{
+	margin-bottom:20px;
+	position:relative;
+}
+.group h1{
+	font-size:14px;
+	font-weight:bold;
+	background-color:#fff;
+	padding:0 14px;
+	position:absolute;
+	left:20px;
+	top:-34px;
+}
+.group div{
+	border:1px solid #000;
+}
+#oper div{
+	border-style:none;
+}
+#task .content{
+	height:635px;
+}
+#oper .content{
+	height:30px;
+}
+#fields .content{
+	height:390px;
+	overflow-y:auto;
+}
+#charge .content{
+	height:175px;
+	overflow-y:auto;
+}
+#message{
+	display:none;	
+}
+#message .content{
+	height:170px;
+	overflow-y:auto;
+}
+#query .content{
+	height:365px;
+}
+#task .table>thead>tr>th, #task .table>tbody>tr>th, #task .table>tfoot>tr>th, #task .table>thead>tr>td, #task .table>tbody>tr>td, #task .table>tfoot>tr>td{
+	vertical-align:middle;
+	border-top-style:none;
+}
+#charge>table{
+	height:100px;
+}
+/*
+.clear{
+	clear:both;
+}
+*/

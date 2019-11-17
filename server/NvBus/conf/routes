@@ -1,0 +1,149 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+GET     /menu/{userid}                             Application.menu
+GET     /4s                                     AppStatus.status
+GET		/4sj									AppStatus.getAppStatus
+GET		/4sd									AppStatus.testDB
+GET		/4sr									AppStatus.testRedis
+GET     /bpl                                    AppStatus.bpl
+GET     /exe                                    AppStatus.exe
+GET     /ini                                    AppStatus.ini
+GET     /pk                                     AppStatus.pk
+GET     /testparam                              AppStatus.findTestParams
+POST     /testparam                             AppStatus.saveTestParams
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+GET     /download/                              staticDir:public/download
+POST	/upload/excel						buttjoin.SecurityButtJoinAction.uploadExcel
+POST	/upload/file						controllers.systeminfo.action.SystemInfoAction.uploadfile
+
+POST    /remote/schedule/status	 		 	remotesale.NetOtherTicketSellAction.findScheduleStatus
+POST	/remote/sell/ticket					remotesale.NetOtherTicketSellAction.sellTicket
+POST    /remote/seat/lock					remotesale.NetOtherTicketSellAction.lockSeat
+POST    /remote/seat/unlock					remotesale.NetOtherTicketSellAction.unLockSeat
+POST    /remote/ticket/no					remotesale.NetOtherTicketSellAction.changeTicketNo
+POST	/remote/schedule/seats				remotesale.NetOtherTicketSellAction.findScheduleSeats
+POST	/remote/ticket/prices				remotesale.NetOtherTicketSellAction.findTicketPrices
+POST	/remote/return/tickets				remotesale.NetOtherTicketSellAction.returnTickets
+POST	/remote/cancel/tickets				remotesale.NetOtherTicketSellAction.cancelTickets  
+POST	/remote/scheduleplan/status			remotesale.NetOtherTicketSellAction.modifySchedulePlanStatus
+
+POST	/remote/scheduledetail				remotesale.NetOtherTicketSellAction.findScheduleDetail
+
+POST	/remote/check/sell					remotesale.NetOtherTicketSellAction.checkTicketsell  
+POST	/remote/check/cancel				remotesale.NetOtherTicketSellAction.cancelRemoteTicketCheck  
+POST	/remote/ticket/sell					remotesale.NetOtherTicketSellAction.findTicketsell 
+
+POST	/remote/eticket/lock/seat			remotesale.ETicketSellAction.lockSeat 
+POST	/remote/eticket/lock/seat			remotesale.ETicketSellAction.lockSeat 
+POST	/remote/eticket/unlock/seat			remotesale.ETicketSellAction.unlockSeat
+POST	/remote/eticket/sell/seat			remotesale.ETicketSellAction.sellTicket 
+POST	/remote/eticket/order				remotesale.ETicketSellAction.getOrderInfo
+POST	/remote/eticket/seat				remotesale.ETicketSellAction.getSeatInfo 
+POST	/remote/eticket						remotesale.ETicketSellAction.updateEticket 
+POST	/remote/eticket/take				remotesale.ETicketSellAction.takeTicket 
+POST	/remote/undo/{transacionid}			remotesale.NetOtherTicketSellAction.undoTransaciton
+
+#联网订票
+POST	/remote/seat/netreserveseat			remotesale.NetOtherTicketSellAction.reserveSeat
+
+#联网改签(参考联网退票remotesale.NetOtherTicketSellAction.returnTickets)
+#POST	/remote/return/changetickets				remotesale.NetOtherTicketSellAction.returnTickets
+POST	/remote/return/changetickets_O2L	remotesale.NetOtherTicketSellAction.changetickets_O2L
+
+#=============================主页=======================================================
+GET		/iframeIndex						Application.iframeIndex
+POST	/getfunctionkey						Application.getfunctionkey
+GET		/balance/index						Application.balanceindex
+GET		/ticketsell/index					Application.ticketsellindex
+GET		/ticketcheck/index					Application.ticketcheckindex
+GET		/control/index						Application.controlindex
+GET		/security/index						Application.securityindex
+GET		/ticket/index						Application.ticketindex
+GET		/indexhead/index					Application.headindex
+#===============================END=====================================================
+
+
+#===============================通用Action========================
+POST   	/common/auto	             CommonAction.autoComplete
+POST    /common/select            	 CommonAction.getCheckcombox
+POST	/common/getparentid			 CommonAction.getparentids
+POST	/common/getorgids			 CommonAction.getorgids
+#=================================================================
+
+#===============================动态页面========================
+GET   /ui/dynamiclist             UIAction.dynamicList
+GET   /ui/dynamicedit             UIAction.dynamicEdit
+#===============================================================
+
+#=============================系统安全对接接口=================================
+GET		/securityButtJoin/getCheckedTicketValidity	buttjoin.SecurityButtJoinAction.getCheckedTicketValidity
+GET		/securityButtJoin/getDriverReportInfo	buttjoin.SecurityButtJoinAction.getDriverReportInfo
+GET		/securityButtonJon/getPassengerOfNumber buttjoin.SecurityButtJoinAction.getPassengerOfNumber
+GET		/securityButtJoin/getVehicle			buttjoin.SecurityButtJoinAction.getVehicle
+GET		/securityButtJoin/getDriver				buttjoin.SecurityButtJoinAction.getDriver
+GET		/securityButtJoin/getRoute				buttjoin.SecurityButtJoinAction.getRoute
+GET		/securityButtJoin/getUnit				buttjoin.SecurityButtJoinAction.getUnit
+POST	    /securityButtJoin/securityAync			buttjoin.SecurityButtJoinAction.saveSecuritycheckresult
+#====================================end======================================
+#中心加座
+POST 	/remote/addSeat							buttjoin.SecurityButtJoinAction.addSeat
+
+#===============================报表========================
+GET    /ui/report/dynamiclist               report.UIAction.dynamicList
+POST   /ui/report/refurbishDynamicList      report.UIAction.refurbishDynamicList
+POST   /data/report/page             		report.FileDataAction.getPage
+POST   /data/report/auto					report.FileDataAction.autoComplete
+GET	   /excel/report/list					report.ExportObject.exportExc
+GET	   /excel/report/print					report.ExportObject.printExc
+#===============================================================
+
+#===============================复杂报表========================
+#运费结算明细表
+GET		/ui/report/queryBalanceItem			report.QueryBalanceItemAction.index	
+POST	/ui/report/queryBalanceItemData		report.QueryBalanceItemAction.getData	
+GET		/exportexcel/queryBalanceItem		report.QueryBalanceItemAction.exportData
+POST	/linkage/findBranchOrganization		CommonAction.findBranchOrganization
+POST	/linkage/findOrganization			CommonAction.findOrganization
+#===============================================================
+
+
+#===============================通用数据增删改查方法========================
+POST   /data/page             		FileDataAction.getPage
+POST   /data/save					FileDataAction.save
+POST   /data/delete					FileDataAction.delete
+
+POST   /data/auto					FileDataAction.autoComplete
+
+POST   /data/multisave				ReceiptDataAction.save
+POST   /data/multidelete			ReceiptDataAction.delete
+#==========================================================================
+
+#=============================导出Excel======================================
+GET		/excel/list				ExportObject.exportExc
+GET		/excel/listUnConfig		ExportObject.exportExcUnConfig
+POST  	/getselect/str			ExportObject.getselect
+#==============================END=============================================
+POST	/tvschedule				TvScheduleAction.tvSchedule
+GET  	/tvschedule				TvScheduleAction.tvSchedule
+GET  	/tv						TvScheduleAction.index
+
+# Catch all
+*       /NvBusWeb/{controllername}/{actionname}.action          Application.switcher
+*		/NvBusWeb/system/updatefile								Application.switcher(controllername:'system',actionname:'updatefile')
+*		/NvBusWeb/system/checkversion							Application.switcher(controllername:'system',actionname:'checkversion')
+*       /plugin                                       module:*
+*		/chk/ticket				        controllers.EncryptionAction.chk
+
+#****************************联网生成行包费用****************************
+POST	/pack/genPackFees				controllers.PackTransportBus.net.action.NetPackFeeAction.genPackFees
+POST	/pack/genPackShipprice			controllers.PackTransportBus.net.action.NetPackFeeAction.genPackShipprice
+POST	/pack/genPackTransPrice			controllers.PackTransportBus.net.action.NetPackFeeAction.genPackTransPrice
+#****************************联网生成行包费用****************************

@@ -1,0 +1,54 @@
+[TERMINF]
+#生产地址URL
+URL=https://api-mop.chinaums.com
+
+#APPID
+APPID=206AD245F4D0ABF2D62628D9DBB1553F80ACFD3306DDEE256DD2FE47BFE71149
+
+#APPKEY
+APPKEY=E306DA831BDA6057B51345DC2910A6692B6486A63996707E9EA627BDB8CA10C6
+
+#第一次装机为1
+ISFIRSTTOKEN=0
+
+#商户号
+MCHT_ID=898530172990931
+    
+#终端号
+TERM_ID=53103639
+
+#中文商户名
+MCHT_NAME=测试商户
+
+#英文商户名
+MCHT_E_NAME=
+
+#商户号密文
+SN=F8DA2A11B4507099400E320D260B111F
+
+#签购单文件名
+giCARDPRT=.\receipt.txt
+
+#打印模式  0-gmc打印  1-COMPOS模板打印
+gbComPos=0
+
+#gmc打印模式  0-不打印  1-USB打印  2-并口打印  3-串口打印
+giPrintMode=0
+
+#并口或串口打印端口
+giPrintPort=1
+
+#是否开启自动签到  0-不开启  1-开启
+autologin=1
+
+#上次签到时间(YYYYMMDD)
+LoginDate=20180209
+
+#上次结算时间(YYYYMMDD)
+SettleDate=20180309
+
+#日志级别(5-debug    4-hint    3-warn    2-error    1-fatal    0-always)
+LOG_LEVEL=5
+
+#十六进制日志级别(5-debug    4-hint    3-warn    2-error    1-fatal    0-always)
+DLOG_LEVEL=5

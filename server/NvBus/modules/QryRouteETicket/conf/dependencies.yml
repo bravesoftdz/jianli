@@ -1,0 +1,4 @@
+self: play -> QryRouteETicket 0.1
+
+require:
+    - play

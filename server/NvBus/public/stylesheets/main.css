@@ -1,0 +1,9 @@
+/*validation 校验信息样式*/
+.error{
+	color:red;
+}
+.mark-star{
+	font-size:20px;
+	font-weight:bold;
+	vertical-align:middle;
+}

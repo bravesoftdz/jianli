@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>检票口班次展示</title>
+<link rel="stylesheet" href="/public/bootstrap-3.0.3/css/bootstrap.min.css">
+<script src="/public/javascripts/jquery-1.10.2.min.js"></script>
+<script src="/public/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+<script>
+	function search(){
+		$.post("/tvschedule",
+  		   			{
+   						index:$("#jpno").val(),
+   						pagesize:$("#pagesize").val()  
+ 					},
+			  		function(data,status){
+    						$("#result").html(data);
+    						next();
+  					});
+	}
+	
+	function next(){
+		$('.carousel').carousel({
+ 		 interval: parseInt($("#xzsj").val())*1000
+		})
+	}
+	
+	function hiddlen() {
+		$('.infoBox').css('display','none');
+		search();  
+		setInterval(function(){
+    		search();                
+		},parseInt($("#gxsj").val())*1000);
+	}
+	
+</script>
+		<style>
+		
+.infoBox{
+visibility:visible;
+	display:block;
+	height:270px;
+	padding:0 20px;
+	border:1px solid #fff;
+	color:#000;
+	margin-top:40px;
+	border-radius:10px;
+	background: white;
+	box-shadow:0 0 15px #222;
+	background: -moz-linear-gradient(top, #fff, #efefef 8%);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#f4f4f4));
+	font:11px/1.5em 'Microsoft YaHei' ;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-115px;
+}
+</style>
+</head>
+    <body onload="next()" style="background-color:#337AB7">
+      <div id="result" style="background-color:#337AB7"">
+    </div>
+
+ <div class="infoBox row-fluid">
+ 			<br>
+ 			<div class="input-group"  style="width: 300px">
+ 			<span class="input-group-addon">检票口：</span>
+  			<select class="form-control" id="jpno">
+				<option value="1">一号检票口</option>
+				<option value="2">二号检票口</option>
+				<option value="3">三号检票口</option>
+				<option value="4">四号检票口</option>
+				<option value="5">五号检票口</option>
+			</select>
+			</div>	
+			<br>
+  			<div class="input-group"  style="width: 300px">
+  				<span class="input-group-addon">每页显示：</span>
+  				<input type="text" class="form-control" value="7" id="pagesize">
+  				<span class="input-group-addon">行</span>
+			</div>		
+			<br>
+  			<div class="input-group"  style="width: 300px">
+  				<span class="input-group-addon">更新时间：</span>
+  				<input type="text" class="form-control" value="60" id="gxsj">
+  				<span class="input-group-addon">秒</span>
+			</div>		
+			<br>
+  			<div class="input-group"  style="width: 300px">
+  				<span class="input-group-addon">换页时间：</span>
+  				<input type="text" class="form-control" value="5" id="xzsj">
+  				<span class="input-group-addon">秒</span>
+			</div>	
+			<br>	
+      <button type="button" style="width:300px" class="btn" onclick="hiddlen()">完成设置</button>
+  </div>
+  </div>
+    </body>
+</html>

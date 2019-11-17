@@ -1,0 +1,33 @@
+<div class="carousel slide" id="carousel-139392">
+<div class="carousel-inner">
+#{list datas,as:'data'}
+#{if data_index==1}
+<div class="item active">
+#{/if}
+#{if data_index!=1}
+<div class="item">
+#{/if}
+
+<table class="table" contenteditable="true" style="font-size:35px;font-weight:bold;color:white;background-color:#337AB7">
+                    <tr style="height:40px;font-size:37px">
+                      <td align="center" valign="middle">车次</td>
+                       <td align="center" valign="middle">终点站</td>
+                       <td align="center" valign="middle">发车时间</td>
+                       <td align="center" valign="middle">上车卡位</td>
+                      <td align="center" valign="middle">班次状态</td>
+                    </tr>
+                  #{list data,as:'d'}
+                    <tr style="height:40px;font-size:30px">
+                      <td align="center" valign="middle">${d[0]}</td>
+                      <td align="center" valign="middle">${d[1]}</td>
+                      <td align="center" valign="middle">${d[2]}</td>
+                      <td align="center" valign="middle">${d[3]}</td>
+                      <td align="center" valign="middle">${d[4]}</td>
+                    </tr>
+                  #{/list} 
+                </table>
+</div>
+
+#{/list}
+</div>
+</div>

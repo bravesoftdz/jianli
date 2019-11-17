@@ -1,0 +1,39 @@
+.shipoClass{margin-left:3%;margin-top:20px;border:1px solid black;height:14%;width:48%;float:left}
+.selfstorageClass{margin-top:20px;border:1px solid black;height:24%;width:48%;float:left}
+h6{margin:-10px 0 0 10px;background:white;width:100px;}
+.input-group{margin-left:20px;}
+.radio-inline{margin-left:10px;width:70px}
+.span{width:200px}
+.selfstorageClass1{margin-left:3%;margin-top:20px;border:1px solid black;height:24%;width:48%;float:left}
+.shipoClass1{margin-top:20px;border:1px solid black;height:14%;width:48%;float:left}
+.spans{width:150px;display:inline-block;}
+.input-group{
+	margin-top:5px;
+}
+#parent:after{
+    clear:both;
+    display:block;
+    visibility:hidden;
+    height: 0;
+    line-height:0;
+    content:"";
+}
+.withdraw{
+	float:left;
+	margin-top:20px;
+	margin-left:3%;
+	border:1px solid #000;
+	width:48%;
+	height:24%
+}
+.withdraw legend{
+	padding:0 5px;
+	border:none;
+	width:auto;
+	font-size:14px;
+	font-weight:bold;
+}
+.withdraw label.title{
+	margin-left:20px;
+	width:150px;
+}

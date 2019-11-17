@@ -1,0 +1,17 @@
+$(function(){
+	$('.a_title_2').click(function(){
+		getkeyvalue('{9595273F-2AE2-4990-A543-D6DC7F6A654F}','0');
+	});
+	$('.a_title_3').click(function(){
+		getkeyvalue('{41FC8438-E55B-4C1D-B673-3C0A9D5BF4CE}','');
+	});
+	$('.a_title_4').click(function(){
+		getkeyvalue('{54D372AC-BF88-4DBF-9411-CE497EEDAEA1}','');
+	});
+	$('.a_title_5').click(function(){
+		getkeyvalue('{B495CB14-24A9-4D2D-B407-2FEA4698430D}','');
+	});
+	$('.a_title_6').click(function(){
+		getkeyvalue('{9F2F834B-F217-452A-BD3B-4A4134E40A79}','');
+	});
+});
