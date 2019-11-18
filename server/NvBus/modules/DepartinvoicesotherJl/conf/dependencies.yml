@@ -1,0 +1,4 @@
+self: play -> DepartinvoicesotherJl 0.1
+
+require:
+    - play
