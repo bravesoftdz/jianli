@@ -9,7 +9,6 @@ uses
 
 type
   TfrmDepartinvoicesotherJl = class(TSimpleCRUDForm)
-    jcdsResulttestfield: TFloatField;
     procedure tbtnFilterClick(Sender: TObject);
   private
     { Private declarations }

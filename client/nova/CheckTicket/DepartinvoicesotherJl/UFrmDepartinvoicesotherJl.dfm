@@ -1,10 +1,19 @@
 inherited frmDepartinvoicesotherJl: TfrmDepartinvoicesotherJl
   Caption = #32467#31639#21333#34917#24405'('#30417#21033')'
-  ExplicitWidth = 1140
-  ExplicitHeight = 463
+  ClientHeight = 494
+  ClientWidth = 1128
+  ExplicitWidth = 1144
+  ExplicitHeight = 533
   PixelsPerInch = 96
   TextHeight = 14
+  inherited pnlQuery: TPanel
+    Width = 1128
+    ExplicitWidth = 120
+  end
   inherited tlbShortCut: TToolBar
+    Width = 1128
+    ExplicitWidth = 120
+    ExplicitHeight = 490
     inherited tbtnFilter: TToolButton
       OnClick = tbtnFilterClick
     end
@@ -22,8 +31,17 @@ inherited frmDepartinvoicesotherJl: TfrmDepartinvoicesotherJl
     end
   end
   inherited Panel1: TPanel
+    Width = 1128
+    Height = 391
+    ExplicitTop = 548
+    ExplicitWidth = 120
     inherited GroupBox1: TGroupBox
+      Width = 1128
+      Height = 391
+      ExplicitWidth = 120
       inherited dbgrdhResult: TNvDbgridEh
+        Width = 1124
+        Height = 373
         FooterRowCount = 1
         RowHeight = 24
         UseMultiTitle = True
@@ -31,11 +49,52 @@ inherited frmDepartinvoicesotherJl: TfrmDepartinvoicesotherJl
         Columns = <
           item
             EditButtons = <>
-            FieldName = 'testfield'
-            Footer.ValueType = fvtCount
+            FieldName = 'code'
             Footers = <>
-            Title.Caption = #27979#35797#23383#27573
-            Width = 86
+            Layout = tlCenter
+            Title.Caption = #26426#26500#32534#30721
+            Width = 90
+          end
+          item
+            EditButtons = <>
+            FieldName = 'name'
+            Footers = <>
+            Layout = tlCenter
+            Title.Caption = #26426#26500#21517#31216
+            Width = 90
+            WordWrap = True
+          end
+          item
+            EditButtons = <>
+            FieldName = 'parentid'
+            Footers = <>
+            ImageList = ilToolBar
+            Layout = tlCenter
+            Title.Caption = #29238#32423'Id'
+            Width = 90
+          end
+          item
+            EditButtons = <>
+            FieldName = 'serversaddress'
+            Footers = <>
+            Layout = tlCenter
+            Title.Caption = #26381#21153#31471#22320#22336
+            Width = 100
+          end
+          item
+            EditButtons = <>
+            FieldName = 'stationid'
+            Footers = <>
+            Layout = tlCenter
+            Title.Caption = #36710#31449'Id'
+            Width = 90
+          end
+          item
+            EditButtons = <>
+            FieldName = 'id'
+            Footers = <>
+            Layout = tlCenter
+            Title.Caption = #26426#26500'Id'
           end>
       end
     end
@@ -44,7 +103,7 @@ inherited frmDepartinvoicesotherJl: TfrmDepartinvoicesotherJl
     Left = 128
     Top = 256
     Bitmap = {
-      494C01013A003D000C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01013A003D00100018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000060000000680100000100200000000000001C
       0200000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -4510,7 +4569,7 @@ inherited frmDepartinvoicesotherJl: TfrmDepartinvoicesotherJl
     Left = 192
     Top = 272
     Bitmap = {
-      494C01013A003D000C0018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01013A003D00100018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000060000000680100000100200000000000001C
       0200000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -8978,9 +9037,6 @@ inherited frmDepartinvoicesotherJl: TfrmDepartinvoicesotherJl
     RemoteServer = DMPublic.jcon
     Left = 256
     Top = 272
-    object jcdsResulttestfield: TFloatField
-      FieldName = 'testfield'
-    end
   end
   inherited dsResult: TDataSource
     Left = 64
